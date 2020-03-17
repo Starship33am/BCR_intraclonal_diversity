@@ -1,0 +1,163 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+S15_52                          gagatggagctgataaagcccacagaggacgtgagacaacctgtgcagttcctgagacga	60
+S19_62                          gagatggagcaaacaaagaccacagaggacctgagacaaccagggaagttcctgagactc	60
+S12_49                          gagatggagctgataaagcccacagaggacctgagacaacctgggaagttcctgagactc	60
+S17_55                          gagatggagcaaacaaagcccacagaggacctgagacaaccagggaagttcctgagactc	60
+S18_58                          gagatggagcaaacaaagcccacagtggacctgagacaaccagggaagttcctgagactc	60
+S14_51                          gaggtggagctgatagaagcgacagagcacctgagacgacctgggagaatcctaagtctc	60
+S8_37                           gaggtggagctgatagaagccacagagcacctgagacgacctgggaagttcctgagtctc	60
+S11_46                          gaggtggagccgaaagaagccacagagcacctgagacgacctgggaagttcctgagtctc	60
+S9_39                           gaggtggagccgagaaagcccacagagtacctgagacaccctgggaagttcctgagactc	60
+S13_49                          gaggtggagccgagaaagcccaaagagtacttgagacaccgtgggaagttcctgagactc	60
+S10_46                          gaggtgcagctgatagaggacacagaagacctgagacgacctgggatgttcctgagactc	60
+S16_55                          gaggtgcagctgatcgtggacacagaagacctgagacgacctgggatgttccggagactc	60
+S6_18                           gaggttaagctgatagtgcctacagaggaccagagacaacctgggtagtttatgagactc	60
+S20_63                          gaggttgagctcatagagcccacagaggaactgagacaacctgggaagttcctgagactc	60
+S5_11                           gaggtgtagctgatagtgcctacagaggacccgagacaacctgggaagtttatgagactc	60
+S7_20                           gaggtggagctgatagaggccacagaggacctgagacgacctgggatgttcctgagactc	60
+S2_3                            gaggtggagctgatagtgcccacagaggacccgagacaacctgggaagttcctgagactc	60
+L1_3                            gaggtggagctgatagagcccacagaggacctgagacaacctgggaagttcctgagactc	60
+L4_11                           gaggtggagctgatagagcccacagaggacctgagacaacctgggaagttcctgagactc	60
+IGHV3-29IGHD1/OR15-1aIGHJ1      gaggtggagctgatagagcccacagaggacctgagacaacctgggaagttcctgagactc	60
+L3_5                            gaggtggagctgatagagcccacagaggacctgagacaacctgggaagttcctgagactc	60
+                                *** *  ***  *        * **   *   *****  *  * *    *    ** *  
+
+S15_52                          tccggtgtagcctctagattcgccttcagtagccccagtatgagcccagttactcagtct	120
+S19_62                          tccagtgtagcgtctagattcgccttcagtagcttctgtatgagcccagtgaatcagtct	120
+S12_49                          tcctgtgtagcctctagattcgccttcagtagcttctgtatgagcccagttaatcagtct	120
+S17_55                          tcctgtgtagcgtctagattcgccttcagtagcttctgtatgagcccagttaatcagtct	120
+S18_58                          tccagtgtagcgtctagattcgccttcagtagcttctgtatgagcccagtgaatcagtct	120
+S14_51                          tcctgtgtagagtctagattcgactgaagtaacttctgaatgagcccagttcaccacgct	120
+S8_37                           tcctgtgtagagtctagattcgacttcagtagcttctgaatgagcccagttcaccacgct	120
+S11_46                          tcctgtgtagagtccaaattcgacttcagtagcttctgaatgagcccagtgcaccacgct	120
+S9_39                           tcctgtgtagcctctagattcgccgtcagtagcttctgaatgagcccagttcaccagtct	120
+S13_49                          tcctgtgtagcatctagatccgccgtcagtagcttctgaatgagcccagttcaccagtct	120
+S10_46                          tcctgtgtagactctagatgcgccttcagtagcttctgaatgagcccagttcaccactct	120
+S16_55                          tcctgtgtagactctagatgcgccttcagtagcttctgaatgagcccagttcaccactct	120
+S6_18                           tcctgtgtagcctatagactagccttcagttgcttctgaatgaggccagttcactagtct	120
+S20_63                          tcctgtgtagcctctaggttcgccttcagtgggttctgaatgagcccagttcaccagtct	120
+S5_11                           tcctgtgtagcctatagactagccttcagttgcttctgaatgaggccagttcaccagtct	120
+S7_20                           tcctgtgtagactctagattcgccttcagtagcttctgaatgagcccagttcaccactct	120
+S2_3                            tcctgtgtagcctctagactcgccttcagtagcttctgaatgagcccagttcaccagtct	120
+L1_3                            tcctgtgtagcctctagattcgccttcagtagcttctgaatgagcccagttcaccagtct	120
+L4_11                           tcctgtgtagcctctagattcgccttcagtagcttctgaatgagcccagttcaccagtct	120
+IGHV3-29IGHD1/OR15-1aIGHJ1      tcctgtgtagcctctagattcgccttcagtagcttctgaatgagcccagttcaccagtct	120
+L3_5                            tcctgtgtagcctctagattcgccttcagtagcttctgaatgagcccagttcaccagtct	120
+                                *** ******  *  *     * *   ***     * * ***** *****     *  **
+
+S15_52                          gcagtcaaggggctggagagattaatagatataaaagatgatggaagtcagatactccac	180
+S19_62                          gcagtcaaggggctggcgtaattaatagacataaaagatgatgaaagtcagattctccac	180
+S12_49                          gcagtcaaggggctggagtcattaatagatataaaagatgatggaagtcagatactccac	180
+S17_55                          gcagtcaaggggctggagtcattaatagatataaaagatgatggaagtcagattctccac	180
+S18_58                          gcagtcaaggggctggagtaattaatagatataaaagatgatggaagtcagattctccac	180
+S14_51                          gccgacaaggggctggcgtgagttattgatataatagtacatggaagtctgatacaccat	180
+S8_37                           gccggcaaggggctggcgtgagttatagatataatagaacatggaagtctgatacaccat	180
+S11_46                          gccggcaaggagctggcgtgcgttatagatatattagaacatggaagtcggatacaccat	180
+S9_39                           acaggcaaggggctggagtgagtaatagatataaaagatgatggaaggcagatacaccat	180
+S13_49                          acaggcaaggggctggagtgagtaatagatataaaagatgatggaagacagatacaccat	180
+S10_46                          acaggcaaggggctggagtgagtaatagatataaaagcagatggaagtcagatacaccat	180
+S16_55                          acagggaaggggctggagtgagtaatagatataaaagcagatggaagtcagatacaccat	180
+S6_18                           gaaggcaaggagctggagtgagtaatagatataaaagatgacggcagtcatatacacctt	180
+S20_63                          gcaagcaaggggctggagtgaataatagatataaaagatgatggcagtcaggtacaccat	180
+S5_11                           gaaggcgaggagctggagtgagtaatagatataaaagatgatggaagtcagatacaccat	180
+S7_20                           gcaggcaaggggctggagtgagtaatagatataaaagaagatggaagtcagatacaccat	180
+S2_3                            gaaggcgaggagctggagtgagtaatagatataaaagatgatggaagtcagatacaccat	180
+L1_3                            gcaggcaaggggctggagtgagtaatagatataaaagatgatggaagtcagatacaccat	180
+L4_11                           gcaggcaaggggctggagtgagtaatagatataaaagatgatggaagtcagatacaccat	180
+IGHV3-29IGHD1/OR15-1aIGHJ1      gcaggcaaggggctggagtgagtaatagatataaaagatgatggaagtcagatacaccat	180
+L3_5                            gcaggcaaggggctggagtgagtaatagatataaaagatgatggaagtcagatacaccat	180
+                                       *** ***** *    * ** ** ***  **   * *  ** *   * * **  
+
+S15_52                          gcatactctgtgaagggcagattctccgtctccaaagaaaatgctaagaactcgcggtat	240
+S19_62                          gcatacactgtggagcgaagattctccgtctccaacgaaaacgccaagaactctctgtat	240
+S12_49                          gcatactctgtgaagggcagattctccgtctccaaagaaaatgctaagaactctctgtat	240
+S17_55                          gcatactctgtgaagggcagattctccgtctccaacgaaaatgccaagaactctctgtat	240
+S18_58                          gcatactctgtgaagcgcagattctccgtctccaacgaaaatgccaagaactctctgtat	240
+S14_51                          gcagacgctgcgaagggcagatgctccatctcaaaagacaatgctaagaactctctttgt	240
+S8_37                           gcagactctgcgaagggcagatgctccatctcaaaagacaatgctaagaactctctgtct	240
+S11_46                          gcagactctgcgaagggcaggtgctcgatctcaaaagacaatgctaagaactctctgtct	240
+S9_39                           acagactctgtgaagggcagattcgccatctccaaagacaatgctaagaactctctgtat	240
+S13_49                          acagactctgtcaacggcagattcgccatctccaaagataatgctaagaactctctgtat	240
+S10_46                          gcagactctgtgaagggtagattctacatctcaaaagacaatgctaagaactctctgtat	240
+S16_55                          acagactctgtgaagggtagattatacatctcaaaagacaatgctaagaactctctgtat	240
+S6_18                           gcagactctgtgaagggcagattctccatctcaaaaccaaatgctaagaactctctgtat	240
+S20_63                          gcagactctgtgaagggcagattctccatccccaaagacaacgctaagaactctctgtat	240
+S5_11                           gcagactctgtgaagggcagattctccatctcaaaacaaaatgctaagaactctctgtat	240
+S7_20                           gcagactctgtgaagggcagattctccatctcaaaagacaatgctaagaactctctgtat	240
+S2_3                            gcagactctgtgaagggcagattctccatctcaaaagacaatgctaagaactctctgtat	240
+L1_3                            gcagactctgtgaagggcagattctccatctccaaagacaatgctaagaactctctgtat	240
+L4_11                           gcagactctgtgaagggcagattctccatctccaaagacaatgctaagaactctctgtat	240
+IGHV3-29IGHD1/OR15-1aIGHJ1      gcagactctgtgaagggcagattctccatctccaaagacaatgctaagaactctctgtat	240
+L3_5                            gcagactctgtgaagggcagattctccatctccaaagacaatgctaagaactctctgtat	240
+                                 ** ** ***   *  * ** *      ** * **    ** ** ******** *  * *
+
+S15_52                          ctgcaaatgaacattcagaaaactgaggacatggctgtgtatgactgtacgtaaggttgg	300
+S19_62                          ccgcaaataaaactacatagaactgaggatatgcctgtgtaggagtgtatattagattgg	300
+S12_49                          ctgcaaatgaacattcagagaactgaggacatggctgtgtatgactgtacataaggttgg	300
+S17_55                          ccgcaaatgaacatacagagaactgaggacatggctgtgtaggactgtatattaggttgg	300
+S18_58                          ccgcaaatgaacctacatagaactgaggacatggctgtgtaggagtgtatattagattgg	300
+S14_51                          ctgcaactacacagtctgataactaaggacatgcctgtgtatggctgtacatatggtata	300
+S8_37                           ctgcaactaaacagtcagataactaaggacatggctgtgtatggctgtacatatggtata	300
+S11_46                          ctgcaactaagcagtcagataactaaggacatggctgtctatggctgcacatatggtata	300
+S9_39                           ctgcaaatgaacatttagataactgagtacatggctctgtaaggctgtacataagtttcg	300
+S13_49                          ctgcaaatggacatttagataactgagtacattgatctgtaacgctgtacataagtttcg	300
+S10_46                          ctgcagctaaacagtcagataactaaggacatggctgtgtatggctgtacatcaggtata	300
+S16_55                          ctgcacctaaacagtcagataactaaggacatggttgtgtatggctgtacatcaggtata	300
+S6_18                           ctgcaaatgaacagtcggaggactgaggaagtggctgagtaaggctgtacgtaaggttcg	300
+S20_63                          ctgcaaatgaacagtcagagaagtgaggacatggctgtgtacggctgtacataaggttgg	300
+S5_11                           ctgcaaatgaacagtcggagaactgaggaagtggctgtgtaaggctgtacataaggttcg	300
+S7_20                           ctgcaactaaacagtcagataactaaggacatggctgtgtatggctgtacataaggtata	300
+S2_3                            ctgcaaatgaacagtcagagaactgaggaaatggctgtgtaaggctgtacataaggttcg	300
+L1_3                            ctgcaaatgaacagtcagagaactgaggacatggctgtgtatggctgtacataaggttcg	300
+L4_11                           ctgcaaatgaacagtcagagaactgaggacatggctgtgtatggctgtacataaggtata	300
+IGHV3-29IGHD1/OR15-1aIGHJ1      ctgcaaatgaacagtcagagaactgaggacatggctgtgtatggctgtacataaggttgg	300
+L3_5                            ctgcaaatgaacagtcagagaactgaggacatggctgtgtatggctgtacataaggttgg	300
+                                * ***  *          *  * * ** *  *   *   **    ** *  *  * *   
+
+S15_52                          ta--taactgtagcaacccgctgaatactcccagctctggggcaagggcacccaggtcac	358
+S19_62                          ta--taactggaggatcccgctgattcctcccagcactcgggcaagggcacaccgctcac	358
+S12_49                          ta--taactggagcaacccgctgaatactcccagcactggggcaagggcacccaggtcac	358
+S17_55                          ta--taactggagcaacccgctgaatactcccagcactggggcaagggcaccccggtcac	358
+S18_58                          ta--taactggagcaacccgctgaatactcccagcactggggcaagggcacaccgctcac	358
+S14_51                          actggaac--------aacgctcaatacttcccgcactggggccagggcaccctggtccc	352
+S8_37                           actggaac--------aacgctcaatacttccagcactggggccagggcaccctggtcac	352
+S11_46                          actggaac--------aacgctcaatacttccagcactggggccagggcaccctggtcac	352
+S9_39                           ggtataactcgaacaacatgctgaatatttccagcactgggtccagggcacccaggtcac	360
+S13_49                          ggtatacctcgaacaacatgctgaatatttccagcactgggtccagggcaccaaggtcac	360
+S10_46                          actggaac--------aacgctcaatacttccagcacgggcgacagggcaccctggtcac	352
+S16_55                          actggaaa--------aacgctcaatacttccagcacgggcgacagagcaccctggtcac	352
+S6_18                           gatataaatggaacagcatgctgcatacttccagcactggggccaggccatcccggtcgc	360
+S20_63                          ta--taactggaacaacccgctgaatacttccagcactggggccagggcaccctggtcac	358
+S5_11                           gatataaatggaacagcatgctgaatacttccagcactggggccagggcaccccggtcgc	360
+S7_20                           actgga--------acaacgctcaatacttccagcactggggccagggcaccctggtcac	352
+S2_3                            ggtataaatggaacagcatgctgaatacttccagcactggggccagggcaccccggtcgc	360
+L1_3                            ggtataactggaacaacatgctgaatacttccagcactggggccagggcaccctggtcac	360
+L4_11                           a--ctg------gaacaacgctgaatacttccagcactggggccagggcaccctggtcac	352
+IGHV3-29IGHD1/OR15-1aIGHJ1      t--ataactggaacaac--gctgaatacttccagcactggggccagggcaccctggtcac	356
+L3_5                            t--ataactggaacaacccgctgaatacttccagcactggggccagggcaccctggtcac	358
+                                                   ***   *  * ** ** *  *    **  **    * ** *
+
+S15_52                          tgtctcctcag	369
+S19_62                          cggctcctcag	369
+S12_49                          cgtctcctcag	369
+S17_55                          cggctcctcag	369
+S18_58                          cggctcctcag	369
+S14_51                          cgtcacctcac	363
+S8_37                           cgtcacctcac	363
+S11_46                          cgtcacatcac	363
+S9_39                           cgtctcctcag	371
+S13_49                          cctctcctcag	371
+S10_46                          cgtctcctcag	363
+S16_55                          ggtctcctcag	363
+S6_18                           cgtcttctcat	371
+S20_63                          cgtctcctcag	369
+S5_11                           cgtctcctcag	371
+S7_20                           cgtctcctcag	363
+S2_3                            cgtctcctcag	371
+L1_3                            cgtctcctcag	371
+L4_11                           cgtctcctcag	363
+IGHV3-29IGHD1/OR15-1aIGHJ1      cgtctcctcag	367
+L3_5                            cgtctcctcag	369
+                                   *   *** 

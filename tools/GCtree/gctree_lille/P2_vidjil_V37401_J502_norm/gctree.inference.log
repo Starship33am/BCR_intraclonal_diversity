@@ -1,0 +1,7 @@
+number of trees with integer branch lengths: 2
+2 trees exhibit unobserved unifurcation from root. Adding psuedocounts to these roots
+floating point error in MLE: underflow encountered in double_scalars. Attempt 1 of 10. Rerunning with new random start.
+params = [0.4990099143225337, 0.02976190453384648]
+tree	alleles	logLikelihood
+1	16	-98.6923631711
+2	16	-98.6923631711

@@ -1,0 +1,17 @@
+seq15,simcell_93
+seq16,simcell_109:simcell_110:simcell_111:simcell_112:simcell_100:simcell_104:simcell_105:simcell_106:simcell_107:simcell_108:simcell_101:simcell_102:simcell_103
+naive,simcell_98:simcell_99:simcell_94:simcell_95:simcell_96:simcell_91:simcell_92
+seq14,simcell_114
+seq13,simcell_97
+seq12,simcell_113
+seq11,simcell_79:simcell_80
+seq10,simcell_82:simcell_83
+seq9,simcell_74
+seq8,simcell_90
+seq3,simcell_71:simcell_72
+seq2,simcell_78
+seq1,simcell_85:simcell_86
+seq7,simcell_84:simcell_87:simcell_88:simcell_89
+seq6,simcell_69:simcell_65:simcell_66:simcell_67:simcell_68
+seq5,simcell_77:simcell_70:simcell_76:simcell_73:simcell_75
+seq4,simcell_81

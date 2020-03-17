@@ -1,0 +1,6 @@
+number of trees with integer branch lengths: 2
+2 trees exhibit unobserved unifurcation from root. Adding psuedocounts to these roots
+params = [0.499009900571915, 0.02976190441568071]
+tree	alleles	logLikelihood
+1	16	-98.6923631711
+2	16	-98.6923631711
