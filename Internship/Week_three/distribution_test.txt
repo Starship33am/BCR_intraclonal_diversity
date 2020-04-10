@@ -1,0 +1,5 @@
+Clone number1	0.67
+Clone number2	0.38
+Clone number3	0.38
+Clone number4	0.33
+Clone number5	0.26
