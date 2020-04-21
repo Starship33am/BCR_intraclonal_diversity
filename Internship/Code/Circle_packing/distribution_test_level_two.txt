@@ -1,0 +1,5 @@
+Clone number1	0.67	Clonotype 0.95 0.05
+Clone number2	0.18	Clonotype 0.50 0.50
+Clone number3	0.10	Clonotype 1
+Clone number4	0.05	Clonotype 1
+Clone number5	0.05	Clonotype 0.98 0.02
