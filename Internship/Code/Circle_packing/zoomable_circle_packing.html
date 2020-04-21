@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Zoomable Circle Packing </title>
+  <meta charset='utf-8'/>
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+</head>
+
+<style>
+circle {
+  fill: blue;
+  opacity: 0.3;
+  stroke: white;
+}
+text {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  fill: white;
+  font-size: 12px;
+  text-anchor: middle;
+}
+</style>
+
+<body>
+
+<svg width="420" height="420">
+    <g></g>
+  </svg>
+
+<script>
+
+//creation of pack layout
+var packLayout = d3.pack();
+packLayout.size([400, 400]);
+packLayout.padding(3);	//padding around each circle
+
+//loading the json file
+d3.json("distribution_test_level_two.json", function(error, data) {
+  if (error) throw error;
+
+  //creation from the data of the json file of a data structure that represent a hierarchy
+  var root = d3.hierarchy(data);
+
+  //traverse the tree and put at value attribue the sum of its children
+  root.sum(function(d) {return d.value});
+  root.sort(function(a, b) { return b.value - a.value; });
+
+  //add x, y and r proprieties to each nodes
+  packLayout(root);
+
+  //create circle for each nodes
+  var nodes = d3.select('svg g')
+    .selectAll('g')
+    .data(root.descendants())
+    .enter()
+    .append('g')
+    .attr('transform', function(d) {return 'translate(' + [d.x, d.y] + ')'})
+
+  nodes
+    .append('circle')
+    .attr('r', function(d) { return d.r; })
+
+  nodes
+    .append('text')
+    .attr('dy', 4)
+    .text(function(d) {return d.data.value;})
+})
+
+</script>
+</body>
+</html>
