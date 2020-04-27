@@ -18,6 +18,19 @@ text {
   font-size: 12px;
   text-anchor: middle;
 }
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
 </style>
 
 <body>
@@ -27,6 +40,12 @@ text {
   </svg>
 
 <script>
+
+//selection of svg
+var svg = d3.select("svg"),
+    diameter = svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+//set the size of svg
 
 //creation of pack layout
 var packLayout = d3.pack();
@@ -40,29 +59,75 @@ d3.json("distribution_test_level_two.json", function(error, data) {
   //creation from the data of the json file of a data structure that represent a hierarchy
   var root = d3.hierarchy(data);
 
-  //traverse the tree and put at value attribue the sum of its children
-  root.sum(function(d) {return d.value});
-  root.sort(function(a, b) { return b.value - a.value; });
+  //traverse the tree and attribute value to the node depending on the percentage store in the node data
+  root.value = 1000;
+  function addValue(nodeObject){
+    //browse all the cildren of the node and set the value of the child node by multiplyingthe value of the node by the percentage 
+    for(child in nodeObject.children){
+      nodeObject.children[child].value = nodeObject.value * nodeObject.children[child]["data"].value;
+      //repeat the same action if it has child
+      if(nodeObject.children[child].children != undefined){
+        addValue(nodeObject.children[child]);
+      }
+    }   
+  }
+  //add value to all the descendant of root
+  addValue(root);
 
-  //add x, y and r proprieties to each nodes
-  packLayout(root);
+  var focus = root, view;
 
-  //create circle for each nodes
-  var nodes = d3.select('svg g')
-    .selectAll('g')
-    .data(root.descendants())
-    .enter()
-    .append('g')
-    .attr('transform', function(d) {return 'translate(' + [d.x, d.y] + ')'})
+  //add x, y and r proprieties to each nodes and store all the nodes in a variable
+  var nodes = packLayout(root).descendants();
 
-  nodes
-    .append('circle')
-    .attr('r', function(d) { return d.r; })
+  //define the properties of the circle
+  var circle = g.selectAll("circle")
+    .data(nodes)
+    .enter().append("circle")
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; }) //changes the shape of the mouse when hovering over the object
+      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
-  nodes
-    .append('text')
-    .attr('dy', 4)
-    .text(function(d) {return d.data.value;})
+  //define properties of the text
+  var text = g.selectAll("text")
+    .data(nodes)
+    .enter().append("text")
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })//allow to display only the text of the nodes that we are on
+      .text(function(d) { return "%" + (d.data.value*100); });
+
+  //create the nodes
+  var node = g.selectAll("circle,text");
+
+  //allow to zoom out
+  svg.on("click", function() { zoom(root); });
+  
+  //allow to set the coordinates of the nodes
+  nodeProperties([root.x, root.y, root.r * 2]);
+
+  function zoom(d) {
+    var focus0 = focus; focus = d;
+    
+    var transition = d3.transition()
+        .duration(750)	//specify the duration of the transition in miliseconde
+        .tween('zoom', function(d) {			//run custom code during the transition
+          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2]);	//apply betwen two views (starts and end)
+          return function(t) { nodeProperties(i(t)); };
+        });
+
+    //show the value of the nodes on which we are zooming
+    transition.selectAll("text")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
+        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
+        .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+  }
+
+  //set the size of the nodes
+  function nodeProperties(v) {
+    var k = (diameter/ (v[2])); view = v;
+    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+    node.attr("r", function(d) { return d.r * k; });
+  }
+
+
 })
 
 </script>
