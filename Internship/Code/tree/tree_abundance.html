@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arbre abondance cercle</title>
+    <meta charset='utf-8'/>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+  <body>
+
+    <script>
+
+    d3.text("counts.txt", function(error, treeData) {
+      if (error) throw error;
+
+      //data structure that represent a hierarchy
+      var data = d3.hierarchy(parseTxt(treeData)); //data structure that represente a hieratchy
+
+      // set the dimensions and margins of the diagram
+      var margin = {top: 40, right: 90, bottom: 50, left: 90},
+      width = 660 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+
+      //declare a tree layout and assigns the size
+      var tree = d3.tree()	//creating the tree layout 
+              .size([width, height]);
+
+      // maps the node data to the tree layout
+      var root = tree(data);
+
+      //create svg object
+      var svg = d3.select("body").append("svg")
+             .attr("width", width + margin.left + margin.right)
+             .attr("height", height + margin.top + margin.bottom),
+          g = svg.append("g")
+           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      //add the links between the nodes
+      var link = g.append("g")
+              .attr("fill", "none")
+              .attr("stroke", "#555")
+              .attr("stroke-opacity", 0.4)
+              .attr("stroke-width", 1.5)
+            .selectAll("path")
+              .data(root.links())
+              .enter().append("path")	//SVG path allow to draw shape
+               .attr("d", branchShape);   //draw elbow branches
+
+      //add each node as a group
+      var node = g.append("g")
+            .attr("stroke-width", 3)
+          .selectAll("g")
+          .data(root.descendants())
+          .enter().append("g")
+            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")";});	//position the nodes
+
+      //add the circle to the node
+      node.append("circle")
+          .attr("fill", "#008080")
+          .attr("r", function(d) { return d.data.value? d.data.value*10 : 0});	//set the value of the radius
+
+      //add the text to the node
+      node.append("text")
+          .attr("dy", 4.5)
+          .attr("text-anchor", "middle")	//set position of the text
+          .text(function(d) { return d.data.value})
+    });
+
+    //give a elbow shape to the branches     
+    function branchShape(d) {
+      return "M" + d.source.x + "," + d.source.y + "H" + d.target.x + "V" + d.target.y;	//M means move to, H and V respectively horizontal and vertical
+    }
+
+    //translate the txt format into object
+    function parseTxt(text) {
+      var data={}, pos = data;
+      var clone = text.split("\n"); // retrieve the clonotype
+
+      if(clone[clone.length-1]==""){clone.pop();} //remove the blank in the end
+      pos=pos.children=[];	
+      clonotype=clone[0].split(",");	//retrieve the id and abondance of the clonotype
+      pos.push({"name": clonotype[0],"value": clonotype[1]});	//add the first node
+
+      for(var i=1; i<(clone.length-1); i++){
+	clonotype=clone[i].split(",");
+        pos.push({"children":[]});
+        pos=pos[1].children;
+	pos.push({"name": clonotype[0],"value": clonotype[1]});
+      }
+      clonotype=clone[clone.length-1].split(","); //add the last node
+      pos.push({"name": clonotype[0],"value": clonotype[1]});
+      return data;
+    }
+   
+
+    </script>
+
+  </body>
+</html>

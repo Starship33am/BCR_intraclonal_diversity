@@ -8,7 +8,6 @@
 
 <style>
 circle {
-  fill: blue;
   opacity: 0.3;
   stroke: white;
 }
@@ -58,19 +57,11 @@ d3.json("distribution_test_level_two.json", function(error, data) {
 
   //creation from the data of the json file of a data structure that represent a hierarchy
   var root = d3.hierarchy(data);
-
-  //traverse the tree and attribute value to the node depending on the percentage store in the node data
+  
+  //assign a color to each node
+  attributeColor(root);
+  
   root.value = 1000;
-  function addValue(nodeObject){
-    //browse all the cildren of the node and set the value of the child node by multiplyingthe value of the node by the percentage 
-    for(child in nodeObject.children){
-      nodeObject.children[child].value = nodeObject.value * nodeObject.children[child]["data"].value;
-      //repeat the same action if it has child
-      if(nodeObject.children[child].children != undefined){
-        addValue(nodeObject.children[child]);
-      }
-    }   
-  }
   //add value to all the descendant of root
   addValue(root);
 
@@ -83,14 +74,15 @@ d3.json("distribution_test_level_two.json", function(error, data) {
   var circle = g.selectAll("circle")
     .data(nodes)
     .enter().append("circle")
-      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; }) //changes the shape of the mouse when hovering over the object
+      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+      .style("fill", function(d){ return d.data.color; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
   //define properties of the text
   var text = g.selectAll("text")
     .data(nodes)
     .enter().append("text")
-      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })//allow to display only the text of the nodes that we are on
+      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
       .text(function(d) { return "%" + (d.data.value*100); });
 
   //create the nodes
@@ -118,6 +110,7 @@ d3.json("distribution_test_level_two.json", function(error, data) {
         .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
         .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
         .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+
   }
 
   //set the size of the nodes
@@ -127,6 +120,33 @@ d3.json("distribution_test_level_two.json", function(error, data) {
     node.attr("r", function(d) { return d.r * k; });
   }
 
+  //return a random value within a range of value given
+  function getRandomInt(value) {
+    return Math.floor(Math.random() * Math.floor(value));
+  }
+
+  //traverse the tree and attribute value to the node depending on the percentage store in the node data
+  function addValue(nodeObject){
+    //browse all the cildren of the node and set the value of the child node by multiplyingthe value of the node by the percentage 
+    for(child in nodeObject.children){
+      nodeObject.children[child].value = nodeObject.value * nodeObject.children[child]["data"].value;
+      //repeat the same action if it has child
+      if(nodeObject.children[child].children != undefined){
+        addValue(nodeObject.children[child]);
+      }
+    }   
+  }
+
+  //randomly assign a color to each node by adding a color attribut
+  function attributeColor(data){
+    data.color="#808080"; //the color of the set is fixed
+    var colorList = ["#C0C0C0", "#FF0000", "#800000", "#FFFF00", "#808000", "#00FF00", "#008000", "#00FFFF", "#008080", "#0000FF", "#000080", "#FF00FF", "#800080"]; //list of color
+    for(var i in data.children){
+      var color = colorList[getRandomInt(colorList.length)]; //select randomly a color among the list
+      data.children[i].data.color=color; //assign the color to the node
+      if(data.children[i].children != undefined){attributeColor(data.children[i]);} //to the same for the children of the node
+    }
+  }
 
 })
 
