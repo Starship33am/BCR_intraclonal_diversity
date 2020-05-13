@@ -9,24 +9,30 @@
 
     <script>
 
-    d3.text("counts.txt", function(error, treeData) {
+    d3.text("real_distribution_clonotype.txt", function(error, treeData) {
       if (error) throw error;
 
       //data structure that represent a hierarchy
       var data = d3.hierarchy(parseTxt(treeData)); //data structure that represente a hieratchy
+      
+      //find the most abundant clonotype
+      maxValue = maxClonotypeValue(data, 0);
 
       // set the dimensions and margins of the diagram
-      var margin = {top: 40, right: 90, bottom: 50, left: 90},
-      width = 660 - margin.left - margin.right,
-      height = 500 - margin.top - margin.bottom;
+      var margin = {top: 50, right: 10, bottom: 50, left: 10},
+      width = maxValue*(data.height)*4 - margin.left - margin.right,
+      height = 600 - margin.top - margin.bottom;
 
       //declare a tree layout and assigns the size
       var tree = d3.tree()	//creating the tree layout 
               .size([width, height]);
 
-      // maps the node data to the tree layout
+      //assign properties to the data (coordinates, depth, ...)
       var root = tree(data);
 
+      //adjust the length of the branch depending on the radius of the node and the position between the nodes
+      branchLength(root, height, maxValue);
+console.log(root)
       //create svg object
       var svg = d3.select("body").append("svg")
              .attr("width", width + margin.left + margin.right)
@@ -56,13 +62,14 @@
       //add the circle to the node
       node.append("circle")
           .attr("fill", "#008080")
-          .attr("r", function(d) { return d.data.value? d.data.value*10 : 0});	//set the value of the radius
+          .attr("r", function(d) { return d.data.value? d.data.value : 0});	//set the value of the radius
 
       //add the text to the node
       node.append("text")
-          .attr("dy", 4.5)
+          .attr('font-size', 12) //set the size of the text
+          .attr("dy", function(d){if(d.data.value!=undefined){return d.data.value+30;}}) //position the text under the node
           .attr("text-anchor", "middle")	//set position of the text
-          .text(function(d) { return d.data.value})
+          .text(function(d) { if(d.data.value!=undefined) return "%"+d.data.value;})
     });
 
     //give a elbow shape to the branches     
@@ -71,26 +78,48 @@
     }
 
     //translate the txt format into object
-    function parseTxt(text) {
+    function parseTxt(text, maxValue) {
       var data={}, pos = data;
       var clone = text.split("\n"); // retrieve the clonotype
-
+maxValue = 10;
       if(clone[clone.length-1]==""){clone.pop();} //remove the blank in the end
       pos=pos.children=[];	
       clonotype=clone[0].split(",");	//retrieve the id and abondance of the clonotype
-      pos.push({"name": clonotype[0],"value": clonotype[1]});	//add the first node
+      pos.push({"name": clonotype[0],"value": parseFloat(clonotype[1])});	//add the first node
 
       for(var i=1; i<(clone.length-1); i++){
 	clonotype=clone[i].split(",");
         pos.push({"children":[]});
         pos=pos[1].children;
-	pos.push({"name": clonotype[0],"value": clonotype[1]});
+	pos.push({"name": clonotype[0],"value": parseFloat(clonotype[1])});
       }
       clonotype=clone[clone.length-1].split(","); //add the last node
-      pos.push({"name": clonotype[0],"value": clonotype[1]});
+      pos.push({"name": clonotype[0],"value": parseFloat(clonotype[1])});
       return data;
     }
    
+    //fix the size of the branches and allow the branches to be fixed on the top of the nodes and not in the center
+    function branchLength(nodes, h, maxValue){
+      var height=(h/2); 
+      for(var i in nodes.children){
+        if(i%2==0){nodes.children[i].x = nodes.x - (2*maxValue);}else{nodes.children[i].x = nodes.x + (2*maxValue);}
+        if(nodes.children[i].data.value!=undefined){
+          nodes.children[i].y = nodes.children[i].y + nodes.children[i].data.value;
+        }
+        if(nodes.children[i].children != undefined){
+          branchLength(nodes.children[i],h,maxValue);
+        }	
+      }
+    }
+
+    //browse the tree to find the clonotype with the biggest abundance and return its value
+    function maxClonotypeValue(data, maxValue){
+      for(var i in data.children){
+        if(data.children[i].data.value > maxValue){maxValue = data.children[i].data.value;} //change the maxValue
+	if(data.children[i].children != undefined){maxClonotypeValue(data.children[i], maxValue);}
+      }
+      return maxValue
+    }
 
     </script>
 
