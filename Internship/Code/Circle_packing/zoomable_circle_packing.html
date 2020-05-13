@@ -8,8 +8,8 @@
 
 <style>
 circle {
-  opacity: 0.3;
-  stroke: white;
+  opacity: 0.7;
+  stroke-width : 2;
 }
 text {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -23,7 +23,7 @@ text {
 
 .node:hover {
   stroke: #000;
-  stroke-width: 1.5px;
+  stroke-width: 1px;
 }
 
 .node--root,
@@ -52,7 +52,7 @@ packLayout.size([400, 400]);
 packLayout.padding(3);	//padding around each circle
 
 //loading the json file
-d3.json("distribution_test_level_two.json", function(error, data) {
+d3.json("real_distribution.json", function(error, data) {
   if (error) throw error;
 
   //creation from the data of the json file of a data structure that represent a hierarchy
@@ -76,6 +76,9 @@ d3.json("distribution_test_level_two.json", function(error, data) {
     .enter().append("circle")
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
       .style("fill", function(d){ return d.data.color; })
+      .style("stroke", function(d){ return d.data.stroke; })
+      .style("stroke-dasharray", function(d){ return d.data.style; })
+      .style("display", function(d){if((d === root) || (d.parent === root)){return "inline";}else{return "none";}}) //only display the first level of circle packing
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
   //define properties of the text
@@ -111,6 +114,12 @@ d3.json("distribution_test_level_two.json", function(error, data) {
         .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
         .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
 
+    transition.selectAll("circle")
+      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; }) //select only the elements that match the specified filter
+        //.style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
+        .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; }) //display child of the element we are focus on when the transition starts
+        .on("end", function(d) { if (focus0.parent === focus && d.parent === focus0 ) this.style.display = "none"; }); //hide, when the transition end, the child of the element if we are in first level 
+
   }
 
   //set the size of the nodes
@@ -118,11 +127,6 @@ d3.json("distribution_test_level_two.json", function(error, data) {
     var k = (diameter/ (v[2])); view = v;
     node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
     node.attr("r", function(d) { return d.r * k; });
-  }
-
-  //return a random value within a range of value given
-  function getRandomInt(value) {
-    return Math.floor(Math.random() * Math.floor(value));
   }
 
   //traverse the tree and attribute value to the node depending on the percentage store in the node data
@@ -138,13 +142,51 @@ d3.json("distribution_test_level_two.json", function(error, data) {
   }
 
   //randomly assign a color to each node by adding a color attribut
-  function attributeColor(data){
-    data.color="#808080"; //the color of the set is fixed
-    var colorList = ["#C0C0C0", "#FF0000", "#800000", "#FFFF00", "#808000", "#00FF00", "#008000", "#00FFFF", "#008080", "#0000FF", "#000080", "#FF00FF", "#800080"]; //list of color
-    for(var i in data.children){
-      var color = colorList[getRandomInt(colorList.length)]; //select randomly a color among the list
-      data.children[i].data.color=color; //assign the color to the node
-      if(data.children[i].children != undefined){attributeColor(data.children[i]);} //to the same for the children of the node
+  function attributeColor(tree){
+    var colorList = ["800000","FF0000","800080","00FFFF","008000","7FFFD4","F0FFFF","FFE4C4","000000","D3D3D3","FFEBCD","0000FF","8A2BE2","A52A2A","DEB887","F5F5DC","F0F8FF","5F9EA0","7FFF00","D2691E","FF7F50","6495ED","FFF8DC","DC143C","00FFFF","00008B","008B8B","B8860B","A9A9A9","A9A9A9","006400","BDB76B","8B008B","556B2F","FF8C00","9932CC","8B0000","E9967A","8FBC8F","483D8B","2F4F4F","2F4F4F","00CED1","9400D3","FF1493","00BFFF","696969","696969","1E90FF","B22222","FFFAF0","228B22","FF00FF","DCDCDC","F8F8FF","FFD700","DAA520","808080","ADFF2F","F0FFF0","FF69B4","CD5C5C","4B0082","FFFFF0","F0E68C","E6E6FA","FFF0F5","7CFC00","FFFACD","ADD8E6","F08080","E0FFFF","FAFAD2","FAEBD7","D3D3D3","90EE90","FFB6C1","FFA07A","20B2AA","87CEFA","778899","778899","B0C4DE","FFFFE0","00FF00","32CD32","FAF0E6","FF00FF","66CDAA","0000CD","BA55D3","9370DB","3CB371","7B68EE","00FA9A","48D1CC","C71585","191970","F5FFFA","FFE4E1","FFE4B5","FFDEAD","000080","FDF5E6","808000","6B8E23","FFA500","FF4500","DA70D6","EEE8AA","98FB98","AFEEEE","DB7093","FFEFD5","FFDAB9","CD853F","FFC0CB","DDA0DD","B0E0E6","663399","BC8F8F","4169E1","8B4513","FA8072","F4A460","2E8B57","FFF5EE","A0522D","C0C0C0","87CEEB","6A5ACD","708090","708090","FFFAFA","00FF7F","4682B4","D2B48C","008080","D8BFD8","FF6347","40E0D0","EE82EE","F5DEB3","FFFFFF","F5F5F5","FFFF00","9ACD32"]; 
+    var strokeStyle = ["none", "10,10", "1,5"];
+    var indexCircle = 0, indexStroke = 0, indexStyle = 0;
+    //the color of the set is fixed
+    tree.data.color="#808080";
+    tree.data.stroke="#808080";
+    tree.data.style="none";
+    for(var i in tree.children){
+      tree.children[i].data.color="#"+colorList[indexCircle];	//assign the color to the node
+      tree.children[i].data.stroke="#"+colorList[indexStroke];
+      tree.children[i].data.style=strokeStyle[indexStyle];
+      if(indexCircle!=(colorList.length-1)){
+        indexCircle++;
+      }else if(indexStroke!=(colorList.length-1)){
+        indexCircle = 0;
+        indexStroke++;
+      }else if(indexStyle!=(strokeStyle.length-1)){
+        indexCircle = 0;
+        indexStroke = 0;
+        indexStyle++;
+      }else{
+        indexCircle = 0;
+        indexStroke = 0;
+        indexStyle = 0;
+      }
+      for(var j in tree.children[i].children){
+        tree.children[i].children[j].data.color="#"+colorList[indexCircle];	//assign the color to the node
+        tree.children[i].children[j].data.stroke="#"+colorList[indexStroke];
+        tree.children[i].children[j].data.style=strokeStyle[indexStyle];
+        if(indexCircle!=(colorList.length-1)){
+          indexCircle++;
+        }else if(indexStroke!=(colorList.length-1)){
+          indexCircle = 0;
+          indexStroke++;
+        }else if(indexStyle!=(strokeStyle.length-1)){
+          indexCircle = 0;
+          indexStroke = 0;
+          indexStyle++;
+        }else{
+          indexCircle = 0;
+          indexStroke = 0;
+          indexStyle = 0;
+        }
+      } //do the same for the children of the node     
     }
   }
 
