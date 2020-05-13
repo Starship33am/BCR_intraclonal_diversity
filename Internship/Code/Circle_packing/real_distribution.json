@@ -1,0 +1,54 @@
+{
+    "children": [
+        {
+            "name": "clonotype2",
+            "children": [
+                {
+                    "name": "1",
+                    "value": 0.35
+                },
+                {
+                    "name": "2",
+                    "value": 0.2
+                },
+                {
+                    "name": "3",
+                    "value": 0.1
+                },
+                {
+                    "name": "4",
+                    "value": 0.04
+                },
+                {
+                    "name": "5",
+                    "value": 0.02
+                },
+                {
+                    "name": "6",
+                    "value": 0.02
+                },
+                {
+                    "name": "7",
+                    "value": 0.01
+                },
+                {
+                    "name": "8",
+                    "value": 0.01
+                },
+                {
+                    "name": "9",
+                    "value": 0.01
+                },
+                {
+                    "name": "10",
+                    "value": 0.0008
+                }
+            ],
+            "value": 0.7608
+        },
+        {
+            "name": "clonotype1",
+            "value": 0.23920000000000002
+        }
+    ]
+}
