@@ -1,0 +1,4 @@
+Week eight report
+
+J’ai fait un script python qui permet de récupérer les informations contenues dans les fichiers de sortie de Gctree : l’abondance dans le fichier .count et l’arborescence dans le fichier .nk. Ce script génère un fichier au format JSON avec toutes ces informations et permet de visualiser l’arbre avec l’abondance des clonotypes. Sur cette visualisation, j’ai changé la représentation des branches pour qu’elles soient linéaire cependant cela provoque un chevauchement des branches par endroit. 
+Concernant la représentation circulaire, il est maintenant possible d’afficher l’arbre des clonotypes à droite lorsque l’on clique et il disparaît lorsque l’on retourne sur le répertoire des clones. J’essaie à présent d’ajouter sur la page principale une visualisation de l’abondance des clone en fonction d’un seuil.
