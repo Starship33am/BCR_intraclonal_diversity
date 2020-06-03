@@ -1,0 +1,27 @@
+For all_clone_I1.txt
+
+Visualize the repertoire containing 520 clones
+    
+    - How to integrate all the clones in the image? maybe a threshold for grouping low abundance clones?
+
+Steps : 
+1) calculate the size of each clone
+2) apply the threshold
+    - visualize the x more abundant clones
+    - visualize the clones with more than y% of abundance as a separate circle, all the clones less abundant than y%, are grouped and shown as a single circle called "polyclonal background".
+3) Groupe clonotypes within each clone: same V gene and allele + same J gene + same CDR3 (AA)
+4) run the visualization program 
+
+
+For ten_clone_I1.txt
+
+Intraclonal diversity study 
+- How much time does it take to infer the tree?
+- How to calculate the consensus sequences? the most abundant? the text consensus? 
+
+Steps for each clone :
+
+1) find the clonotypes and abundances 
+2) create the consensus sequence representing the clonotype (use the fasta file)
+2) run GCtree on consensus sequences
+3) visualize the tree 
