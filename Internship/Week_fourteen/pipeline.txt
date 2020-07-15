@@ -1,0 +1,29 @@
+Step one input :
+		- Fasta file [text file]
+		- IMGT annotation output "" [text file]
+		- IMGT annotation output "" [text file]
+Run step one :
+		> SCOPer for having the clones [R]
+		> Regrouping the sequence based on IMGT clonetype (AA) definition [python]
+		> Format the outputs to Repertoire_two_levels_info [python] (see repertoire_formatted.txt)
+Step one output :
+		~ Circle packing visualization + clone and clonotype percentage 
+
+Step two input :
+		- User Email adress 
+		- List of clones to analyse [choose by user via website]
+		- Repertoire_two_levels_info [text file]
+		- Fasta file [text file]
+		- IMGT annotation output "" [text file]
+Run step two :
+		For each clone :
+			> Find the germline seq [python]
+			> Find the consensus seq for each clonotype [python]
+			> Align the consesnsus seqs + the gemline seq ===> keep also the distances [python]
+			> Find the gene limite positions on each consensus seq [python]
+			> Run the GCtree [python]
+Step two output :
+		For each clone :
+			~ GCtree
+			~ Distance plot between two or multiple seqs
+			~ seq alignement with V, D and J gene limites on each seq
