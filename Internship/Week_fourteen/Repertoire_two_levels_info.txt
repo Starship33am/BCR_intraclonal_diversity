@@ -1,7 +1,7 @@
 
 File format :
 
-clone_id		clone_perc 		clonotype_perc list		v_call			j_call  CDR3
+clone_id		clone_perc 		clonotype_perc list		v_call			j_call			CDR3
 
 
 example :
