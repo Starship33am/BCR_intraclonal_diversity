@@ -1,0 +1,18 @@
+An overview of the human immune diversity
+
+B cells realize the antibody-mediated response of the adaptive immune system a . These cells recognize and
+interact with the antigens b through Immunoglobulin molecule of the B-cell Receptor (BCR-IG). The BCR
+consists of two types of components: the recognition unit, structured by a membrane Immunoglobulin (IG)
+protein, and the transmembrane signal unit. An IG is a heterodimer composed of two heavy chains (IGH) and
+two light chains bound by disulfide bridges. Each chain has two distinct parts: the variable domain in the N-
+terminal side responsible for antigen recognition and the constant region on the C-terminal side. Three gene
+families encode IGH variable domain: variable (V), diversity (D), and joining (J). IGH sequences are created
+during early B-cell ontogeny by a process called VDJ recombination or rearrangement, which randomly select
+and joins together one of each of these three types of genes. Joining is imprecise as nucleotides are randomly
+deleted and inserted in the V-D (N1) and D-J (N2) junctions. The N1-D-N2 region is called CDR3 and has
+the highest variability.
+After VDJ recombination, antigen-activated B cells undergo rapid proliferation (clone expansion) and
+further diversification of their BCR by somatic hypermutation (SHM), an enzymatically-driven process in-
+troducing point substitutions into the IG locus. The total collection of BCR-IGs in an individual tissue or
+cell subset is referred to as the ‘immune repertoire’ (in short, repertoire) of the given cell population. The
+repertoire of a human adult contains more than 10 11 BCR-IG sequences

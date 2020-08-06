@@ -1,0 +1,42 @@
+Introduction
+
+
+Context :
+
+Effective response to the vast antigenic diversity of the microbial world is the main physiologic function of the immune system.
+Membrane receptor of B-cells (BCR), one of the principal components of adaptive immunity, can recognize different and even closely related antigenes
+their enormous inherent variability is achieved through genetic processes during B cell maturation; BCR genetic sequence composition can be used as an important identifier of a B cell clone which refers to a B cell of one specificity and its progeny.
+Next generation sequencing (NGS) has revolutionized the study of BCR  sequences and shed light on exploring the entire specific BCR’s in an individual or BCR repertoire.
+
+
+The study of B-cell Clonal and intra-clonal diversity in the germinal center is an active field of research that can provide
+an insight into the response to infections, mechanisms of vaccines, immunological memory, antibody
+engineering, immunoproliferative diseases[], etc. But it still isn’t frequently used as a part of the
+diagnosis or the follow-up routine in the clinical context.
+
+
+Objectives :
+The goal is to reconcile research-oriented Rep-Seq analyses with the diagnosis, prognosis, and monitoring of
+lymphocyte malignancies. Using an interactive visualization can encourage a
+more regular usage of this information source.
+
+The main aim was accomplished by fulfilling the following specific objectives: 
+    1. Review the literature concerning the ...
+    2. 
+    3.
+
+
+
+
+Contributions :
+A draft of an accurate tool for visualizing repertoire up to intra-clonal diversity that could be used in the clinical context.
+
+
+
+
+Work organization : 
+
+A general content description of the subsequent chapters in this work is given as follows. 
+The second chapter outlines genetic mechanisms that lead to high BCR repertoire diversity, particularly the VDJ recombination and somatic hypermutations
+Next ...
+Finally ...
