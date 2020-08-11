@@ -1,13 +1,13 @@
 
 File format :
 
-clone_id		clone_perc 		clonotype_perc list		v_call			j_call			CDR3
+clone_id		clone_perc 		clonotype list(percentage,functionality)		v_call			j_call			CDR3(s)
 
 
 example :
 
-Clone number1	0.67			Clonotype 0.90 0.05 0.05		IGHV1-18*01		IGHJ4*03  CAKEGSIGRSSSDDAFDIW
-Clone number2	0.18			Clonotype 0.50 0.20 0.10 0.10 0.05 0.05		IGHV1-18*01		IGHJ4*03  CARDVGFDSGDKKGFDYW
-Clone number3	0.10			Clonotype 1				IGHV4-34*01		IGHJ4*03  CARDVGFDSGDKKGFDYW
-Clone number4	0.05			Clonotype 1				IGHV4-34*01		IGHJ4*03  CARDVGFDSGDKKGFDYW
-Clone number5	0.05			Clonotype 0.98 0.02		IGHV4-34*01		IGHJ4*03  CARDVGFDSGDKKGFDYW
+Clone number1	0.67			Clonotype 0.90,productive 0.05,productive 0.05,productive		IGHV1-18*01		IGHJ4*03  CAKEGSIGQSSSDDAFDIW CAKEGSIGRSSDDDAFDIW CAKEGSIGRSISDDAFDIW
+Clone number2	0.18			Clonotype 0.50,productive 0.20,productive 0.10,productive 0.10,productive 0.05,productive 0.05,productive		IGHV1-18*01		IGHJ4*03  CARDVGFDSDDKKGFDYW CARDVGGDSGDKKGFDYW CARDVGFDSGDKKKFDYW CARRVGFDSGDKKGFDYW CARDVGFDSGDKKGGDYW CARDVGFDSSDKKGFDYW
+Clone number3	0.10			Clonotype 1,unproductive			IGHV4-34*01		IGHJ4*03  CARDVGFDSGDKKGF*YW
+Clone number4	0.05			Clonotype 1,unproductive				IGHV4-34*01		IGHJ4*03  CAR*VGFDSGDKKGFDYW
+Clone number5	0.05			Clonotype 0.98,productive 0.02,unproductive		IGHV4-34*01		IGHJ4*03  CARDVGFDSGDKKGFDYW CARDVGFDSGDKKGF*YW

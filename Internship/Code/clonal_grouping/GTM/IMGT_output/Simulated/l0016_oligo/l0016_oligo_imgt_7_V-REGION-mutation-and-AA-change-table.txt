@@ -1,0 +1,1015 @@
+Sequence number	Sequence ID	V-DOMAIN Functionality	V-GENE and allele	V-REGION	FR1-IMGT	CDR1-IMGT	FR2-IMGT	CDR2-IMGT	FR3-IMGT	CDR3-IMGT	
+1	S1	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|	c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+2	S2	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g303>c, V101; V101 gtg 301-303>V gtc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|	c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g303>c, V101; V101 gtg 301-303>V gtc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+3	S3	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|	c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+4	S4	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|	c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+5	S5	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+6	S6	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+7	S7	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|a173>t,Y58>F(- + -); Y58 tat 172-174 [ta 172-173]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|a173>t,Y58>F(- + -); Y58 tat 172-174 [ta 172-173]>F ttt|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+8	S8	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+9	S9	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+10	S10	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a103>g,S35>G(+ + -); S35 agt 103-105>G ggt|a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g303>c, V101; V101 gtg 301-303>V gtc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		a103>g,S35>G(+ + -); S35 agt 103-105>G ggt|		a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|	c287>g,A96>G(- + -); A96 gct 286-288 [agct 285-288]>G ggt|g303>c, V101; V101 gtg 301-303>V gtc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+11	S11	productive	Homsap IGHV1-2*02 F	c203>a,A68>E(- - -); A68 gca 202-204>E gaa|					c203>a,A68>E(- - -); A68 gca 202-204>E gaa|		
+12	S12	productive	Homsap IGHV1-2*02 F	a184>t,S62>C(- - -); S62 agt 184-186>C tgt|				a184>t,S62>C(- - -); S62 agt 184-186>C tgt|			
+13	S13	productive	Homsap IGHV3-9*01 F								
+14	S14	productive	Homsap IGHV3-9*01 F								
+15	S15	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+16	S16	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+17	S17	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+18	S18	productive	Homsap IGHV3-9*01 F								
+19	S19	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|c259>t, L87; L87 ctg 259-261>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|c259>t, L87; L87 ctg 259-261>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+20	S20	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+21	S21	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+22	S22	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+23	S23	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+24	S24	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+25	S25	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g80>a,G27>E(- - -); G27 gga 79-81>E gaa|a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g80>a,G27>E(- - -); G27 gga 79-81>E gaa|			a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+26	S26	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|c259>t, L87; L87 ctg 259-261>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|c259>t, L87; L87 ctg 259-261>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+27	S27	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t111>c, Y37; Y37 tat 109-111>Y tac|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t111>c, Y37; Y37 tat 109-111>Y tac|			g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+28	S28	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+29	S29	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+30	S30	productive	Homsap IGHV3-21*01 F							g319>c|	
+31	S31	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+32	S32	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|g57>c, L19; L19 ctg 55-57>L ctc|c280>a,L94>M(+ + -); L94 ctg 280-282>M atg|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|g57>c, L19; L19 ctg 55-57>L ctc|				c280>a,L94>M(+ + -); L94 ctg 280-282>M atg|	a320>t|	
+33	S33	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|g57>c, L19; L19 ctg 55-57>L ctc|g258>a, T86; T86 acg 256-258>T aca|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|g57>c, L19; L19 ctg 55-57>L ctc|				g258>a, T86; T86 acg 256-258>T aca|	a320>t|	
+34	S34	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+35	S35	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g291>a, E97; E97 gag 289-291>E gaa|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|				c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g291>a, E97; E97 gag 289-291>E gaa|	a320>t|	
+36	S36	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g291>a, E97; E97 gag 289-291>E gaa|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|				c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g291>a, E97; E97 gag 289-291>E gaa|	a320>t|	
+37	S37	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+38	S38	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|a41>g,Q14>R(+ - -); Q14 cag 40-42>R cgg|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|a41>g,Q14>R(+ - -); Q14 cag 40-42>R cgg|				a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|	a320>t|	
+39	S39	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>t,T106>S(+ - +); T106 aca 316-318>S tca|g319>t|	
+40	S40	productive	Homsap IGHV3-11*01 F							a320>g|	
+41	S41	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+42	S42	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+43	S43	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+44	S44	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+45	S45	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+46	S46	productive	Homsap IGHV3-11*01 F							a320>g|	
+47	S47	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|		a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|	g319>c|	
+48	S48	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+49	S49	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+50	S50	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+51	S51	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c248>g,S83>C(- - -); S83 tcc 247-249>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c248>g,S83>C(- - -); S83 tcc 247-249>C tgc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+52	S52	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+53	S53	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+54	S54	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c248>g,S83>C(- - -); S83 tcc 247-249>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c248>g,S83>C(- - -); S83 tcc 247-249>C tgc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+55	S55	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+56	S56	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a194>g,K65>R(+ + +); K65 aaa 193-195 [aa 193-194]>R aga|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a194>g,K65>R(+ + +); K65 aaa 193-195 [aa 193-194]>R aga|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+57	S57	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+58	S58	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+59	S59	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|t266>c,L89>P(- - -); L89 ctg 265-267>P ccg|a277>t,S93>C(- - -); S93 agc 277-279>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|t266>c,L89>P(- - -); L89 ctg 265-267>P ccg|a277>t,S93>C(- - -); S93 agc 277-279>C tgc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+60	S60	productive	Homsap IGHV3-9*01 F	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|c268>a,Q90>K(+ - -); Q90 caa 268-270>K aaa|	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|				c268>a,Q90>K(+ - -); Q90 caa 268-270>K aaa|		
+61	S61	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+62	S62	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+63	S63	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|		c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+64	S64	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+65	S65	productive	Homsap IGHV3-11*01 F								
+66	S66	productive	Homsap IGHV3-11*01 F	t189>c, S63; S63 agt 187-189 [ta 189-190]>S agc|				t189>c, S63; S63 agt 187-189 [ta 189-190]>S agc|		a320>g|	
+67	S67	productive	Homsap IGHV3-11*01 F							a320>g|	
+68	S68	productive	Homsap IGHV3-11*01 F	a232>t,I78>F(+ - -); I78 atc 232-234>F ttc|					a232>t,I78>F(+ - -); I78 atc 232-234>F ttc|	a320>g|	
+69	S69	productive	Homsap IGHV3-11*01 F							a320>g|	
+70	S70	productive	Homsap IGHV3-11*01 F							a320>g|	
+71	S71	productive	Homsap IGHV4-31*03 F							a316>c, R106; R106 aga 316-318>R cga|	
+72	S72	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+73	S73	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+74	S74	productive	Homsap IGHV3-11*01 F							a320>g|	
+75	S75	productive	Homsap IGHV3-11*01 F							a320>g|	
+76	S76	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+77	S77	productive	Homsap IGHV4-31*03 F							a320>g|	
+78	S78	productive	Homsap IGHV3-7*01 F							g319>a|	
+79	S79	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t83>g,F28>C(+ - -); F28 ttc 82-84>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t83>g,F28>C(+ - -); F28 ttc 82-84>C tgc|				g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+80	S80	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+81	S81	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+82	S82	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+83	S83	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+84	S84	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+85	S85	productive	Homsap IGHV3-11*01 F	a131>t,Q44>L(- - -); Q44 cag 130-132>L ctg|			a131>t,Q44>L(- - -); Q44 cag 130-132>L ctg|			a320>g|	
+86	S86	productive	Homsap IGHV3-11*01 F							a320>g|	
+87	S87	productive	Homsap IGHV3-11*01 F							a320>g|	
+88	S88	productive	Homsap IGHV3-11*01 F							a320>g|	
+89	S89	productive	Homsap IGHV3-11*01 F							a320>g|	
+90	S90	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+91	S91	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+92	S92	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+93	S93	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+94	S94	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+95	S95	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|g188>t,S63>I(- - -); S63 agt 187-189 [agta 187-190]>I att|			g153>a, E51; E51 gag 151-153>E gaa|	g188>t,S63>I(- - -); S63 agt 187-189 [agta 187-190]>I att|			
+96	S96	productive	Homsap IGHV3-11*01 F	c203>a,A68>E(- - -); A68 gca 202-204>E gaa|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|c309>t, Y103; Y103 tac 307-309 [tact 307-310]>Y tat|					c203>a,A68>E(- - -); A68 gca 202-204>E gaa|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|c309>t, Y103; Y103 tac 307-309 [tact 307-310]>Y tat|	a320>g|	
+97	S97	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|a271>c,M91>L(+ + -); M91 atg 271-273 [aa 270-271]>L ctg|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|a271>c,M91>L(+ + -); M91 atg 271-273 [aa 270-271]>L ctg|		
+98	S98	productive	Homsap IGHV5-51*03 F	c10>g,L4>V(+ - +); L4 ctg 10-12 [agct 8-11]>V gtg|c252>g,I84>M(+ + -); I84 atc 250-252>M atg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	c10>g,L4>V(+ - +); L4 ctg 10-12 [agct 8-11]>V gtg|				c252>g,I84>M(+ + -); I84 atc 250-252>M atg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+99	S99	productive	Homsap IGHV3-11*01 F	a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+100	S100	productive	Homsap IGHV5-51*03 F	c10>g,L4>V(+ - +); L4 ctg 10-12 [agct 8-11]>V gtg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	c10>g,L4>V(+ - +); L4 ctg 10-12 [agct 8-11]>V gtg|				t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+101	S101	productive	Homsap IGHV5-51*03 F	c43>t,P15>S(+ - -); P15 ccg 43-45 [agcc 41-44]>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	c43>t,P15>S(+ - -); P15 ccg 43-45 [agcc 41-44]>S tcg|				t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+102	S102	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+103	S103	productive	Homsap IGHV3-11*01 F								
+104	S104	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+105	S105	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+106	S106	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+107	S107	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+108	S108	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+109	S109	productive	Homsap IGHV5-51*03 F	g13>a,V5>M(+ - -); V5 gtg 13-15>M atg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g13>a,V5>M(+ - -); V5 gtg 13-15>M atg|				t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+110	S110	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+111	S111	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+112	S112	productive	Homsap IGHV1-18*01 F								
+113	S113	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+114	S114	productive	Homsap IGHV3-9*01 F	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|c268>a,Q90>K(+ - -); Q90 caa 268-270>K aaa|	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|				c268>a,Q90>K(+ - -); Q90 caa 268-270>K aaa|		
+115	S115	productive	Homsap IGHV3-11*01 F							a320>g|	
+116	S116	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+117	S117	productive	Homsap IGHV3-11*01 F	a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|		a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|				a320>g|	
+118	S118	productive	Homsap IGHV3-11*01 F	a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|		a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|				a320>g|	
+119	S119	productive	Homsap IGHV4-31*03 F							a320>g|	
+120	S120	productive	Homsap IGHV3-11*01 F							a320>g|	
+121	S121	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+122	S122	productive	Homsap IGHV3-11*01 F							a320>g|	
+123	S123	productive	Homsap IGHV3-11*01 F	t304>g,Y102>D(- - -); Y102 tat 304-306 [ta 304-305]>D gat|					t304>g,Y102>D(- - -); Y102 tat 304-306 [ta 304-305]>D gat|	a320>g|	
+124	S124	productive	Homsap IGHV3-11*01 F	t38>a,V13>D(- - -); V13 gtc 37-39>D gac|g153>a, E51; E51 gag 151-153>E gaa|t310>a,C104>S(- - -); C104 tgt 310-312>S agt|	t38>a,V13>D(- - -); V13 gtc 37-39>D gac|		g153>a, E51; E51 gag 151-153>E gaa|		t310>a,C104>S(- - -); C104 tgt 310-312>S agt|		
+125	S125	productive	Homsap IGHV1-18*01 F								
+126	S126	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+127	S127	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+128	S128	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+129	S129	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+130	S130	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+131	S131	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+132	S132	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|t310>a,C104>S(- - -); C104 tgt 310-312>S agt|			g153>a, E51; E51 gag 151-153>E gaa|		t310>a,C104>S(- - -); C104 tgt 310-312>S agt|		
+133	S133	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+134	S134	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g68>a,C23>Y(- - -); C23 tgt 67-69>Y tat|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g68>a,C23>Y(- - -); C23 tgt 67-69>Y tat|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+135	S135	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+136	S136	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+137	S137	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+138	S138	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+139	S139	productive	Homsap IGHV3-11*01 F	a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+140	S140	productive	Homsap IGHV3-11*01 F	a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|a269>g,Q90>R(+ - -); Q90 caa 268-270>R cga|					a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|a269>g,Q90>R(+ - -); Q90 caa 268-270>R cga|	a320>g|	
+141	S141	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+142	S142	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+143	S143	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+144	S144	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+145	S145	productive	Homsap IGHV3-11*01 F	a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+146	S146	productive	Homsap IGHV3-11*01 F	a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+147	S147	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a318>g, K106; K106 aaa 316-318 [aa 317-318]>K aag|a320>c|	
+148	S148	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+149	S149	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+150	S150	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+151	S151	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|t272>c,M91>T(- - -); M91 atg 271-273>T acg|			g153>a, E51; E51 gag 151-153>E gaa|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	t272>c,M91>T(- - -); M91 atg 271-273>T acg|		
+152	S152	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+153	S153	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|t272>c,M91>T(- - -); M91 atg 271-273>T acg|			g153>a, E51; E51 gag 151-153>E gaa|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	t272>c,M91>T(- - -); M91 atg 271-273>T acg|		
+154	S154	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+155	S155	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+156	S156	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+157	S157	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+158	S158	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+159	S159	productive	Homsap IGHV3-11*01 F	c120>g,S40>R(- - -); S40 agc 118-120 [agct 118-121]>R agg|			c120>g,S40>R(- - -); S40 agc 118-120 [agct 118-121]>R agg|				
+160	S160	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+161	S161	productive	Homsap IGHV3-11*01 F								
+162	S162	productive	Homsap IGHV3-11*01 F	a162>t, S54; S54 tca 160-162>S tct|a190>g,T64>A(- - -); T64 acc 190-192 [ta 189-190]>A gcc|a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|			a162>t, S54; S54 tca 160-162>S tct|	a190>g,T64>A(- - -); T64 acc 190-192 [ta 189-190]>A gcc|	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+163	S163	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+164	S164	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+165	S165	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+166	S166	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+167	S167	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+168	S168	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+169	S169	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+170	S170	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+171	S171	productive	Homsap IGHV3-48*01 F								
+172	S172	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+173	S173	productive	Homsap IGHV3-48*01 F	t196>c,Y66>H(+ - -); Y66 tac 196-198 [ta 196-197]>H cac|					t196>c,Y66>H(+ - -); Y66 tac 196-198 [ta 196-197]>H cac|		
+174	S174	productive	Homsap IGHV3-48*01 F	t196>c,Y66>H(+ - -); Y66 tac 196-198 [ta 196-197]>H cac|g289>a,E97>K(+ - -); E97 gag 289-291>K aag|					t196>c,Y66>H(+ - -); Y66 tac 196-198 [ta 196-197]>H cac|g289>a,E97>K(+ - -); E97 gag 289-291>K aag|		
+175	S175	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+176	S176	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+177	S177	productive	Homsap IGHV3-21*01 F								
+178	S178	productive	Homsap IGHV3-21*01 F								
+179	S179	productive	Homsap IGHV3-21*01 F	c65>g,S22>C(- - -); S22 tcc 64-66>C tgc|	c65>g,S22>C(- - -); S22 tcc 64-66>C tgc|						
+180	S180	productive	Homsap IGHV3-21*01 F								
+181	S181	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|a305>c,Y102>S(+ - -); Y102 tat 304-306 [ta 304-305]>S tct|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|a305>c,Y102>S(+ - -); Y102 tat 304-306 [ta 304-305]>S tct|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+182	S182	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+183	S183	productive	Homsap IGHV3-21*01 F							g319>c|	
+184	S184	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|t154>g,W52>G(- - -); W52 tgg 154-156>G ggg|t196>c,Y66>H(+ - -); Y66 tac 196-198 [ta 196-197]>H cac|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|t154>g,W52>G(- - -); W52 tgg 154-156>G ggg|		t196>c,Y66>H(+ - -); Y66 tac 196-198 [ta 196-197]>H cac|	g319>c|	
+185	S185	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+186	S186	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+187	S187	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+188	S188	productive	Homsap IGHV3-48*01 F								
+189	S189	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+190	S190	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|a305>c,Y102>S(+ - -); Y102 tat 304-306 [ta 304-305]>S tct|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|a305>c,Y102>S(+ - -); Y102 tat 304-306 [ta 304-305]>S tct|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+191	S191	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a115>g,M39>V(+ - -); M39 atg 115-117>V gtg|			a115>g,M39>V(+ - -); M39 atg 115-117>V gtg|			a320>t|	
+192	S192	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							a318>c,R106>S(- - -); R106 aga 316-318>S agc|	
+193	S193	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+194	S194	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+195	S195	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+196	S196	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+197	S197	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+198	S198	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+199	S199	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+200	S200	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|					a320>g|	
+201	S201	productive	Homsap IGHV3-7*01 F								
+202	S202	productive	Homsap IGHV3-7*01 F								
+203	S203	productive	Homsap IGHV3-7*01 F								
+204	S204	productive	Homsap IGHV3-7*01 F	c120>t, S40; S40 agc 118-120 [agct 118-121]>S agt|			c120>t, S40; S40 agc 118-120 [agct 118-121]>S agt|				
+205	S205	productive	Homsap IGHV3-7*01 F								
+206	S206	productive	Homsap IGHV3-7*01 F	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|						
+207	S207	productive	Homsap IGHV3-7*01 F	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|						
+208	S208	productive	Homsap IGHV3-11*01 F								
+209	S209	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|g291>a, S97; S97 tcg 289-291>S tca|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|g291>a, S97; S97 tcg 289-291>S tca|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+210	S210	productive	Homsap IGHV3-7*01 F								
+211	S211	productive	Homsap IGHV3-11*01 F							a320>g|	
+212	S212	productive	Homsap IGHV4-4*07 F							a318>g, R106; R106 aga 316-318>R agg|	
+213	S213	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a263>c,Y88>S(+ - -); Y88 tat 262-264 [ta 262-263]>S tct|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a263>c,Y88>S(+ - -); Y88 tat 262-264 [ta 262-263]>S tct|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+214	S214	productive	Homsap IGHV3-11*01 F							a320>g|	
+215	S215	productive	Homsap IGHV3-11*01 F							a320>g|	
+216	S216	productive	Homsap IGHV3-11*01 F							a320>g|	
+217	S217	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+218	S218	productive	Homsap IGHV3-11*01 F	t312>g,C104>W(+ - -); C104 tgt 310-312>W tgg|					t312>g,C104>W(+ - -); C104 tgt 310-312>W tgg|	a320>g|	
+219	S219	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+220	S220	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+221	S221	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+222	S222	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t109>a,Y37>N(- - -); Y37 tat 109-111 [ta 109-110]>N aat|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t109>a,Y37>N(- - -); Y37 tat 109-111 [ta 109-110]>N aat|				g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+223	S223	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+224	S224	productive	Homsap IGHV3-15*01 F	a192>g, T64; T64 aca 190-192>T acg|a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|				a192>g, T64; T64 aca 190-192>T acg|a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+225	S225	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+226	S226	productive	Homsap IGHV3-21*01 F							g319>c|	
+227	S227	productive	Homsap IGHV3-21*01 F							g319>c|	
+228	S228	productive	Homsap IGHV3-21*01 F	c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|					c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|	g319>c|	
+229	S229	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+230	S230	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+231	S231	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+232	S232	productive	Homsap IGHV4-59*01 F							a318>g, R106; R106 aga 316-318>R agg|a320>g|	
+233	S233	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+234	S234	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+235	S235	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+236	S236	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+237	S237	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+238	S238	productive	Homsap IGHV3-11*01 F	g32>a,G11>D(- - -); G11 ggc 31-33 [ggct 31-34]>D gac|	g32>a,G11>D(- - -); G11 ggc 31-33 [ggct 31-34]>D gac|						
+239	S239	productive	Homsap IGHV3-11*01 F								
+240	S240	productive	Homsap IGHV3-21*01 F								
+241	S241	productive	Homsap IGHV4-59*01 F							a318>g, R106; R106 aga 316-318>R agg|a320>g|	
+242	S242	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|			g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+243	S243	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|			g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+244	S244	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g6>a, V2; V2 gtg 4-6>V gta|a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g6>a, V2; V2 gtg 4-6>V gta|				a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+245	S245	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g6>a, V2; V2 gtg 4-6>V gta|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g6>a, V2; V2 gtg 4-6>V gta|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+246	S246	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g6>a, V2; V2 gtg 4-6>V gta|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g6>a, V2; V2 gtg 4-6>V gta|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+247	S247	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g6>a, V2; V2 gtg 4-6>V gta|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g6>a, V2; V2 gtg 4-6>V gta|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+248	S248	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t192>a,N64>K(+ - -); N64 aat 190-192 [ta 192-193]>K aaa|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				t192>a,N64>K(+ - -); N64 aat 190-192 [ta 192-193]>K aaa|	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+249	S249	productive	Homsap IGHV4-59*01 F							a318>g, R106; R106 aga 316-318>R agg|a320>g|	
+250	S250	productive	Homsap IGHV3-48*03 F	g286>a,A96>T(- - -); A96 gcc 286-288>T acc|					g286>a,A96>T(- - -); A96 gcc 286-288>T acc|		
+251	S251	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|t62>a,L21>H(- - -); L21 ctc 61-63>H cac|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|t62>a,L21>H(- - -); L21 ctc 61-63>H cac|		c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+252	S252	productive	Homsap IGHV3-11*01 F								
+253	S253	productive	Homsap IGHV3-15*01 F	a192>g, T64; T64 aca 190-192>T acg|a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|c231>t, T77; T77 acc 229-231>T act|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|				a192>g, T64; T64 aca 190-192>T acg|a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|	c231>t, T77; T77 acc 229-231>T act|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+254	S254	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+255	S255	productive	Homsap IGHV3-11*01 F							a320>g|	
+256	S256	productive	Homsap IGHV3-11*01 F							a320>g|	
+257	S257	productive	Homsap IGHV3-11*01 F							a320>g|	
+258	S258	productive	Homsap IGHV3-11*01 F							a320>g|	
+259	S259	productive	Homsap IGHV3-11*01 F	t266>g,L89>R(- + -); L89 ctg 265-267>R cgg|					t266>g,L89>R(- + -); L89 ctg 265-267>R cgg|	a320>g|	
+260	S260	productive	Homsap IGHV3-11*01 F							a320>g|	
+261	S261	productive	Homsap IGHV3-11*01 F	c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|					c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|	a320>g|	
+262	S262	productive	Homsap IGHV3-11*01 F							a320>g|	
+263	S263	productive	Homsap IGHV3-11*01 F							a320>g|	
+264	S264	productive	Homsap IGHV3-11*01 F	a131>t,Q44>L(- - -); Q44 cag 130-132>L ctg|			a131>t,Q44>L(- - -); Q44 cag 130-132>L ctg|			a320>g|	
+265	S265	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+266	S266	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+267	S267	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+268	S268	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|a316>c,K106>Q(+ - -); K106 aaa 316-318 [aa 315-316]>Q caa|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|		a316>c,K106>Q(+ - -); K106 aaa 316-318 [aa 315-316]>Q caa|	
+269	S269	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+270	S270	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+271	S271	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+272	S272	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|a271>g,M91>V(+ - -); M91 atg 271-273 [aa 270-271]>V gtg|			g153>a, E51; E51 gag 151-153>E gaa|		a271>g,M91>V(+ - -); M91 atg 271-273 [aa 270-271]>V gtg|		
+273	S273	productive	Homsap IGHV3-11*01 F								
+274	S274	productive	Homsap IGHV3-11*01 F								
+275	S275	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|a271>g,M91>V(+ - -); M91 atg 271-273 [aa 270-271]>V gtg|			g153>a, E51; E51 gag 151-153>E gaa|		a271>g,M91>V(+ - -); M91 atg 271-273 [aa 270-271]>V gtg|		
+276	S276	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|					a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|		
+277	S277	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|					a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|		
+278	S278	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g282>a, L94; L94 ctg 280-282>L cta|					g282>a, L94; L94 ctg 280-282>L cta|		
+279	S279	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|					a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|		
+280	S280	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+281	S281	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c296>g,T99>R(- - -); T99 acg 295-297>R agg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c296>g,T99>R(- - -); T99 acg 295-297>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+282	S282	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+283	S283	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+284	S284	productive	Homsap IGHV3-11*01 F								
+285	S285	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+286	S286	productive	Homsap IGHV3-21*01 F								
+287	S287	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+288	S288	productive	Homsap IGHV5-51*03 F								
+289	S289	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+290	S290	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+291	S291	productive	Homsap IGHV3-9*01 F								
+292	S292	productive	Homsap IGHV3-9*01 F	t167>c,I56>T(- - -); I56 att 166-168 [tt 167-168]>T act|g239>c,R80>T(- - -); R80 aga 238-240>T aca|				t167>c,I56>T(- - -); I56 att 166-168 [tt 167-168]>T act|	g239>c,R80>T(- - -); R80 aga 238-240>T aca|		
+293	S293	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a166>c,I56>L(+ + +); I56 ata 166-168 [ta 165-166]>L cta|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a166>c,I56>L(+ + +); I56 ata 166-168 [ta 165-166]>L cta|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+294	S294	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c296>g,T99>R(- - -); T99 acg 295-297>R agg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c296>g,T99>R(- - -); T99 acg 295-297>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+295	S295	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+296	S296	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+297	S297	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+298	S298	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+299	S299	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+300	S300	productive	Homsap IGHV3-9*01 F	a131>g,Q44>R(+ - -); Q44 caa 130-132>R cga|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|			a131>g,Q44>R(+ - -); Q44 caa 130-132>R cga|		g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+301	S301	productive	Homsap IGHV3-9*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+302	S302	productive	Homsap IGHV3-9*01 F	g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+303	S303	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a173>t,Y58>F(- + -); Y58 tat 172-174 [ta 172-173]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a173>t,Y58>F(- + -); Y58 tat 172-174 [ta 172-173]>F ttt|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+304	S304	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a119>t,H40>L(- - -); H40 cac 118-120>L ctc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|			a119>t,H40>L(- - -); H40 cac 118-120>L ctc|			g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+305	S305	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+306	S306	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+307	S307	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+308	S308	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+309	S309	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+310	S310	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a173>t,Y58>F(- + -); Y58 tat 172-174 [ta 172-173]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a173>t,Y58>F(- + -); Y58 tat 172-174 [ta 172-173]>F ttt|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+311	S311	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a271>c,M91>L(+ + -); M91 atg 271-273 [aa 270-271]>L ctg|					a271>c,M91>L(+ + -); M91 atg 271-273 [aa 270-271]>L ctg|	a320>t|	
+312	S312	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a271>c,M91>L(+ + -); M91 atg 271-273 [aa 270-271]>L ctg|					a271>c,M91>L(+ + -); M91 atg 271-273 [aa 270-271]>L ctg|	a320>t|	
+313	S313	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+314	S314	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+315	S315	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+316	S316	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+317	S317	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+318	S318	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+319	S319	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+320	S320	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+321	S321	productive	Homsap IGHV3-21*01 F	c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|					c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|	g319>c|	
+322	S322	productive	Homsap IGHV3-9*01 F	g106>t,D36>Y(- - -); D36 gat 106-108>Y tat|c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|		g106>t,D36>Y(- - -); D36 gat 106-108>Y tat|			c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|	a322>t|	
+323	S323	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|g140>t,G47>V(- - -); G47 ggg 139-141>V gtg|	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|		g140>t,G47>V(- - -); G47 ggg 139-141>V gtg|			a320>g|	
+324	S324	productive	Homsap IGHV3-21*01 F	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|c230>a,T77>N(- + -); T77 acc 229-231>N aac|	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|		g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|		c230>a,T77>N(- + -); T77 acc 229-231>N aac|	g319>c|	
+325	S325	productive	Homsap IGHV3-21*01 F	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|c230>a,T77>N(- + -); T77 acc 229-231>N aac|	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|		g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|		c230>a,T77>N(- + -); T77 acc 229-231>N aac|	g319>c|	
+326	S326	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+327	S327	productive	Homsap IGHV3-15*01 F	c265>g,L89>V(+ - +); L89 ctg 265-267>V gtg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c265>g,L89>V(+ - +); L89 ctg 265-267>V gtg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+328	S328	productive	Homsap IGHV3-15*01 F	g109>a,A37>T(- - -); A37 gcc 109-111>T acc|t272>c,M91>T(- - -); M91 atg 271-273>T acg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|		g109>a,A37>T(- - -); A37 gcc 109-111>T acc|			t272>c,M91>T(- - -); M91 atg 271-273>T acg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+329	S329	productive	Homsap IGHV3-21*01 F								
+330	S330	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+331	S331	productive	Homsap IGHV3-15*01 F, or Homsap IGHV3-15*05 F	c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+332	S332	productive	Homsap IGHV3-11*01 F								
+333	S333	productive	Homsap IGHV3-11*01 F	g173>a,S58>N(- - -); S58 agt 172-174 [agta 172-175]>N aat|				g173>a,S58>N(- - -); S58 agt 172-174 [agta 172-175]>N aat|			
+334	S334	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+335	S335	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+336	S336	productive	Homsap IGHV4-31*03 F	c66>g, T22; T22 acc 64-66>T acg|	c66>g, T22; T22 acc 64-66>T acg|					a320>g|	
+337	S337	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+338	S338	productive	Homsap IGHV3-11*01 F	a251>c,K84>T(- - -); K84 aag 250-252 [aa 250-251]>T acg|					a251>c,K84>T(- - -); K84 aag 250-252 [aa 250-251]>T acg|	a320>g|	
+339	S339	productive	Homsap IGHV3-11*01 F							a320>g|	
+340	S340	productive	Homsap IGHV3-11*01 F							a320>g|	
+341	S341	productive	Homsap IGHV3-11*01 F							a320>g|	
+342	S342	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+343	S343	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+344	S344	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+345	S345	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+346	S346	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+347	S347	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a204>t, A68; A68 gca 202-204>A gct|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a204>t, A68; A68 gca 202-204>A gct|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+348	S348	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a204>t, A68; A68 gca 202-204>A gct|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a204>t, A68; A68 gca 202-204>A gct|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+349	S349	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|	a320>g|	
+350	S350	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+351	S351	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+352	S352	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t111>c, Y37; Y37 tat 109-111>Y tac|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t111>c, Y37; Y37 tat 109-111>Y tac|			g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+353	S353	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+354	S354	productive	Homsap IGHV3-15*01 F								
+355	S355	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+356	S356	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+357	S357	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+358	S358	productive	Homsap IGHV3-11*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|g153>a, E51; E51 gag 151-153>E gaa|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|		g153>a, E51; E51 gag 151-153>E gaa|				
+359	S359	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F								
+360	S360	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|		
+361	S361	productive	Homsap IGHV3-9*01 F	a119>c,H40>P(+ - -); H40 cac 118-120>P ccc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|			a119>c,H40>P(+ - -); H40 cac 118-120>P ccc|		g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+362	S362	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+363	S363	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+364	S364	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F								
+365	S365	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+366	S366	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g104>a,S35>N(- - -); S35 agt 103-105 [agta 103-106]>N aat|a293>g,D98>G(- - -); D98 gac 292-294>G ggc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g104>a,S35>N(- - -); S35 agt 103-105 [agta 103-106]>N aat|			a293>g,D98>G(- - -); D98 gac 292-294>G ggc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+367	S367	productive	Homsap IGHV4-31*03 F							a316>c, R106; R106 aga 316-318>R cga|	
+368	S368	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+369	S369	productive	Homsap IGHV4-39*01 F	g3>a, Q1; Q1 cag 1-3 [agct 2-5]>Q caa|t38>a,V13>E(- + -); V13 gtg 37-39>E gag|	g3>a, Q1; Q1 cag 1-3 [agct 2-5]>Q caa|t38>a,V13>E(- + -); V13 gtg 37-39>E gag|					c319>g|	
+370	S370	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	c265>g,L89>V(+ - +); L89 ctg 265-267>V gtg|					c265>g,L89>V(+ - +); L89 ctg 265-267>V gtg|	a320>t|	
+371	S371	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+372	S372	productive	Homsap IGHV1-3*01 F							a320>c|	
+373	S373	productive	Homsap IGHV1-3*01 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|	a320>c|	
+374	S374	productive	Homsap IGHV1-3*01 F	g172>t,A58>S(- + -); A58 gct 172-174>S tct|				g172>t,A58>S(- + -); A58 gct 172-174>S tct|		a320>c|	
+375	S375	productive	Homsap IGHV1-3*01 F							a320>c|	
+376	S376	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|			g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+377	S377	productive	Homsap IGHV1-3*01 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|	a320>c|	
+378	S378	productive	Homsap IGHV1-3*01 F							a320>c|	
+379	S379	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+380	S380	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+381	S381	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+382	S382	productive	Homsap IGHV5-51*03 F	c172>g,P58>A(- - -); P58 cct 172-174>A gct|c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				c172>g,P58>A(- - -); P58 cct 172-174>A gct|	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+383	S383	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+384	S384	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+385	S385	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+386	S386	productive	Homsap IGHV5-51*03 F	g49>a,E17>K(+ - -); E17 gag 49-51>K aag|c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g49>a,E17>K(+ - -); E17 gag 49-51>K aag|				c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+387	S387	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+388	S388	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+389	S389	productive	Homsap IGHV3-11*01 F							a320>g|	
+390	S390	productive	Homsap IGHV3-11*01 F	c276>t, N92; N92 aac 274-276>N aat|					c276>t, N92; N92 aac 274-276>N aat|	a320>g|	
+391	S391	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g147>c, G49; G49 ggg 145-147 [ggct 146-149]>G ggc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|			g147>c, G49; G49 ggg 145-147 [ggct 146-149]>G ggc|			g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+392	S392	productive	Homsap IGHV3-9*01 F	c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|					c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|	a322>t|	
+393	S393	productive	Homsap IGHV3-48*01 F								
+394	S394	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+395	S395	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g282>a, L94; L94 ctg 280-282>L cta|					g282>a, L94; L94 ctg 280-282>L cta|		
+396	S396	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+397	S397	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|t186>a, G62; G62 ggt 184-186>G gga|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|			t186>a, G62; G62 ggt 184-186>G gga|		a320>g|	
+398	S398	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+399	S399	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+400	S400	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+401	S401	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+402	S402	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+403	S403	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+404	S404	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+405	S405	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+406	S406	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+407	S407	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+408	S408	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+409	S409	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t76>c,S26>P(+ - -); S26 tct 76-78>P cct|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	t76>c,S26>P(+ - -); S26 tct 76-78>P cct|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+410	S410	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+411	S411	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a305>t,Y102>F(- + -); Y102 tat 304-306 [ta 304-305]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a305>t,Y102>F(- + -); Y102 tat 304-306 [ta 304-305]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+412	S412	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+413	S413	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+414	S414	productive	Homsap IGHV3-48*03 F	g286>a,A96>T(- - -); A96 gcc 286-288>T acc|					g286>a,A96>T(- - -); A96 gcc 286-288>T acc|		
+415	S415	productive	Homsap IGHV3-48*03 F	g286>a,A96>T(- - -); A96 gcc 286-288>T acc|					g286>a,A96>T(- - -); A96 gcc 286-288>T acc|		
+416	S416	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|		c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|				a320>t|	
+417	S417	productive	Homsap IGHV3-11*01 F								
+418	S418	productive	Homsap IGHV3-11*01 F								
+419	S419	productive	Homsap IGHV3-11*01 F	g18>a, E6; E6 gag 16-18>E gaa|g153>a, E51; E51 gag 151-153>E gaa|	g18>a, E6; E6 gag 16-18>E gaa|		g153>a, E51; E51 gag 151-153>E gaa|				
+420	S420	productive	Homsap IGHV3-11*01 F								
+421	S421	productive	Homsap IGHV3-11*01 F								
+422	S422	productive	Homsap IGHV3-11*01 F	c7>a,Q3>K(+ - -); Q3 cag 7-9>K aag|t112>g,Y38>D(- - -); Y38 tac 112-114 [ta 112-113]>D gac|	c7>a,Q3>K(+ - -); Q3 cag 7-9>K aag|	t112>g,Y38>D(- - -); Y38 tac 112-114 [ta 112-113]>D gac|					
+423	S423	productive	Homsap IGHV3-11*01 F								
+424	S424	productive	Homsap IGHV3-11*01 F								
+425	S425	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+426	S426	productive	Homsap IGHV3-11*01 F	a17>c,E6>A(- - -); E6 gag 16-18>A gcg|a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|	a17>c,E6>A(- - -); E6 gag 16-18>A gcg|				a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+427	S427	productive	Homsap IGHV5-51*03 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+428	S428	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|t272>c,M91>T(- - -); M91 atg 271-273>T acg|			g153>a, E51; E51 gag 151-153>E gaa|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	t272>c,M91>T(- - -); M91 atg 271-273>T acg|		
+429	S429	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g25>a,G9>R(- - -); G9 gga 25-27>R aga|a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g25>a,G9>R(- - -); G9 gga 25-27>R aga|			a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+430	S430	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+431	S431	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g25>a,G9>R(- - -); G9 gga 25-27>R aga|a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g25>a,G9>R(- - -); G9 gga 25-27>R aga|			a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+432	S432	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+433	S433	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g9>a, Q3; Q3 cag 7-9 [agct 8-11]>Q caa|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g9>a, Q3; Q3 cag 7-9 [agct 8-11]>Q caa|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+434	S434	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+435	S435	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+436	S436	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+437	S437	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	t306>c, Y102; Y102 tat 304-306 [tt 306-307]>Y tac|					t306>c, Y102; Y102 tat 304-306 [tt 306-307]>Y tac|	a320>t|	
+438	S438	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+439	S439	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+440	S440	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g117>c,M39>I(+ + -); M39 atg 115-117>I atc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|			g117>c,M39>I(+ + -); M39 atg 115-117>I atc|			g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+441	S441	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+442	S442	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+443	S443	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+444	S444	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+445	S445	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>S(- + -); A96 gct 286-288 [agct 285-288]>S agt|c287>g,A96>S(- + -); A96 gct 286-288 [agct 285-288]>S agt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>S(- + -); A96 gct 286-288 [agct 285-288]>S agt|c287>g,A96>S(- + -); A96 gct 286-288 [agct 285-288]>S agt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+446	S446	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|			g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+447	S447	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|t272>c,M91>T(- - -); M91 atg 271-273>T acg|			g153>a, E51; E51 gag 151-153>E gaa|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	t272>c,M91>T(- - -); M91 atg 271-273>T acg|		
+448	S448	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	t21>c, S7; S7 tct 19-21>S tcc|	t21>c, S7; S7 tct 19-21>S tcc|					a320>t|	
+449	S449	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+450	S450	productive	Homsap IGHV3-9*01 F								
+451	S451	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|t304>c,Y102>H(+ - -); Y102 tat 304-306 [ta 304-305]>H cat|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|t304>c,Y102>H(+ - -); Y102 tat 304-306 [ta 304-305]>H cat|		
+452	S452	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+453	S453	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+454	S454	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+455	S455	productive	Homsap IGHV3-9*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|			t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+456	S456	productive	Homsap IGHV3-9*01 F								
+457	S457	productive	Homsap IGHV3-9*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|			t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+458	S458	productive	Homsap IGHV3-9*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|			t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+459	S459	productive	Homsap IGHV3-9*01 F								
+460	S460	productive	Homsap IGHV3-9*01 F	a200>c,Y67>S(+ - -); Y67 tat 199-201 [ta 199-200]>S tct|					a200>c,Y67>S(+ - -); Y67 tat 199-201 [ta 199-200]>S tct|		
+461	S461	productive	Homsap IGHV3-9*01 F								
+462	S462	productive	Homsap IGHV3-9*01 F							a318>t,K106>N(+ - -); K106 aaa 316-318 [aa 317-318]>N aat|	
+463	S463	productive	Homsap IGHV3-15*01 F	a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|				a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+464	S464	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+465	S465	productive	Homsap IGHV3-15*01 F	a200>t,Y67>F(- + -); Y67 tac 199-201 [ta 199-200]>F ttc|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					a200>t,Y67>F(- + -); Y67 tac 199-201 [ta 199-200]>F ttc|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+466	S466	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+467	S467	productive	Homsap IGHV3-15*01 F	a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|				a193>t,T65>S(+ - +); T65 aca 193-195 [aa 192-193]>S tca|	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+468	S468	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+469	S469	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+470	S470	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|		g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|	g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		
+471	S471	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+472	S472	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+473	S473	productive	Homsap IGHV3-11*01 F							a320>g|	
+474	S474	productive	Homsap IGHV3-11*01 F							a320>g|	
+475	S475	productive	Homsap IGHV3-11*01 F							a320>g|	
+476	S476	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+477	S477	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+478	S478	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+479	S479	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+480	S480	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+481	S481	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+482	S482	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+483	S483	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+484	S484	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+485	S485	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a240>g, R80; R80 aga 238-240>R agg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a240>g, R80; R80 aga 238-240>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+486	S486	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aag|a318>g,R106>K(+ + +); R106 aga 316-318>K aag|	
+487	S487	productive	Homsap IGHV3-48*03 F	g286>a,A96>T(- - -); A96 gcc 286-288>T acc|					g286>a,A96>T(- - -); A96 gcc 286-288>T acc|		
+488	S488	productive	Homsap IGHV3-48*03 F	g286>a,A96>T(- - -); A96 gcc 286-288>T acc|					g286>a,A96>T(- - -); A96 gcc 286-288>T acc|		
+489	S489	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+490	S490	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+491	S491	productive	Homsap IGHV3-21*01 F	c120>t, N40; N40 aac 118-120 [aact 118-121]>N aat|c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|			c120>t, N40; N40 aac 118-120 [aact 118-121]>N aat|		c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|	g319>c|	
+492	S492	productive	Homsap IGHV3-21*01 F	c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|					c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|	g319>c|	
+493	S493	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+494	S494	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+495	S495	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|a191>g,Y64>C(- - -); Y64 tac 190-192 [ta 190-191]>C tgc|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|	a191>g,Y64>C(- - -); Y64 tac 190-192 [ta 190-191]>C tgc|		g319>c|	
+496	S496	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+497	S497	productive	Homsap IGHV3-21*01 F	c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|					c287>t,A96>V(+ - +); A96 gcc 286-288 [agcc 285-288]>V gtc|	g319>c|	
+498	S498	productive	Homsap IGHV3-15*01 F								
+499	S499	productive	Homsap IGHV3-15*01 F								
+500	S500	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|t45>g, P15; P15 cct 43-45>P ccg|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|t45>g, P15; P15 cct 43-45>P ccg|		c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+501	S501	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|t109>c,Y37>H(+ - -); Y37 tat 109-111 [ta 109-110]>H cat|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	t109>c,Y37>H(+ - -); Y37 tat 109-111 [ta 109-110]>H cat|	c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+502	S502	productive	Homsap IGHV3-15*01 F								
+503	S503	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+504	S504	productive	Homsap IGHV3-15*01 F, or Homsap IGHV3-15*05 F	c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+505	S505	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+506	S506	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a110>t,Y37>F(- + -); Y37 tat 109-111 [ta 109-110]>F ttt|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		a110>t,Y37>F(- + -); Y37 tat 109-111 [ta 109-110]>F ttt|			g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+507	S507	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g303>t, V101; V101 gtg 301-303>V gtt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g303>t, V101; V101 gtg 301-303>V gtt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+508	S508	productive	Homsap IGHV5-51*03 F								
+509	S509	productive	Homsap IGHV3-11*01 F							a320>g|	
+510	S510	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t111>c, Y37; Y37 tat 109-111>Y tac|g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t111>c, Y37; Y37 tat 109-111>Y tac|			g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+511	S511	productive	Homsap IGHV5-51*03 F								
+512	S512	productive	Homsap IGHV5-51*03 F								
+513	S513	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+514	S514	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+515	S515	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+516	S516	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+517	S517	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+518	S518	productive	Homsap IGHV2-5*02 F	g160>a,A54>T(- - -); A54 gca 160-162>T aca|t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|			g160>a,A54>T(- - -); A54 gca 160-162>T aca|		t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+519	S519	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+520	S520	productive	Homsap IGHV2-5*02 F	c222>t, S74; S74 agc 220-222>S agt|t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					c222>t, S74; S74 agc 220-222>S agt|t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+521	S521	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+522	S522	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+523	S523	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+524	S524	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+525	S525	productive	Homsap IGHV5-51*03 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+526	S526	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+527	S527	productive	Homsap IGHV5-51*03 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+528	S528	productive	Homsap IGHV5-51*03 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+529	S529	productive	Homsap IGHV5-51*03 F	a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a263>g,Y88>C(- - -); Y88 tac 262-264 [ta 262-263]>C tgc|c279>a,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R aga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+530	S530	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+531	S531	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+532	S532	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+533	S533	productive	Homsap IGHV3-11*01 F	g18>c,E6>D(+ - +); E6 gag 16-18>D gac|	g18>c,E6>D(+ - +); E6 gag 16-18>D gac|					a320>g|	
+534	S534	productive	Homsap IGHV3-11*01 F	c10>a,L4>M(+ + -); L4 ctg 10-12 [agct 8-11]>M atg|g18>c,E6>D(+ - +); E6 gag 16-18>D gac|	c10>a,L4>M(+ + -); L4 ctg 10-12 [agct 8-11]>M atg|g18>c,E6>D(+ - +); E6 gag 16-18>D gac|					a320>g|	
+535	S535	productive	Homsap IGHV2-5*02 F	t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|					t266>a,L89>H(- - -); L89 ctt 265-267 [tt 266-267]>H cat|		
+536	S536	productive	Homsap IGHV3-11*01 F							a320>g|	
+537	S537	productive	Homsap IGHV3-11*01 F							a320>g|	
+538	S538	productive	Homsap IGHV3-11*01 F							a320>g|	
+539	S539	productive	Homsap IGHV3-11*01 F							a320>g|	
+540	S540	productive	Homsap IGHV3-11*01 F	g18>c,E6>D(+ - +); E6 gag 16-18>D gac|	g18>c,E6>D(+ - +); E6 gag 16-18>D gac|					a320>g|	
+541	S541	productive	Homsap IGHV3-11*01 F							a320>g|	
+542	S542	productive	Homsap IGHV3-11*01 F							a320>g|	
+543	S543	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+544	S544	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+545	S545	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+546	S546	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+547	S547	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+548	S548	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+549	S549	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+550	S550	productive	Homsap IGHV3-11*01 F							a320>g|	
+551	S551	productive	Homsap IGHV3-11*01 F							a320>g|	
+552	S552	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+553	S553	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+554	S554	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|		
+555	S555	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+556	S556	productive	Homsap IGHV3-11*01 F							a320>g|	
+557	S557	productive	Homsap IGHV3-11*01 F							a320>g|	
+558	S558	productive	Homsap IGHV3-7*01 F								
+559	S559	productive	Homsap IGHV3-11*01 F	g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|				
+560	S560	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+561	S561	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|a115>t,M39>L(+ + -); M39 atg 115-117>L ttg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|		a115>t,M39>L(+ + -); M39 atg 115-117>L ttg|			a320>g|	
+562	S562	productive	Homsap IGHV2-5*02 F								
+563	S563	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+564	S564	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+565	S565	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+566	S566	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a263>t,Y88>F(- + -); Y88 tat 262-264 [ta 262-263]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+567	S567	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+568	S568	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+569	S569	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+570	S570	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+571	S571	productive	Homsap IGHV3-9*01 F	g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+572	S572	productive	Homsap IGHV3-9*01 F	g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+573	S573	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+574	S574	productive	Homsap IGHV4-31*03 F								
+575	S575	productive	Homsap IGHV3-9*01 F	g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|					g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|		
+576	S576	productive	Homsap IGHV3-9*01 F	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+577	S577	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+578	S578	productive	Homsap IGHV3-48*03 F								
+579	S579	productive	Homsap IGHV4-31*03 F							a316>c, R106; R106 aga 316-318>R cga|	
+580	S580	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+581	S581	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c234>g,I78>M(+ + -); I78 atc 232-234>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c234>g,I78>M(+ + -); I78 atc 232-234>M atg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+582	S582	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c10>g,L4>V(+ - +); L4 ctg 10-12 [agct 8-11]>V gtg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	c10>g,L4>V(+ - +); L4 ctg 10-12 [agct 8-11]>V gtg|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+583	S583	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a173>g,Y58>C(- - -); Y58 tat 172-174 [ta 172-173]>C tgt|a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a173>g,Y58>C(- - -); Y58 tat 172-174 [ta 172-173]>C tgt|	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+584	S584	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a173>g,Y58>C(- - -); Y58 tat 172-174 [ta 172-173]>C tgt|a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a173>g,Y58>C(- - -); Y58 tat 172-174 [ta 172-173]>C tgt|	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+585	S585	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|g301>a,V101>M(+ - -); V101 gtg 301-303>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|			g301>a,V101>M(+ - -); V101 gtg 301-303>M atg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+586	S586	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a173>g,Y58>C(- - -); Y58 tat 172-174 [ta 172-173]>C tgt|a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a173>g,Y58>C(- - -); Y58 tat 172-174 [ta 172-173]>C tgt|	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+587	S587	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+588	S588	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+589	S589	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+590	S590	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+591	S591	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+592	S592	productive	Homsap IGHV3-9*01 F								
+593	S593	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+594	S594	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+595	S595	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+596	S596	productive	Homsap IGHV4-31*03 F							a316>c, R106; R106 aga 316-318>R cga|	
+597	S597	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a270>c,Q90>H(- + -); Q90 caa 268-270 [aa 269-270]>H cac|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a270>c,Q90>H(- + -); Q90 caa 268-270 [aa 269-270]>H cac|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+598	S598	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+599	S599	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		c108>t, S36; S36 agc 106-108 [agct 106-109]>S agt|				g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+600	S600	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggt|g18>t,E6>G(- - -); E6 gag 16-18>G ggt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggt|g18>t,E6>G(- - -); E6 gag 16-18>G ggt|					g319>c|	
+601	S601	productive	Homsap IGHV3-21*01 F	g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|		g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|				g319>c|	
+602	S602	productive	Homsap IGHV3-21*01 F							g319>c|	
+603	S603	productive	Homsap IGHV3-21*01 F							g319>c|	
+604	S604	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+605	S605	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					g319>c|	
+606	S606	productive	Homsap IGHV3-21*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c114>a,S38>R(- - -); S38 agc 112-114>R aga|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	c114>a,S38>R(- - -); S38 agc 112-114>R aga|				g319>c|	
+607	S607	productive	Homsap IGHV5-51*03 F								
+608	S608	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+609	S609	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+610	S610	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+611	S611	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+612	S612	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+613	S613	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+614	S614	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+615	S615	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+616	S616	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+617	S617	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+618	S618	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+619	S619	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+620	S620	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+621	S621	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|	g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+622	S622	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+623	S623	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+624	S624	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+625	S625	productive	Homsap IGHV4-31*03 F							a316>c, R106; R106 aga 316-318>R cga|	
+626	S626	productive	Homsap IGHV3-11*01 F	t149>c,L50>P(- - -); L50 ctg 148-150>P ccg|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|			t149>c,L50>P(- - -); L50 ctg 148-150>P ccg|		c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+627	S627	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+628	S628	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+629	S629	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+630	S630	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+631	S631	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g26>a,G9>E(- - -); G9 gga 25-27>E gaa|c63>g, L21; L21 ctc 61-63>L ctg|					g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+632	S632	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g188>t,S63>I(- - -); S63 agt 187-189 [agta 187-190]>I att|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				g188>t,S63>I(- - -); S63 agt 187-189 [agta 187-190]>I att|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+633	S633	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+634	S634	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+635	S635	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+636	S636	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+637	S637	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g298>a,A100>T(- - -); A100 gct 298-300 [ggct 297-300]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+638	S638	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+639	S639	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a256>g,T86>A(- - -); T86 acg 256-258>A gcg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a256>g,T86>A(- - -); T86 acg 256-258>A gcg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+640	S640	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+641	S641	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+642	S642	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>g|	
+643	S643	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aag|a318>g,R106>K(+ + +); R106 aga 316-318>K aag|	
+644	S644	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F								
+645	S645	productive	Homsap IGHV3-15*01 F	t262>a,Y88>N(- - -); Y88 tat 262-264 [ta 262-263]>N aat|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					t262>a,Y88>N(- - -); Y88 tat 262-264 [ta 262-263]>N aat|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+646	S646	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a225>g, R75; R75 cga 223-225>R cgg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a225>g, R75; R75 cga 223-225>R cgg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+647	S647	productive	Homsap IGHV3-21*01 F	c192>t, Y64; Y64 tac 190-192>Y tat|				c192>t, Y64; Y64 tac 190-192>Y tat|		g319>c|	
+648	S648	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+649	S649	productive	Homsap IGHV5-51*03 F	a277>g,S93>G(+ + -); S93 agc 277-279>G ggc|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a277>g,S93>G(+ + -); S93 agc 277-279>G ggc|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+650	S650	productive	Homsap IGHV5-51*03 F	t192>a,D64>E(+ - +); D64 gat 190-192 [ta 192-193]>E gaa|a277>g,S93>G(+ + -); S93 agc 277-279>G ggc|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t192>a,D64>E(+ - +); D64 gat 190-192 [ta 192-193]>E gaa|	a277>g,S93>G(+ + -); S93 agc 277-279>G ggc|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+651	S651	productive	Homsap IGHV5-51*03 F	g272>c,W91>S(- - -); W91 tgg 271-273>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					g272>c,W91>S(- - -); W91 tgg 271-273>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+652	S652	productive	Homsap IGHV5-51*03 F	g272>c,W91>S(- - -); W91 tgg 271-273>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					g272>c,W91>S(- - -); W91 tgg 271-273>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+653	S653	productive	Homsap IGHV5-51*03 F	g272>c,W91>S(- - -); W91 tgg 271-273>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					g272>c,W91>S(- - -); W91 tgg 271-273>S tcg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+654	S654	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+655	S655	productive	Homsap IGHV5-51*03 F	c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					c213>g,F71>L(+ - -); F71 ttc 211-213>L ttg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+656	S656	productive	Homsap IGHV1-2*02 F								
+657	S657	productive	Homsap IGHV1-2*02 F	g4>c,V2>L(+ - +); V2 gtg 4-6>L ctg|	g4>c,V2>L(+ - +); V2 gtg 4-6>L ctg|						
+658	S658	productive	Homsap IGHV1-2*02 F								
+659	S659	productive	Homsap IGHV1-2*02 F								
+660	S660	productive	Homsap IGHV1-2*02 F								
+661	S661	productive	Homsap IGHV1-2*02 F	c203>g,A68>G(- + -); A68 gca 202-204>G gga|					c203>g,A68>G(- + -); A68 gca 202-204>G gga|		
+662	S662	productive	Homsap IGHV1-2*02 F								
+663	S663	productive	Homsap IGHV1-2*02 F								
+664	S664	productive	Homsap IGHV3-11*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|a245>c,N82>T(- + -); N82 aac 244-246 [aa 244-245]>T acc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|				a245>c,N82>T(- + -); N82 aac 244-246 [aa 244-245]>T acc|	a320>g|	
+665	S665	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|c276>t, N92; N92 aac 274-276>N aat|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|		c276>t, N92; N92 aac 274-276>N aat|	g319>c|	
+666	S666	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|c276>t, N92; N92 aac 274-276>N aat|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|		c276>t, N92; N92 aac 274-276>N aat|	g319>c|	
+667	S667	productive	Homsap IGHV3-11*01 F	g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			a320>g|	
+668	S668	productive	Homsap IGHV3-11*01 F	g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			a320>g|	
+669	S669	productive	Homsap IGHV3-11*01 F							a320>g|	
+670	S670	productive	Homsap IGHV3-11*01 F								
+671	S671	productive	Homsap IGHV3-11*01 F								
+672	S672	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c309>t, Y103; Y103 tac 307-309 [tact 307-310]>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c309>t, Y103; Y103 tac 307-309 [tact 307-310]>Y tat|	a320>g|	
+673	S673	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g282>a, L94; L94 ctg 280-282>L cta|					g282>a, L94; L94 ctg 280-282>L cta|		
+674	S674	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+675	S675	productive	Homsap IGHV3-21*01 F	t64>g,S22>A(- + -); S22 tcc 64-66>A gcc|	t64>g,S22>A(- + -); S22 tcc 64-66>A gcc|						
+676	S676	productive	Homsap IGHV3-11*01 F								
+677	S677	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+678	S678	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+679	S679	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+680	S680	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+681	S681	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+682	S682	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+683	S683	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+684	S684	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+685	S685	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+686	S686	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+687	S687	productive	Homsap IGHV3-11*01 F	t105>a,S35>R(- - -); S35 agt 103-105>R aga|a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|g303>c, V101; V101 gtg 301-303>V gtc|		t105>a,S35>R(- - -); S35 agt 103-105>R aga|		a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|	g303>c, V101; V101 gtg 301-303>V gtc|	a320>g|	
+688	S688	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+689	S689	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+690	S690	productive	Homsap IGHV3-11*01 F	g298>a,A100>T(- - -); A100 gcc 298-300>T acc|					g298>a,A100>T(- - -); A100 gcc 298-300>T acc|		
+691	S691	productive	Homsap IGHV3-11*01 F	g298>a,A100>T(- - -); A100 gcc 298-300>T acc|					g298>a,A100>T(- - -); A100 gcc 298-300>T acc|		
+692	S692	productive	Homsap IGHV3-11*01 F	a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|		a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|					
+693	S693	productive	Homsap IGHV3-11*01 F	a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|		a113>g,Y38>C(- - -); Y38 tac 112-114 [ta 112-113]>C tgc|					
+694	S694	productive	Homsap IGHV3-11*01 F								
+695	S695	productive	Homsap IGHV3-11*01 F								
+696	S696	productive	Homsap IGHV3-15*01 F							c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+697	S697	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+698	S698	productive	Homsap IGHV3-11*01 F	g18>a, E6; E6 gag 16-18>E gaa|g153>a, E51; E51 gag 151-153>E gaa|	g18>a, E6; E6 gag 16-18>E gaa|		g153>a, E51; E51 gag 151-153>E gaa|				
+699	S699	productive	Homsap IGHV3-11*01 F	c39>g, V13; V13 gtc 37-39>V gtg|g153>a, E51; E51 gag 151-153>E gaa|c228>g,F76>L(+ - -); F76 ttc 226-228>L ttg|	c39>g, V13; V13 gtc 37-39>V gtg|		g153>a, E51; E51 gag 151-153>E gaa|		c228>g,F76>L(+ - -); F76 ttc 226-228>L ttg|		
+700	S700	productive	Homsap IGHV3-11*01 F	g18>a, E6; E6 gag 16-18>E gaa|g153>a, E51; E51 gag 151-153>E gaa|	g18>a, E6; E6 gag 16-18>E gaa|		g153>a, E51; E51 gag 151-153>E gaa|				
+701	S701	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|t272>c,M91>T(- - -); M91 atg 271-273>T acg|			g153>a, E51; E51 gag 151-153>E gaa|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	t272>c,M91>T(- - -); M91 atg 271-273>T acg|		
+702	S702	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|a274>g,N92>D(+ + -); N92 aac 274-276>D gac|			g153>a, E51; E51 gag 151-153>E gaa|		a274>g,N92>D(+ + -); N92 aac 274-276>D gac|		
+703	S703	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+704	S704	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+705	S705	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+706	S706	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+707	S707	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+708	S708	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+709	S709	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c65>g,S22>C(- - -); S22 tcc 64-66>C tgc|a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	c65>g,S22>C(- - -); S22 tcc 64-66>C tgc|			a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+710	S710	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g104>a,S35>N(- - -); S35 agt 103-105 [agta 103-106]>N aat|a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g104>a,S35>N(- - -); S35 agt 103-105 [agta 103-106]>N aat|		a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+711	S711	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+712	S712	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a168>g,I56>M(+ + -); I56 ata 166-168 [ta 167-168]>M atg|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+713	S713	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g4>a,V2>M(+ - -); V2 gtg 4-6>M atg|g282>a, L94; L94 ctg 280-282>L cta|	g4>a,V2>M(+ - -); V2 gtg 4-6>M atg|				g282>a, L94; L94 ctg 280-282>L cta|	a320>t|	
+714	S714	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c201>t, Y67; Y67 tac 199-201>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c201>t, Y67; Y67 tac 199-201>Y tat|	a320>g|	
+715	S715	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+716	S716	productive	Homsap IGHV1-3*01 F							a320>c|	
+717	S717	productive	Homsap IGHV1-3*01 F							a320>c|	
+718	S718	productive	Homsap IGHV1-3*01 F							a320>c|	
+719	S719	productive	Homsap IGHV1-3*01 F							a320>c|	
+720	S720	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|		c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+721	S721	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+722	S722	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+723	S723	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|t306>c, Y102; Y102 tat 304-306 [tt 306-307]>Y tac|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|				t306>c, Y102; Y102 tat 304-306 [tt 306-307]>Y tac|	a320>t|	
+724	S724	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+725	S725	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+726	S726	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+727	S727	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+728	S728	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+729	S729	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+730	S730	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+731	S731	productive	Homsap IGHV3-9*01 F	t45>c, P15; P15 cct 43-45>P ccc|t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|	t45>c, P15; P15 cct 43-45>P ccc|			t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+732	S732	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+733	S733	productive	Homsap IGHV3-11*01 F								
+734	S734	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+735	S735	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+736	S736	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+737	S737	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+738	S738	productive	Homsap IGHV3-9*01 F								
+739	S739	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+740	S740	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+741	S741	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+742	S742	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+743	S743	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+744	S744	productive	Homsap IGHV3-48*03 F	g4>a,V2>M(+ - -); V2 gtg 4-6>M atg|t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	g4>a,V2>M(+ - -); V2 gtg 4-6>M atg|				t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+745	S745	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+746	S746	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+747	S747	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+748	S748	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+749	S749	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+750	S750	productive	Homsap IGHV3-48*03 F	g173>c,S58>T(+ - +); S58 agt 172-174 [agta 172-175]>T act|t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|				g173>c,S58>T(+ - +); S58 agt 172-174 [agta 172-175]>T act|	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+751	S751	productive	Homsap IGHV3-48*03 F	g173>c,S58>T(+ - +); S58 agt 172-174 [agta 172-175]>T act|t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|				g173>c,S58>T(+ - +); S58 agt 172-174 [agta 172-175]>T act|	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+752	S752	productive	Homsap IGHV4-31*03 F							a320>g|	
+753	S753	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+754	S754	productive	Homsap IGHV4-39*01 F							c319>g|	
+755	S755	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+756	S756	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a204>t, A68; A68 gca 202-204>A gct|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a204>t, A68; A68 gca 202-204>A gct|a308>g,Y103>C(- - -); Y103 tac 307-309 [ta 307-308]>C tgc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+757	S757	productive	Homsap IGHV1-18*01 F								
+758	S758	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|a152>g,E51>G(- - -); E51 gag 151-153>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|		a152>g,E51>G(- - -); E51 gag 151-153>G ggg|			a320>g|	
+759	S759	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+760	S760	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g57>c, L19; L19 ctg 55-57>L ctc|a190>g,N64>D(+ + -); N64 aat 190-192 [ta 189-190]>D gat|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g57>c, L19; L19 ctg 55-57>L ctc|			a190>g,N64>D(+ + -); N64 aat 190-192 [ta 189-190]>D gat|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+761	S761	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+762	S762	productive	Homsap IGHV3-21*01 F							g319>c|	
+763	S763	productive	Homsap IGHV3-11*01 F							a320>g|	
+764	S764	productive	Homsap IGHV3-11*01 F	g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|					g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|	a320>g|	
+765	S765	productive	Homsap IGHV3-11*01 F							a320>g|	
+766	S766	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+767	S767	productive	Homsap IGHV3-11*01 F							a320>g|	
+768	S768	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+769	S769	productive	Homsap IGHV3-21*01 F	g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g133>c,A45>P(- - -); A45 gct 133-135 [ggct 132-135]>P cct|			g319>c|	
+770	S770	productive	Homsap IGHV3-11*01 F	g119>t,S40>I(- - -); S40 agc 118-120 [agct 118-121]>I atc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|a305>t,Y102>F(- + -); Y102 tat 304-306 [ta 304-305]>F ttt|			g119>t,S40>I(- - -); S40 agc 118-120 [agct 118-121]>I atc|		c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|a305>t,Y102>F(- + -); Y102 tat 304-306 [ta 304-305]>F ttt|	a320>g|	
+771	S771	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+772	S772	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a190>g,N64>D(+ + -); N64 aat 190-192 [ta 189-190]>D gat|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|				a190>g,N64>D(+ + -); N64 aat 190-192 [ta 189-190]>D gat|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+773	S773	productive	Homsap IGHV3-11*01 F	a225>g, R75; R75 cga 223-225>R cgg|					a225>g, R75; R75 cga 223-225>R cgg|		
+774	S774	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+775	S775	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+776	S776	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g301>t,V101>L(+ - +); V101 gtg 301-303>L ttg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+777	S777	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+778	S778	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+779	S779	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|t304>c,Y102>H(+ - -); Y102 tat 304-306 [ta 304-305]>H cat|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|t304>c,Y102>H(+ - -); Y102 tat 304-306 [ta 304-305]>H cat|	a320>g|	
+780	S780	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+781	S781	productive	Homsap IGHV3-11*01 F	c114>t, Y38; Y38 tac 112-114>Y tat|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|		c114>t, Y38; Y38 tac 112-114>Y tat|			c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+782	S782	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+783	S783	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+784	S784	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+785	S785	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+786	S786	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+787	S787	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|t310>a,C104>S(- - -); C104 tgt 310-312>S agt|			g153>a, E51; E51 gag 151-153>E gaa|		t310>a,C104>S(- - -); C104 tgt 310-312>S agt|		
+788	S788	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g36>a, V12; V12 gtg 34-36>V gta|a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g36>a, V12; V12 gtg 34-36>V gta|			a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+789	S789	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g36>a, V12; V12 gtg 34-36>V gta|a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	g36>a, V12; V12 gtg 34-36>V gta|			a195>g, K65; K65 aaa 193-195 [aa 194-195]>K aag|		g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+790	S790	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+791	S791	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+792	S792	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+793	S793	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+794	S794	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+795	S795	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+796	S796	productive	Homsap IGHV3-11*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|					a320>g|	
+797	S797	productive	Homsap IGHV3-11*01 F							a320>g|	
+798	S798	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+799	S799	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+800	S800	productive	Homsap IGHV3-11*01 F	g202>a,A68>T(- - -); A68 gca 202-204>T aca|					g202>a,A68>T(- - -); A68 gca 202-204>T aca|	a320>g|	
+801	S801	productive	Homsap IGHV3-11*01 F	g202>a,A68>T(- - -); A68 gca 202-204>T aca|					g202>a,A68>T(- - -); A68 gca 202-204>T aca|	a320>g|	
+802	S802	productive	Homsap IGHV4-39*01 F	g3>a, Q1; Q1 cag 1-3 [agct 2-5]>Q caa|t38>a,V13>E(- + -); V13 gtg 37-39>E gag|	g3>a, Q1; Q1 cag 1-3 [agct 2-5]>Q caa|t38>a,V13>E(- + -); V13 gtg 37-39>E gag|					c319>g|	
+803	S803	productive	Homsap IGHV4-39*01 F	t38>a,V13>E(- + -); V13 gtg 37-39>E gag|	t38>a,V13>E(- + -); V13 gtg 37-39>E gag|					c319>g|	
+804	S804	productive	Homsap IGHV4-39*01 F	t38>a,V13>E(- + -); V13 gtg 37-39>E gag|	t38>a,V13>E(- + -); V13 gtg 37-39>E gag|					c319>g|	
+805	S805	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+806	S806	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t192>a,D64>E(+ - +); D64 gat 190-192 [ta 192-193]>E gaa|a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|t192>a,D64>E(+ - +); D64 gat 190-192 [ta 192-193]>E gaa|	a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+807	S807	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|t192>a,D64>E(+ - +); D64 gat 190-192 [ta 192-193]>E gaa|a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|t192>a,D64>E(+ - +); D64 gat 190-192 [ta 192-193]>E gaa|	a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+808	S808	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+809	S809	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|a193>t,T65>S(+ - +); T65 acc 193-195 [ta 192-193]>S tcc|a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|a193>t,T65>S(+ - +); T65 acc 193-195 [ta 192-193]>S tcc|	a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+810	S810	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+811	S811	productive	Homsap IGHV5-51*03 F	t177>a, G59; G59 ggt 175-177>G gga|a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|				t177>a, G59; G59 ggt 175-177>G gga|	a245>g,K82>R(+ + +); K82 aag 244-246 [aa 244-245]>R agg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+812	S812	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a318>g, K106; K106 aaa 316-318 [aa 317-318]>K aag|a320>c|	
+813	S813	productive	Homsap IGHV3-48*01 F								
+814	S814	productive	Homsap IGHV1-18*01 F	a190>g,N64>D(+ + -); N64 aac 190-192 [ta 189-190]>D gac|				a190>g,N64>D(+ + -); N64 aac 190-192 [ta 189-190]>D gac|			
+815	S815	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a318>g, K106; K106 aaa 316-318 [aa 317-318]>K aag|a320>c|	
+816	S816	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a318>g, K106; K106 aaa 316-318 [aa 317-318]>K aag|a320>c|	
+817	S817	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a318>g, K106; K106 aaa 316-318 [aa 317-318]>K aag|a320>c|	
+818	S818	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a318>g, K106; K106 aaa 316-318 [aa 317-318]>K aag|a320>c|	
+819	S819	productive	Homsap IGHV3-11*01 F							a320>g|	
+820	S820	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+821	S821	productive	Homsap IGHV3-11*01 F	g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			g147>a, G49; G49 ggg 145-147 [ggct 146-149]>G gga|			a320>g|	
+822	S822	productive	Homsap IGHV3-11*01 F							a320>g|	
+823	S823	productive	Homsap IGHV1-18*01 F								
+824	S824	productive	Homsap IGHV3-11*01 F							a320>g|	
+825	S825	productive	Homsap IGHV3-11*01 F							a320>g|	
+826	S826	productive	Homsap IGHV3-11*01 F							a320>g|	
+827	S827	productive	Homsap IGHV3-11*01 F							a320>g|	
+828	S828	productive	Homsap IGHV3-11*01 F							a320>g|	
+829	S829	productive	Homsap IGHV3-11*01 F							a320>g|	
+830	S830	productive	Homsap IGHV3-11*01 F							a320>g|	
+831	S831	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+832	S832	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|g303>c, V101; V101 gtg 301-303>V gtc|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|	g303>c, V101; V101 gtg 301-303>V gtc|	a320>g|	
+833	S833	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+834	S834	productive	Homsap IGHV3-48*03 F	t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|					t208>c,S70>P(+ - -); S70 tct 208-210>P cct|c248>g,A83>G(- + -); A83 gcc 247-249>G ggc|	a320>g|	
+835	S835	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+836	S836	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|		c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+837	S837	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+838	S838	productive	Homsap IGHV3-11*01 F							a320>g|	
+839	S839	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+840	S840	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+841	S841	productive	Homsap IGHV3-11*01 F	g46>c,G16>R(- - -); G16 gga 46-48>R cga|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	g46>c,G16>R(- - -); G16 gga 46-48>R cga|				c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+842	S842	productive	Homsap IGHV3-11*01 F	g46>c,G16>R(- - -); G16 gga 46-48>R cga|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	g46>c,G16>R(- - -); G16 gga 46-48>R cga|				c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+843	S843	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+844	S844	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+845	S845	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|t307>c,Y103>H(+ - -); Y103 tac 307-309 [ta 307-308]>H cac|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|t307>c,Y103>H(+ - -); Y103 tac 307-309 [ta 307-308]>H cac|	a320>g|	
+846	S846	productive	Homsap IGHV3-11*01 F	c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|t307>c,Y103>H(+ - -); Y103 tac 307-309 [ta 307-308]>H cac|					c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|t307>c,Y103>H(+ - -); Y103 tac 307-309 [ta 307-308]>H cac|	a320>g|	
+847	S847	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+848	S848	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+849	S849	productive	Homsap IGHV3-11*01 F	a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|					a232>c,I78>L(+ + +); I78 atc 232-234>L ctc|c259>g,L87>V(+ - +); L87 ctg 259-261>V gtg|	a320>g|	
+850	S850	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g286>a,A96>T(- - -); A96 gct 286-288 [agct 285-288]>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+851	S851	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|					a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|		
+852	S852	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|					a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|		
+853	S853	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+854	S854	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|					a263>g,Y88>C(- - -); Y88 tat 262-264 [ta 262-263]>C tgt|		
+855	S855	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+856	S856	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g133>t,A45>S(- + -); A45 gct 133-135 [ggct 132-135]>S tct|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|			g133>t,A45>S(- + -); A45 gct 133-135 [ggct 132-135]>S tct|			g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+857	S857	productive	Homsap IGHV3-21*01 F								
+858	S858	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g258>t, T86; T86 acg 256-258>T act|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					a200>t,Y67>F(- + -); Y67 tat 199-201 [ta 199-200]>F ttt|g258>t, T86; T86 acg 256-258>T act|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+859	S859	productive	Homsap IGHV3-21*01 F								
+860	S860	productive	Homsap IGHV3-21*01 F								
+861	S861	productive	Homsap IGHV1-2*02 F								
+862	S862	productive	Homsap IGHV3-9*01 F								
+863	S863	productive	Homsap IGHV3-9*01 F	c84>t, F28; F28 ttc 82-84>F ttt|a166>t,I56>F(+ - -); I56 att 166-168 [ta 165-166]>F ttt|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		c84>t, F28; F28 ttc 82-84>F ttt|		a166>t,I56>F(+ - -); I56 att 166-168 [ta 165-166]>F ttt|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+864	S864	productive	Homsap IGHV3-11*01 F							a320>g|	
+865	S865	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+866	S866	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+867	S867	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+868	S868	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+869	S869	productive	Homsap IGHV3-11*01 F							a320>g|	
+870	S870	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+871	S871	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+872	S872	productive	Homsap IGHV3-11*01 F	a115>g,M39>V(+ - -); M39 atg 115-117>V gtg|g153>a, E51; E51 gag 151-153>E gaa|			a115>g,M39>V(+ - -); M39 atg 115-117>V gtg|g153>a, E51; E51 gag 151-153>E gaa|				
+873	S873	productive	Homsap IGHV4-59*01 F	g9>a, Q3; Q3 cag 7-9 [agct 8-11]>Q caa|a225>t, R75; R75 cga 223-225>R cgt|	g9>a, Q3; Q3 cag 7-9 [agct 8-11]>Q caa|				a225>t, R75; R75 cga 223-225>R cgt|	a318>g, R106; R106 aga 316-318>R agg|a320>g|	
+874	S874	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+875	S875	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+876	S876	productive	Homsap IGHV3-11*01 F	a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|					a197>g,Y66>C(- - -); Y66 tac 196-198 [ta 196-197]>C tgc|		
+877	S877	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+878	S878	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+879	S879	productive	Homsap IGHV1-3*01 F							a320>c|	
+880	S880	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+881	S881	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+882	S882	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+883	S883	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+884	S884	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|a200>g,Y67>C(- - -); Y67 tat 199-201 [ta 199-200]>C tgt|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|		a200>g,Y67>C(- - -); Y67 tat 199-201 [ta 199-200]>C tgt|		
+885	S885	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+886	S886	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+887	S887	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|			
+888	S888	productive	Homsap IGHV4-4*07 F	t11>g,L4>R(- + -); L4 ctg 10-12>R cgg|a318>g, R106; R106 aga 316-318>R agg|	t11>g,L4>R(- + -); L4 ctg 10-12>R cgg|					a318>g, R106; R106 aga 316-318>R agg|	
+889	S889	productive	Homsap IGHV4-4*07 F							a318>g, R106; R106 aga 316-318>R agg|	
+890	S890	productive	Homsap IGHV4-4*07 F	g273>a, L91; L91 ctg 271-273>L cta|a318>g, R106; R106 aga 316-318>R agg|					g273>a, L91; L91 ctg 271-273>L cta|	a318>g, R106; R106 aga 316-318>R agg|	
+891	S891	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+892	S892	productive	Homsap IGHV3-9*01 F	t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|				t189>c, G63; G63 ggt 187-189 [ta 189-190]>G ggc|	a206>t,D69>V(- - -); D69 gac 205-207>V gtc|g211>a,V71>M(+ - -); V71 gtg 211-213>M atg|		
+893	S893	productive	Homsap IGHV5-51*03 F								
+894	S894	productive	Homsap IGHV5-51*03 F								
+895	S895	productive	Homsap IGHV5-51*03 F								
+896	S896	productive	Homsap IGHV5-51*03 F								
+897	S897	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c296>g,T99>R(- - -); T99 acg 295-297>R agg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c296>g,T99>R(- - -); T99 acg 295-297>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+898	S898	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	c296>g,T99>R(- - -); T99 acg 295-297>R agg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					c296>g,T99>R(- - -); T99 acg 295-297>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+899	S899	productive	Homsap IGHV5-51*03 F								
+900	S900	productive	Homsap IGHV5-51*03 F								
+901	S901	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|g319>t|	
+902	S902	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+903	S903	productive	Homsap IGHV3-15*01 F	c194>g,T65>R(- - -); T65 aca 193-195>R aga|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|				c194>g,T65>R(- - -); T65 aca 193-195>R aga|	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+904	S904	productive	Homsap IGHV3-15*01 F	c194>g,T65>R(- - -); T65 aca 193-195>R aga|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|				c194>g,T65>R(- - -); T65 aca 193-195>R aga|	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+905	S905	productive	Homsap IGHV3-15*01 F, or Homsap IGHV3-15*05 F	c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+906	S906	productive	Homsap IGHV3-15*01 F, or Homsap IGHV3-15*05 F	g9>a, Q3; Q3 cag 7-9 [agct 8-11]>Q caa|c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	g9>a, Q3; Q3 cag 7-9 [agct 8-11]>Q caa|				c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+907	S907	productive	Homsap IGHV3-15*01 F, or Homsap IGHV3-15*05 F	c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+908	S908	productive	Homsap IGHV3-15*01 F, or Homsap IGHV3-15*05 F	c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c279>g,S93>R(- - -); S93 agc 277-279 [agcc 277-280]>R agg|a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+909	S909	productive	Homsap IGHV3-15*01 F	g109>a,A37>T(- - -); A37 gcc 109-111>T acc|t272>c,M91>T(- - -); M91 atg 271-273>T acg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|		g109>a,A37>T(- - -); A37 gcc 109-111>T acc|			t272>c,M91>T(- - -); M91 atg 271-273>T acg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+910	S910	productive	Homsap IGHV3-15*01 F	g109>a,A37>T(- - -); A37 gcc 109-111>T acc|g164>c,R55>P(- - -); R55 cgt 163-165>P cct|t272>c,M91>T(- - -); M91 atg 271-273>T acg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|		g109>a,A37>T(- - -); A37 gcc 109-111>T acc|	g164>c,R55>P(- - -); R55 cgt 163-165>P cct|		t272>c,M91>T(- - -); M91 atg 271-273>T acg|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+911	S911	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|	g32>t,G11>V(- - -); G11 ggc 31-33 [ggct 31-34]>V gtc|					a320>t|	
+912	S912	productive	Homsap IGHV4-31*03 F							a320>g|	
+913	S913	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+914	S914	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+915	S915	productive	Homsap IGHV3-7*01 F							g319>a|	
+916	S916	productive	Homsap IGHV3-7*01 F	c255>t, N85; N85 aac 253-255 [aact 253-256]>N aat|					c255>t, N85; N85 aac 253-255 [aact 253-256]>N aat|	g319>a|	
+917	S917	productive	Homsap IGHV3-7*01 F							g319>a|	
+918	S918	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|		c164>t,A55>V(+ - +); A55 gct 163-165 [agct 162-165]>V gtt|			a320>g|	
+919	S919	productive	Homsap IGHV4-39*01 F	g3>a, Q1; Q1 cag 1-3 [agct 2-5]>Q caa|t38>a,V13>E(- + -); V13 gtg 37-39>E gag|	g3>a, Q1; Q1 cag 1-3 [agct 2-5]>Q caa|t38>a,V13>E(- + -); V13 gtg 37-39>E gag|					c319>g|	
+920	S920	productive	Homsap IGHV3-11*01 F							a320>g|	
+921	S921	productive	Homsap IGHV3-11*01 F	c111>t, Y37; Y37 tac 109-111 [tact 109-112]>Y tat|		c111>t, Y37; Y37 tac 109-111 [tact 109-112]>Y tat|				a320>g|	
+922	S922	productive	Homsap IGHV3-11*01 F							a320>g|	
+923	S923	productive	Homsap IGHV3-11*01 F							a320>g|	
+924	S924	productive	Homsap IGHV3-11*01 F							a320>g|	
+925	S925	productive	Homsap IGHV3-11*01 F	c276>t, N92; N92 aac 274-276>N aat|					c276>t, N92; N92 aac 274-276>N aat|	a320>g|	
+926	S926	productive	Homsap IGHV3-11*01 F	c276>t, N92; N92 aac 274-276>N aat|					c276>t, N92; N92 aac 274-276>N aat|	a320>g|	
+927	S927	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|a305>c,Y102>S(+ - -); Y102 tat 304-306 [ta 304-305]>S tct|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|a305>c,Y102>S(+ - -); Y102 tat 304-306 [ta 304-305]>S tct|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+928	S928	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+929	S929	productive	Homsap IGHV3-9*01 F	g106>t,D36>Y(- - -); D36 gat 106-108>Y tat|a119>c,H40>P(+ - -); H40 cac 118-120>P ccc|c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|		g106>t,D36>Y(- - -); D36 gat 106-108>Y tat|	a119>c,H40>P(+ - -); H40 cac 118-120>P ccc|		c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|	a322>t|	
+930	S930	productive	Homsap IGHV3-11*01 F							a320>g|	
+931	S931	productive	Homsap IGHV3-11*01 F							a320>g|	
+932	S932	productive	Homsap IGHV3-11*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|					a320>g|	
+933	S933	productive	Homsap IGHV3-11*01 F	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|	g32>c,G11>A(- + -); G11 ggc 31-33 [ggct 31-34]>A gcc|					a320>g|	
+934	S934	productive	Homsap IGHV3-11*01 F	g185>a,G62>D(- - -); G62 ggt 184-186 [ggta 184-187]>D gat|c276>t, N92; N92 aac 274-276>N aat|				g185>a,G62>D(- - -); G62 ggt 184-186 [ggta 184-187]>D gat|	c276>t, N92; N92 aac 274-276>N aat|	a320>g|	
+935	S935	productive	Homsap IGHV3-11*01 F	g185>a,G62>D(- - -); G62 ggt 184-186 [ggta 184-187]>D gat|c276>t, N92; N92 aac 274-276>N aat|				g185>a,G62>D(- - -); G62 ggt 184-186 [ggta 184-187]>D gat|	c276>t, N92; N92 aac 274-276>N aat|	a320>g|	
+936	S936	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c201>t, Y67; Y67 tac 199-201>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c201>t, Y67; Y67 tac 199-201>Y tat|	a320>g|	
+937	S937	productive	Homsap IGHV3-9*01 F	c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|					c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|	a322>t|	
+938	S938	productive	Homsap IGHV3-7*01 F								
+939	S939	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|		g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|	g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		
+940	S940	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|		g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|	g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		
+941	S941	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		c108>g,S36>R(- - -); S36 agc 106-108 [agct 106-109]>R agg|		g191>a,S64>N(- - -); S64 agc 190-192 [agca 190-193]>N aac|	g225>a, R75; R75 cgg 223-225 [ggtt 224-227]>R cga|a229>t,T77>S(+ - +); T77 acc 229-231>S tcc|c287>a,A96>D(- - -); A96 gcc 286-288 [agcc 285-288]>D gac|		
+942	S942	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g37>t,V13>L(+ - +); V13 gta 37-39 [ggta 36-39]>L tta|	g37>t,V13>L(+ - +); V13 gta 37-39 [ggta 36-39]>L tta|						
+943	S943	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	g37>t,V13>L(+ - +); V13 gta 37-39 [ggta 36-39]>L tta|	g37>t,V13>L(+ - +); V13 gta 37-39 [ggta 36-39]>L tta|						
+944	S944	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+945	S945	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+946	S946	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+947	S947	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+948	S948	productive	Homsap IGHV3-48*03 F							a320>g|	
+949	S949	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+950	S950	productive	Homsap IGHV3-7*01 F	g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|			g133>a,A45>T(- - -); A45 gct 133-135 [ggct 132-135]>T act|				
+951	S951	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+952	S952	productive	Homsap IGHV1-18*01 F								
+953	S953	productive	Homsap IGHV3-9*01 F							a322>t|	
+954	S954	productive	Homsap IGHV4-31*03 F							a320>g|	
+955	S955	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+956	S956	productive	Homsap IGHV5-51*03 F	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|c129>g, R43; R43 cgc 127-129>R cgg|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	t64>c,S22>P(+ - -); S22 tcc 64-66>P ccc|		c129>g, R43; R43 cgc 127-129>R cgg|		t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+957	S957	productive	Homsap IGHV3-7*01 F	a106>g,S36>G(+ + -); S36 agc 106-108 [ta 105-106]>G ggc|		a106>g,S36>G(+ + -); S36 agc 106-108 [ta 105-106]>G ggc|					
+958	S958	productive	Homsap IGHV5-51*03 F	t302>g,M101>R(- + -); M101 atg 301-303>R agg|					t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+959	S959	productive	Homsap IGHV3-7*01 F								
+960	S960	productive	Homsap IGHV3-7*01 F								
+961	S961	productive	Homsap IGHV3-15*01 F	a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					a283>g,K95>E(+ - -); K95 aaa 283-285>E gaa|c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+962	S962	productive	Homsap IGHV3-9*01 F	g106>t,D36>Y(- - -); D36 gat 106-108>Y tat|c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|		g106>t,D36>Y(- - -); D36 gat 106-108>Y tat|			c255>a,N85>K(+ - -); N85 aac 253-255 [aact 253-256]>K aaa|	a322>t|	
+963	S963	productive	Homsap IGHV3-11*01 F	a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|				a175>g,S59>G(+ + -); S59 agt 175-177 [ta 174-175]>G ggt|		a320>g|	
+964	S964	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F								
+965	S965	productive	Homsap IGHV3-11*01 F							a320>g|	
+966	S966	productive	Homsap IGHV3-9*01 F	t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|c268>a,Q90>K(+ - -); Q90 caa 268-270>K aaa|				t168>c, I56; I56 att 166-168 [ta 168-169]>I atc|	c268>a,Q90>K(+ - -); Q90 caa 268-270>K aaa|		
+967	S967	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|a195>t,K65>N(+ - -); K65 aaa 193-195 [aa 194-195]>N aat|g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|		a195>t,K65>N(+ - -); K65 aaa 193-195 [aa 194-195]>N aat|	g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+968	S968	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|			g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+969	S969	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g221>a,G74>D(- - -); G74 ggc 220-222>D gac|a232>g,I78>V(+ - +); I78 atc 232-234>V gtc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|					g221>a,G74>D(- - -); G74 ggc 220-222>D gac|a232>g,I78>V(+ - +); I78 atc 232-234>V gtc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+970	S970	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F							a320>t|	
+971	S971	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|			g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+972	S972	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	a138>g, P46; P46 cca 136-138>P ccg|g221>a,G74>D(- - -); G74 ggc 220-222>D gac|a232>g,I78>V(+ - +); I78 atc 232-234>V gtc|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|			a138>g, P46; P46 cca 136-138>P ccg|		g221>a,G74>D(- - -); G74 ggc 220-222>D gac|a232>g,I78>V(+ - +); I78 atc 232-234>V gtc|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+973	S973	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+974	S974	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+975	S975	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+976	S976	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|					a320>g|	
+977	S977	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		t82>c,F28>L(+ - -); F28 ttc 82-84 [tt 82-83]>L ctc|			g301>c,V101>L(+ - +); V101 gtg 301-303>L ctg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+978	S978	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c201>t, Y67; Y67 tac 199-201>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c201>t, Y67; Y67 tac 199-201>Y tat|	a320>g|	
+979	S979	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|a193>g,T65>A(- - -); T65 aca 193-195>A gca|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|			a193>g,T65>A(- - -); T65 aca 193-195>A gca|		a320>g|	
+980	S980	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c201>t, Y67; Y67 tac 199-201>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c201>t, Y67; Y67 tac 199-201>Y tat|	a320>g|	
+981	S981	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c201>t, Y67; Y67 tac 199-201>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c201>t, Y67; Y67 tac 199-201>Y tat|	a320>g|	
+982	S982	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|t304>a,Y102>N(- - -); Y102 tat 304-306 [ta 304-305]>N aat|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|	g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|t304>a,Y102>N(- - -); Y102 tat 304-306 [ta 304-305]>N aat|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+983	S983	productive	Homsap IGHV3-23*01 F, or Homsap IGHV3-23D*01 F	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|c201>t, Y67; Y67 tac 199-201>Y tat|	a17>g,E6>G(- - -); E6 gag 16-18>G ggg|				c201>t, Y67; Y67 tac 199-201>Y tat|	a320>g|	
+984	S984	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|	g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+985	S985	productive	Homsap IGHV3-30*03 F, or Homsap IGHV3-30*18 F or Homsap IGHV3-30-5*01 F	g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|		g107>a,S36>N(- - -); S36 agc 106-108 [agct 106-109]>N aac|	g163>c,V55>L(+ - +); V55 gtt 163-165 [agtt 162-165]>L ctt|	g188>a,S63>N(- - -); S63 agt 187-189 [agta 187-190]>N aat|	c198>t, Y66; Y66 tac 196-198 [tact 196-199]>Y tat|g286>c,A96>P(- - -); A96 gct 286-288 [agct 285-288]>P cct|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+986	S986	productive	Homsap IGHV5-51*03 F							g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+987	S987	productive	Homsap IGHV3-11*01 F							a320>g|	
+988	S988	productive	Homsap IGHV3-11*01 F	c61>t,L21>F(+ - -); L21 ctc 61-63>F ttc|	c61>t,L21>F(+ - -); L21 ctc 61-63>F ttc|					a320>g|	
+989	S989	productive	Homsap IGHV3-11*01 F							a320>g|	
+990	S990	productive	Homsap IGHV3-11*01 F	t109>g,Y37>D(- - -); Y37 tac 109-111 [ta 109-110]>D gac|		t109>g,Y37>D(- - -); Y37 tac 109-111 [ta 109-110]>D gac|				a320>g|	
+991	S991	productive	Homsap IGHV3-11*01 F	t109>g,Y37>D(- - -); Y37 tac 109-111 [ta 109-110]>D gac|		t109>g,Y37>D(- - -); Y37 tac 109-111 [ta 109-110]>D gac|				a320>g|	
+992	S992	productive	Homsap IGHV3-11*01 F							a320>g|	
+993	S993	productive	Homsap IGHV3-11*01 F							a320>g|	
+994	S994	productive	Homsap IGHV3-11*01 F	a190>g,T64>A(- - -); T64 acc 190-192 [ta 189-190]>A gcc|g211>c,V71>L(+ - +); V71 gtg 211-213>L ctg|				a190>g,T64>A(- - -); T64 acc 190-192 [ta 189-190]>A gcc|	g211>c,V71>L(+ - +); V71 gtg 211-213>L ctg|	a320>g|	
+995	S995	productive	Homsap IGHV3-11*01 F							a320>g|	
+996	S996	productive	Homsap IGHV3-11*01 F							a320>g|	
+997	S997	productive	Homsap IGHV3-7*01 F								
+998	S998	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|		
+999	S999	productive	Homsap IGHV5-51*03 F	g73>t,G25>C(- - -); G25 ggt 73-75>C tgt|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g73>t,G25>C(- - -); G25 ggt 73-75>C tgt|				t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+1000	S1000	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+1001	S1001	productive	Homsap IGHV5-51*03 F	a277>g,S93>G(+ + -); S93 agc 277-279>G ggc|t302>g,M101>R(- + -); M101 atg 301-303>R agg|					a277>g,S93>G(+ + -); S93 agc 277-279>G ggc|t302>g,M101>R(- + -); M101 atg 301-303>R agg|	g317>a,R106>K(+ + +); R106 aga 316-318>K aaa|	
+1002	S1002	productive	Homsap IGHV3-7*01 F								
+1003	S1003	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|		
+1004	S1004	productive	Homsap IGHV3-7*01 F								
+1005	S1005	productive	Homsap IGHV3-21*01 F							g319>c|	
+1006	S1006	productive	Homsap IGHV3-11*01 F								
+1007	S1007	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+1008	S1008	productive	Homsap IGHV3-15*01 F	c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|					c287>a,T96>N(- + -); T96 acc 286-288 [aacc 285-288]>N aac|	c314>g,T105>R(- - -); T105 acc 313-315 [tacc 312-315]>R agg|c315>g,T105>R(- - -); T105 acc 313-315>R agg|a316>g,T106>A(- - -); T106 aca 316-318>A gca|g319>t|	
+1009	S1009	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|		
+1010	S1010	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				
+1011	S1011	productive	Homsap IGHV3-11*01 F	g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|				g185>c,G62>A(- + -); G62 ggt 184-186 [ggta 184-187]>A gct|	a225>g, R75; R75 cga 223-225>R cgg|a270>g, Q90; Q90 caa 268-270 [aa 269-270]>Q cag|		
+1012	S1012	productive	Homsap IGHV3-11*01 F	g32>a,G11>D(- - -); G11 ggc 31-33 [ggct 31-34]>D gac|	g32>a,G11>D(- - -); G11 ggc 31-33 [ggct 31-34]>D gac|						
+1013	S1013	productive	Homsap IGHV3-11*01 F	g32>a,G11>D(- - -); G11 ggc 31-33 [ggct 31-34]>D gac|	g32>a,G11>D(- - -); G11 ggc 31-33 [ggct 31-34]>D gac|						
+1014	S1014	productive	Homsap IGHV3-11*01 F	g153>a, E51; E51 gag 151-153>E gaa|			g153>a, E51; E51 gag 151-153>E gaa|				

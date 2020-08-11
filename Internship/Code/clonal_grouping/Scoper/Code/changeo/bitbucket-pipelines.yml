@@ -1,0 +1,9 @@
+image:
+  name: immcantation/test:devel
+
+pipelines:
+  default:
+    - step:
+        script:
+          - python3 setup.py install
+          - python3 -m unittest
