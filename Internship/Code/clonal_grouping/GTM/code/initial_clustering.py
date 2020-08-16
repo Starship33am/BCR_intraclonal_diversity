@@ -24,6 +24,7 @@ def filter_seq(lines,output_file):
 	filtered_lines = []
 	for l in range(0,len(lines)):
 		seq= lines[l].split("\t")
+		print (seq)
 		if seq[2].rstrip() == "_" or seq[3].rstrip() == "_" or seq[4].rstrip() == "_" :
 			seq_unannotated =  seq[0]+ "\t" + seq[1] + "\t" + seq[2] + "\t" + seq[3] + "\t" + seq[4] + "\n"
 			#print seq
@@ -42,7 +43,7 @@ def delete_duplicate(lines):
 		#print lines[l]
 		seq= lines[l].split("\t")
 		#print seq
-		dup_id = seq[1].rstrip()+"_"+seq[2].rstrip()+"_"+seq[3].rstrip()
+		dup_id = seq[2].rstrip()+"_"+seq[3].rstrip()+"_"+seq[4].rstrip()
 		#print dup_id
 		if dup_id in  dup_corresp.keys() :
 			#print seq[0]

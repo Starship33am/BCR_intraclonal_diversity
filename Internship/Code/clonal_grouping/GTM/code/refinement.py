@@ -31,7 +31,7 @@ def delete_duplicate(nomFi):
 	dup_corresp = {}
 	for l in range(0,len(lines)):
 		seq= lines[l].split("\t")
-		dup_id = seq[1].rstrip()+"_"+seq[3].rstrip()+"_"+seq[4].rstrip()
+		dup_id = seq[2].rstrip()+"_"+seq[4].rstrip()+"_"+seq[5].rstrip()
 		if dup_id in  dup_corresp.keys() :
 			dup_corresp[dup_id].append(seq[0])
 		else :
@@ -112,14 +112,15 @@ def get_similarity_score(s1,s2, l1, l2):
 #####################################################################
 def CalculateMedoid(dico_vjunc,Dicoresult):
 	centroid={}
+	#print (Dicoresult)
 	for key in Dicoresult.keys() :
 		listloc=[]
 		for seq in Dicoresult[key]:
 			if seq.rstrip() in dico_vjunc.keys():
-				listloc.append(dico_vjunc[seq.rstrip()][2])
+				listloc.append(dico_vjunc[seq.rstrip()][3])
 		if len(listloc) != 0 :
 			centroid[key]=Levenshtein.median(listloc)
-
+	#print ("centroid",centroid)
 	return centroid
 #####################################################################
 def Creat_dico_neighbour(Dicocentroid):
@@ -152,6 +153,7 @@ def Creat_dico_neighbour(Dicocentroid):
 def run_silhouette(Dicofasta,Dicocentroid,Dicoresult,DicoNeighbour, len_max_CDR3,len_max_J,dico_vjunc):
 	i=0
 	j=0
+
 	new_dico_res = Dicoresult
 	new_dico_neig = DicoNeighbour
 	new_dico_cent = Dicocentroid
@@ -175,11 +177,8 @@ def run_silhouette(Dicofasta,Dicocentroid,Dicoresult,DicoNeighbour, len_max_CDR3
 
 def silhouette(Dicofasta,Dicocentroid,Dicoresult,DicoNeighbour, len_max_CDR3,len_max_J,dico_vjunc):
 	summe=0
-	#for cluster in tqdm.tqdm(Dicoresult.keys()) :
 	for cluster in Dicoresult.keys() :
-		#print ("cluster",cluster)
 		for seq in Dicoresult[cluster]:
-			#print(Dicofasta[seq])
 			dist_intra = 0
 			dist_neighb = {}
 			for seq_same_clust in Dicoresult[cluster] :
@@ -214,19 +213,21 @@ def silhouette(Dicofasta,Dicocentroid,Dicoresult,DicoNeighbour, len_max_CDR3,len
 			#print (seq)
 			#print ("ai = ",ai )
 			if bi<ai :
-				 #print ("lalalalaala",ai,bi)
-				#print("disonnnnn,Dicoresult",)
-				
-				to_move = (list(dist_neighb.keys())[list(dist_neighb.values()).index(bi)]) 
-				#print("tomove",to_move)
-				Dicoresult[DicoNeighbour[cluster]].remove(to_move)
-				if len(Dicoresult[DicoNeighbour[cluster]]) == 0:
-					del Dicoresult[DicoNeighbour[cluster]]
-				Dicoresult[cluster].append(to_move)
-				#print(Dicoresult)
-				Dicocentroid = CalculateMedoid(dico_vjunc,Dicoresult)
-				DicoNeighbour = Creat_dico_neighbour(Dicocentroid)
-				#silhouette(Dicofasta,Dicocentroid,Dicoresult,DicoNeighbour, len_max_CDR3,len_max_J,dico_vjunc)
+				if len(Dicofasta[seq][2].split(" ")[0]) == len(Dicofasta[seq_neighb][2].split(" ")[0]):
+					#print (len(Dicofasta[seq][2].split(" ")[0]),len(Dicofasta[seq_neighb][2].split(" ")[0]))
+					 #print ("lalalalaala",ai,bi)
+					#print("disonnnnn,Dicoresult",)
+					
+					to_move = (list(dist_neighb.keys())[list(dist_neighb.values()).index(bi)]) 
+					#print("tomove",to_move)
+					Dicoresult[DicoNeighbour[cluster]].remove(to_move)
+					if len(Dicoresult[DicoNeighbour[cluster]]) == 0:
+						del Dicoresult[DicoNeighbour[cluster]]
+					Dicoresult[cluster].append(to_move)
+					#print(Dicoresult)
+					Dicocentroid = CalculateMedoid(dico_vjunc,Dicoresult)
+					DicoNeighbour = Creat_dico_neighbour(Dicocentroid)
+					#silhouette(Dicofasta,Dicocentroid,Dicoresult,DicoNeighbour, len_max_CDR3,len_max_J,dico_vjunc)
 
 
 			return (Dicoresult,DicoNeighbour,Dicocentroid)
@@ -272,7 +273,6 @@ def main():
 	(options, args) = parser.parse_args()
 	if len(sys.argv) != 5:
 		parser.error("incorrect number of arguments")
-	
 	FastaFile = options.FastaFile
 	ClusteringFile = options.ClusteringFile
 	uniq_seq_dico,filtered_lines = delete_duplicate(FastaFile)
@@ -281,9 +281,11 @@ def main():
 	
 	dico_result = readClusteringResults(ClusteringFile)
 	filtered_clustering_label = filter_clustering_output (dico_result,uniq_seq_dico)
+	#print("filtered_clustering_label",filtered_clustering_label)
 
 	dico_centroid = CalculateMedoid(dico_vjunc,filtered_clustering_label)
 	dico_neighbour = Creat_dico_neighbour(dico_centroid)
+	#print ("dicoNeighbour",dico_neighbour)
 	Dicoresult = run_silhouette(dico_vjunc,dico_centroid,filtered_clustering_label,dico_neighbour,len_max_CDR3,len_max_J,dico_vjunc)
 	write_clone_V_cdr3_(Dicoresult,dico_vjunc,uniq_seq_dico,FastaFile)
 
