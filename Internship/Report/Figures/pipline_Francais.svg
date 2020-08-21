@@ -43,7 +43,7 @@
      id="namedview317"
      showgrid="false"
      inkscape:zoom="0.65186406"
-     inkscape:cx="1074.54"
+     inkscape:cx="700.99586"
      inkscape:cy="897.84013"
      inkscape:window-x="0"
      inkscape:window-y="27"
@@ -773,14 +773,18 @@
        y="747.43762"> et des clonotypes</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;"
-     x="1336.1682"
-     y="719.50214"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+     x="1328.4979"
+     y="714.89996"
      id="text1329"><tspan
        sodipodi:role="line"
-       id="tspan1337">Analyse d'hétérogénéité</tspan><tspan
+       id="tspan1337"
+       x="1328.4979"
+       y="714.89996">Analyse d'hétérogénéité</tspan><tspan
        sodipodi:role="line"
-       id="tspan1339"> intra-clonale</tspan></text>
+       id="tspan1339"
+       x="1328.4979"
+       y="744.89996"> intra-clonale</tspan></text>
   <text
      id="text1343"
      y="1847.0378"
