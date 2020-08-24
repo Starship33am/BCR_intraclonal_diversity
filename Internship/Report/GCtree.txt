@@ -36,3 +36,14 @@ Vidjil is an alignment-free tool, and it performs clonal grouping before VDJ ass
 Refrences :
 
 Marc Duez, Mathieu Giraud, Ryan Herbert, Tatiana Rocher, Mikaël Salson, and Florian Thonier. Vidjil: A Web Platform for Analysis of High-Throughput Repertoire Sequencing. PLOS ONE, 11(11):e0166126,November 2016
+
+
+
+
+
+--------------------------------------------------------------------------------------------------
+Scoper :
+A method based on spectral clustering with an adaptive threshold to determine the local sequence neighborhood.
+Scoper provides an unsupervised spectral clustering approach to infer clonal relationships in high-throughput Adaptive Immune Receptor Repertoire sequencing data. This approach uses the IMGT annotation output and clusters B receptor sequences based on junction region sequence similarity and shared mutations within partitions that share the same V gene, J gene, and junction length, allowing for ambiguous V or J gene annotations.
+
+Nouri N, Kleinstein S (2018). “A spectral clustering-based method for identifying clones from high-throughput B cell repertoire sequencing data.” Bioinformatics, i341-i349. doi: 10.1093/bioinformatics/bty235 (URL: https://doi.org/10.1093/bioinformatics/bty235).
