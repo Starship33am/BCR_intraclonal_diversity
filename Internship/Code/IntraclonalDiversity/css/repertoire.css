@@ -1,0 +1,150 @@
+html, body {
+   height: 100%;  
+}
+#menu { 
+width : 100%;  
+height : 40px;
+margin : 2em 0 0 0; /*avoid line indentation */
+padding : 0;
+background-color : #f4f9fd;
+list-style-type : none; /* remove dots */
+}
+
+/* properties of the menu buttons */
+#menu li {
+padding : 0 0.5em;  
+line-height : 40px; /*vertically center the test */
+}
+ 
+#menu li.menuButton {
+float : right;
+}
+ 
+#menu li.title {
+float : left;
+font :  1.3em "Trebuchet MS";
+line-height : 40px; /*vertically center the text */
+}
+
+#menu a {
+color : black;
+text-decoration : none;
+
+padding : 0 0.5em; 
+font :  1em "Trebuchet MS";
+}
+ 
+#menu a:hover { text-decoration : underline; }
+ 
+#menu a img { 
+border : none;
+padding :  0 0.3em;
+}
+
+h3{ 
+text-align:center; 
+color: #2471a3; 
+}
+
+#barChart
+{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/*formatting of the form of the clonal threshold choice */
+.thresholdForm {
+  /*margin: 0 auto;*/
+  width: 310px;
+  padding: 0.5em;
+  font :  0.8em "Trebuchet MS";
+  border: 0.5px solid #CCC;
+  border-radius: 0.5em;
+  float : right;
+  display : block;
+  /*position : relative;*/
+}
+
+.thresholdLabel {
+  display: inline-block;
+  /*width: 200px;*/
+  text-align: left;
+}
+
+
+.enterButton {
+  float : right;
+  
+}
+
+.thresholdLine {
+  stroke : black;
+}
+
+#nextButton {
+  display : none;
+  text-align : right;
+}
+
+/*formatting of the form which allows to select the clones to analysed */
+#checkboxContainer { 
+width:20%; 
+height:30%; 
+overflow-y: scroll;
+}
+
+.cloneForm{
+  width:430px; 
+  height:230px;
+  margin-left: auto;
+  margin-right: auto;
+  font :  0.9em "Trebuchet MS";
+  display : block;
+}
+
+/*table of abundance and name of clones*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+  font :  0.9em "Trebuchet MS";
+  display: table;
+  width: 80%;
+}
+table thead, table tbody {
+  float: left;
+  width: 100%;
+}
+table tbody {
+  overflow: auto;
+  height: 200px;
+}
+table tr {
+  width: 100%;
+  display: table;
+  text-align: center;
+  table-layout: fixed;
+}
+
+/*table containing the sequence*/
+.tableSeqCell{
+width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
