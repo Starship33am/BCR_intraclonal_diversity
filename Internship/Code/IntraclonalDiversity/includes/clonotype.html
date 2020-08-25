@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Zoomable Circle Packing </title>
+  <meta charset='utf-8'/>
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+</head>
+
+<style>
+html, body {
+   height: 100%;  
+}
+/*#chart2
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+</style>
+
+<body>
+
+  <div style="width: 100%; height: 800px;">
+    <div id="chart1" style="width: 50%; height: 50%; float: left;" ></div>
+    <div id="chart2" style="margin-left: 50%; height: 50%;"></div>
+    <div id="chart3" style="width: 100%; height: 50%;"></div>
+  </div>
+
+  <script>
+
+    var treeData = localStorage['clonotypeData'];	//recover the data of the clone from previously saved
+    //localStorage.removeItem( 'clonotypeData' ); // Clear the localStorage
+    var selectedNode = [];
+
+//****************** Tree
+    var data = d3.hierarchy(JSON.parse(treeData)); //data structure that represente a hieratchy
+    changeDepth(data);
+
+    var sequences = sequenceOfClonotype(data.data["parent"]);
+
+    // set the dimensions and margins of the diagram
+    var margin = {top: 20, right: 10, bottom: 20, left: 10},
+        width = (document.getElementById('chart1').offsetWidth)-1 - margin.left - margin.right,	//get width of chart2 element in px 
+        height = (document.getElementById('chart1').offsetHeight)- margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+      // appends a 'group' element to 'svg'
+      // moves the 'group' element to the top left margin
+      var svg1 = d3.select("#chart1").append("svg")
+             .attr("width", width + margin.left + margin.right)
+             .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+           .attr("transform", "translate(" + width/2 +','+ height/2 + ")");
+
+      // declares a tree layout and assigns the size
+      var tree = d3.tree()	//creating the tree layout 
+             // .nodeSize([10,80])
+              //.size([height, width])
+              //.separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 4; });
+              //.separation(function(a, b) { return ((a.parent == data) && (b.parent == data)) ? 5 : 1; });
+.size([2 * Math.PI, height/2])
+//.separation(function(a, b) { return ((a.parent == data) && (b.parent == data)) ? 3 : 1; });
+.separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 4; });
+              
+      var duration = 750;
+      data.x0 = height / 2;
+      data.y0 = 0;
+
+      //data.children.forEach(collapse);
+
+      updateTree(data);
+
+      function updateTree(source){
+
+        //assign properties to the data (coordinates, depth, ...)
+        var root = tree(data);
+
+        //adjust the length of the branch depending on the radius of the node and the position between the nodes
+        //branchLength(root);
+
+        // ********* Creation of the nodes *********
+
+        //add each node as a group
+        var node = svg1.selectAll("g")
+                .data(root.descendants());
+
+        var nodeEnter = node.enter().append("g")
+                     .attr("transform", function(d) { return "translate(" + radialPoint(source.x0, source.y0) + ")";})	//position the nodes
+                     .on('click', selectClonotype)
+                     .on('dblclick', changeChildren);
+
+        // adds the circle to the node
+        nodeEnter.append("circle")
+                 .style("fill", function(d){ return d.data.color; })
+        .style("stroke", function(d){ return d.data.stroke; })
+        .style("stroke-dasharray", function(d){ return d.data.style; })
+        .style("stroke-width", 1)
+                 .attr("r", function(d) { return d.data.value? 2*d.data.value : 0}); //set the diameter of the node
+
+        //add text to the node
+        nodeEnter.append("text")
+                 .attr('font-size', 12) //set the size of the text
+                 .attr("dy", function(d) { return 15+(2*d.data.value)})	//set the emplacement of the text
+                 .attr("dx", 15)
+                 .attr("text-anchor", "middle")
+                 .text(function(d) { return "%"+d.data.value})
+                 .clone(true).lower()
+                 .attr("stroke", "white");
+
+
+        var nodeUpdate = nodeEnter.merge(node);
+
+        //transition to the proper position for the node
+        nodeUpdate.transition()
+                  .duration(duration)
+                  .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")";});
+
+        nodeUpdate.select('circle')
+                  .attr('r', function(d) { return d.data.value? 2*d.data.value : 2})
+                  
+                  .attr('cursor', 'pointer');
+
+        //remove any exiting nodes
+        var nodeExit = node.exit().transition()
+                    .duration(duration)
+                    .attr("transform", function(d) { return "translate(" + radialPoint(source.x, source.y) + ")";})
+                    .remove();
+
+        // ********* Creation of links *********
+
+        //add the links between the nodes
+        var link = svg1.selectAll("path")
+                .data(root.descendants().slice(1));
+              
+        var linkEnter = link.enter().insert('path',"g")	//SVG path allow to draw shape
+              .attr("fill", "none")
+              .attr("stroke", "#555")
+              .attr("stroke-opacity", 0.5)
+              .attr("stroke-width", 2)
+                     .attr("d", function(d){ var s = {x : source.x0, y : source.y0}; return branchShape(source, source);});
+
+        //update link
+        var linkUpdate = linkEnter.merge(link);
+
+        //transition back to the parent element position
+        linkUpdate.transition()
+                  .duration(duration)
+                  .attr("d", function(d){ return branchShape(d, d.parent); });
+
+        //remove any exiting links
+        var linkExit = link.exit().transition()
+                    .duration(duration)
+                    .attr("d", function(d){ var s = {x : source.x, y : source.y}; return branchShape(s, s);})
+                    .remove();
+
+        root.descendants().forEach(function(d){ d.x0 = d.x; d.y0 = d.y;});
+
+      }
+
+      function changeChildren(d){
+        if(d.children){
+          d._children = d.children;
+          d.children = null;
+        }else{
+          d.children = d._children;
+          d._children = null;
+        }
+        updateTree(d);
+      }
+
+      function selectClonotype(d){
+        if (!d3.select(this).classed("selected")) {
+          d3.select("#chart3 svg").remove();
+          selectedNode.push(d.data);
+	  displaySequence(selectedNode)
+          d3.select(this)
+            .style("font-weight", "bold")
+            .classed("selected",true)
+          d3.select(this).selectAll("circle")
+              //.style("opacity", 0.8)
+              .style("stroke-width", 3);
+        }else{
+          d3.select("#chart3 svg").remove();
+          index = selectedNode.indexOf(d.data);
+          d3.select(this)
+            .style("font-weight", "normal")
+            //.style("stroke-width", 'black')
+            .classed("selected",false);
+          d3.select(this).selectAll("circle")
+              //.style("opacity", 1)
+              .style("stroke-width", 1);
+          selectedNode.splice(index,1)
+          if(selectedNode!=[]){displaySequence(selectedNode)}
+        }
+      }
+
+      function radialPoint(x, y) {
+	return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
+      }
+
+      function changeDepth(d){
+        for(var i in d.children){ d.children[i].depth = d.depth+(1*d.children[i].data["length"]);
+        if (d.children[i].children){changeDepth(d.children[i]);}}
+      }
+
+      //**************************************** distance ****************************************************
+
+      //margin = {top: 50, right: 10, bottom: 50, left: 100};
+      width = (document.getElementById('chart2').offsetWidth );	//get width of chart2 element in px 
+      height = (document.getElementById('chart2').offsetHeight );
+      chartRadius = height / 2 - 20;
+
+      const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+let svg = d3.select('#chart2').append('svg')
+  .attr('width', width)
+  .attr('height', height)
+  .append('g')
+    .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+
+let tooltip = d3.select('#chart2').append('div')
+  .attr('class', 'tooltip');
+
+var pi = Math.PI,
+  arcPosition = 50,	//position of the arc relative to the center
+  arcPadding = 10;	//space between the different arcs
+
+d3.csv('distance_clone1.csv', (error, data) => {
+
+  var maxDistance = d3.max(data, function(d){ return d.value });
+  //create a quantitative linear scale. This function map data values into visual variables
+  var scale = d3.scaleLinear()
+    .domain([0, maxDistance * 1.33])	//minimum and maximum values of the input data (the min and max distance between clonotype)
+    .range([0, maxDistance * pi]); //range of values to which the distance values match
+
+  //array of values sampled from the scale’s domain
+  var ticks = scale.ticks(maxDistance);
+  //copies all abundance from the clonotypes into this map
+  var abundanceSeq = data.map(function(d){ return d.name;});
+
+  //number of clonotypes
+  var numClonotypes = abundanceSeq.length;
+  //calculation of the width of the arcs according to the number of clonotypes
+  var arcWidth = (chartRadius - arcPosition - numClonotypes * arcPadding) / numClonotypes;
+
+//create a new arc generator
+  var arc = d3.arc()
+         .innerRadius(function(d, i){ return getInnerRadius(i); }) //set the inner radius to a specific value determine by a function
+         .outerRadius(function(d, i){ return getOuterRadius(i); })
+         .startAngle(0)	//determine the start angle for the arcs
+         .endAngle(function(d){ return scale(d); });	//end angle of the cercle determine by the scale function
+
+  //create radial axis to add text to identify the different axes
+  var radialAxis = svg.append('g')
+    .selectAll('g')
+      .data(data)
+      .enter().append('g');
+
+  radialAxis.append('text')
+    .style('font', '12px sans-serif')
+    .attr('x', -35)
+    .attr('y', function(d, i){ return (-getOuterRadius(i) + arcPadding); })
+    .text(function(d){ return "%"+d.abundance; });
+
+  //create axial axis to identify the distances
+  var axialAxis = svg.append('g')
+    .selectAll('g')
+      .data(ticks)
+      .enter().append('g')
+        .attr('transform', function(d) { return 'rotate(' + ((scale(d) * 180 / pi) - 90) + ')'; });
+
+  //add line to the axial axis
+  axialAxis.append('line')
+    .style("stroke", "#cccccc")
+    .style("stroke-width", "1px")
+    .attr('x2', chartRadius);
+
+  axialAxis.append('text')
+    .attr('x', chartRadius + 10)
+    .style('font', '12px sans-serif')
+    .style('text-anchor', function (d) { return (scale(d) >= pi && scale(d) < 2 * pi ? 'end' : null); })
+    .attr('transform', function (d) { return 'rotate(' + (90 - (scale(d) * 180 / pi)) + ',' + (chartRadius + 10) + ',0)'; })
+    .text(function(d){ return d; });
+
+  //data arcs
+  var arcs = svg.append('g')
+    //.attr('class', 'data')
+    .selectAll('path')
+      .data(data)
+      .enter().append('path')
+      //.attr('class', 'arc')
+      .style('fill', function(d, i) { return d.color; } )
+
+  arcs.transition()
+    .delay(function(d, i) { return i * 200; } )
+    .duration(750)
+    .attrTween('d', arcTween);
+
+  //arcs.on('mousemove', showTooltip)
+  //arcs.on('mouseout', hideTooltip)
+
+
+  function arcTween(d, i) {
+    var interpolate = d3.interpolate(0, d.value);
+    return t => arc(interpolate(t), i);
+  }
+
+  /*function showTooltip(d) {
+    tooltip.style('left', (d3.event.pageX + 10) + 'px')
+      .style('top', (d3.event.pageY - 25) + 'px')
+      .style('display', 'inline-block')
+      .html(d.value);
+  }
+
+  function hideTooltip() {
+    tooltip.style('display', 'none');
+  }*/
+
+  //calculate the value of inner radius in function of the index of the clonotype
+  function getInnerRadius(index) {
+    return arcPosition + (numClonotypes - (index + 1)) * (arcWidth + arcPadding); //the position of the inner radius corresponds to the addition of distance from the center and the thickness of the other arcs according to the clonotype index
+  }
+
+  //calculate the value of outer radius in function of the index of the clonotype
+  function getOuterRadius(index) {
+    return getInnerRadius(index) + arcWidth; //the position of the outer radius correpond to the addition of the position of the inner radius and the tickness of the arc
+  }
+});
+
+// Add title to graph
+/*svg2.append("text")
+        .attr("x", 0)
+        .attr("y", -20)
+        .attr("text-anchor", "left")
+        .style("font-size", "14px")
+        .text("Heatmap of distances between clonotypes");*/
+
+
+
+//********************** Sequence **************************************************************************
+
+    function displaySequence(data){
+
+      width = (document.getElementById('chart3').offsetWidth);	//get width of chart2 element in px 
+      height = (document.getElementById('chart3').offsetHeight);
+
+      var svg3 = d3.select("#chart3").append("svg")
+             .attr("width", width)
+             .attr("height", height);
+
+      attributeCoord(data);
+
+      var circleGroup = svg3.append("g");
+                            //.attr("id","circleSeq");
+
+      var circles = circleGroup.selectAll("circle")
+                               .data(data)
+                               .enter()
+                               .append("circle");
+
+      circles.attr("cx", function(d){ return d.x })
+             .attr("cy", function(d){ return d.y })
+             .attr("r", function(d){ return 2*d.value; })
+             .style("fill", function(d){ return d.color; })
+             .style("stroke", function(d){ return d.stroke; })
+             .style("stroke-dasharray", function(d){ return d.style; })
+             .style("stroke-width", 1.5);
+
+      var textGroup = svg3.append("g");
+                          //.attr("id","textSeq");
+
+      var textSeq = textGroup.selectAll("text")
+                               .data(data)
+                               .enter()
+                               .append("text")
+                               .attr('font-size', 11)
+                               .attr("dy", function(d) { return d.y; })
+                               .attr("dx", function(d) { return d.xText; })
+                               .text(function(d) { return d.sequence.slice(0,140); })
+ 
+    }
+
+
+    function attributeCoord(data){
+      var yValue=0;
+      for( var i in data){
+        data[i]["x"] = 30;
+        data[i]["xText"] = 50+data[i]["value"]*2;
+        data[i]["y"] = 30+yValue;
+        data[i]["sequence"] = sequences[data[i]["name"]];
+        yValue = data[i]["y"]+data[i]["value"]*2;
+      }
+    }
+
+    function sequenceOfClonotype(nameClone){
+      sequences = {}
+      file = "sequence_"+nameClone+".fasta";
+      d3.text(file, function(fasta) {
+        sequence=fasta.split("\n");
+        for(var i=0; i<sequence.length-1; i+=2){
+          nameSeq=sequence[i].split(">");
+          sequences[nameSeq[1]]=sequence[i+1];
+        }
+      });
+      return sequences
+    }
+
+    function collapse(d){
+      if(d.children){
+        if(d.depth>=2){
+          d._children = d.children;
+          d._children.forEach(collapse);
+          d.children = null;
+        }else{
+          d.children.forEach(collapse);
+        }
+      }
+    }
+
+    //give the start and end point to a branch    
+    function branchShape(s,t) {
+      return "M" + radialPoint(s.x, s.y)[0] + "," + radialPoint(s.x, s.y)[1] + " " + radialPoint(t.x, t.y)[0] + "," + radialPoint(t.x, t.y)[1];
+    }
+
+    
+    function branchLength(nodes){
+      //var maxValue = maxClonotypeValue(nodes);
+      for(var i in nodes.children){
+        coef = (nodes.children[i].x-nodes.x)/(nodes.children[i].y-nodes.y);
+        nodes.children[i].y = nodes.children[i].y + ((nodes.y - nodes.children[i].y) * (1-nodes.children[i].data["length"]));   
+        nodes.children[i].x = (nodes.children[i].y * coef) + nodes.x;
+        if(nodes.children[i].children != undefined){
+          branchLength(nodes.children[i]);
+        }
+      }
+    }
+
+
+    //browse the tree to find the clonotype with the biggest abundance and return its value
+    function maxClonotypeValue(data){
+      var maxValue = 0;
+      for(var i in data.children){
+        if(parseFloat(data.children[i].data.value) > maxValue){maxValue = parseFloat(data.children[i].data.value);} 
+	//if(data.children[i].children != undefined){maxClonotypeValue(data.children[i], maxValue);}
+      }
+      return maxValue;
+    }
+
+    function variableMat(data, variable, clonotypeAbundance, clonotypeColor){
+      for(var i in data.children){
+        variable.push(data.children[i].data["name"]);
+        clonotypeAbundance[data.children[i].data["name"]]=data.children[i].data["value"];
+        clonotypeColor[data.children[i].data["name"]]=data.children[i].data["color"];
+        if(data.children[i].children){variableMat(data.children[i], variable, clonotypeAbundance, clonotypeColor);}
+      }
+    }
+
+    function distanceMat(distanceMatrice){
+      d3.csv("distance_clone1.csv", function(distance) {
+        for(var i in distance){
+          distanceMatrice.push(distance[i]);
+          distanceMatrice[distanceMatrice.length-1]["length"]=parseFloat(distanceMatrice[distanceMatrice.length-1]["length"]);
+        }
+      })
+    }
+
+    function distanceClonotype(data, distanceMatrice, variables, ...parents){
+      for(var i in data.children){
+	variables.push(data.children[i].data["name"]);
+        distanceMatrice.push({"name1": data.children[i].parent.data["name"], "name2": data.children[i].data["name"], "length": parseFloat(data.children[i].data["length"])});
+        distanceMatrice.push({"name1": data.children[i].data["name"], "name2": data.children[i].parent.data["name"], "length": parseFloat(data.children[i].data["length"])});
+        var ancestor = [];
+        for(var j in parents){
+          length = parents[j]["length"] + parseFloat(data.children[i].data["length"]);
+          distanceMatrice.push({"name1": parents[j]["name"], "name2": data.children[i].data["name"], "length": length});
+          distanceMatrice.push({"name1": data.children[i].data["name"], "name2": parents[j]["name"], "length": length});
+          ancestor.push({"name": parents[j]["name"], "length": length});
+        }
+        if(data.children[i].children){
+          ancestor.push({"name":data.children[i].parent.data["name"], "length": parseFloat(data.children[i].data["length"])});
+          distanceClonotype(data.children[i], distanceMatrice, variables, ...ancestor);
+        }
+      }
+    }
+
+
+  </script>
+</body>
+</html>
+
