@@ -1,23 +1,15 @@
 <?php $userFile = $_COOKIE['Userfile']; ?>
-<!-- Website menu -->
-<ul id="menu">
-  <li class="title">Intraclonal diversity study</li>
-  <li class="menuButton"><a href="#">Help</a></li>
-  <li class="menuButton"><a href="#">Contact</a></li>
-  <li class="menuButton"><a href="#">Examples</a></li>
-  <li class="menuButton"><a href="#">Home</a></li>
-</ul>
 <br><br>
 <h3>Visualization of the repertoire</h3>
 <br><br>
 <!-- Container of the representation -->
-<div style="width: 100%; height: 1000px;">
+<div style="width: 100%; height: 100%;">
   <!-- Chart1 : contain the zooming circle packing representation -->
   <div style="width: 50%; height: 70%; float: left;" id="chart1"></div>
   <!-- Chart2 : contain the elements needed to observed the clonality threshold -->
   <div id="chart2" style="margin-left: 50%; height: 70%;" >
     <!-- Button that appears when clicking on a specific clone --> 
-    <div id="nextButton"><input type="button" onclick="window.location='clonotype_tree.html';" value="Intraclonal study" /></div>
+    <div id="nextButton"><input type="button" onclick="window.location='clonotype.php';" value="Intraclonal study" /></div>
     <!-- Contain the bar chart representation -->
     <div id="barChart" style="width: 100%; height: 37%;"></div>
     <!-- Contain the form which allow to change the value of clonality threshold -->
@@ -92,7 +84,7 @@ function changeThreshold(){
 var svg1 = d3.select("#chart1").append("svg")
              .attr("width", "100%")
              .attr("height", "100%"),
-    diameter = (document.getElementById('chart1').offsetWidth),
+    diameter = Math.min(document.getElementById('chart1').offsetWidth, document.getElementById('chart1').offsetHeight),
     g = svg1.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")"); /* set the size of the */
 
 //creation of pack layout
@@ -566,11 +558,14 @@ d3.json(path, function(error, data) {
 
 function displayTree(){
   //localStorage.removeItem( 'clonotypeData' ); // Clear the localStorage
-  //loading the json file
-  //d3.json("test_format.json", function(error, data) {
-    //if (error) throw error;
 
-    var data = d3.hierarchy(dataClonotype); //data structure that represente a hieratchy
+  //CAUTOUS : call the tool for analyse the intraclonal heterogeneity
+
+  //loading the json file
+  d3.json("pipeline/usersFiles/example/example_clonotype.json", function(error, dataTree) {
+    if (error) throw error;
+
+    var data = d3.hierarchy(dataTree); //data structure that represente a hieratchy
 
     //change the depth of the node to allow to represent the different length of the branch
     changeDepth(data);
@@ -716,10 +711,10 @@ function displayTree(){
       }
     }
 
-    
-  }
+  });
+}
 
-//});
+
 
 
   function radialPoint(x, y) {
