@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title> Zoomable Circle Packing </title>
-  <meta charset='utf-8'/>
-  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
-</head>
-
-<style>
-html, body {
-   height: 100%;  
-}
-/*#chart2
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-</style>
-
-<body>
-
+  <?php $userFile = $_COOKIE['Userfile']; ?>
   <div style="width: 100%; height: 800px;">
     <div id="chart1" style="width: 50%; height: 50%; float: left;" ></div>
     <div id="chart2" style="margin-left: 50%; height: 50%;"></div>
@@ -28,12 +7,14 @@ html, body {
 
   <script>
 
-    var treeData = localStorage['clonotypeData'];	//recover the data of the clone from previously saved
     //localStorage.removeItem( 'clonotypeData' ); // Clear the localStorage
     var selectedNode = [];
 
 //****************** Tree
-    var data = d3.hierarchy(JSON.parse(treeData)); //data structure that represente a hieratchy
+d3.json("pipeline/usersFiles/example/example_clonotype.json", function(error, dataTree) {
+    if (error) throw error;
+
+    var data = d3.hierarchy(dataTree); //data structure that represente a hieratchy
     changeDepth(data);
 
     var sequences = sequenceOfClonotype(data.data["parent"]);
@@ -202,6 +183,7 @@ html, body {
         for(var i in d.children){ d.children[i].depth = d.depth+(1*d.children[i].data["length"]);
         if (d.children[i].children){changeDepth(d.children[i]);}}
       }
+    });
 
       //**************************************** distance ****************************************************
 
@@ -225,7 +207,7 @@ var pi = Math.PI,
   arcPosition = 50,	//position of the arc relative to the center
   arcPadding = 10;	//space between the different arcs
 
-d3.csv('distance_clone1.csv', (error, data) => {
+d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
 
   var maxDistance = d3.max(data, function(d){ return d.value });
   //create a quantitative linear scale. This function map data values into visual variables
