@@ -1,0 +1,307 @@
+{
+    "color": "#808080",
+    "stroke": "#808080",
+    "style": "none",
+    "children" : [
+	{
+	    "name" : "C1",
+	    "value" : "49",
+	    "color": "#800000",
+	    "stroke": "#800000",
+	    "style": "none",
+	    "children" : [
+		{
+		    "name": "C1-1",
+		    "length": "2",
+		    "value": "1",
+		    "color": "#FFFF00",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-2",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#FF0000",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+			    "name": "C1-3",
+			    "length": "2",
+			    "value": "1",
+			    "color": "#808000",
+			    "stroke": "#800000",
+			    "style": "none"
+		},
+		{
+		    "name": "C1-4",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#00FFFF",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-5",
+		    "length": "2",
+		    "value": "1",
+		    "color": "#7FFFD4",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+			    "name": "C1-6",
+			    "length": "1",
+			    "value": "2",
+			    "color": "#008000",
+			    "stroke": "#800000",
+			    "style": "none"
+		},
+		{
+		    "name": "C1-7",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#E73E01",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-8",
+		    "length": "1",
+		    "value": "2",
+		    "color": "#000080",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-9",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#FF007F",
+		    "stroke": "#800000",
+		    "style": "none"
+		},	    
+		{
+		    "name": "C1-10",
+		    "length": "1",
+		    "value": "4",
+		    "color": "#FF5733",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-11",
+		    "length": "1",
+		    "value": "2",
+		    "color": " #566573",
+		    "stroke": "#800000",
+		    "style": "none"
+		},	 	    
+		{
+		    "name": "C1-12",
+		    "length": "1",
+		    "value": "13",
+		    "color": "#0000FF",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-13",
+		    "length": "1",
+		    "value": "5",
+		    "color": "#8A2BE2",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-14",
+		    "length": "1",
+		    "value": "1",
+		    "color": " #008080",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-15",
+		    "length": "1",
+		    "value": "2",
+		    "color": "#FFFFFF",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C1-16",
+		    "length": "1",
+		    "value": "5",
+		    "color": "#00FF00",
+		    "stroke": "#800000",
+		    "style": "none"
+		}
+	    ]
+	},
+	{
+	    "name" : "C2",
+	    "value" : "27",
+	    "color": "#9EFD38",
+	    "stroke": "#800000",
+	    "style": "none",
+	    "children" : [
+		{
+		    "name": "C2-1",
+		    "length": "1",
+		    "value": "9",
+		    "color": "#88421D",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C2-2",
+		    "length": "1",
+		    "value": "4",
+		    "color": "#9683EC",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C2-3",
+		    "length": "2",
+		    "value": "1",
+		    "color": "#BBD2E1",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C2-4",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#FCDC12",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C2-5",
+		    "length": "1",
+		    "value": "2",
+		    "color": "#FD6C9E",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C2-6",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#00561B",
+		    "stroke": "#800000",
+		    "style": "none"
+		},			    
+		{
+		    "name": "C2-7",
+		    "length": "2",
+		    "value": "3",
+		    "color": "#130E0A",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C2-8",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#FDF1B8",
+		    "stroke": "#800000",
+		    "style": "none"
+		}
+	    ]
+	},
+	{
+	    "name" : "C3",
+	    "value" : "16",
+	    "color": "#003366",
+	    "stroke": "#800000",
+	    "style": "none",
+	    "children" : [
+		{
+		    "name": "C3-1",
+		    "length": "2",
+		    "value": "1",
+		    "color": "#5B3C11",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C3-2",
+		    "length": "1",
+		    "value": "4",
+		    "color": "#DE3163",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C3-3",
+		    "length": "1",
+		    "value": "2",
+		    "color": "#F0C300",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C3-4",
+		    "length": "2",
+		    "value": "1",
+		    "color": "#01D758",
+		    "stroke": "#800000",
+		    "style": "none"
+		},	    
+		{
+		    "name": "C3-5",
+		    "length": "1",
+		    "value": "2",
+		    "color": "#FF007F",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C3-6",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#791CF8",
+		    "stroke": "#800000",
+		    "style": "none"
+		}
+	    ]
+	},
+	{
+	    "name" : "C4",
+	    "value" : "8",
+	    "color": "#E7F00D",
+	    "stroke": "#800000",
+	    "style": "none",
+	    "children" : [
+		{
+		    "name": "C4-1",
+		    "length": "1",
+		    "value": "1",
+		    "color": "#6C0277",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C4-1",
+		    "length": "2",
+		    "value": "2",
+		    "color": "#18391E",
+		    "stroke": "#800000",
+		    "style": "none"
+		},
+		{
+		    "name": "C4-3",
+		    "length": "3",
+		    "value": "2",
+		    "color": "#EE1010",
+		    "stroke": "#800000",
+		    "style": "none"
+		}
+	    ]
+	}
+    ]
+}
