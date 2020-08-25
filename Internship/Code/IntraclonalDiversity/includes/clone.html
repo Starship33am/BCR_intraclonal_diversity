@@ -105,10 +105,10 @@ var local = d3.local();
 
 var user = "<?php echo $userFile; ?>",
     file = user +"_repertoire_two_levels_info.json";
-    path = "pipeline/userFiles/"+user+"/"+file;
-alert(file)
+    path = "pipeline/usersFiles/"+user+"/"+file;
+
 //loading the json file
-d3.json("/IntraclonalDiversity/pipeline/userFiles/example/example_repertoire_two_levels_info.json", function(error, data) {
+d3.json(path, function(error, data) {
   if (error) throw error;
 
   //separate the data in two: the parents containing the clones and the children containing the clonotypes. This then makes it possible in the representation to keep the proportions between the clones regardless of the number of clonotypes they contain.
