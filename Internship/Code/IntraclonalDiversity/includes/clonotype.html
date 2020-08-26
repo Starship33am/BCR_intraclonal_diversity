@@ -2,22 +2,41 @@
   <div style="width: 100%; height: 800px;">
     <div id="chart1" style="width: 50%; height: 50%; float: left;" ></div>
     <div id="chart2" style="margin-left: 50%; height: 50%;"></div>
-    <div id="chart3" style="width: 100%; height: 50%;"></div>
+    <div id="chart3" style="width: 100%; height: 50%;">
+      <table id="tableSequence" style="width: 100%; height: 100%;">
+        <thead>
+          <tr>
+            <th width=10%>Name</th>
+            <th>Sequence</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
   </div>
 
   <script>
-
+    var clone = localStorage['clone'];
     //localStorage.removeItem( 'clonotypeData' ); // Clear the localStorage
     var selectedNode = [];
 
 //****************** Tree
-d3.json("pipeline/usersFiles/example/example_clonotype.json", function(error, dataTree) {
-    if (error) throw error;
+    //loading the json file
+d3.json("pipeline/usersFiles/example/example_"+clone+"_clonotype.json", function(error, dataTree) {
+  if (error) throw error;
 
     var data = d3.hierarchy(dataTree); //data structure that represente a hieratchy
     changeDepth(data);
 
-    var sequences = sequenceOfClonotype(data.data["parent"]);
+    //store the most abundant clonotypes
+    var distanceOfClonotypes = [];
+    findMostAbundantClonotypes(data, distanceOfClonotypes);
+    //retrieve the name of all the clonotypes selected
+    var clonotypesName = distanceOfClonotypes.map(function(d){ return d.data.name });
+    
+    distancesRepresentation(distanceOfClonotypes);
+
+    //create the table of the sequences
+    displaySequence(data.children);
 
     // set the dimensions and margins of the diagram
     var margin = {top: 20, right: 10, bottom: 20, left: 10},
@@ -80,14 +99,19 @@ d3.json("pipeline/usersFiles/example/example_clonotype.json", function(error, da
 
         //add text to the node
         nodeEnter.append("text")
-                 .attr('font-size', 12) //set the size of the text
+                 .attr('font-size', 11) //set the size of the text
                  .attr("dy", function(d) { return 15+(2*d.data.value)})	//set the emplacement of the text
                  .attr("dx", 15)
                  .attr("text-anchor", "middle")
-                 .text(function(d) { return "%"+d.data.value})
+                 .text(function(d) { if(d.data.name!="naive"){return d.data.name;}})
                  .clone(true).lower()
                  .attr("stroke", "white");
 
+       //display the clone selected
+       nodeEnter.filter(function (d, i) { if(clonotypesName.indexOf(d.data.name)!=-1){ selectedNode.push(d); return d.data.name; }})
+                .style("font-weight", "bold")
+                .classed("selected",true)
+                .selectAll("circle").style("stroke-width", 3);
 
         var nodeUpdate = nodeEnter.merge(node);
 
@@ -149,32 +173,34 @@ d3.json("pipeline/usersFiles/example/example_clonotype.json", function(error, da
         updateTree(d);
       }
 
+
+      //action performes when nodes are selected or deselected
       function selectClonotype(d){
         if (!d3.select(this).classed("selected")) {
-          d3.select("#chart3 svg").remove();
-          selectedNode.push(d.data);
-	  displaySequence(selectedNode)
-          d3.select(this)
-            .style("font-weight", "bold")
-            .classed("selected",true)
-          d3.select(this).selectAll("circle")
-              //.style("opacity", 0.8)
-              .style("stroke-width", 3);
+          if(selectedNode.length>8){
+            alert("Can't show the distance of more than 8 clonotypes")
+          }else{
+            selectedNode.push(d); //add the clonotype selected in the array containing all the element selected
+            d3.select(this)	//change the style of the selected clonotype
+              .style("font-weight", "bold")
+              .classed("selected",true)
+            d3.select(this).selectAll("circle")
+                .style("stroke-width", 3);
+          }
         }else{
-          d3.select("#chart3 svg").remove();
-          index = selectedNode.indexOf(d.data);
-          d3.select(this)
+          index = selectedNode.indexOf(d);
+          d3.select(this)	//change the style of the deselected clonotype
             .style("font-weight", "normal")
-            //.style("stroke-width", 'black')
             .classed("selected",false);
           d3.select(this).selectAll("circle")
-              //.style("opacity", 1)
               .style("stroke-width", 1);
-          selectedNode.splice(index,1)
-          if(selectedNode!=[]){displaySequence(selectedNode)}
+          selectedNode.splice(index,1) 	//delete the clonotype from the array with all the selected element 
+          //if(selectedNode!=[]){displaySequence(data, ["Name", "Sequence"],["name","seq"]);}
         }
+        d3.select("#chart2 svg").remove();
+        distancesRepresentation(selectedNode);
       }
-
+});
       function radialPoint(x, y) {
 	return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
       }
@@ -183,66 +209,67 @@ d3.json("pipeline/usersFiles/example/example_clonotype.json", function(error, da
         for(var i in d.children){ d.children[i].depth = d.depth+(1*d.children[i].data["length"]);
         if (d.children[i].children){changeDepth(d.children[i]);}}
       }
-    });
 
       //**************************************** distance ****************************************************
+
+  //create the representation of the distances
+  function distancesRepresentation(distanceOfClonotypes){
+
+      var distanceTable = [] //store the clonotypes for which the distance will be represented on the chart
+      //retrieve the name of all the clonotypes selected
+      var clonotypesName = distanceOfClonotypes.map(function(d){ return d.data.name });
+      createDistanceTable(distanceTable, distanceOfClonotypes); //table of the distance of the 5 most abundant clonotypes that'll be use in the graph representing the distance
 
       //margin = {top: 50, right: 10, bottom: 50, left: 100};
       width = (document.getElementById('chart2').offsetWidth );	//get width of chart2 element in px 
       height = (document.getElementById('chart2').offsetHeight );
-      chartRadius = height / 2 - 20;
+      chartRadius = height / 2 - 25;
 
-      const color = d3.scaleOrdinal(d3.schemeCategory10);
-
-let svg = d3.select('#chart2').append('svg')
+var svg = d3.select('#chart2').append('svg')
   .attr('width', width)
   .attr('height', height)
   .append('g')
     .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
-let tooltip = d3.select('#chart2').append('div')
+var tooltip = d3.select('#chart2').append('div')
   .attr('class', 'tooltip');
 
 var pi = Math.PI,
   arcPosition = 50,	//position of the arc relative to the center
   arcPadding = 10;	//space between the different arcs
 
-d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
-
-  var maxDistance = d3.max(data, function(d){ return d.value });
+  var maxDistance = d3.max(distanceTable, function(d){ return d.length });
   //create a quantitative linear scale. This function map data values into visual variables
   var scale = d3.scaleLinear()
     .domain([0, maxDistance * 1.33])	//minimum and maximum values of the input data (the min and max distance between clonotype)
-    .range([0, maxDistance * pi]); //range of values to which the distance values match
+    .range([0, 2 * pi]); //range of values to which the distance values match
 
   //array of values sampled from the scale’s domain
   var ticks = scale.ticks(maxDistance);
-  //copies all abundance from the clonotypes into this map
-  var abundanceSeq = data.map(function(d){ return d.name;});
 
   //number of clonotypes
-  var numClonotypes = abundanceSeq.length;
+  var numClonotypes = clonotypesName.length;
   //calculation of the width of the arcs according to the number of clonotypes
   var arcWidth = (chartRadius - arcPosition - numClonotypes * arcPadding) / numClonotypes;
 
 //create a new arc generator
   var arc = d3.arc()
-         .innerRadius(function(d, i){ return getInnerRadius(i); }) //set the inner radius to a specific value determine by a function
-         .outerRadius(function(d, i){ return getOuterRadius(i); })
-         .startAngle(0)	//determine the start angle for the arcs
+         .innerRadius(function(d, i){ return getInnerRadius(parseInt(distanceTable[i].index)); }) //set the inner radius to a specific value determine by a function
+         .outerRadius(function(d, i){ return getOuterRadius(parseInt(distanceTable[i].index)); })
+         .startAngle(function(d, i){ return scale(parseInt(distanceTable[i].start)); })	//determine the start angle for the arcs
          .endAngle(function(d){ return scale(d); });	//end angle of the cercle determine by the scale function
 
   //create radial axis to add text to identify the different axes
   var radialAxis = svg.append('g')
     .selectAll('g')
-      .data(data)
+      .data(distanceTable)
       .enter().append('g');
 
   radialAxis.append('text')
     .style('font', '12px sans-serif')
-    .attr('x', -35)
+    .attr('x', -45)
     .attr('y', function(d, i){ return (-getOuterRadius(i) + arcPadding); })
-    .text(function(d){ return "%"+d.abundance; });
+    .text(function(d,i){ return clonotypesName[i]; });
 
   //create axial axis to identify the distances
   var axialAxis = svg.append('g')
@@ -268,10 +295,13 @@ d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
   var arcs = svg.append('g')
     //.attr('class', 'data')
     .selectAll('path')
-      .data(data)
+      .data(distanceTable)
       .enter().append('path')
       //.attr('class', 'arc')
       .style('fill', function(d, i) { return d.color; } )
+      .style("stroke", function(d){ return d.stroke; })
+        .style("stroke-dasharray", function(d){ return d.style; })
+        .style("stroke-width", 0.75)
 
   arcs.transition()
     .delay(function(d, i) { return i * 200; } )
@@ -281,9 +311,8 @@ d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
   //arcs.on('mousemove', showTooltip)
   //arcs.on('mouseout', hideTooltip)
 
-
   function arcTween(d, i) {
-    var interpolate = d3.interpolate(0, d.value);
+    var interpolate = d3.interpolate(0, d.length);
     return t => arc(interpolate(t), i);
   }
 
@@ -307,7 +336,79 @@ d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
   function getOuterRadius(index) {
     return getInnerRadius(index) + arcWidth; //the position of the outer radius correpond to the addition of the position of the inner radius and the tickness of the arc
   }
-});
+}
+
+//browse the tree of clonotypes to find the 5 first clonotypes with the most abundance
+function findMostAbundantClonotypes(node, table){
+  //for each children of the given node 
+  for(var i in node.children){
+    //there is already 5 clonotypes stores in the tab
+    if(table.length == 5){
+      //Compare the abundance of the clonotypes to those in of the clonotypes in the tab
+      comparisonOfAbundance(table, node.children[i]);
+    }else{
+      //add the clonotypes to the table
+      table.push(node.children[i]);
+      //sort the elment of the table depending on the abundance
+      table.sort(function sortByAbondance(a, b){
+        if (a.data.value < b.data.value){
+          return -1;
+        }else if (a.data.value > b.data.value){
+          return 1;
+        }
+        return 0;
+      });
+      table.reverse();
+    }
+    //look among the children of this node if there are clonotypes with more abundance
+    if(node.children[i].children){ findMostAbundantClonotypes(node.children[i], table); }
+  }
+}
+
+//modify the table that store the most abundant clonotypes if clonotypewith a abundance superior is found
+function comparisonOfAbundance(table, clonotype){
+  var nbElement = table.length; 
+  var superior = true;
+  var indice = -1;
+  //browse all the element of the table to find if the clonotype has an abindance superior to the other
+  while( superior && (nbElement != 0)){
+    if(parseFloat(clonotype.data.value)>table[nbElement-1].data.value){
+      indice = nbElement-1; //store the position of the element 
+    }else{
+      superior=false;
+    }
+    nbElement--;
+  }
+  //modify the table if the clonotype have a abundance superior to the clonotype of the table
+  if(indice!=-1){
+    table.splice(indice, 0, clonotype); //add the clonotype to the table
+    table.pop(); //delete the last element of the table
+  }
+}
+
+//create an array which contain the five clonotpes with the most abundance to allow to draw the chart
+function createDistanceTable(table, clonotypes){
+  //browse the table containing the clonotype to represent
+  for(var i in clonotypes){
+    parentsLength = storeClonotypesAncestor(table, clonotypes[i], i, clonotypes[i].data.name);
+  }
+}
+
+//browse all the parent of clonotype to add them to the array it is necessary to represent the distance
+function storeClonotypesAncestor(table, clonotype, index, name){
+  //browse in the parent of the clonotype
+  if(clonotype.parent){
+    parentsLength = storeClonotypesAncestor(table, clonotype.parent, index, name);
+    //allow to know which name should be write on the graph
+    if(name==clonotype.data["name"]){ appear=true; }else{ appear=false; }
+    //cumulate the length of the parent to allow to draw the distances on the graph
+    length = parseFloat(clonotype.data["length"])+parentsLength
+    table.push({"name":clonotype.data["name"], "value":clonotype.data["value"], "length":length, "color":clonotype.data["color"], "index":index, "start":parentsLength, "stroke":clonotype.data["stroke"], "style":clonotype.data["style"]}); //add the clonotype to the table of clonotype
+    return length;
+  }else{
+    return 0;
+  }  
+}
 
 // Add title to graph
 /*svg2.append("text")
@@ -321,71 +422,44 @@ d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
 
 //********************** Sequence **************************************************************************
 
-    function displaySequence(data){
+  function displaySequence(data){
 
-      width = (document.getElementById('chart3').offsetWidth);	//get width of chart2 element in px 
-      height = (document.getElementById('chart3').offsetHeight);
+    //select the div element which will contain the sequences
+    var table = document.getElementById('tableSequence');
+    
+    //create a tbody element and add it to the table
+    var tbody = document.createElement('tbody');
+    table.appendChild(tbody);
 
-      var svg3 = d3.select("#chart3").append("svg")
-             .attr("width", width)
-             .attr("height", height);
+    childClonotypeSequence(data,tbody);
 
-      attributeCoord(data);
-
-      var circleGroup = svg3.append("g");
-                            //.attr("id","circleSeq");
-
-      var circles = circleGroup.selectAll("circle")
-                               .data(data)
-                               .enter()
-                               .append("circle");
-
-      circles.attr("cx", function(d){ return d.x })
-             .attr("cy", function(d){ return d.y })
-             .attr("r", function(d){ return 2*d.value; })
-             .style("fill", function(d){ return d.color; })
-             .style("stroke", function(d){ return d.stroke; })
-             .style("stroke-dasharray", function(d){ return d.style; })
-             .style("stroke-width", 1.5);
-
-      var textGroup = svg3.append("g");
-                          //.attr("id","textSeq");
-
-      var textSeq = textGroup.selectAll("text")
-                               .data(data)
-                               .enter()
-                               .append("text")
-                               .attr('font-size', 11)
-                               .attr("dy", function(d) { return d.y; })
-                               .attr("dx", function(d) { return d.xText; })
-                               .text(function(d) { return d.sequence.slice(0,140); })
- 
-    }
-
-
-    function attributeCoord(data){
-      var yValue=0;
-      for( var i in data){
-        data[i]["x"] = 30;
-        data[i]["xText"] = 50+data[i]["value"]*2;
-        data[i]["y"] = 30+yValue;
-        data[i]["sequence"] = sequences[data[i]["name"]];
-        yValue = data[i]["y"]+data[i]["value"]*2;
+  }
+  
+    function childClonotypeSequence(data,table){
+      //browse the clones and show the sequences for each of them
+      for(var i in data){ 
+        //create a tr element to add a line and add it to the table
+        var tr = document.createElement('tr');
+        table.appendChild(tr);
+        //create a td element to add a cell that contain the name
+        var td1 = document.createElement('td');
+        td1.appendChild(document.createTextNode(data[i].data["name"]));
+        td1.style.width = "10%"; 
+        //create a td element to add a cell that contain the sequence
+        var td2 = document.createElement('td');
+        //create a p element which will contain the sequence of the clone or clonotype
+        var p = document.createElement('p');
+        p.classList = "tableSeqCell";
+        p.appendChild(document.createTextNode(data[i].data["seq"]));
+        //add it to the td element
+        td2.appendChild(p);
+        //add all the element created to the table      
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        if(data[i].children){childClonotypeSequence(data[i].children,table)}
       }
     }
 
-    function sequenceOfClonotype(nameClone){
-      sequences = {}
-      file = "sequence_"+nameClone+".fasta";
-      d3.text(file, function(fasta) {
-        sequence=fasta.split("\n");
-        for(var i=0; i<sequence.length-1; i+=2){
-          nameSeq=sequence[i].split(">");
-          sequences[nameSeq[1]]=sequence[i+1];
-        }
-      });
-      return sequences
-    }
 
     function collapse(d){
       if(d.children){
@@ -467,6 +541,5 @@ d3.csv('pipeline/usersFiles/example/example_clonotype.csv', (error, data) => {
 
 
   </script>
-</body>
-</html>
+
 
