@@ -11,9 +11,9 @@
     <!-- Button that appears when clicking on a specific clone --> 
     <div id="nextButton"><input type="button" onclick="window.location='clonotype.php';" value="Intraclonal study" /></div>
     <!-- Contain the bar chart representation -->
-    <div id="barChart" style="width: 100%; height: 37%;"></div>
+    <div id="barChart" style="width: 100%; height: 70%;"></div>
     <!-- Contain the tree representation -->
-    <div id="clonotypeTree" style="width: 100%; height: 37%;"></div>
+    <div id="clonotypeTree" style="width: 100%; height: 70%;"></div>
     <!-- Contain the form which allow to change the value of clonality threshold -->
     <div id="thresholdSelection" style="width: 100%; height: 10%;">
       <form class="thresholdForm" name="thresholdForm">
@@ -26,27 +26,19 @@
         </div>
       </form>
     </div>
-    <!-- Allow the user to select the clones to analyzed -->
-    <div id="cloneSelection" style="width: 100%; height: 23%;" ><br>
-      <!-- Contain the form which allow to select clone to analyze -->
-      <form class="cloneForm" name="cloneForm">
-        <div><label>Please select the clones you want to analyze : </label></div><br>
-        <div id="checkboxContainer"></div><br>
-        <div><label for="email">Enter your e-mail : </label>
-        <input type="text" name="email" style="width:250px" /></div><br>
-        <center ><input type="button" name="sendButton" value="Send" onclick="chargeClonotypes()" style="width:100px" /></center>
-      </form>
-    </div>
   </div><br>
-  <!-- Chart3 : show correspondance between clone name and abundance -->
-  <div id="chart3" style="width: 30%; height: 30%; float: left;" >
+  <!-- Button to change the tree form --> 
+  <div id="treeForm" style="margin-left: 55%; ">
+    <div><input type="radio" name="treeForm" id="circleTree" onClick="displayTree(this.value);" value=0>
+    <label for="circleTree">Circular tree</label></div>
+    <div><input type="radio" name="treeForm" id="elbowTree" onClick="displayTree(this.value);" value=1>
+    <label for="elbowTree">Elbow tree</label></div>
+  </div><br><br>
+  <!-- Chart3 : show abundance, V and J sequences and cdr3 regions -->
+  <div id="chart3" style="width: 100%; height: 30%; " >
     <table id="cloneTable"></table>
-  </div>
-  <!-- chart4 : show the sequences of V, J and cdr3 regions  -->
-  <div id="chart4" style="margin-left: 30%; height: 30%;" >
-    <table id="tableSequence" style="height: 80%;"></table>
-    <a id="downloadButton" style="float: right; margin-right: 10%; display:none;">
-      <button type="button"  onclick="downloadClonesInformations()">Download</button>
+    <a id="downloadButton" style="float: right; margin-right: 10%; ">
+      <button type="button" onclick="downloadClonesInformations()">Download</button>
     </a>
   </div>
 </div>
@@ -62,6 +54,7 @@
 var yMax = 0;
 var threshold = -1;
 var firstCreation = true;
+var objectSelected;
 
 function changeThreshold(){ 
   threshold = parseFloat(document.thresholdForm.threshold.value);
@@ -99,7 +92,7 @@ var local = d3.local();
 
 var user = "<?php echo $userFile; ?>",
     file = user +"_repertoire_two_levels_info.json";
-    path = "pipeline/usersFiles/"+user+"/"+file;
+    path = "pipeline/usersFiles/"+user+"/GTM/"+file;
 
 //loading the json file
 d3.json(path, function(error, data) {
@@ -108,11 +101,10 @@ d3.json(path, function(error, data) {
   //separate the data in two: the parents containing the clones and the children containing the clonotypes. This then makes it possible in the representation to keep the proportions between the clones regardless of the number of clonotypes they contain.
   var children = [],
   parent = parseClone(data, children);
+  objectSelected = children; //store the clone or clonotype depending on the zoom we have done to allow to download the data
 
   //parent pack to represente the clone
-  root = d3.hierarchy(parent)
-      .sum(function(d) { return d.value; })
-      //.sort(function(a, b) { return b.value - a.value; });
+  root = d3.hierarchy(parent).sum(function(d) { return d.value; })
 
   //store the root in focus variable to allow zoom
   var focus = root, view, cloneZoom = false, child;
@@ -130,12 +122,12 @@ d3.json(path, function(error, data) {
              .style("fill", function(d){ return d.data.color; })
              .style("stroke", function(d){ return d.data.stroke; })
              .style("stroke-dasharray", function(d){ return d.data.style; })
-             .on("click", function(d,i) { 
+             .on("click", function(d,i) {  if (focus !== d && children[i-1].children ) {
                              child = displayClonotype(d,i);
                              cloneZoom=true;
-                             if (focus !== d ) { zoom(d), d3.event.stopPropagation();
-                               clonePage(children[i-1].children,d.data.name);} 
-//data.children[root.children.indexOf(d)].children[0],data.children[root.children.indexOf(d)]["name"]; 
+                             zoom(d), d3.event.stopPropagation();
+                             objectSelected = children[i-1].children;
+                             clonePage(children[i-1].children,d.data.name);} 
                           });
 
   //add name of the clone on the circle
@@ -146,11 +138,10 @@ d3.json(path, function(error, data) {
              .style("font-size", "12px")
              .style("text-anchor", "middle")
              .text(function(d) { if(d.data.value>=1){return d.data.name; } });
-//var value = (d.data.value*100)/root.data.value;
-//"%" + Math.round(value*100)/100;
+
 
   //allow to zoom out
-  svg1.on("click", function() { d3.select(child)._groups[0][0].remove(); cloneZoom= false; zoom(root); mainPage(children, firstCreation); } );
+  svg1.on("click", function() { d3.select(child)._groups[0][0].remove(); cloneZoom= false; zoom(root);  objectSelected = children; mainPage(children, firstCreation); } );
 
   //calculate the cordinates of the circles representing the clones
   nodeProperties([root.x, root.y, root.r * 2], root);
@@ -168,21 +159,11 @@ d3.json(path, function(error, data) {
       clonotypes.push({"name": data.children[i]["name"], "length": data.children[i]["length"], "value": data.children[i]["value"], "color": data.children[i]["color"], "stroke": data.children[i]["stroke"], "style": data.children[i]["style"], "idV": data.children[i]["idV"], "idJ": data.children[i]["idJ"], "cdr3": data.children[i]["cdr3"], "productivity": data.children[i]["productivity"]});
       //store the clonotypes of the clone in the variable "clonotypes" if there are any
       if(data.children[i].children){
-        //clonotype = [];
-        //clonotypeOfClone(data.children[i], clonotype); 
         clonotypes[i].children = data.children[i].children;
       }
     }
     return clones;
   }
-
-  //retrieve all the clonotype of a clone in tree format
-  /*function clonotypeOfClone(clone, clonotype){
-    for(var i in clone.children){
-      clonotype.push({"name": clone.children[i]["name"], "length": clone.children[i]["length"], "value": clone.children[i]["value"], "color": clone.children[i]["color"], "stroke": clone.children[i]["stroke"], "style": clone.children[i]["style"]});
-      if(clone.children[i].children){clonotypeOfClone(clone.children[i], clonotype)}
-    }
-  }*/
 
   //set the size of the nodes
   function nodeProperties(v,child) {
@@ -190,8 +171,6 @@ d3.json(path, function(error, data) {
     //modify the cordinate of the cercle representing the clones depending on the view
     parentNodes.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k  + "," + (d.y - v[1]) * k + ")"; });
     parentNodes.selectAll("circle").attr("r", function(d) { return d.r * k; });
-//if(d.data.name==clone.data.name){p=[(d.x - v[0])*k,(d.y - v[1])*k,d.r * k];}
-    //modify the cordinates of the circle representing the clonotypes if we are zooming in
     if(cloneZoom){
       child.attr("transform", function(d) { return "translate(" + (d.x-(v[2]/2))*k + "," + (d.y-(v[2]/2)) *k + ")"; });
       child.selectAll("circle").attr("r", function(d) { return d.r * k; });
@@ -255,8 +234,7 @@ d3.json(path, function(error, data) {
               .style("font-size", "12px")
               .style("text-anchor", "middle")
               .text(function(d) { if(d.data.value>=1){ return d.data.name }});
-//var value = (d.data.value*100)/root.data.value;
-// "%" + Math.round(value*100)/100;
+
     return childNodes
   }
 
@@ -265,7 +243,7 @@ d3.json(path, function(error, data) {
 
 // **************************************** Show the elements present on the main page **********************************************
 
-  function mainPage(data, state){
+  function mainPage(dataClone, state){
     //remove content of barChart when we are zooming out
     document.getElementById("nextButton").style.display = "none";
     //display the bar chart
@@ -273,30 +251,20 @@ d3.json(path, function(error, data) {
     chart.style.display = "flex";
     //deactivate tree container
     document.getElementById("clonotypeTree").style.display = "none";
+    //deactivate radios button
+    document.getElementById("treeForm").style.display = "none";
     //display the form which allows to enter a threshold value
     var form = document.getElementById('thresholdSelection');
     form.style.display = "block";
-    //display the form which allow the user to select clone he want to analyzed
-    var cloneSelection = document.getElementById('cloneSelection');
-    cloneSelection.style.display = "block";
-    //deactivate the abundance table
-    var abundanceTable = document.getElementById('cloneTable');
-    abundanceTable.innerHTML = "";
-    //table correlate the name of the clones and their abundance
-    tableAbundance(data);
-    //deactivate the table which contain the sequences of the clonotypes and the download button
-    var seqTable = document.getElementById('tableSequence');
-    seqTable.innerHTML = "";
-    //show the sequence of V, J and cdr3 regions of a clone
-    tableSequence(data, ["Clone", "V region", "J region", "cdr3", "Productivity"], ["name","idV","idJ","cdr3", "productivity"]);
-    var button = document.getElementById('downloadButton');
-    button.style.display = "block";
+    //deactivate the clonotype table
+    var clonotypeTable = document.getElementById('cloneTable');
+    clonotypeTable.innerHTML = "";
+    //table that contain the data of clones
+    tableData(dataClone, ["Clone", "Abundance(%)", "V region", "J region", "cdr3", "Productivity"], ["name","value","idV","idJ","cdr3", "productivity"]);
     //create the different element if the user load the page for the first time
     if(state){
       //create bar chart representation
-      barChart(data.slice(0,9));
-      //create area for the selection of the clone to analyzed
-      cloneCheckbox(data);
+      barChart(dataClone.slice(0,9));
     }
   }
 
@@ -305,7 +273,6 @@ d3.json(path, function(error, data) {
 // **************************************** Bar chart representing abundance of clones **********************************************
 
   function barChart(data){
-    //document.getElementById('barChart').style.height = "80%";
     // set the dimensions and margins of the diagram
     var margin = {top: 20, right: 10, bottom: 50, left: 70},
         width = ((document.getElementById('barChart').offsetWidth)/1.5) - (margin.left + margin.right),	//get width of barChart element in px 
@@ -344,7 +311,6 @@ d3.json(path, function(error, data) {
     //add the y axis to the svg
     svg2.append("g")
         .call(d3.axisLeft(y).ticks(6));
-        //.text("Abundance");
 
     //add the bar corresponding to the abundance of the clones. The width of the bar is determined by the function x and the height by the y function
     svg2.selectAll(".bar")
@@ -379,98 +345,12 @@ d3.json(path, function(error, data) {
 
 
 
-// **************************************** Area for the selection of clone to analyzed **********************************************
+// ******************************************** Data of the clones and clonotypes ****************************************************
 
-  function cloneCheckbox(data){
-    //select the div element which will contain the checkbox
-    var container = document.getElementById('checkboxContainer');
-    //browse the clones and create a checkbox for each of them
-    for(var i in data){
-      var cloneName = data[i]["name"];	 //recover the name of the clone
-      //show only clones with at least 4 clonotypes
-      if(data[i]["children"] && data[i]["children"].length>=4){
-        //create a checkbox element
-        var checkbox = document.createElement('input');
-        checkbox.type = "checkbox";
-        checkbox.name = cloneName;
-        checkbox.value = cloneName;
-        checkbox.id = cloneName;
-        //create a label element
-        var label = document.createElement('label');
-        label.htmlFor = cloneName;
-        label.appendChild(document.createTextNode(cloneName));
-        //create a line break element
-        var br=document.createElement("br");
-        //add all the elemnt created to the div container
-        container.appendChild(checkbox);
-        container.appendChild(label);
-        container.appendChild(br);
-      }
-    }
-  }
-
-
-
-// ************************************ Table of the name of the clones and their abundance ******************************************
-
-  function tableAbundance(data){
-
-    //select the table element
-    var table = document.getElementById('cloneTable');
-
-    //create a thead element and add it to the table
-    var thead = document.createElement('thead');
-    table.appendChild(thead);
-
-    //create a tr element to add a line
-    var tr = document.createElement('tr');
-    
-    //create a th element that contain the name of the first column
-    var th1 = document.createElement('th');
-    th1.appendChild(document.createTextNode("Name"));
-    //create a th element that contain the name of the second column
-    var th2 = document.createElement('th');
-    th2.appendChild(document.createTextNode("Abundance(%)"));
-
-    //add all the element created to the table
-    thead.appendChild(tr);
-    tr.appendChild(th1);
-    tr.appendChild(th2);
-
-    //create a tbody element and add it to the table
-    var tbody = document.createElement('tbody');
-    table.appendChild(tbody);
-
-    //browse the clones and create a line in the table for each of them
-    for(var i in data){
-
-      //create a tr element to add a line
-      var tr = document.createElement('tr');
-
-      //create a first td element to add a cell which will contain the name of the clone
-      var td1 = document.createElement('td');
-      td1.appendChild(document.createTextNode(data[i]["name"]));
-      //create a second td element to add a cell which will contain the abundance of the clone
-      var td2 = document.createElement('td');
-      td2.appendChild(document.createTextNode(data[i]["value"]));
-
-      //add all the element created to the table
-      tbody.appendChild(tr);
-      tr.appendChild(td1);
-      tr.appendChild(td2);
-
-    }
-
-  }
-
-
-
-// ****************************************** Sequences of the V, j and cdr3 regions *************************************************
-
-  function tableSequence(data, heading, value){
+  function tableData(data, heading, value){
 
     //select the div element which will contain the sequences
-    var table = document.getElementById('tableSequence');
+    var table = document.getElementById('cloneTable');
     //create a thead element and add it to the table
     var thead = document.createElement('thead');
     table.appendChild(thead);
@@ -521,80 +401,129 @@ d3.json(path, function(error, data) {
 
 // ************************************** Load the page showing the description of a clone *******************************************
 
-  function clonePage(data, clone){
+  function clonePage(dataClonotypes, clone){
     //remove the elements of the main page
     //deactivate the bar chart elements
     var threshold = document.getElementById('thresholdSelection');
     threshold.style.display = "none";
     var chart = document.getElementById('barChart');
     chart.style.display = "none";
-    //deactivate the area for the clone selection
-    var selectionClone = document.getElementById('cloneSelection');
-    selectionClone.style.display = "none";
-    //deactivate the abundance table
-    var abundanceTable = document.getElementById('cloneTable');
-    abundanceTable.innerHTML = "";
-    //table correlate the name of the clonotypes and their abundance
-    tableAbundance(data);
-    //deactivate the table which contain the sequences of the clones and the download button
-    var seqTable = document.getElementById('tableSequence');
-    seqTable.innerHTML = "";
-    //show name, cdr3, productivity and sequence of the clonotypes in a table
-    tableSequence(data, ["Name", "cdr3", "Productivity", "Sequence"], ["name", "cdr3", "productivity", "seq"])
-    var button = document.getElementById('downloadButton');
-    button.style.display = "none";
+    //deactivate the clone table
+    var cloneTable = document.getElementById('cloneTable');
+    cloneTable.innerHTML = "";
+    //table of clonotypes data
+    tableData(dataClonotypes, ["Clonotype", "Abundance in repertoire (%)", "Abundance in clone (%)", "cdr3", "Productivity", "Sequence"], ["name", "value_rep", "value", "cdr3", "productivity", "seq"]);
     //activate button to access to the description of clones
     document.getElementById("nextButton").style.display = "block";
+    //activate the radios button to change the form of the tree
+    document.getElementById("treeForm").style.display = "block";
     //launch the tool to obtained hierarchy of clonotypes
     //activate tree container
     document.getElementById("clonotypeTree").style.display = "block";
     d3.select("#clonotypeTree svg").remove()
     //represent these data in the form of a tree 
-    displayTree(clone) 
+    document.getElementById("circleTree").checked = true;
+    displayTree(0); 
   }
 
 
 // ******************************* Allows the user to download all the information of the repertoire ********************************
 
-  function downloadClonesInformations(clone){
-    var link = document.getElementById('downloadButton');
-    link.href="pipeline/usersFiles/example/repertoire_data.csv";
+  function downloadClonesInformations(){
+    var download = "", heading = [];
+    if("idV" in objectSelected[0]){ fileName = "repertoire"; }else{ fileName = "clone"+objectSelected[0]["name"].split("-")[0]; }
+    //recover the title 
+    for(var title in objectSelected[0]){
+      if(!(title in {"children":"","color":"","stroke":"","style":""})){ 
+        heading.push(title); 
+        download += title+";";
+      }
+    }
+    download += "\n"
+    //add all the clone or clonotype
+    for(var i in objectSelected){
+      for(var j in heading){
+        download += objectSelected[i][heading[j]]+";";
+      }
+      download += "\n";
+    }
+    var textToBLOB = new Blob([download], {type : 'text/plain' });
+    var fileSave = fileName+'_data.txt';
+    var newLink = document.createElement("a");
+        newLink.download = fileSave;
+    
+    if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
   }
 
-// ******************************* Display of clonotype tree for a given clone ****************************************************
+// ********************************* Display of clonotype tree for a given clone ****************************************************
 
-function displayTree(clone){
+function displayTree(form){
+  d3.select("#clonotypeTree svg").remove();
+  
   //localStorage.removeItem( 'clonotypeData' ); // Clear the localStorage
-  localStorage.setItem( 'clone', clone );
+  cloneName = objectSelected[0]["name"].split("-")[0];
+  localStorage.setItem( 'clone', cloneName );
 
   //CAUTOUS : call the tool for analyse the intraclonal heterogeneity
 
+  var user = "<?php echo $userFile; ?>",
+      file = user +"_"+cloneName+"_clonotype.json";
+      path = "pipeline/usersFiles/"+user+"/"+file;
+
   //loading the json file
-  d3.json("pipeline/usersFiles/example/example_"+clone+"_clonotype.json", function(error, dataTree) {
+  d3.json(path, function(error, dataTree) {
     if (error) throw error;
 
     var data = d3.hierarchy(dataTree); //data structure that represente a hieratchy
 
-    //change the depth of the node to allow to represent the different length of the branch
+    //branch length for the circular tree
     changeDepth(data);
-    //save the data needed to the tree to pass them on the next page
-    
-    //set the dimensions and margins of the diagram
-    var margin = {top: 20, right: 10, bottom: 20, left: 10},
-    width = (document.getElementById('chart2').offsetWidth) - margin.left - margin.right,
-    height = (document.getElementById('chart2').offsetHeight) - margin.top - margin.bottom;
 
-    //add an svg object to the chart2 element
-    var svg2 = d3.select("#clonotypeTree").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-          .append("g")
-           .attr("transform", "translate(" + width/2 +','+ height/2 + ")");
+    //create the svg object and the layout depending on the form of the tree
+    if(form==0){
+      //set the dimensions and margins of the diagram
+      var margin = {top: 20, right: 10, bottom: 20, left: 10},
+      width = (document.getElementById('chart2').offsetWidth) - margin.left - margin.right,
+      height = (document.getElementById('chart2').offsetHeight) - margin.top - margin.bottom;
 
-    // declares a tree layout and assigns the size
-    var tree = d3.tree()	//creating the tree layout 
-            .size([2 * Math.PI, height/2])
-            .separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 4; });
+      //add an svg object to the chart2 element
+      var svg2 = d3.select("#clonotypeTree").append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+              .attr("transform", "translate(" + width/2 +','+ height/2 + ")");
+
+      // declares a tree layout and assigns the size
+      var tree = d3.tree()	//creating the tree layout 
+              .size([2 * Math.PI, height/2])
+              .separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 4; });
+    }else{
+      //set the dimensions and margins of the diagram
+      var margin = {top: 60, right: 60, bottom: 60, left: 60},
+      width = (document.getElementById('chart2').offsetWidth) - margin.left - margin.right,
+      height = (document.getElementById('chart2').offsetHeight) - margin.top - margin.bottom;
+
+      //add an svg object to the chart2 element
+      var svg2 = d3.select("#clonotypeTree").append("svg")
+              .attr("width", width + margin.left + margin.right)
+              .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      // declares a tree layout and assigns the size
+      var tree = d3.tree()	//creating the tree layout 
+              .size([width, height])
+              .separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 2.5; });
+    }
     
     //parameters use to collapse the tree       
     var duration = 750;
@@ -608,9 +537,6 @@ function displayTree(clone){
       //assign properties to the data (coordinates, depth, ...)
       var root = tree(data);
 
-        //adjust the length of the branch depending on the radius of the node and the position between the nodes
-        //branchLength(root);
-
         // ********* Creation of the nodes *********
 
         //add each node as a group
@@ -618,8 +544,11 @@ function displayTree(clone){
                 .data(root.descendants());
 
         var nodeEnter = node.enter().append("g")
-                     .attr("transform", function(d) { return "translate(" + radialPoint(source.x0, source.y0) + ")";})	//position the nodes
-                     .on('dblclick', changeChildren);
+                     .attr("transform", function(d) { if(form==0){ return "translate(" + radialPoint(source.x0, source.y0) + ")"; }else{ return "translate(" + source.x0 + "," + source.y0 + ")"; } })	//position the nodes
+                     .on('dblclick', changeChildren)
+                     .on("mouseover", function(d) { var g = d3.select(this); //g object of the node
+                                                    var info = g.append('text').classed('info', true).attr('x', -25).attr('y', function(d) { return -(5+(2*d.data.value))}).text(function(d) { if(d.data.name!="naive"){ return d.data.name; }}).attr('font-size', 12) ;})
+                      .on("mouseout", function() { d3.select(this).select('text.info').remove()}); //remove the text on mouse out
 
         // adds the circle to the node
         nodeEnter.append("circle")
@@ -635,7 +564,7 @@ function displayTree(clone){
                  .attr("dy", function(d) { return 15+(2*d.data.value)})	//set the emplacement of the text
                  .attr("dx", 15)
                  .attr("text-anchor", "middle")
-                 .text(function(d) { if(d.data.name!="naive"){ return d.data.name; }})
+                 .text(function(d) { if(d.data.name!="naive" && d.parent.data.name=="naive"){ return d.data.name; }})
                  .clone(true).lower()
                  .attr("stroke", "white");
 
@@ -645,7 +574,7 @@ function displayTree(clone){
         //transition to the proper position for the node
         nodeUpdate.transition()
                   .duration(duration)
-                  .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")";});
+                  .attr("transform", function(d) { if(form==0){ return "translate(" + radialPoint(d.x, d.y) + ")";}else{return "translate(" + d.x + "," + d.y + ")";} });
 
         nodeUpdate.select('circle')
                   .attr('r', function(d) { return d.data.value? 2*d.data.value : 0})
@@ -654,7 +583,7 @@ function displayTree(clone){
         //remove any exiting nodes
         var nodeExit = node.exit().transition()
                     .duration(duration)
-                    .attr("transform", function(d) { return "translate(" + radialPoint(source.x, source.y) + ")";})
+                    .attr("transform", function(d) { if(form==0){ return "translate(" + radialPoint(source.x, source.y) + ")";}else{return "translate(" + source.x + "," + source.y + ")";} })
                     .remove();
 
         // ********* Creation of links *********
@@ -719,61 +648,21 @@ function displayTree(clone){
 	return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
   }
 
-//give the start and end point to a branch    
-    function branchShape(s,t) {
+  //give the start and end point to a branch    
+  function branchShape(s,t) {
+    if(form==0){
       return "M" + radialPoint(s.x, s.y)[0] + "," + radialPoint(s.x, s.y)[1] + " " + radialPoint(t.x, t.y)[0] + "," + radialPoint(t.x, t.y)[1]; //M means move to
-    }
-}
-
-function changeDepth(d){
-  for(var i in d.children){ 
-    d.children[i].depth = d.depth+(1*d.children[i].data["length"]);
-    if (d.children[i].children){changeDepth(d.children[i]);}
-  }
-}
-    
-    function branchLength(nodes){
-      //var maxValue = maxClonotypeValue(nodes);
-      for(var i in nodes.children){
-        coef = (nodes.children[i].x-nodes.x)/(nodes.children[i].y-nodes.y);
-        nodes.children[i].y = nodes.children[i].y + ((nodes.y - nodes.children[i].y) * (1-nodes.children[i].data["length"]));   
-        nodes.children[i].x = (nodes.children[i].y * coef) + nodes.x;
-        if(nodes.children[i].children != undefined){
-          branchLength(nodes.children[i]);
-        }
-      }
-    }
-
-  //browse the tree to find the clonotype with the biggest abundance and return its value
-  function maxClonotypeValue(data, maxValue){
-    for(var i in data.children){
-      if(data.children[i].data.value > maxValue){maxValue = data.children[i].data.value;} //change the maxValue
-      if(data.children[i].children != undefined){maxClonotypeValue(data.children[i], maxValue);}
-    }
-    return maxValue
-  }
-
-  //tranform the data format to obtained circle representation
-  function parseClone(data){
-    cloneInformation = {"color": data["color"], "stroke": data["stroke"], "style": data["style"], "children" : []}
-    for(var i in data.children){
-      cloneInformation["children"].push({"name": data.children[i]["name"], "length": data.children[i]["length"], "value": data.children[i]["value"], "color": data.children[i]["color"], "stroke": data.children[i]["stroke"], "style": data.children[i]["style"]});
-      if(data.children[i].children){
-        clonotype = [];
-        clonotypeOfClone(data.children[i], clonotype);
-        cloneInformation.children[i].children = clonotype;
-      }
-    }
-    return cloneInformation;
-  }
-
-  //retrieve all the clonotype of a clone
-  function clonotypeOfClone(clone, clonotype){
-    for(var i in clone.children){
-      clonotype.push({"name": clone.children[i]["name"], "length": clone.children[i]["length"], "value": clone.children[i]["value"], "color": clone.children[i]["color"], "stroke": clone.children[i]["stroke"], "style": clone.children[i]["style"]});
-      if(clone.children[i].children){clonotypeOfClone(clone.children[i], clonotype)}
+    }else{
+      return "M" + s.x + "," + s.y + "V" + t.y + "H" + t.x;}
     }
   }
 
+  function changeDepth(d){
+    for(var i in d.children){ 
+      d.children[i].depth = d.depth+(1*d.children[i].data["length"]);
+      if (d.children[i].children){changeDepth(d.children[i]);}
+    }
+  }
+
+	
 </script>
-
