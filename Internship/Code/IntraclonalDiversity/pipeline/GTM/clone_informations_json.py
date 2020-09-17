@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #-*-coding:Utf-8-*-
 
-#Translate the txt format of file containing clone whith their clonotype in json format. It recover the output file provide from the SCOPer and IMGT analysis.
+#Translate the txt format of file containing clone whith their clonotype in json format. It recover the output file provide from the GTM and IMGT analysis.
 #The file in txt format to convert must be pass in argument and the file containning the html colo.
 
 import sys
@@ -71,46 +71,42 @@ if(len(sys.argv)==3):
 	stroke_style = ["none", "10,10", "1,5"]
 	index = [0,0,0]
 	clones=[]
-	clones_txt = "clone;abundance (%);idV;idJ;cdr3\n"
-	#ext = os.path.splitext(sys.argv[1]) #recover the extension of the file
+	num_clone = 1;
+	productivity = {"productive": "yes","unproductive" : "no", "" : "/"}	#match for the productivity to complete the table of data
 	#open the input file
 	with open(sys.argv[1]) as file:
 		for line in file :
 			line = line.split("\n")	#delete the the line break at the end of the line
 			[clone_name, clone_abundance, clonotype, idV, idJ, cdr3]=line[0].split("	")	#separates the columns
-			clone_name = "C"+clone_name.split("Clone number")[1]
+			clone_name = "C"+str(num_clone)
 			clonotypes_list = clonotype.split("Clonotype ")
 			clonotypes_list = clonotypes_list[1].split(" ")
 			cdr3_list = cdr3.split(" ")
+			#the clone doesn't have clonotypes
 			if(len(clonotypes_list)==1):
-				clones.append({"name":clone_name, "value":float(clone_abundance)*100, "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":clonotypes_list[0].split(",")[1]})
+				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":productivity[clonotypes_list[0].split(",")[1]]})
+			#the cdr3 is the same for all the clonotypes
 			elif(len(cdr3_list)==1):
 				clonotypes = []
 				for i in range(len(clonotypes_list)):
 					clonotype_info = clonotypes_list[i].split(",") #contains the abundance of the clonotypes and the productivity
-					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":float(clonotype_info[0])*100, "productivity":clonotype_info[1], "cdr3":cdr3, "seq":"/"})
-				#ALREADY DONE BY NIKA sort the clonotypes by their abundance
-				#clonotypes_sorted = sorted(clonotypes, key=lambda k: k['value'], reverse=True)
-				clones.append({"name":clone_name, "value":float(clone_abundance)*100, "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":"/", "children":clonotypes})
+					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":round(float(clonotype_info[0])*100,3), "value_rep":round(float(clone_abundance)*100*float(clonotype_info[0]),3), "productivity":productivity[clonotype_info[1]], "cdr3":cdr3, "seq":"/"})
+				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":"/", "children":clonotypes})
+			#each clonotype has a different cdr3
 			else :
 				clonotypes = []
 				for i in range(len(clonotypes_list)):
 					clonotype_info = clonotypes_list[i].split(",") #contains the abundance of the clonotypes and the productivity
-					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":float(clonotype_info[0])*100, "productivity":clonotype_info[1], "cdr3":cdr3_list[i], "seq":"/"})
-				clones.append({"name":clone_name, "value":float(clone_abundance)*100, "idV":idV, "idJ":idJ, "cdr3":cdr3_list[0], "productivity":"/", "children":clonotypes})
-			clones_txt += clone_name +";"+ str(float(clone_abundance)*100) +";"+ idV +";"+ idJ +";"+ cdr3 + "\n"
-
-	#ALREADY DONE BY NIKA sort the clones by their abundance
-	#clones_sorted = sorted(clones, key=lambda k: k['value'], reverse=True)
+					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":round(float(clonotype_info[0])*100, 3), "value_rep": round(float(clone_abundance)*100*float(clonotype_info[0]), 3), "productivity":productivity[clonotype_info[1]], "cdr3":cdr3_list[i], "seq":"/"})
+				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3_list[0], "productivity":"/", "children":clonotypes})
+			num_clone += 1
+			
 	repertoire = {"value":100,"color":"#808080","stroke":"#808080","style":"none", "children": clones}	#contain the informations of the repertoire (clones, clonotypes)
 	attribute_color(repertoire["children"], colors, stroke_style, index)	#add properties to nodes
 
-	input_file = sys.argv[1].split(".txt")	#recover the nk file name
+	input_file = sys.argv[1].split(".txt")	#recover the file name
 
 	save_json_format(input_file[0], repertoire)	#save data in json format
-	save_text_format(input_file[0], clones_txt)	#save data in a txt format that the user can download
 
 else:
 	print("Please enter 2 files in argument")
-
-#VERIFIER QUE LE FICHIER N'EST PAS VIDE ET QU'IL SOIT BIEN AU FORMAT TXT
