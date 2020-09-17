@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source /home/administrator/anaconda3/bin/activate base 
 BASEDIR=`dirname "${0}"`
 cd "$BASEDIR"
 
