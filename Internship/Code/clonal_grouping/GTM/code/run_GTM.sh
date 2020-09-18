@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir ../GTM/$1
-python format_labeling_imgt.py -s ../IMGT_output/Real/$1_IMGT/1_Summary.txt -g ../IMGT_output/Real/$1_IMGT/2_IMGT-gapped-nt-sequences.txt -o $1_seq_Fo.txt
+python format_labeling_imgt.py -s ../IMGT_output/Real/$1/1_Summary.txt -g ../IMGT_output/Real/$1/2_IMGT-gapped-nt-sequences.txt -o $1_seq_Fo.txt
 python  initial_clustering.py -i $1_seq_Fo_V_CDR3_Jseq.txt -o $1_initial_clusters -s 0.7
 python format_clustering_output.py -i $1_initial_clusters_sameVJ_noallele_CDR3_0.7.txt -o $1_initial_clusters_Fo.txt
 #mv ../Data/$1_db-pass.tsv ../output
