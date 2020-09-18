@@ -122,12 +122,13 @@ d3.json(path, function(error, data) {
              .style("fill", function(d){ return d.data.color; })
              .style("stroke", function(d){ return d.data.stroke; })
              .style("stroke-dasharray", function(d){ return d.data.style; })
-             .on("click", function(d,i) {  if (focus !== d && children[i-1].children ) {
-                             child = displayClonotype(d,i);
-                             cloneZoom=true;
-                             zoom(d), d3.event.stopPropagation();
-                             objectSelected = children[i-1].children;
-                             clonePage(children[i-1].children,d.data.name);} 
+             .on("click", function(d,i) { if(d3.select(child)._groups[0][0]){d3.select(child)._groups[0][0].remove();} 
+                                          if (focus !== d && children[i-1].children) {
+                                            child = displayClonotype(d,i);
+                                            cloneZoom=true;
+                                            zoom(d), d3.event.stopPropagation();
+                                            objectSelected = children[i-1].children;
+                                            clonePage(children[i-1].children,d.data.name);} 
                           });
 
   //add name of the clone on the circle
