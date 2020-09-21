@@ -13,7 +13,7 @@ ini_set("display_errors", 1);
   setcookie('Userfile', $userFile, time() + 365*24*3600, null, null, false, true); 
 
   echo "<!DOCTYPE html><html>";
-  echo debut_html("Intraclonal visualization - Repertoire");
+  echo debut_html("Visualizing intraClonal Diversity");
   echo "<body>";
 
   if(isset($_POST['submit'])){
@@ -30,7 +30,7 @@ ini_set("display_errors", 1);
       // format error
       $error = checkFastaFile($files[0]);
       if($error==0){
-          header('Location: clone.php');
+          header('Location: gtm.php');
           exit();
       }else{
         echo "<p class='error' >", $error, "</p>";
@@ -64,25 +64,6 @@ ini_set("display_errors", 1);
     fclose($fileHandle);
     return 0;
   }
-/*
-  function checkIMGTFormat($files){}
-
-  function IMGTSummary($file){
-    $pathParts = pathinfo($file);
-    $fileName = $pathParts['basename'];
-    $fileHandle = fopen($file, "r");
-    $header = "Sequence number	Sequence ID	V-DOMAIN Functionality	V-GENE and allele	V-REGION score	V-REGION identity %	V-REGION identity nt	V-REGION identity % (with ins/del events)	V-REGION identity nt (with ins/del events)	J-GENE and allele	J-REGION score	J-REGION identity %	J-REGION identity nt	D-GENE and allele	D-REGION reading frame	CDR1-IMGT length	CDR2-IMGT length	CDR3-IMGT length	CDR-IMGT lengths	FR-IMGT lengths	AA JUNCTION	JUNCTION frame	Orientation	V-DOMAIN Functionality comment	V-REGION potential ins/del	J-GENE and allele comment	V-REGION insertions	V-REGION deletions	Sequence	5prime trimmed-n nb	3prime trimmed-n nb	Analysed sequence length	Sequence analysis category	";
-    $line=fgets($fileHandle);
-    if($line==header){
-      $line=fgets($fileHandle);
-      
-    }
-  }
-
-  function IMGTGap($file){
-    Sequence number	Sequence ID	V-DOMAIN Functionality	V-GENE and allele	J-GENE and allele	D-GENE and allele	V-D-J-REGION	V-J-REGION	V-REGION	FR1-IMGT	CDR1-IMGT	FR2-IMGT	CDR2-IMGT	FR3-IMGT	CDR3-IMGT	JUNCTION	J-REGION	FR4-IMGT	
-
-  }*/
 
 
 ?>
