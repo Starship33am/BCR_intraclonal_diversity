@@ -478,7 +478,7 @@ function displayTree(form){
 
   var user = "<?php echo $userFile; ?>",
       file = user +"_"+cloneName+"_clonotype.json";
-      path = "pipeline/usersFiles/"+user+"/"+file;
+      path = "pipeline/usersFiles/"+user+"/tree/"+file;
 
   //loading the json file
   d3.json(path, function(error, dataTree) {
