@@ -16,20 +16,11 @@
       <label for="elbowTree">Elbow tree</label></div>
     </div><br><br>
     <div id="chart3" style="width: 100%; height: 50%;">
-      <!--<table id="tableSequence" style="width: 100%; height: 100%;">
-        <thead>
-          <tr>
-            <th width=10%>Name</th>
-            <th>Sequence</th>
-          </tr>
-        </thead>
-      </table>-->
     </div>
   </div>
 
   <script>
     var clone = localStorage['clone'];
-    //localStorage.removeItem( 'clonotypeData' ); // Clear the localStorage
     var selectedNode = [], firstTime = true, form = 0;
     displayTree(0);
 
@@ -60,9 +51,7 @@ function displayTree(){
       findMostAbundantClonotypes(data, selectedNode);
        
       distancesRepresentation(selectedNode);
-      
-      //create the table of the sequences
-      //displaySequence(data.children);
+	    
     }
 
     //retrieve the name of all the clonotypes selected
@@ -101,17 +90,13 @@ function displayTree(){
 
       // declares a tree layout and assigns the size
       var tree = d3.tree()	//creating the tree layout 
-              //.nodeSize([10,80])
               .size([width, height])
               .separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 2.5; });
-              //.separation(function(a, b) { return ((a.parent == data) && (b.parent == data)) ? 5 : 1; });
     }
               
       var duration = 750;
       data.x0 = height / 2;
       data.y0 = 0;
-
-      //data.children.forEach(collapse);
 
       updateTree(data);
 
@@ -119,9 +104,6 @@ function displayTree(){
 
         //assign properties to the data (coordinates, depth, ...)
         var root = tree(data);
-
-        //adjust the length of the branch depending on the radius of the node and the position between the nodes
-        //branchLength(root);
 
         // ********* Creation of the nodes *********
 
@@ -132,7 +114,6 @@ function displayTree(){
         var nodeEnter = node.enter().append("g")
                      .attr("transform", function(d) { return "translate(" + radialPoint(source.x0, source.y0) + ")";})	//position the nodes
                      .on('click', selectClonotype)
-                     //.on('dblclick', changeChildren) 
                      .on("mouseover", function(d) { var g = d3.select(this); //g object of the node
                                                     var info = g.append('text').classed('info', true).attr('x', -20).attr('y', function(d) { return -(5+(5+(0.25*d.data.value)))}).text(function(d) { if(d.data.name!="ighv"){ return d.data.name; }}).attr('font-size', 12) ;})
                      .on("mouseout", function() { d3.select(this).select('text.info').remove()}); //remove the text on mouse out
@@ -212,17 +193,6 @@ function displayTree(){
 
         root.descendants().forEach(function(d){ d.x0 = d.x; d.y0 = d.y;});
 
-      }
-
-      function changeChildren(d){
-        if(d.children){
-          d._children = d.children;
-          d.children = null;
-        }else{
-          d.children = d._children;
-          d._children = null;
-        }
-        updateTree(d);
       }
 
       firstTime = false;
@@ -349,11 +319,9 @@ var pi = Math.PI,
 
   //data arcs
   var arcs = svg.append('g')
-    //.attr('class', 'data')
     .selectAll('path')
       .data(distanceTable)
       .enter().append('path')
-      //.attr('class', 'arc')
       .style('fill', function(d, i) { return d.color; } )
       .style("stroke", function(d){ return d.stroke; })
         .style("stroke-dasharray", function(d){ return d.style; })
@@ -364,24 +332,10 @@ var pi = Math.PI,
     .duration(750)
     .attrTween('d', arcTween);
 
-  //arcs.on('mousemove', showTooltip)
-  //arcs.on('mouseout', hideTooltip)
-
   function arcTween(d, i) {
     var interpolate = d3.interpolate(0, d.length);
     return t => arc(interpolate(t), i);
   }
-
-  /*function showTooltip(d) {
-    tooltip.style('left', (d3.event.pageX + 10) + 'px')
-      .style('top', (d3.event.pageY - 25) + 'px')
-      .style('display', 'inline-block')
-      .html(d.value);
-  }
-
-  function hideTooltip() {
-    tooltip.style('display', 'none');
-  }*/
 
   //calculate the value of inner radius in function of the index of the clonotype
   function getInnerRadius(index) {
@@ -466,57 +420,6 @@ function storeClonotypesAncestor(table, clonotype, index, name){
   }  
 }
 
-// Add title to graph
-/*svg2.append("text")
-        .attr("x", 0)
-        .attr("y", -20)
-        .attr("text-anchor", "left")
-        .style("font-size", "14px")
-        .text("Heatmap of distances between clonotypes");*/
-
-
-
-//********************** Sequence **************************************************************************
-
-  /*function displaySequence(data){
-
-    //select the div element which will contain the sequences
-    var table = document.getElementById('tableSequence');
-    
-    //create a tbody element and add it to the table
-    var tbody = document.createElement('tbody');
-    table.appendChild(tbody);
-
-    childClonotypeSequence(data,tbody);
-
-  }*/
-  
-    function childClonotypeSequence(data,table){
-      //browse the clones and show the sequences for each of them
-      for(var i in data){ 
-        //create a tr element to add a line and add it to the table
-        var tr = document.createElement('tr');
-        table.appendChild(tr);
-        //create a td element to add a cell that contain the name
-        var td1 = document.createElement('td');
-        td1.appendChild(document.createTextNode(data[i].data["name"]));
-        td1.style.width = "10%"; 
-        //create a td element to add a cell that contain the sequence
-        var td2 = document.createElement('td');
-        //create a p element which will contain the sequence of the clone or clonotype
-        var p = document.createElement('p');
-        p.classList = "tableSeqCell";
-        p.appendChild(document.createTextNode(data[i].data["seq"]));
-        //add it to the td element
-        td2.appendChild(p);
-        //add all the element created to the table      
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-        if(data[i].children){childClonotypeSequence(data[i].children,table)}
-      }
-    }
-
-
     function collapse(d){
       if(d.children){
         if(d.depth>=2){
@@ -537,67 +440,6 @@ function storeClonotypesAncestor(table, clonotype, index, name){
       return "M" + s.x + "," + s.y + "V" + t.y + "H" + t.x;
     }
   }
-
-    
-    function branchLength(nodes){
-      //var maxValue = maxClonotypeValue(nodes);
-      for(var i in nodes.children){
-        coef = (nodes.children[i].x-nodes.x)/(nodes.children[i].y-nodes.y);
-        nodes.children[i].y = nodes.children[i].y + ((nodes.y - nodes.children[i].y) * (1-nodes.children[i].data["length"]));   
-        nodes.children[i].x = (nodes.children[i].y * coef) + nodes.x;
-        if(nodes.children[i].children != undefined){
-          branchLength(nodes.children[i]);
-        }
-      }
-    }
-
-
-    //browse the tree to find the clonotype with the biggest abundance and return its value
-    function maxClonotypeValue(data){
-      var maxValue = 0;
-      for(var i in data.children){
-        if(parseFloat(data.children[i].data.value) > maxValue){maxValue = parseFloat(data.children[i].data.value);} 
-	//if(data.children[i].children != undefined){maxClonotypeValue(data.children[i], maxValue);}
-      }
-      return maxValue;
-    }
-
-    function variableMat(data, variable, clonotypeAbundance, clonotypeColor){
-      for(var i in data.children){
-        variable.push(data.children[i].data["name"]);
-        clonotypeAbundance[data.children[i].data["name"]]=data.children[i].data["value"];
-        clonotypeColor[data.children[i].data["name"]]=data.children[i].data["color"];
-        if(data.children[i].children){variableMat(data.children[i], variable, clonotypeAbundance, clonotypeColor);}
-      }
-    }
-
-    function distanceMat(distanceMatrice){
-      d3.csv("distance_clone1.csv", function(distance) {
-        for(var i in distance){
-          distanceMatrice.push(distance[i]);
-          distanceMatrice[distanceMatrice.length-1]["length"]=parseFloat(distanceMatrice[distanceMatrice.length-1]["length"]);
-        }
-      })
-    }
-
-    function distanceClonotype(data, distanceMatrice, variables, ...parents){
-      for(var i in data.children){
-	variables.push(data.children[i].data["name"]);
-        distanceMatrice.push({"name1": data.children[i].parent.data["name"], "name2": data.children[i].data["name"], "length": parseFloat(data.children[i].data["length"])});
-        distanceMatrice.push({"name1": data.children[i].data["name"], "name2": data.children[i].parent.data["name"], "length": parseFloat(data.children[i].data["length"])});
-        var ancestor = [];
-        for(var j in parents){
-          length = parents[j]["length"] + parseFloat(data.children[i].data["length"]);
-          distanceMatrice.push({"name1": parents[j]["name"], "name2": data.children[i].data["name"], "length": length});
-          distanceMatrice.push({"name1": data.children[i].data["name"], "name2": parents[j]["name"], "length": length});
-          ancestor.push({"name": parents[j]["name"], "length": length});
-        }
-        if(data.children[i].children){
-          ancestor.push({"name":data.children[i].parent.data["name"], "length": parseFloat(data.children[i].data["length"])});
-          distanceClonotype(data.children[i], distanceMatrice, variables, ...ancestor);
-        }
-      }
-    }
 
 
   </script>
