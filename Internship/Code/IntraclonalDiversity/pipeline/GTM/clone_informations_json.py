@@ -73,6 +73,7 @@ if(len(sys.argv)==3):
 	clones=[]
 	num_clone = 1;
 	productivity = {"productive": "yes","unproductive" : "no", "" : "/"}	#match for the productivity to complete the table of data
+	#ext = os.path.splitext(sys.argv[1]) #recover the extension of the file
 	#open the input file
 	with open(sys.argv[1]) as file:
 		for line in file :
@@ -110,3 +111,4 @@ if(len(sys.argv)==3):
 
 else:
 	print("Please enter 2 files in argument")
+

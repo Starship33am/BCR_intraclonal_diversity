@@ -33,3 +33,6 @@ mv $1_final_clusters_Fo.txt ../usersFiles/$1/GTM
 mv $1_seq_Fo_V_CDR3_Jseq.txt ../usersFiles/$1/GTM
 mv $1_repertoire_two_levels_info.json ../usersFiles/$1/GTM
 mv $1_repertoire_two_levels_info_clones.csv ../usersFiles/$1/GTM
+
+#modify the statute of the date traitement in the database
+mysql -u users -pBCRVisualizati0n! -D BCRVisualization -e "UPDATE users SET firstStep='done' WHERE userID=$1"
