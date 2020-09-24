@@ -14,7 +14,7 @@ def change_format(tree, num_clone):
 	dict_tree["name"]=tree.name	#recover the name of the tree object
 	dict_tree["length"]=tree._length	#recover the length of the tree object
 	if tree.name in clonotype_name.keys():	#add the value of abundance if the name of the clone is find in the dictionary of abundance
-		dict_tree["value"]=data["children"][num_clone]["children"][clonotype_name[tree.name]]["value"]
+		dict_tree["value"]=str(data["children"][num_clone]["children"][clonotype_name[tree.name]]["value"])
 		dict_tree["value_rep"]=data["children"][num_clone]["children"][clonotype_name[tree.name]]["value_rep"]
 		dict_tree["productivity"]=data["children"][num_clone]["children"][clonotype_name[tree.name]]["productivity"]
 		dict_tree["cdr3"]=data["children"][num_clone]["children"][clonotype_name[tree.name]]["cdr3"]
@@ -43,7 +43,6 @@ def save_json_format(file_name, data):
 
 #check if two file have been put in argument
 if(len(sys.argv)==4):
-
 	#open the first file which contains the Newick format
 	with open(sys.argv[1]) as file:
 		newick_tree = load(file)	#function of newick package which allow to load Newick format into python object
@@ -54,8 +53,8 @@ if(len(sys.argv)==4):
 	clonotype_name = {}
 	for i in range(len(data["children"][int(sys.argv[3])-1]["children"])) :
 		clonotype_name[data["children"][int(sys.argv[3])-1]["children"][i]["name"]]=i
-
-	tree = change_format(newick_tree[0],int(sys.argv[3]))	#change the format of the tree to export it in JSON format
+	
+	tree = change_format(newick_tree[0],int(sys.argv[3])-1)	#change the format of the tree to export it in JSON format
 
 	tree["value"]=1		#add the value of abundance to the naive sequence
 	tree["name"]="ighv"
@@ -63,7 +62,7 @@ if(len(sys.argv)==4):
 	tree["color"]="#808080";
 	tree["stroke"]="#808080";
 	tree["style"]="none";
-	print(tree)
+	
 	input_file = sys.argv[1].split(".nk")	#recover the file name
 
 	save_json_format(input_file[0]+"_clonotype", tree)	#save data in json format
