@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
   require_once('class/tools.php');
 
   $userFile = $_COOKIE['Userfile'];
@@ -33,11 +36,13 @@
         $query = null;
         $bdd = null;
 
-        $numClone = 1;
+        $numClone = 2;
         //intraclonal study
         $cmd = '/bin/bash /var/www/html/IntraclonalDiversity/pipeline/tree/run_tree.sh '.$userFile.' '.$numClone.' > /dev/null&';
+        echo($cmd);
         exec($cmd, $output);
-      
+
+var_dump($output);
         //waiting page
         header('Location: clone.php');
         exit();
