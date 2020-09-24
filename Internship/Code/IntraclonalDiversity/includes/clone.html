@@ -104,7 +104,9 @@ d3.json(path, function(error, data) {
   objectSelected = children; //store the clone or clonotype depending on the zoom we have done to allow to download the data
 
   //parent pack to represente the clone
-  root = d3.hierarchy(parent).sum(function(d) { return d.value; })
+  root = d3.hierarchy(parent)
+      .sum(function(d) { return d.value; })
+      //.sort(function(a, b) { return b.value - a.value; });
 
   //store the root in focus variable to allow zoom
   var focus = root, view, cloneZoom = false, child;
@@ -129,6 +131,7 @@ d3.json(path, function(error, data) {
                                             zoom(d), d3.event.stopPropagation();
                                             objectSelected = children[i-1].children;
                                             clonePage(children[i-1].children,d.data.name);} 
+//data.children[root.children.indexOf(d)].children[0],data.children[root.children.indexOf(d)]["name"]; 
                           });
 
   //add name of the clone on the circle
@@ -139,7 +142,8 @@ d3.json(path, function(error, data) {
              .style("font-size", "12px")
              .style("text-anchor", "middle")
              .text(function(d) { if(d.data.value>=1){return d.data.name; } });
-
+//var value = (d.data.value*100)/root.data.value;
+//"%" + Math.round(value*100)/100;
 
   //allow to zoom out
   svg1.on("click", function() { d3.select(child)._groups[0][0].remove(); cloneZoom= false; zoom(root);  objectSelected = children; mainPage(children, firstCreation); } );
@@ -160,11 +164,21 @@ d3.json(path, function(error, data) {
       clonotypes.push({"name": data.children[i]["name"], "length": data.children[i]["length"], "value": data.children[i]["value"], "color": data.children[i]["color"], "stroke": data.children[i]["stroke"], "style": data.children[i]["style"], "idV": data.children[i]["idV"], "idJ": data.children[i]["idJ"], "cdr3": data.children[i]["cdr3"], "productivity": data.children[i]["productivity"]});
       //store the clonotypes of the clone in the variable "clonotypes" if there are any
       if(data.children[i].children){
+        //clonotype = [];
+        //clonotypeOfClone(data.children[i], clonotype); 
         clonotypes[i].children = data.children[i].children;
       }
     }
     return clones;
   }
+
+  //retrieve all the clonotype of a clone in tree format
+  /*function clonotypeOfClone(clone, clonotype){
+    for(var i in clone.children){
+      clonotype.push({"name": clone.children[i]["name"], "length": clone.children[i]["length"], "value": clone.children[i]["value"], "color": clone.children[i]["color"], "stroke": clone.children[i]["stroke"], "style": clone.children[i]["style"]});
+      if(clone.children[i].children){clonotypeOfClone(clone.children[i], clonotype)}
+    }
+  }*/
 
   //set the size of the nodes
   function nodeProperties(v,child) {
@@ -172,6 +186,8 @@ d3.json(path, function(error, data) {
     //modify the cordinate of the cercle representing the clones depending on the view
     parentNodes.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k  + "," + (d.y - v[1]) * k + ")"; });
     parentNodes.selectAll("circle").attr("r", function(d) { return d.r * k; });
+//if(d.data.name==clone.data.name){p=[(d.x - v[0])*k,(d.y - v[1])*k,d.r * k];}
+    //modify the cordinates of the circle representing the clonotypes if we are zooming in
     if(cloneZoom){
       child.attr("transform", function(d) { return "translate(" + (d.x-(v[2]/2))*k + "," + (d.y-(v[2]/2)) *k + ")"; });
       child.selectAll("circle").attr("r", function(d) { return d.r * k; });
@@ -201,11 +217,11 @@ d3.json(path, function(error, data) {
     //store the radius of all the clones
     var parentRadius = packLayout(root).descendants().filter(function(d) { return d.depth == 1; }).map(function(d) { return d.r; });
     //creation of child pack layout
-    var childPack = d3.pack().size([parentRadius[i-1]*2 - 2, parentRadius[i-1]*2 - 2])
-                 .padding(6);
+    var childPack = d3.pack().size([parentRadius[i-1]*2 , parentRadius[i-1]*2 ]).padding(6);
     //child pack to represente the clonotypes
+
     var childRoot =  d3.hierarchy(children[i-1])
-	         .sum(function(d) { return d.value; });
+	         .sum(function(d) { return d.value_rep; });
 	         //.sort(function(a,b) { return b.value - a.value; });	
     childRoots = childPack(childRoot).descendants(); 
     //create the child circle pack, add a g container for each clonotype
@@ -235,7 +251,8 @@ d3.json(path, function(error, data) {
               .style("font-size", "12px")
               .style("text-anchor", "middle")
               .text(function(d) { if(d.data.value>=1){ return d.data.name }});
-
+//var value = (d.data.value*100)/root.data.value;
+// "%" + Math.round(value*100)/100;
     return childNodes
   }
 
@@ -274,6 +291,7 @@ d3.json(path, function(error, data) {
 // **************************************** Bar chart representing abundance of clones **********************************************
 
   function barChart(data){
+    //document.getElementById('barChart').style.height = "80%";
     // set the dimensions and margins of the diagram
     var margin = {top: 20, right: 10, bottom: 50, left: 70},
         width = ((document.getElementById('barChart').offsetWidth)/1.5) - (margin.left + margin.right),	//get width of barChart element in px 
@@ -312,6 +330,7 @@ d3.json(path, function(error, data) {
     //add the y axis to the svg
     svg2.append("g")
         .call(d3.axisLeft(y).ticks(6));
+        //.text("Abundance");
 
     //add the bar corresponding to the abundance of the clones. The width of the bar is determined by the function x and the height by the y function
     svg2.selectAll(".bar")
@@ -448,6 +467,8 @@ d3.json(path, function(error, data) {
       }
       download += "\n";
     }
+    //var link = document.getElementById('downloadButton');
+    //link.href="pipeline/usersFiles/example/GTM/repertoire_data.csv";
     var textToBLOB = new Blob([download], {type : 'text/plain' });
     var fileSave = fileName+'_data.txt';
     var newLink = document.createElement("a");
@@ -522,8 +543,10 @@ function displayTree(form){
 
       // declares a tree layout and assigns the size
       var tree = d3.tree()	//creating the tree layout 
+              //.nodeSize([10,80])
               .size([width, height])
               .separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 2.5; });
+              //.separation(function(a, b) { return ((a.parent == data) && (b.parent == data)) ? 5 : 1; });
     }
     
     //parameters use to collapse the tree       
@@ -538,6 +561,9 @@ function displayTree(form){
       //assign properties to the data (coordinates, depth, ...)
       var root = tree(data);
 
+        //adjust the length of the branch depending on the radius of the node and the position between the nodes for the elbow tree
+        //if(form==1){branchLength(root);}
+
         // ********* Creation of the nodes *********
 
         //add each node as a group
@@ -546,9 +572,9 @@ function displayTree(form){
 
         var nodeEnter = node.enter().append("g")
                      .attr("transform", function(d) { if(form==0){ return "translate(" + radialPoint(source.x0, source.y0) + ")"; }else{ return "translate(" + source.x0 + "," + source.y0 + ")"; } })	//position the nodes
-                     .on('dblclick', changeChildren)
+                     //.on('dblclick', changeChildren)
                      .on("mouseover", function(d) { var g = d3.select(this); //g object of the node
-                                                    var info = g.append('text').classed('info', true).attr('x', -25).attr('y', function(d) { return -(5+(2*d.data.value))}).text(function(d) { if(d.data.name!="naive"){ return d.data.name; }}).attr('font-size', 12) ;})
+                                                    var info = g.append('text').classed('info', true).attr('x', -25).attr('y', function(d) { return -(5+(5+(0.25*d.data.value)))}).text(function(d) { if(d.data.name!="ighv"){ return d.data.name; }}).attr('font-size', 12) ;})
                       .on("mouseout", function() { d3.select(this).select('text.info').remove()}); //remove the text on mouse out
 
         // adds the circle to the node
@@ -557,15 +583,15 @@ function displayTree(form){
         .style("stroke", function(d){ return d.data.stroke; })
         .style("stroke-dasharray", function(d){ return d.data.style; })
         .style("stroke-width", 1.5)
-                 .attr("r", function(d) { return d.data.value? 2*d.data.value : 0}); //set the diameter of the node
+                 .attr("r", function(d) { return d.data.value? 5+(0.25*d.data.value) : 0}); //set the diameter of the node
 
         //add text to the node
         nodeEnter.append("text")
                  .attr('font-size', 12) //set the size of the text
-                 .attr("dy", function(d) { return 15+(2*d.data.value)})	//set the emplacement of the text
+                 .attr("dy", function(d) { return 15+(5+(0.25*d.data.value))})	//set the emplacement of the text
                  .attr("dx", 15)
                  .attr("text-anchor", "middle")
-                 .text(function(d) { if(d.data.name!="naive" && d.parent.data.name=="naive"){ return d.data.name; }})
+                 .text(function(d) { if(d.data.name!="ighv" && d.parent.data.name=="ighv"){ return d.data.name; }})
                  .clone(true).lower()
                  .attr("stroke", "white");
 
@@ -578,7 +604,7 @@ function displayTree(form){
                   .attr("transform", function(d) { if(form==0){ return "translate(" + radialPoint(d.x, d.y) + ")";}else{return "translate(" + d.x + "," + d.y + ")";} });
 
         nodeUpdate.select('circle')
-                  .attr('r', function(d) { return d.data.value? 2*d.data.value : 0})
+                  .attr('r', function(d) { return d.data.value? 5+(0.25*d.data.value) : 0})
                   .attr('cursor', 'pointer');
 
         //remove any exiting nodes
@@ -664,6 +690,28 @@ function displayTree(form){
       if (d.children[i].children){changeDepth(d.children[i]);}
     }
   }
+    
+    function branchLength(nodes){
+      //var maxValue = maxClonotypeValue(nodes);
+      for(var i in nodes.children){
+        coef = (nodes.children[i].x-nodes.x)/(nodes.children[i].y-nodes.y);
+        nodes.children[i].y = nodes.children[i].y + ((nodes.y - nodes.children[i].y) * (1-nodes.children[i].data["length"]));   
+        nodes.children[i].x = (nodes.children[i].y * coef) + nodes.x;
+        if(nodes.children[i].children != undefined){
+          branchLength(nodes.children[i]);
+        }
+      }
+    }
 
-	
+  //browse the tree to find the clonotype with the biggest abundance and return its value
+  function maxClonotypeValue(data, maxValue){
+    for(var i in data.children){
+      if(data.children[i].data.value > maxValue){maxValue = data.children[i].data.value;} //change the maxValue
+      if(data.children[i].children != undefined){maxClonotypeValue(data.children[i], maxValue);}
+    }
+    return maxValue
+  }
+
+
 </script>
+
