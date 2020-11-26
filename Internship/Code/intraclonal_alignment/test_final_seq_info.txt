@@ -1,0 +1,13 @@
+0_642	S15768	unproductive	IGHV3-74*01	IGHJ4*02	CASGQGSAPTGVGRAVPFDSW	ctttgactcctggggccagtgaaccttgtgcaccgtcccctcag
+0_643	S15802	productive	IGHV3-74*02	IGHJ4*02	CVRDQGSADTGVGTAVAFDSW	ctttgactcatggggccagggggccctggtcaccgtctcctcag
+0_643	S20726	productive	IGHV3-74*01	IGHJ4*02	CVRDQGSADTGVGTAVAFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_643	S27465	productive	IGHV3-74*01	IGHJ4*02	CVRDQGSADTGVGTAVAFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_643	S29048	productive	IGHV3-74*01	IGHJ4*02	CVRDQGSADTGVGTAVAFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_644	S15809	productive	IGHV3-74*01	IGHJ4*02	CVRDQGQAETGVGTAVPFDSW	ctttgactcatggggccagggaactctagtcaccgtctcctcag
+0_645	S15823	productive	IGHV3-74*01	IGHJ4*02	CAREEGSAGTGVGRAVPFDSW	ctttgactcatggggccagcgtaccctggtcaccgtctcctctg
+0_618	S14768	productive	IGHV3-74*01	IGHJ4*02	CVRDLGSADTGVGTAVPFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_618	S19404	productive	IGHV3-74*01	IGHJ4*02	CVRDLGSADTGVGTAVPFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_618	S20144	productive	IGHV3-74*01	IGHJ4*02	CVRDLGSADTGVGTAVPFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_618	S32221	productive	IGHV3-74*01	IGHJ4*02	CVRDLGSADTGVGTAVPFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_618	S20370	productive	IGHV3-74*03	IGHJ4*02	CVRDLGSADTGVGTAVPFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
+0_618	S24295	productive	IGHV3-74*02	IGHJ4*02	CVRDLGSADTGVGTAVPFDSW	ctttgactcatggggccagggaaccctggtcaccgtctcctcag
