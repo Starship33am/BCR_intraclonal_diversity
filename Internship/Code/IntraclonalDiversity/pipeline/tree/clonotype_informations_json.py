@@ -41,7 +41,7 @@ def save_json_format(file_name, data):
 
 # ------------------------------------------------------------------------------------
 
-#check if two file have been put in argument
+#check if four files have been put in argument
 if(len(sys.argv)==4):
 	#open the first file which contains the Newick format
 	with open(sys.argv[1]) as file:
@@ -67,7 +67,3 @@ if(len(sys.argv)==4):
 
 	save_json_format(input_file[0]+"_clonotype", tree)	#save data in json format
 	
-	
-
-
-
