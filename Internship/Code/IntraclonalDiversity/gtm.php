@@ -4,6 +4,7 @@
 
   //setcookie("Userfile", $userFile, "");
   $userFile = $_COOKIE['Userfile'];
+  $title = $_COOKIE["title"];
   echo "<!DOCTYPE html><html>";
   echo debut_html("ViCoD - Repertoire");
   echo "<body>";
@@ -33,7 +34,6 @@
 
     //this user is the first in the list
     if($id==$userFile){
-      //echo "<p class='wait' >", "Please wait a moment, your data are being analyzed", "</p>";
       $update='UPDATE users SET firstStep="in progress" WHERE userID='.$userFile;  //modify the statute of the user from "waiting" to "in progress"
       $query = $bdd->query($update); 
       //disconnect from the database
@@ -48,16 +48,6 @@
       //waiting page
       header('Location: tree.php');
       exit();
-      //connection to the database
-      //$bdd = new PDO('mysql:host=localhost;dbname=BCRVisualization;charset=utf8', 'users', 'BCRVisualizati0n!');
-      //$update='UPDATE users SET firstStep="done" WHERE userID='.$userFile; //modify the statute of the user from "in progress" to "done"
-      //$query = $bdd->query($update);
-      //disconnect from the database
-      //$query = null;
-      //$bdd = null;
-
-      //load the visualization page of the data analysed
-      //include('includes/clone.html');
 
     //This user is not the first in the list
     }else{
