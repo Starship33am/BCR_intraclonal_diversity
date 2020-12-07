@@ -111,4 +111,3 @@ if(len(sys.argv)==3):
 
 else:
 	print("Please enter 2 files in argument")
-
