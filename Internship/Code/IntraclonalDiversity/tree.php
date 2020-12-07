@@ -5,6 +5,7 @@ ini_set("display_errors", 1);
   require_once('class/tools.php');
 
   $userFile = $_COOKIE['Userfile'];
+  $title = $_COOKIE["title"];
   echo "<!DOCTYPE html><html>";
   echo debut_html("ViCoD - Repertoire");
   echo "<body>";
@@ -19,7 +20,6 @@ ini_set("display_errors", 1);
     //search if a job is running for the tree
     $inProgress = 'SELECT userID FROM users WHERE secondStep="in progress"';
     $query = $bdd->query($inProgress);
-  echo"hey";
     //if not the data of this user can be analysed if he is the first in the list
     if($query->fetch()==null){
       //Is this user the first in the list?
@@ -46,9 +46,6 @@ var_dump($output);
         //waiting page
         header('Location: clone.php');
         exit();
-
-      //load the visualization page of the data analysed
-      //include('includes/clone.html');
 
       //This user is not the first in the list
       }else{
