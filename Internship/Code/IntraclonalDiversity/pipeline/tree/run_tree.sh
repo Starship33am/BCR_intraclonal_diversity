@@ -13,6 +13,7 @@ do
 
   #move the nk file in the user folder MUST BE DELETE WHEN THE TREE GENERATION TOOL WILL BE INTEGRATE
   cp ../false_values_tree/userName_C$i.nk ../usersFiles/$1/tree/$1_C$i.nk
+  cp ../false_values_tree/userName_sequences_C$i.txt ../usersFiles/$1/tree/$1_sequences_C$i.txt
 
   #translate the data in JSON format to analyse them 
   python3 clonotype_informations_json.py ../usersFiles/$1/tree/$1_C$i.nk ../usersFiles/$1/GTM/$1_repertoire_two_levels_info.json $i
