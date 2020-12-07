@@ -2,9 +2,11 @@
   require_once('class/tools.php');
 
   $userFile = $_COOKIE['Userfile'];
+  $title = $_COOKIE["title"];
   echo "<!DOCTYPE html><html>";
   echo debut_html("ViCoD - Repertoire");
   echo "<body>";
+  include('includes/navbar.html');
 
   $bdd = new PDO('mysql:host=localhost;dbname=BCRVisualization;charset=utf8', 'users', 'BCRVisualizati0n!');
   $state = 'SELECT secondStep FROM users WHERE userID='.$userFile; // statute of the user 
@@ -18,8 +20,7 @@
     $query = null;
     $bdd = null;
 
-    //$cmd = '/bin/bash /var/www/html/IntraclonalDiversity/pipeline/tree/run_tree.sh '.$userFile.' > /dev/null&';
-    //exec($cmd, $output);
+
     //load the visualization page of the data analysed
     include('includes/clone.html');
 
