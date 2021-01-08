@@ -92,9 +92,9 @@ color: #2471a3;
 
 .linkTree {
   fill: none;
-  stroke: #555;
-  stroke-opacity: 0.5;
-  stroke-width: 2;
+  /*stroke: #555;*/
+  stroke-opacity: 1;
+  /*stroke-width: 2;*/
 }
 
 
@@ -144,10 +144,6 @@ width: 100%;
     padding: 0;
     overflow: auto;
 }
-
-
-
-
 
 #tableSequence { 
   border-spacing: 0;
