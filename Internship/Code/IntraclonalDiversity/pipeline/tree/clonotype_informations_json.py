@@ -58,6 +58,7 @@ if(len(sys.argv)==4):
 
 	tree["value"]=0		#add the value of abundance to the naive sequence
 	tree["name"]="ighv"
+	tree["length"]=0
 
 	tree["color"]="#808080";
 	tree["stroke"]="#808080";
