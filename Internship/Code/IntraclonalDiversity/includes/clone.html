@@ -481,7 +481,8 @@ d3.json(path, function(error, data) {
 
 function displayTree(){
   d3.select("#clonotypeTree svg").remove();
-  var colorProd = document.getElementById("productivity"); // checkbox element 
+  var colorProd = document.getElementById("productivity"); // checkbox element
+  var treeBranches = [], maxAbundance=0; 
   
   cloneName = objectSelected[0]["name"].split("-")[0];
   localStorage.setItem( 'clone', cloneName );
@@ -497,6 +498,10 @@ function displayTree(){
     if (error) throw error;
 
     var data = d3.hierarchy(dataTree); //data structure that represente a hieratchy
+
+    //store the most abundant clonotypes and the value of the longest branch of the tree
+    //treeBranches = findMostAbundantClonotypes(data);
+    //console.log(treeBranches);    
 
     //branch length for the circular tree
     //changeDepth(data);
@@ -636,7 +641,6 @@ function updateTree(source) {
   
         var linkEnter = link.enter().insert('path',"g")	//SVG path allow to draw shape
                      .attr("class", "linkTree")
-                     .style("stroke-width", 2)
                      .style("stroke", "#555")
                      .attr("d", function(d){ var s = {x : source.x0, y : source.y0}; return branchShape(s, s);});
 
@@ -696,6 +700,38 @@ function updateTree(source) {
       if (d.children[i].children){changeDepth(d.children[i]);}
     }
   }
+
+//browse the tree of clonotypes to find the 5 first clonotypes with the most abundance
+function findMostAbundantClonotypes(data){
+  var longestTreeBranch = [0,0,0,0], lengthBranch = [], nodeSize = [], abundanceMax = [];
+  //for each children of the given node 
+  for(var i in data.children){
+    abundanceMax.push(parseFloat(data.children[i].data.value));
+    //look among the children of this node if there are clonotypes with more abundance
+    if(data.children[i].children){ 
+      longestTreeBranch = findMostAbundantClonotypes(data.children[i]);
+      //add to a table all the length of the branch
+      lengthBranch.push(longestTreeBranch[1]+parseFloat(data.children[i].data.length));
+      nodeSize.push(longestTreeBranch[2]+parseFloat(data.children[i].data.value));
+    }else{    
+      //add to a table all the length of the branch
+      lengthBranch.push(parseFloat(data.children[i].data.length));
+      nodeSize.push(parseFloat(data.children[i].data.value));
+    }
+  }
+
+  longestTreeBranch[0] += 1;
+  for(var j in lengthBranch){
+    if(lengthBranch[j]+nodeSize[j]>longestTreeBranch[1]+longestTreeBranch[2]){
+      longestTreeBranch[1]=lengthBranch[j];
+      longestTreeBranch[2]=nodeSize[j];
+    }
+  }
+console.log(longestTreeBranch[3],Math.max.apply(null,abundanceMax),abundanceMax)
+  if(Math.max.apply(null,abundanceMax)>longestTreeBranch[3]){longestTreeBranch[3]=Math.max.apply(null,abundanceMax);}
+
+  return longestTreeBranch;
+}
 
 
 </script>
