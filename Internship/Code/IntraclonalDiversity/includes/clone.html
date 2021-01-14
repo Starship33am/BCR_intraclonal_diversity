@@ -142,6 +142,7 @@ d3.json(path, function(error, data) {
                                             cloneZoom=true;
                                             zoom(d), d3.event.stopPropagation();
                                             objectSelected = children[i-1].children;
+                                            form=0;
                                             clonePage(children[i-1].children,d.data.name);} 
                           });
 
@@ -267,6 +268,8 @@ d3.json(path, function(error, data) {
     document.getElementById("clonotypeTree").style.display = "none";
     //deactivate radios button
     document.getElementById("treeForm").style.display = "none";
+    //deactivate checkbox
+    document.getElementById("checkboxProductivity").style.display = "none";
     //display the form which allows to enter a threshold value
     var form = document.getElementById('thresholdSelection');
     form.style.display = "block";
@@ -430,6 +433,8 @@ d3.json(path, function(error, data) {
     document.getElementById("nextButton").style.display = "block";
     //activate the radios button to change the form of the tree
     document.getElementById("treeForm").style.display = "block";
+    //activate the checkbox to visualise the productivity
+    document.getElementById("checkboxProductivity").style.display = "block";
     //launch the tool to obtained hierarchy of clonotypes
     //activate tree container
     document.getElementById("clonotypeTree").style.display = "block";
@@ -500,8 +505,7 @@ function displayTree(){
     var data = d3.hierarchy(dataTree); //data structure that represente a hieratchy
 
     //store the most abundant clonotypes and the value of the longest branch of the tree
-    //treeBranches = findMostAbundantClonotypes(data);
-    //console.log(treeBranches);    
+    treeBranches = findMostAbundantClonotypes(data); 
 
     //branch length for the circular tree
     //changeDepth(data);
@@ -548,6 +552,13 @@ function displayTree(){
     var duration = 750, i=0;
     data.x0 = height / 2;
     data.y0 = 0;
+
+        var maxSizeNode = width/(data.leaves().length+1), 
+            minSizeNode = (width/(data.leaves().length+1))*0.9,
+            //maxSizeNode = Math.min(maxSizeWidth,maxSizeHeight)
+            nodeSizeFactor = (maxSizeNode-minSizeNode)/treeBranches[3],  //abundance scale unit
+            yUnit = (height-((treeBranches[2]*nodeSizeFactor)+minSizeNode))/treeBranches[1];  //value of a nucleotide in pixel
+
 
 // Collapse the second level
 //data.children.forEach(collapse);
@@ -597,7 +608,7 @@ function updateTree(source) {
                                             }else{return d.data.color;}})
                  .style("stroke", function(d){ if(colorProd.checked){return "#000000";}else{return d.data.stroke;} })
                  .style("stroke-dasharray", function(d){ if(colorProd.checked){return "none";}else{return d.data.style;} })
-                 .attr("d", d3.symbol().size(function(d) { return d.data.value? 50+(10*d.data.value) : 0} )
+                 .attr("d", d3.symbol().size(function(d) { return d.data.value? (nodeSizeFactor*parseFloat(d.data.value))+minSizeNode : 0} )
                                        .type(function(d) { if(d.data.name=="ighv"){return d3.symbolTriangle;
                                                            }else{return d3.symbolCircle;}
                                                          }));
@@ -620,7 +631,7 @@ function updateTree(source) {
                   .attr("transform", function(d) { if(form==0){ return "translate(" + radialPoint(d.x, d.y) + ")";}else{return "translate(" + d.x + "," + d.y + ")";} });
 
         nodeUpdate.select('path.nodeTree')
-                  .attr("d", d3.symbol().size(function(d) { return d.data.value? 50+(10*d.data.value) : 0})
+                  .attr("d", d3.symbol().size(function(d) { return d.data.value? (nodeSizeFactor*parseFloat(d.data.value))+minSizeNode : 0})
                                         .type(function(d) { if(d.data.name=="ighv"){return d3.symbolTriangle;
                                                             }else{return d3.symbolCircle;}}))
                   .attr('cursor', 'pointer');
@@ -703,21 +714,21 @@ function updateTree(source) {
 
 //browse the tree of clonotypes to find the 5 first clonotypes with the most abundance
 function findMostAbundantClonotypes(data){
-  var longestTreeBranch = [0,0,0,0], lengthBranch = [], nodeSize = [], abundanceMax = [];
+  var longestTreeBranch = [0,0,0,0], lengthBranch = [], nodeSize = [], maxAbundance = [];
   //for each children of the given node 
   for(var i in data.children){
-    abundanceMax.push(parseFloat(data.children[i].data.value));
     //look among the children of this node if there are clonotypes with more abundance
     if(data.children[i].children){ 
       longestTreeBranch = findMostAbundantClonotypes(data.children[i]);
       //add to a table all the length of the branch
       lengthBranch.push(longestTreeBranch[1]+parseFloat(data.children[i].data.length));
-      nodeSize.push(longestTreeBranch[2]+parseFloat(data.children[i].data.value));
+      nodeSize.push(longestTreeBranch[2]+(parseFloat(data.children[i].data.value)/100));
     }else{    
       //add to a table all the length of the branch
       lengthBranch.push(parseFloat(data.children[i].data.length));
-      nodeSize.push(parseFloat(data.children[i].data.value));
+      nodeSize.push(parseFloat(data.children[i].data.value)/100);
     }
+    maxAbundance.push(parseFloat(data.children[i].data.value));
   }
 
   longestTreeBranch[0] += 1;
@@ -727,8 +738,8 @@ function findMostAbundantClonotypes(data){
       longestTreeBranch[2]=nodeSize[j];
     }
   }
-console.log(longestTreeBranch[3],Math.max.apply(null,abundanceMax),abundanceMax)
-  if(Math.max.apply(null,abundanceMax)>longestTreeBranch[3]){longestTreeBranch[3]=Math.max.apply(null,abundanceMax);}
+
+  if(Math.max.apply(null,maxAbundance)>longestTreeBranch[3]){ longestTreeBranch[3]=Math.max.apply(null,maxAbundance); }
 
   return longestTreeBranch;
 }
