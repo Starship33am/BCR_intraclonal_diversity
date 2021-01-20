@@ -14,7 +14,7 @@ def color_list(file):
 	colors = []
 	with open(file) as f:
 		for line in f :
-			colors.append("#"+line.split("\n")[0])
+			colors.append(line.split("\n")[0])
 	return colors
 
 # ------------------------------------------------------------------------------------
