@@ -56,7 +56,7 @@ if(len(sys.argv)==4):
 	
 	tree = change_format(newick_tree[0],int(sys.argv[3])-1)	#change the format of the tree to export it in JSON format
 
-	tree["value"]=0		#add the value of abundance to the naive sequence
+	tree["value"]=0.001		#add the value of abundance to the naive sequence
 	tree["name"]="ighv"
 	tree["length"]=0
 
