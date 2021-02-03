@@ -2,7 +2,7 @@
   require_once('class/tools.php');
 
   $userFile = $_COOKIE['Userfile'];
-  $title = $_COOKIE["title"];
+  $analyseName = $_COOKIE["analyseName"];
   echo "<!DOCTYPE html><html>";
   echo debut_html("Intraclonal visualization - clonotype");
   echo "<body>";
