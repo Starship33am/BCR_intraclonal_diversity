@@ -2,7 +2,7 @@
   require_once('class/tools.php');
 
   $userFile = $_COOKIE['Userfile'];
-  $title = $_COOKIE["title"];
+  $analyseName = $_COOKIE["analyseName"];
   echo "<!DOCTYPE html><html>";
   echo debut_html("ViCoD - Repertoire");
   echo "<body>";
@@ -20,7 +20,8 @@
     $query = null;
     $bdd = null;
 
-
+    //$cmd = '/bin/bash /var/www/html/IntraclonalDiversity/pipeline/tree/run_tree.sh '.$userFile.' > /dev/null&';
+    //exec($cmd, $output);
     //load the visualization page of the data analysed
     include('includes/clone.html');
 
@@ -34,4 +35,5 @@
     include('includes/waiting.html');
   }
 
+  echo "</body>";
 ?>
