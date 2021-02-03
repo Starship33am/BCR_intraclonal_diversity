@@ -19,31 +19,24 @@ def color_list(file):
 
 # ------------------------------------------------------------------------------------
 
-#randomly assign a color, a stroke and style to each node 
-def attribute_color(tree, tab_color, tab_style, tab_index):
+#change the index of the color, stroke and style
+def change_index(tab_index,nb_colors,nb_stroke):
 
-	for node in tree:
-		
-		node["color"]=colors[tab_index[0]]
-		node["stroke"]=colors[tab_index[1]]
-		node["style"]=stroke_style[tab_index[2]]
+	if(tab_index[0]!=nb_colors-1):
+		tab_index[0] += 1
+	elif(tab_index[1]!=nb_colors-1):
+		tab_index[0] = 0
+		tab_index[1] += 1
+	elif(tab_index[2]!=nb_stroke-1):
+		tab_index[0] = 0
+		tab_index[1] = 0
+		tab_index[2] += 1
+	else:
+		tab_index[0] = 0
+		tab_index[1] = 0
+		tab_index[2] = 0
 
-		if(tab_index[0]!=len(colors)-1):
-			tab_index[0] += 1
-		elif(tab_index[1]!=len(colors)-1):
-			tab_index[0] = 0
-			tab_index[1] += 1
-		elif(tab_index[2]!=len(stroke_style)-1):
-			tab_index[0] = 0
-			tab_index[1] = 0
-			tab_index[2] += 1
-		else:
-			tab_index[0] = 0
-			tab_index[1] = 0
-			tab_index[2] = 0
-
-		if "children" in node.keys():
-			attribute_color(node["children"], tab_color, tab_style, tab_index)
+	return tab_index
 
 # ------------------------------------------------------------------------------------
 
@@ -69,7 +62,7 @@ if(len(sys.argv)==3):
 
 	colors = color_list(sys.argv[2]) 	
 	stroke_style = ["none", "10,10", "1,5"]
-	index = [0,0,0]
+	clone_index = [0,0,0]
 	clones=[]
 	num_clone = 1;
 	productivity = {"productive": "yes","unproductive" : "no", "" : "/"}	#match for the productivity to complete the table of data
@@ -85,25 +78,31 @@ if(len(sys.argv)==3):
 			cdr3_list = cdr3.split(" ")
 			#the clone doesn't have clonotypes
 			if(len(clonotypes_list)==1):
-				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":productivity[clonotypes_list[0].split(",")[1]]})
+				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":productivity[clonotypes_list[0].split(",")[1]], "color":colors[clone_index[0]], "stroke":colors[clone_index[1]], "style":stroke_style[clone_index[2]]})
+				clone_index = change_index(clone_index,len(colors),len(stroke_style))	#update the values of the index
 			#the cdr3 is the same for all the clonotypes
 			elif(len(cdr3_list)==1):
+				clonotype_index = change_index([clone_index[0],0,0],len(colors),len(stroke_style))	#update the values of the index
 				clonotypes = []
 				for i in range(len(clonotypes_list)):
 					clonotype_info = clonotypes_list[i].split(",") #contains the abundance of the clonotypes and the productivity
-					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":round(float(clonotype_info[0])*100,3), "value_rep":round(float(clone_abundance)*100*float(clonotype_info[0]),3), "productivity":productivity[clonotype_info[1]], "cdr3":cdr3, "seq":"/"})
-				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":"/", "children":clonotypes})
+					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":round(float(clonotype_info[0])*100,3), "value_rep":round(float(clone_abundance)*100*float(clonotype_info[0]),3), "productivity":productivity[clonotype_info[1]], "cdr3":cdr3, "color":colors[clonotype_index[0]], "stroke":colors[clonotype_index[1]], "style":stroke_style[clonotype_index[2]], "seq":"/"})
+					clonotype_index = change_index(clonotype_index,len(colors),len(stroke_style))	#update the values of the index
+				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3, "productivity":"/", "color":colors[clone_index[0]], "stroke":colors[clone_index[1]], "style":stroke_style[clone_index[2]], "children":clonotypes})
+				clone_index = change_index(clone_index,len(colors),len(stroke_style))	#update the values of the index
 			#each clonotype has a different cdr3
 			else :
+				clonotype_index = change_index([clone_index[0],0,0],len(colors),len(stroke_style))	#update the values of the index
 				clonotypes = []
 				for i in range(len(clonotypes_list)):
 					clonotype_info = clonotypes_list[i].split(",") #contains the abundance of the clonotypes and the productivity
-					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":round(float(clonotype_info[0])*100, 3), "value_rep": round(float(clone_abundance)*100*float(clonotype_info[0]), 3), "productivity":productivity[clonotype_info[1]], "cdr3":cdr3_list[i], "seq":"/"})
-				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3_list[0], "productivity":"/", "children":clonotypes})
+					clonotypes.append({"name":clone_name+"-"+str(i+1), "value":round(float(clonotype_info[0])*100, 3), "value_rep": round(float(clone_abundance)*100*float(clonotype_info[0]), 3), "productivity":productivity[clonotype_info[1]], "cdr3":cdr3_list[i], "color":colors[clonotype_index[0]], "stroke":colors[clonotype_index[1]], "style":stroke_style[clonotype_index[2]], "seq":"/"})
+					clonotype_index = change_index(clonotype_index,len(colors),len(stroke_style))	#update the values of the index
+				clones.append({"name":clone_name, "value":round(float(clone_abundance)*100,3), "idV":idV, "idJ":idJ, "cdr3":cdr3_list[0], "productivity":"/", "color":colors[clone_index[0]], "stroke":colors[clone_index[1]], "style":stroke_style[clone_index[2]], "children":clonotypes})
+				clone_index = change_index(clone_index,len(colors),len(stroke_style))	#update the values of the index
 			num_clone += 1
 			
 	repertoire = {"value":100,"color":"#808080","stroke":"#808080","style":"none", "children": clones}	#contain the informations of the repertoire (clones, clonotypes)
-	attribute_color(repertoire["children"], colors, stroke_style, index)	#add properties to nodes
 
 	input_file = sys.argv[1].split(".txt")	#recover the file name
 
