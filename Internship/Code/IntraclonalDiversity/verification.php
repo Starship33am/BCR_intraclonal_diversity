@@ -3,7 +3,9 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+
   $userFile = (string) rand(0, 1000000);
+
 
   if(isset($_POST['submit'])){
     //count total files
@@ -27,8 +29,8 @@ ini_set("display_errors", 1);
         $error = checkFastaFile($files[0]);
         if($error=="fasta"){
           //COOKIES
-          setcookie('Userfile', $userFile, time() + 365*24*3600, null, null, false, true);
-          setcookie('title', $analysisTitle, time() + 365*24*3600, null, null, false, true); 
+          setcookie('Userfile', $userFile, time() + 365*24*3600);
+          setcookie('analyseName', $analysisTitle, time() + 365*24*3600); 
 
           header('Location: gtm.php');
           exit();
@@ -42,6 +44,7 @@ ini_set("display_errors", 1);
       echo '<script type="text/javascript">window.alert("ERROR:: You should provide a name to your analysis");</script>';
     }
   }
+
 
   function checkFastaFile($file){
     $pathParts = pathinfo($file);
@@ -65,5 +68,7 @@ ini_set("display_errors", 1);
     fclose($fileHandle);
     return "fasta";
   }
+
+
 
 ?>
