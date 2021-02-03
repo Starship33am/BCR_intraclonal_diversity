@@ -5,6 +5,7 @@ Evaluating the quality of any clustering tool even on sequences that we dont kno
 #!/usr/bin/env python3
 #-*-coding:Utf-8-*-
 
+import os
 import sys
 import math
 import time
@@ -249,7 +250,7 @@ def calculeSil(ai,bi):
     return si
 
 def write_clone_V_cdr3_(Dicoresult,dicoSeq,uniq_seq_dico,output_file):
-	file_name = output_file.split(".")[0]+"_clone_V_CDR3_J.txt"
+	file_name = os.path.splitext(output_file)[0]+"_clone_V_CDR3_J.txt"
 	filetowrite=open(file_name,"w")
 	clone_number = 0
 	for cluster in Dicoresult.keys():
@@ -295,5 +296,4 @@ def main():
 if __name__ == "__main__":
 	main()
   
-
 
