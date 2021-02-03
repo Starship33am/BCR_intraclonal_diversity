@@ -131,23 +131,36 @@ width: 100%;
   z-index:1; /*order of overlays*/
   background-color: white;
 }
+#tableSequence td, th{
+  height: 16px;
+}
 #tableSequence td{
   text-align: center;
 }
-#tableSequence thead tr th {
+#tableSequence thead tr.firstRow th {
+  background-color: white;
   position: sticky;
   top:0;
+}
+#tableSequence thead tr.secondRow th {
+  background-color: white;
+  position: sticky;
+  top:16px;
+}
+#tableSequence thead tr.thirdRow th {
+  position: sticky;
+  top:32px;
 }
 #tableSequence th:first-child {z-index:2; background-color: white;}
 
 .Vregion{
-  background: #b1b3d2;
+  background: #E6E6FA;
 }
 .cdr3region{
-  background: #fafca1;
+  background: #FFFACD;
 }
 .Jregion{
-  background: #9cfa7a;
+  background: #FFF0F5;
 }
 
 /* properties of the tooltip of the distance visualization and the tree visualization*/
