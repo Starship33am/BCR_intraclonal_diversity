@@ -5,7 +5,7 @@ ini_set("display_errors", 1);
   require_once('class/tools.php');
 
   $userFile = $_COOKIE['Userfile'];
-  $title = $_COOKIE["title"];
+  $analyseName = $_COOKIE["analyseName"];
   echo "<!DOCTYPE html><html>";
   echo debut_html("ViCoD - Repertoire");
   echo "<body>";
@@ -46,6 +46,9 @@ var_dump($output);
         //waiting page
         header('Location: clone.php');
         exit();
+
+      //load the visualization page of the data analysed
+      //include('includes/clone.html');
 
       //This user is not the first in the list
       }else{
