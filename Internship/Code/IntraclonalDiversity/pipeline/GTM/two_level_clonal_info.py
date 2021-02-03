@@ -5,6 +5,7 @@
 #!/usr/bin/env python3
 #-*-coding:Utf-8-*-
 
+import os
 import sys
 from optparse import OptionParser
 import operator
@@ -102,7 +103,7 @@ def write_clonal_info(clonal_info_dico_unsorted,output_file):
 
 #####################################################################
 def add_clone_clonotype_to_seq_info(clonotype_dico,dicoSeq,output_file) :
-	file_name = output_file.split(".")[0]+"_total_seq_info.txt"
+	file_name = os.path.splitext(output_file)[0]+"_total_seq_info.txt"
 	filetowrite=open(file_name,"w")
 	for clone in clonotype_dico.keys():
 		clonotype_number = 0
