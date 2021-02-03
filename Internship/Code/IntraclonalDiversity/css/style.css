@@ -42,40 +42,7 @@ border : none;
 padding :  0 0.3em;
 }
 
-/* container of the form */
-.outer {
-  display: table;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.inner {
-  text-align: center;
-  background-color : #f4f9fd;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-}
-
 h3{ 
 text-align:center; 
 color: #2471a3; 
-}
-
-.tooltip {
-  position: absolute;
-  display: none;
-  padding : 5px;
-  font-size :12px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 3px;  
-  box-shadow: -3px 3px 15px #888;
-  color: white;
 }
