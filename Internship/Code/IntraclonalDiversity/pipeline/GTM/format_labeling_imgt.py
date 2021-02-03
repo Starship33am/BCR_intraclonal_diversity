@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import os
 from collections import Counter
 from optparse import OptionParser
 import time
@@ -51,7 +52,7 @@ def dico_J_seq_format(Dico_from_summary, gapped_nt_file ):
 	return Dico_VJCDR3
 #####################################################################				
 def write_file(Dico_VJCDR3,output_file):
-	outputname = output_file.split(".")[0]+"_V_CDR3_Jseq.txt"
+	outputname = os.path.splitext(output_file)[0]+"_V_CDR3_Jseq.txt"
 	f = open(outputname,"w")
 	for key in Dico_VJCDR3.keys():
 		#print (Dico_VJCDR3[key])
