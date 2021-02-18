@@ -6,6 +6,7 @@ from MSTree import *
 from BasicTree import *
 from BasicSeq import *
 import sys 
+import time
 
 
 
@@ -53,6 +54,7 @@ def makeBoolean(var):
 #						Main
 #===================================================================================
 def main():
+	start_time = time.time()
 	usage = usage = "python clonalTree.py -i <fastaFile> -r <revision> -o <outputFile> \n"
 	parser = OptionParser(usage)
 	parser.add_option("-i", "--fastaFile", dest="fastaFile",  help="sequences in fasta format")
@@ -88,9 +90,9 @@ def main():
 		tree.write(format=1, outfile=outputFile)
 		#print (tree.get_ascii(show_internal=True)) 
 		#print (costTree3(tree, labels, adjMatrix))
-		print ('done')
-	else:
-		print ('KO')
+	#clone = fastaFile.split("_"+str(nb_clonotype))[0].split("/")[-1]
+	print("The clonal tree  execution time : %s seconds " % (time.time() - start_time))
+	print("\n")
 	
 
 #===================================================================================

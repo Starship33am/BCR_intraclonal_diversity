@@ -8,6 +8,7 @@ import sys
 from optparse import OptionParser
 import operator
 import collections
+import time
 
 #####################################################################
 def read_file (nomFi):
@@ -119,6 +120,7 @@ def add_clone_clonotype_to_seq_info(clonotype_dico,dicoSeq,output_file) :
 	return 0
 #####################################################################
 def main():
+	start_time = time.time()
 	usage = "usage: two_level_clonal_info.py -f formatted_IMGT_annotation_output -c ClusteringFile -n repertoire_name"
 	parser = OptionParser(usage)
 	parser.add_option("-f", "--formatted_IMGT_annotation_output", dest="IMGT_seq_info",
@@ -141,6 +143,7 @@ def main():
 	clonal_info_dico,clonotype_dico = gather_clone_clonotype_info(dico_result,dico_vjunc,IMGT_seq_info)
 	write_clonal_info(clonal_info_dico,repertoire_name,clonotype_dico)
 	add_clone_clonotype_to_seq_info(clonotype_dico,dico_vjunc,repertoire_name)
+	print("Creating input file for repertoire visualization execution time : %s seconds " % (time.time() - start_time))
 #####################################################################
 if __name__ == "__main__":
 	main()

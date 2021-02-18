@@ -10,6 +10,7 @@ from Levenshtein import distance as levenshtein_distance
 import skbio 
 from skbio import TabularMSA
 from ClusterCDR3Only import FaIR_CDR3Only
+import time
 #from skbio.alignment.parasail import global_pairwise_align_protein
 #import parasail
 # =============================================================================
@@ -143,6 +144,7 @@ def find_max_list(list):
 #=============================================================================#
 
 def main():
+    start_time = time.time()
     usage = "python  initial_clustering.py  -i <formated IMGT highvquest statistics output> -o <output file name> -s <Clone identity between zero and one> \n "
     parser = OptionParser(usage)
     parser.add_option("-i", "--hv_stat_output", dest="hv_stat_output",
@@ -171,6 +173,7 @@ def main():
     VJ_ID_diff_CDR3 = group_clone_VJ_cdr3(dico_same_VJ,dicoSeq,float(Clone_threshold))
 
     write_clone_VJ_cdr3_all(VJ_ID_diff_CDR3,dicoSeq,output_file_name ,Clone_threshold)
+    print("The initial clustering step execution time : %s seconds " % (time.time() - start_time))
 
 
 #=============================================================================#

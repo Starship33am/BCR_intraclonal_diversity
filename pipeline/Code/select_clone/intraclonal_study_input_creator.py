@@ -3,11 +3,13 @@ from optparse import OptionParser
 import operator
 import collections
 import pandas
+import time
 import numpy as np
 from Bio.Align.Applications import ClustalwCommandline
 from Bio import SeqIO
 from Bio.Align.Applications import MuscleCommandline
 from Bio import AlignIO
+
 #####################################################################
 
 def read_file (nomFi):
@@ -59,6 +61,7 @@ def write_clonaltree_align(list_seq,repertoire_name,clone_name):
 
 #####################################################################
 def main():
+	start_time = time.time()
 	usage = "usage: intraclonal_study_input_creator.py -c final_clusters_seq_info -r repertoire_two_levels_info -n repertoire_name -s number_of_clone_to_analyze"
 	parser = OptionParser(usage)
 	parser.add_option("-c", "--final_clusters_seq_info", dest="final_clusters_seq_info",
@@ -81,6 +84,7 @@ def main():
 	list_clone = read_cluster_in_order(repertoire_two_levels_info,nb_clone)
 	cluster_seq = read_clusters_seq_info(final_clusters_seq_info)
 	extract_seq_from_clone_id(repertoire_name,list_clone,cluster_seq)
+	print("The intraclonal study input creator execution time : %s seconds " % (time.time() - start_time))
 
 #####################################################################
 if __name__ == "__main__":

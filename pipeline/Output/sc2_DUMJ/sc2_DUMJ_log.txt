@@ -1,0 +1,48 @@
+Total sequence count :  235528
+Number of low quality sequences that have been eliminated from the analysis :  823
+Number of sequences to be analysed :  234705
+The AIRR file reading step execution time : 2.4506969451904297 seconds 
+The initial clustering step execution time : 22.693480014801025 seconds 
+The refinement step execution time : 7.5713300704956055 seconds 
+Creating input file for repertoire visualization execution time : 0.9016778469085693 seconds 
+The intraclonal study input creator execution time : 0.3297700881958008 seconds 
+The intraclonal alignment step execution time for the  sc2_DUMJ_1   30 clonotypes : 8.78567886352539 seconds 
+The clonal tree  execution time : 0.03913092613220215 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_1   200 clonotypes : 21.087012767791748 seconds 
+The clonal tree  execution time : 7.131211996078491 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_2   30 clonotypes : 8.189411878585815 seconds 
+The clonal tree  execution time : 0.04037594795227051 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_2   200 clonotypes : 18.71263289451599 seconds 
+The clonal tree  execution time : 7.218770980834961 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_3   30 clonotypes : 8.256273031234741 seconds 
+The clonal tree  execution time : 0.04021906852722168 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_3   200 clonotypes : 18.7080500125885 seconds 
+The clonal tree  execution time : 6.959594011306763 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_4   30 clonotypes : 8.099820852279663 seconds 
+The clonal tree  execution time : 0.040515899658203125 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_4   200 clonotypes : 21.41042184829712 seconds 
+The clonal tree  execution time : 7.125252723693848 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_5   30 clonotypes : 8.518898963928223 seconds 
+The clonal tree  execution time : 0.042035818099975586 seconds 
+
+
+The intraclonal alignment step execution time for the  sc2_DUMJ_5   200 clonotypes : 20.976889848709106 seconds 
+The clonal tree  execution time : 7.015779972076416 seconds 
+
+

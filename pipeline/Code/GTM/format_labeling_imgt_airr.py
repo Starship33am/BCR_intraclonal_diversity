@@ -14,25 +14,35 @@ def read_output_file(filename):
 #####################################################################
 def dico_V_J_CDR3_format(AIRR):
 	lines = read_output_file(AIRR)
+	low_quality_seq=[]
 	Dico={}
 	for l in range(1,len(lines)):
-		functionality,V,J,CDR3,Jseq = "_","_","_","_","_"
 		split=lines[l].split("\t")
-		sequence_id = split[0]
-		if split[4] != "":
-			functionality = split[4]
-		if split[9] != "":
-			V = split[9].split(" ")[1]
-			#print (V)
-		if split[11] != "":
-			J = split[11].split(" ")[1]
-			#print (J)
-		if split[28] != "":
-			CDR3 = split[28].replace("#", ".")
-		if split[89] != "":
-			Jseq = split[89]
-			#print (CDR3)
-		Dico[sequence_id] = [functionality,V,J,CDR3,Jseq]
+		#split[13] is the sequence alignment, is better than the sequence because it starts at the beginig of the V and ends at the end of J 
+		if 'n' in split[13].lower():
+			low_quality_seq.append(l)
+			#print (split[13].lower())
+		else :
+			functionality,V,J,CDR3,Jseq = "_","_","_","_","_"
+			
+			sequence_id = split[0]
+			if split[4] != "":
+				functionality = split[4]
+			if split[9] != "":
+				V = split[9].split(" ")[1]
+				#print (V)
+			if split[11] != "":
+				J = split[11].split(" ")[1]
+				#print (J)
+			if split[28] != "":
+				CDR3 = split[28].replace("#", ".")
+			if split[89] != "":
+				Jseq = split[89]
+				#print (CDR3)
+			Dico[sequence_id] = [functionality,V,J,CDR3,Jseq]
+	print("Total sequence count : " , len(lines)-1)
+	print("Number of low quality sequences that have been eliminated from the analysis : ",  len(low_quality_seq))
+	print("Number of sequences to be analysed : ",  (len(lines)-1)-len(low_quality_seq))
 	return Dico
 
 #####################################################################				
@@ -49,6 +59,7 @@ def write_file(Dico_VJCDR3,output_file):
 
 ####################################################################
 def main():
+	start_time = time.time()
 	usage = "usage: format_labeling_imgt.py -a AIRR -o output_file"
 	parser = OptionParser(usage)
 	parser.add_option("-a", "--AIRR", dest="AIRR",
@@ -64,6 +75,7 @@ def main():
 	time_start = time.perf_counter()
 	Dico_VJCDR3 = dico_V_J_CDR3_format(AIRR_file)
 	write_file(Dico_VJCDR3,output_file)
+	print("The AIRR file reading step execution time : %s seconds " % (time.time() - start_time))
 
 
 #####################################################################

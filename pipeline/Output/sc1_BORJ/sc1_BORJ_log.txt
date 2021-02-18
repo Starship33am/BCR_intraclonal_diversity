@@ -1,0 +1,48 @@
+Total sequence count :  269619
+Number of low quality sequences that have been eliminated from the analysis :  413
+Number of sequences to be analysed :  269206
+The AIRR file reading step execution time : 3.6255502700805664 seconds 
+The initial clustering step execution time : 28.81473207473755 seconds 
+The refinement step execution time : 2.7948381900787354 seconds 
+Creating input file for repertoire visualization execution time : 1.022881031036377 seconds 
+The intraclonal study input creator execution time : 0.39200305938720703 seconds 
+The intraclonal alignment step execution time for the  sc1_BORJ_1   30 clonotypes : 10.104261875152588 seconds 
+The clonal tree  execution time : 0.03935503959655762 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_1   200 clonotypes : 21.213512897491455 seconds 
+The clonal tree  execution time : 7.291129112243652 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_2   30 clonotypes : 9.763032674789429 seconds 
+The clonal tree  execution time : 0.039849042892456055 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_2   200 clonotypes : 20.798365116119385 seconds 
+The clonal tree  execution time : 6.852897882461548 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_3   30 clonotypes : 9.428338289260864 seconds 
+The clonal tree  execution time : 0.03982210159301758 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_3   200 clonotypes : 11.83118224143982 seconds 
+The clonal tree  execution time : 0.3226637840270996 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_4   30 clonotypes : 9.588236093521118 seconds 
+The clonal tree  execution time : 0.04022622108459473 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_4   200 clonotypes : 10.906293869018555 seconds 
+The clonal tree  execution time : 0.1551527976989746 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_5   30 clonotypes : 9.91897201538086 seconds 
+The clonal tree  execution time : 0.039920806884765625 seconds 
+
+
+The intraclonal alignment step execution time for the  sc1_BORJ_5   200 clonotypes : 10.785933256149292 seconds 
+The clonal tree  execution time : 0.1347801685333252 seconds 
+
+

@@ -341,6 +341,7 @@ def write_fasta_nosingleton (list_no_singleton,output_file,uniq_fasta,all_fasta)
 
 ####################################################################
 def main():
+	start_time = time.time()
 	usage = "usage: refinement.py -f FastaFile -c ClusteringFile "
 	parser = OptionParser(usage)
 	parser.add_option("-f", "--FastaFile", dest="FastaFile",
@@ -351,7 +352,7 @@ def main():
 	(options, args) = parser.parse_args()
 	if len(sys.argv) != 5:
 		parser.error("incorrect number of arguments")
-	print("refinement is started ...")
+	#print("refinement is started ...")
 	FastaFile = options.FastaFile
 	ClusteringFile = options.ClusteringFile
 
@@ -369,6 +370,7 @@ def main():
 	#print ("dicoNeighbour",dico_neighbour)
 	Dicoresult = run_silhouette(dico_vjunc,dico_centroid,filtered_clustering_label,dico_neighbour,len_max_CDR3,len_max_J,dico_vjunc)
 	write_clone_V_cdr3_(Dicoresult,dico_vjunc,uniq_seq_dico,FastaFile)
+	print("The refinement step execution time : %s seconds " % (time.time() - start_time))
 
 
 #####################################################################
