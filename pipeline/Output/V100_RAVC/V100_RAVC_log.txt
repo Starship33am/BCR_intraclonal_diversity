@@ -1,48 +1,38 @@
 Total sequence count :  532948
 Number of low quality sequences that have been eliminated from the analysis :  0
 Number of sequences to be analysed :  532948
-The AIRR file reading step execution time : 7.497035026550293 seconds 
-The initial clustering step execution time : 57.08732008934021 seconds 
-The refinement step execution time : 12.804997205734253 seconds 
-Creating input file for repertoire visualization execution time : 2.331099271774292 seconds 
-The intraclonal study input creator execution time : 0.8253889083862305 seconds 
-The intraclonal alignment step execution time for the  V100_RAVC_1   30 clonotypes : 23.2185161113739 seconds 
-The clonal tree  execution time : 0.04381728172302246 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_1   200 clonotypes : 38.93429088592529 seconds 
-The clonal tree  execution time : 7.2024970054626465 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_2   30 clonotypes : 24.3661789894104 seconds 
-The clonal tree  execution time : 0.046898841857910156 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_2   200 clonotypes : 38.18015003204346 seconds 
-The clonal tree  execution time : 7.061724901199341 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_3   30 clonotypes : 18.839683771133423 seconds 
-The clonal tree  execution time : 0.04183793067932129 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_3   200 clonotypes : 35.980056047439575 seconds 
-The clonal tree  execution time : 7.0821497440338135 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_4   30 clonotypes : 22.496342182159424 seconds 
-The clonal tree  execution time : 0.043263912200927734 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_4   200 clonotypes : 35.06737995147705 seconds 
-The clonal tree  execution time : 7.1947550773620605 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_5   30 clonotypes : 18.32865309715271 seconds 
-The clonal tree  execution time : 0.04267287254333496 seconds 
-
-
-The intraclonal alignment step execution time for the  V100_RAVC_5   200 clonotypes : 35.63883709907532 seconds 
-The clonal tree  execution time : 7.023612022399902 seconds 
-
-
+The AIRR file reading step execution time : 8.564496278762817 seconds 
+The initial clustering step execution time : 57.20056915283203 seconds 
+The refinement step execution time : 12.675426244735718 seconds 
+Creating input file for repertoire visualization execution time : 2.4564239978790283 seconds 
+The intraclonal study input creator execution time : 0.8377690315246582 seconds 
+The intraclonal alignment step execution time for the  V100_RAVC_1   30 clonotypes : 19.799927949905396 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  V100_RAVC_1   200 clonotypes : 40.76882195472717 seconds 
+201 201
+done
+The intraclonal alignment step execution time for the  V100_RAVC_2   30 clonotypes : 19.07724094390869 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  V100_RAVC_2   200 clonotypes : 36.80382680892944 seconds 
+201 201
+done
+The intraclonal alignment step execution time for the  V100_RAVC_3   30 clonotypes : 23.189603090286255 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  V100_RAVC_3   200 clonotypes : 41.447636127471924 seconds 
+201 201
+done
+The intraclonal alignment step execution time for the  V100_RAVC_4   30 clonotypes : 19.064143180847168 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  V100_RAVC_4   200 clonotypes : 37.66133189201355 seconds 
+201 201
+done
+The intraclonal alignment step execution time for the  V100_RAVC_5   30 clonotypes : 25.67473268508911 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  V100_RAVC_5   200 clonotypes : 45.37355065345764 seconds 
+201 201
+done

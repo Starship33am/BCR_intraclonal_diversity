@@ -5,6 +5,7 @@ from ete3 import Tree
 import numpy as np
 import sys 
 
+
 #------------------------------------------------------
 def pathToRoot(nodeName, tree):
 	D = tree&nodeName
@@ -38,7 +39,7 @@ def costTree(tree):
 	for node in tree.traverse("preorder"):
 		parent = node.up
 		if parent:
-			#print (node.name, parent.name, node.get_distance(parent))
+			print (node.name, parent.name, node.get_distance(parent))
 			ctotal = ctotal + node.dist
 	return ctotal
 
@@ -75,8 +76,8 @@ def costTree2(tree, labels, adjMatrix):
 	for node in tree.traverse("preorder"):
 		parent = node.up
 		if parent:
-			#print ('parentNode=' ,parent.name, 'node=', node.name); 
-			#print(pathToRoot(node.name, tree))
+			print ('parentNode=' ,parent.name, 'node=', node.name); 
+			print(pathToRoot(node.name, tree))
 			pn = parent.name
 			if pn == '':
 				pn = 'germline'
@@ -88,12 +89,12 @@ def costTree2(tree, labels, adjMatrix):
 			
 			if pn in labels and node.name in labels:
 				cost = adjMatrix[labels.index(node.name)][labels.index(pn)]
-				#print (node.name, pn, cost)
+				print (node.name, pn, cost)
 				ctotal = ctotal + cost
 				count +=1
 			else:
 				print (pn, node.name)
-	#print ('Nb nodes', count)
+	print ('Nb nodes', count)
 	return ctotal
 
 #===================================================================================
@@ -134,7 +135,7 @@ def findCommonAncestorLeavesOLD(tree, labels):
 	coupleNodes = {}
 	for i in range(len(labels)):	  
 		for j in range(i+1, len(labels)):
-			#print (labels[i], labels[j])
+			print (labels[i], labels[j])
 			ancestor = tree.get_common_ancestor(labels[i], labels[j])
 			aname = ancestor.name
 			if aname == '':
@@ -146,4 +147,17 @@ def findCommonAncestorLeavesOLD(tree, labels):
 			coupleNodes[labels[i]+ '-'+ labels[j]] = aname
 	return coupleNodes
 
+#===================================================================================
+def checkConsistence(tree, labels):
+	seen = {}
+	for node in tree.traverse("preorder"):
+		if node.name not in seen.keys():
+			if node.name in labels:
+				seen[node.name] = True
+			elif node.name != '':
+				print ("ERROR ", node.name, " not in labels")
+		else:
+			print ("ERROR ", node.name, " several times")
+	print (len(seen),len(labels))
+	return len(seen)==len(labels)
 

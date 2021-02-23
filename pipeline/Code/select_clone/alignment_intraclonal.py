@@ -38,17 +38,20 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 	list_selected_clonotype = []
 	for l in lines:
 		seq = l.split("\t")
+		#print("seq : ",seq)
 		clonotype = seq[0].split("_")[1]
 		if clonotype in clonotype_seq.keys():
 			clonotype_seq[clonotype].append(seq[1])
 		else: 
 			clonotype_seq[clonotype] = [seq[1]]
+	#print("clonotype_seq",clonotype_seq)
 	major_clonotype = (sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0])
 	germline = airr_df.loc[airr_df['sequence_id'] == clonotype_seq[major_clonotype][0]]["germline_seq"].values[0]
 	if nb_clonotype == 'all':
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)))
 	else :
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0:int(nb_clonotype)]))
+	#print("list_selected_clonotype",list_selected_clonotype)
 	return clonotype_seq,germline,list_selected_clonotype,clonotype_seq[major_clonotype][0]
 
 #=============================================================================#
@@ -59,6 +62,7 @@ def compare_clonotype_to_germline(region):
 	region_compered_to_germ['germline'] = region['germline']
 	germline_seq = region['germline'][0]
 	del region['germline']
+	#print("region key",region.keys())
 	for key in region.keys():
 		aligned_seq = ''
 		for nt in range(len(germline_seq)):

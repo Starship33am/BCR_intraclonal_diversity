@@ -119,18 +119,7 @@ def editTree(t1, adjMatrix, labels):
 							G[0].add_child(name=n.name)
 	return tr
 	
-def checkConsistence(tree, labels):
-	seen = {}
-	for node in tree.traverse("preorder"):
-		if node.name not in seen.keys():
-			if node.name in labels:
-				seen[node.name] = True
-			elif node.name != '':
-				print (node.name, " not in labels")
-		else:
-			print ("ERROR ", node.name, " several times")
-		
-	return len(seen)==len(labels)
+
 
 def colapseNodes(node, lnodes, parent, cost, labels, aldColapsed):
 	colapse = []
@@ -145,20 +134,22 @@ def colapseNodes(node, lnodes, parent, cost, labels, aldColapsed):
 				colapse.append(i.name)
 	return colapse
 
-def addNodeTree(t, a, b, min):
+def addNodeTree(t, a, b, min, infoCost):
 
 	tp = ()
 	G = t.search_nodes(name=a)
 	
 	if (G):
-		G[0].add_child(name=b, dist=min); #print (a, b, 'cost', min)
+		G[0].add_child(name=b, dist=min) 
+		infoCost += a + "\t" + b + "\t" + str(min) + "\n"
 	else:
 		G = t.search_nodes(name=b)
 		if (G):
-			G[0].add_child(name=a, dist=min); #print (a, b, 'cost', min)
+			G[0].add_child(name=a, dist=min)
+			infoCost += a + "\t" + b + "\t" + str(min) + "\n"
 		else:
 			print ("Warnning nodes do not exists: ", a, b)
-	return t
+	return t, infoCost
 
 def takeRandomNode(included, labels,  D):
 	#print ("LEN INC", len(included))
@@ -232,6 +223,7 @@ def correctMatrix(adjMatrixNP, visitedNodes):
 
 
 def kruskalMST(cost, root, labels, abundance, useAb=True): 
+	infoTree = ""
 	tree = Tree()
 	tree.add_child(name=labels[root])
 	adjMatrixNP = np.array(cost); np.fill_diagonal(adjMatrixNP, INF)
@@ -241,14 +233,14 @@ def kruskalMST(cost, root, labels, abundance, useAb=True):
 		if useAb:
 			minsI, minsJ =  aminIndex(adjMatrixNP, visitedNodes)
 		else:
-			 minsI, minsJ =  aminIndexFirstFound(adjMatrixNP, visitedNodes)
+			minsI, minsJ =  aminIndexFirstFound(adjMatrixNP, visitedNodes)
 		#print (adjMatrixNP); print (minsI); print (minsJ)
 		nodeA, nodeB = chooseBestNode(minsI, minsJ, visitedNodes, adjMatrixNP, labels, abundance)
 		minV = adjMatrixNP[nodeA][nodeB]
 		adjMatrixNP[nodeA][nodeB] = INF; adjMatrixNP[nodeB][nodeA] = INF
 		#print ('==>', labels[nodeA], labels[nodeB], adjMatrixNP[nodeB][nodeA])
 		#print (adjMatrixNP)
-		tree = addNodeTree(tree, labels[nodeA], labels[nodeB], minV)
+		tree, infoTree = addNodeTree(tree, labels[nodeA], labels[nodeB], minV, infoTree)
 		if nodeA not in visitedNodes:
 			visitedNodes.append(nodeA)
 		if nodeB not in visitedNodes:
@@ -263,6 +255,6 @@ def kruskalMST(cost, root, labels, abundance, useAb=True):
 		#print ('it ', it)
 		adjMatrixNP = correctMatrix(adjMatrixNP, visitedNodes)
 	#print (adjMatrixNP)
-	return tree
+	return tree, infoTree
 
 

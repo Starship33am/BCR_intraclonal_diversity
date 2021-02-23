@@ -1,48 +1,38 @@
 Total sequence count :  31842
 Number of low quality sequences that have been eliminated from the analysis :  112
 Number of sequences to be analysed :  31730
-The AIRR file reading step execution time : 0.3278062343597412 seconds 
-The initial clustering step execution time : 8.220721006393433 seconds 
-The refinement step execution time : 0.09917807579040527 seconds 
-Creating input file for repertoire visualization execution time : 0.09962296485900879 seconds 
-The intraclonal study input creator execution time : 0.04265308380126953 seconds 
-The intraclonal alignment step execution time for the  sc2_VERM_1   30 clonotypes : 1.2739088535308838 seconds 
-The clonal tree  execution time : 0.038949012756347656 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_1   200 clonotypes : 6.180852890014648 seconds 
-The clonal tree  execution time : 6.977118015289307 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_2   30 clonotypes : 1.238548994064331 seconds 
-The clonal tree  execution time : 0.0397191047668457 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_2   200 clonotypes : 6.392329931259155 seconds 
-The clonal tree  execution time : 6.909749984741211 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_3   30 clonotypes : 1.0110270977020264 seconds 
-The clonal tree  execution time : 0.007279157638549805 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_3   200 clonotypes : 0.9990360736846924 seconds 
-The clonal tree  execution time : 0.0072650909423828125 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_4   30 clonotypes : 1.0197100639343262 seconds 
-The clonal tree  execution time : 0.0054111480712890625 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_4   200 clonotypes : 0.9791538715362549 seconds 
-The clonal tree  execution time : 0.005384922027587891 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_5   30 clonotypes : 0.9809331893920898 seconds 
-The clonal tree  execution time : 0.005961179733276367 seconds 
-
-
-The intraclonal alignment step execution time for the  sc2_VERM_5   200 clonotypes : 0.9848930835723877 seconds 
-The clonal tree  execution time : 0.005930900573730469 seconds 
-
-
+The AIRR file reading step execution time : 0.3644547462463379 seconds 
+The initial clustering step execution time : 8.322999000549316 seconds 
+The refinement step execution time : 0.10368990898132324 seconds 
+Creating input file for repertoire visualization execution time : 0.10395598411560059 seconds 
+The intraclonal study input creator execution time : 0.04726004600524902 seconds 
+The intraclonal alignment step execution time for the  sc2_VERM_1   30 clonotypes : 1.3727619647979736 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  sc2_VERM_1   200 clonotypes : 6.0547261238098145 seconds 
+201 201
+done
+The intraclonal alignment step execution time for the  sc2_VERM_2   30 clonotypes : 1.521705150604248 seconds 
+31 31
+done
+The intraclonal alignment step execution time for the  sc2_VERM_2   200 clonotypes : 6.103833913803101 seconds 
+201 201
+done
+The intraclonal alignment step execution time for the  sc2_VERM_3   30 clonotypes : 1.0183541774749756 seconds 
+11 11
+done
+The intraclonal alignment step execution time for the  sc2_VERM_3   200 clonotypes : 1.0604331493377686 seconds 
+11 11
+done
+The intraclonal alignment step execution time for the  sc2_VERM_4   30 clonotypes : 1.0246999263763428 seconds 
+8 8
+done
+The intraclonal alignment step execution time for the  sc2_VERM_4   200 clonotypes : 0.9814808368682861 seconds 
+8 8
+done
+The intraclonal alignment step execution time for the  sc2_VERM_5   30 clonotypes : 0.9987010955810547 seconds 
+9 9
+done
+The intraclonal alignment step execution time for the  sc2_VERM_5   200 clonotypes : 1.1251850128173828 seconds 
+9 9
+done

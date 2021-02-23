@@ -49,16 +49,16 @@ def calculate_abundance(list_of_occurance):
 	for clonotype in list_of_occurance :
 		occurance = clonotype[0]
 		functionality = clonotype[1]
+		CDR3 = clonotype[2]
 		sum_all += occurance
 	for clonotype in list_of_occurance :
 		occurance = clonotype[0]
 		functionality = clonotype[1]
-		abundance.append(("%.5f" % (occurance/float(sum_all)),functionality))
+		CDR3 = clonotype[2]
+		abundance.append(("%.5f" % (occurance/float(sum_all)),functionality,CDR3))
 	return abundance
 #####################################################################
 def gather_clone_clonotype_info(Dicoresult,dicoSeq,output_file):
-	#print(Dicoresult)
-	#clusters = read_file (output_file.split(".")[0]+"_seq_Fo.txt")
 	clusters = read_file (output_file)
 	clonotypes = {}
 	clonal_info = {}
@@ -78,28 +78,24 @@ def gather_clone_clonotype_info(Dicoresult,dicoSeq,output_file):
 	for clone in clonotypes.keys() :
 		list_clonotypes =[]
 		for clonotype in clonotypes[clone].keys():
-			list_clonotypes.append((len(clonotypes[clone][clonotype]),dicoSeq[clonotypes[clone][clonotype][0]][0]))
+			list_clonotypes.append((len(clonotypes[clone][clonotype]),dicoSeq[clonotypes[clone][clonotype][0]][0],dicoSeq[clonotypes[clone][clonotype][0]][3]))
 		clonal_info[clone].append(calculate_abundance(list_clonotypes))
-	#print (clonotypes)
 	return clonal_info,clonotypes
 #####################################################################
 def write_clonal_info(clonal_info_dico_unsorted,output_file,clonotype_dico):
 	file_name = output_file+"_repertoire_two_levels_info.txt"
 	filetowrite=open(file_name,"w")
-	#print (clonal_info_dico_unsorted)
 	clonal_info_dico = dict(sorted(clonal_info_dico_unsorted.items(), key=lambda t: t[1][0],reverse=True))
 	for clone in clonal_info_dico.keys():
-		#print(clonotype_dico[clone],clone)
+		phrase_2 = ''
 		phrase = "Clone number " + str(clone) + "\t" + str(clonal_info_dico[clone][0])+ "\t" +str(clonal_info_dico[clone][1])+ "\t" + "Clonotype" 
 		sorted_clonotype = sorted(clonal_info_dico[clone][-1],key=lambda tup: tup[0] ,reverse=True)
 		for clonotype in  sorted_clonotype:
 			phrase += " " + str(clonotype[0])+","+str(clonotype[1])
+			phrase_2+=clonotype[2]+","+clonotype_dico[clone][clonotype[2]][0]+" "
 		phrase += "\t" + str(clonal_info_dico[clone][2]) + "\t" + str(clonal_info_dico[clone][3]) + "\t"
-		for CDR3 in range(4,len(clonal_info_dico[clone])-2):
-			phrase +=str(clonal_info_dico[clone][CDR3])+","
-			phrase += clonotype_dico[clone][clonal_info_dico[clone][CDR3]][0] + " "
-		phrase +=str(clonal_info_dico[clone][-2])+","
-		phrase += clonotype_dico[clone][clonal_info_dico[clone][-2]][0]
+		phrase_2 = phrase_2[:-1]
+		phrase +=phrase_2
 		phrase += "\n"
 		filetowrite.write(phrase)
 	filetowrite.close()
