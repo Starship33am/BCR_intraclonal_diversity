@@ -11,9 +11,10 @@ function displayTree(dataTree){
   if(firstTime){
     //store the most abundant clonotypes and the value of the longest branch of the tree
     treeBranches = findMostAbundantClonotypes(data, selectedNode);
+    treeBranches[1]["nodeAbundance"].push(1);
+    treeBranches[2]["nodeAbundance"].push(1);
 
-    distancesRepresentation(selectedNode);
-      
+    distancesRepresentation(selectedNode);   
   }
 
   //retrieve the name of all the clonotypes selected
@@ -37,23 +38,28 @@ function displayTree(dataTree){
 
   // declares a tree layout and assigns the size
   var tree = d3.tree()	//creating the tree layout 
-          .size([width, height])
+          .size([width, height]);
           //.separation(function(a, b) { return ((a.depth >= 2) && (b.depth >= 2)) ? 1 : 5; });
 
   var duration = 0, i=0;
   data.x0 = height / 2;
   data.y0 = 0;
-    
+
+  var maxAbundance = Math.max.apply(null,treeBranches[2]["nodeAbundance"]);
+
   if(abCheckbox.checked){
-    var maxSizeNode = Math.pow((width/(data.leaves().length+1)),2), 
-        minSizeNode = Math.pow((width/(data.leaves().length+1))*0.3,2),
-        //maxSizeNode = Math.min(maxSizeWidth,maxSizeHeight)
-        nodeSizeFactor = (maxSizeNode-minSizeNode)/parseFloat(selectedNode[0].data.value),  //abundance scale unit
-        yUnit = (height-Math.sqrt((treeBranches[2]*nodeSizeFactor)+(minSizeNode*(treeBranches[0]+1))))/treeBranches[1];  //value of a nucleotide in pixel
+    //determine the size of the node depending on the height and the width of the vg object containing the tree
+    var sizeNodeWidth = {"max" : Math.pow((width/(data.leaves().length+1)),2), "min" : Math.pow((width/(data.leaves().length+1))*0.2,2) }
+        sizeNodeHeight = {"max" : Math.pow(height/5,2), "min" : Math.pow((height/(50)),2)},
+        nodeSize = determineNodeSize(sizeNodeWidth,sizeNodeHeight,maxAbundance); //choose the largest node size among the two previous ones
+    //calculate the correspondence of a distance of one nucleotide in the svg's absolute value  
+    var yUnit = (height-determineLongestBranch(treeBranches,nodeSize,height,"differentSize"))/treeBranches[0];
+    var nodeSizeFactor = (nodeSize["max"]-nodeSize["min"])/maxAbundance;
   }else{
-    var minSizeNode = Math.pow((width/(data.leaves().length+1))*0.5,2), 
-        nodeSizeFactor = 0,  //abundance scale unit
-        yUnit = (height-Math.sqrt(treeBranches[0]*minSizeNode))/treeBranches[1];  //value of a nucleotide in pixel
+    var nodeSize = {"max" : Math.pow((width/(data.leaves().length+1)),2), "min" : Math.pow((width/(data.leaves().length+1))*0.5,2) }; 
+    //value of a nucleotide in pixel
+    var yUnit = (height-determineLongestBranch(treeBranches,nodeSize,height,"sameSize"))/treeBranches[0];
+    var nodeSizeFactor = 0;  //abundance scale unit
   }
 
   updateTree(data);
@@ -63,7 +69,7 @@ function displayTree(dataTree){
     //assign properties to the data (coordinates, depth, ...)
     var root = tree(data);
 
-    determineNodeCoord(root, (width/(data.leaves().length)), nodeSizeFactor, yUnit, minSizeNode);
+    determineNodeCoord(root, (width/(data.leaves().length)), nodeSizeFactor, yUnit, nodeSize["min"]);
 
     // Compute the new tree layout.
     var nodes = root.descendants(),
@@ -78,7 +84,7 @@ function displayTree(dataTree){
                  .attr('class', 'nodeTree')
                  .attr("transform", function(d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })	//position the nodes
                  .on('click', selectClonotype)
-                 .on("mousemove",function(d){ if(d.data.name!="ighv"){ return showClonotype(d); } })
+                 .on("mousemove",function(d){ if(d.data.color!="#808080"){ return showClonotype(d); } })
                  .on("mouseout",hideClonotype);
 
     // adds the circle to the node
@@ -87,14 +93,15 @@ function displayTree(dataTree){
              .style("fill", function(d){ return d.data.color; })
              .style("stroke", function(d){ return d.data.stroke; })
              .style("stroke-dasharray", function(d){ return d.data.style; })
-             .attr("d", d3.symbol().size(function(d) { return d.data.value? (nodeSizeFactor*parseFloat(d.data.value))+minSizeNode : 0 } )
+             .style("opacity", 0.8 )
+             .attr("d", d3.symbol().size(function(d) { return d.data.value? d.data.nodeSize : 0 } )
                                    .type(function(d) { if(d.data.name=="ighv"){return d3.symbolTriangle;
                                                        }else if(d._children==true){return d3.symbolSquare;
                                                        }else{return d3.symbolCircle;} }));
     //add text to the node
     nodeEnter.append("text")
              .attr('font-size', 12) //set the size of the text
-             .attr("dy", function(d) { return 15+(Math.sqrt((nodeSizeFactor*parseFloat(d.data.value))+minSizeNode)/2)})	//set the emplacement of the text
+             .attr("dy", function(d) { return 15+(Math.sqrt((nodeSizeFactor*parseFloat(d.data.value))+nodeSize["min"])/2)})	//set the emplacement of the text
              .attr("dx", 15)
              .attr("text-anchor", "middle")
              .text(function(d) { if(clonotypesName.indexOf(d.data.name)!=-1){return d.data.name;}})
@@ -115,11 +122,11 @@ function displayTree(dataTree){
               .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
 
     nodeUpdate.select('path.nodeTree')
-              .attr("d", d3.symbol().size(function(d) { return d.data.value? (nodeSizeFactor*parseFloat(d.data.value))+minSizeNode : 0 })
+              .attr("d", d3.symbol().size(function(d) { return d.data.value? d.data.nodeSize : 0 })
                                     .type(function(d) { if(d.data.name=="ighv"){return d3.symbolTriangle;
                                                         }else if(d.data._children){return d3.symbolSquare;
                                                         }else{return d3.symbolCircle;}}))
-              .attr('cursor', function(d){ if(d.data.name!="ighv"){return 'pointer';} });
+              .attr('cursor', function(d){ if(d.data.color!="#808080"){return 'pointer';} });
 
     //remove any exiting nodes
     var nodeExit = node.exit().transition()
@@ -139,8 +146,8 @@ function displayTree(dataTree){
     var linkEnter = link.enter().insert('path',"g")	//SVG path allow to draw shape
                  .attr("class", "linkTree")
                  .style("fill", "none")
-                 .style("stroke-width", function(d){if(clonotypesDistances.indexOf(d.data.name)!=-1){ return 4;}else{return 2;}})
-                 .style("stroke", function(d){if(clonotypesDistances.indexOf(d.data.name)!=-1){ return "#000";}else{return "#555";}})
+                 .style("stroke-width", function(d){if(clonotypesDistances.indexOf(d.data.name)!=-1){ return 3;}else{return 2;}})
+                 .style("stroke", function(d){if(clonotypesDistances.indexOf(d.data.name)!=-1){ return "#FF0000";}else{return "#555";}})
                  .attr("d", function(d){ var s = {x : source.x0, y : source.y0}; return branchShape(source, source);});
 
     //update link
@@ -169,13 +176,13 @@ function displayTree(dataTree){
       if(selectedNode.length==8){
         alert("Can't show the distance of more than 8 clonotypes")
       }else{
-        if(d.data.name!="ighv"){
+        if(d.data.color!="#808080"){
           selectedNode.push(d); //add the clonotype selected in the array containing all the element selected
           d3.select(this).style("font-weight", "bold").classed("selected",true)	//change the style of the selected clonotype                      
           d3.select(this).selectAll("path.nodeTree").style("stroke-width", 3);
           d3.select(this).append("text")	// add the name of the clonotype
                          .attr('font-size', 12) //set the size of the text
-                         .attr("dy", function(d) { return 15+(Math.sqrt((nodeSizeFactor*parseFloat(d.data.value))+minSizeNode)/2)})	//set the emplacement of the text
+                         .attr("dy", function(d) { return 15+(Math.sqrt((nodeSizeFactor*parseFloat(d.data.value))+nodeSize["min"])/2)})	//set the emplacement of the text
                          .attr("dx", 15)
                          .attr("text-anchor", "middle")
                          .text(d.data.name)
@@ -199,7 +206,7 @@ function displayTree(dataTree){
     clonotypeTooltip.style("left", ((d3.event.pageX + 10)+"px"))
                     .style("top", ((d3.event.pageY + 15)+"px"))
                     .style('display', 'inline-block')
-                    .html("Name : "+d.data.name + "<br> Abundance : "+ Math.round(d.data.value*100*100) / 100 + "%<br>Productivity : "+ d.data.productivity);
+                    .html("Name : "+d.data.name + "<br> Abundance : "+ Math.round(d.data.value*100) / 100 + "%<br>Productivity : "+ d.data.productivity);
   }
 
   function hideClonotype() {
