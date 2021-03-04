@@ -1,6 +1,6 @@
 //stores the first 30 clonotypes found while going down the tree
 function firstClonotypes(file, cpt, names) {
-  if(cpt<25 && file.length>0){
+  if(cpt<300 && file.length>0){
     var newfile = [], nbr_node = 0, size = 0;
     for(var i in file){
       for(var j in file[i].children){
@@ -22,7 +22,8 @@ function firstClonotypes(file, cpt, names) {
 
 //browse the tree of clonotypes to find the 5 first clonotypes with the most abundance
 function findMostAbundantClonotypes(node, table){
-  var longestTreeBranch = [0,0,0], lengthBranch = [], nodeSize = [];
+
+  var longestTreeBranch = [0,{"sum":0,"nodeAbundance":0},{"sum":0,"nodeAbundance":[]}], lengthBranch = [], nodeSize = [], maxNodeSize = [], nodeAbundance = [[],[]];
   //for each children of the given node 
   for(var i in node.children){
     //there is already 5 clonotypes stores in the tab
@@ -48,20 +49,41 @@ function findMostAbundantClonotypes(node, table){
     if(node.children[i].children){ 
       longestTreeBranch = findMostAbundantClonotypes(node.children[i], table);
       //add to a table all the length of the branch
-      lengthBranch.push(longestTreeBranch[1]+parseFloat(node.children[i].data.length));
-      nodeSize.push(longestTreeBranch[2]+(parseFloat(node.children[i].data.value)/100));
+      lengthBranch.push(longestTreeBranch[0]+parseFloat(node.children[i].data.length));
+      nodeSize.push(longestTreeBranch[1]["sum"]+(parseFloat(node.children[i].data.value)/100));
+      maxNodeSize.push(longestTreeBranch[2]["sum"]+parseFloat(node.children[i].data.value));
+      var abundanceList = [];
+      for(var h in longestTreeBranch[1]["nodeAbundance"]){ abundanceList.push(longestTreeBranch[1]["nodeAbundance"][h]); }
+      abundanceList.push(parseFloat(node.children[i].data.value));
+      nodeAbundance[0].push(abundanceList);
+      abundanceList = [];
+      for(var h in longestTreeBranch[2]["nodeAbundance"]){ abundanceList.push(longestTreeBranch[2]["nodeAbundance"][h]); }
+      abundanceList.push(parseFloat(node.children[i].data.value));
+      nodeAbundance[1].push(abundanceList);
     }else{    
       //add to a table all the length of the branch
       lengthBranch.push(parseFloat(node.children[i].data.length));
       nodeSize.push(parseFloat(node.children[i].data.value)/100);
+      //nodeNumber.push(1);
+      maxNodeSize.push(parseFloat(node.children[i].data.value));
+      nodeAbundance[0].push([parseFloat(node.children[i].data.value)]);
+      nodeAbundance[1].push([parseFloat(node.children[i].data.value)]);
     }
   }
 
-  longestTreeBranch[0] += 1;
   for(var j in lengthBranch){
-    if(lengthBranch[j]+nodeSize[j]>longestTreeBranch[1]+longestTreeBranch[2]){
-      longestTreeBranch[1]=lengthBranch[j];
-      longestTreeBranch[2]=nodeSize[j];
+    if(lengthBranch[j]+nodeSize[j]>longestTreeBranch[0]+longestTreeBranch[1]["sum"]){
+      longestTreeBranch[0]=lengthBranch[j];
+      longestTreeBranch[1]["sum"]=nodeSize[j];
+      //add the abundance of the node to the list to save the value of the node belonging to the longest branch
+      longestTreeBranch[1]["nodeAbundance"] = nodeAbundance[0][j];
+    }
+
+    //find the branch with the highest abundance
+    if(maxNodeSize[j]>longestTreeBranch[2]["sum"]){
+      longestTreeBranch[2]["sum"]=maxNodeSize[j];
+      //add the abundance of the node to a list to save the value of the node belonging to the branch with the highest abundance
+        longestTreeBranch[2]["nodeAbundance"] = nodeAbundance[1][j];
     }
   }
   return longestTreeBranch;
@@ -88,6 +110,58 @@ function comparisonOfAbundance(table, clonotype){
   }
 }
 
+//return the object with the highest factor to calculate the node size
+function determineNodeSize(sizeWidth, sizeHeight, maxAbundance){ 
+  var factorWidth = (sizeWidth["max"]-sizeWidth["min"])/maxAbundance,
+      factorHeight = (sizeHeight["max"]-sizeHeight["min"])/maxAbundance;
+  if(Math.max(factorWidth, factorHeight)==factorWidth){
+    return sizeWidth;
+  }else{
+    return sizeHeight;
+  } 
+}
+
+//create object containing the somme of node size
+function counter() { this.sumNodeSize = 0; }
+
+//determine the longest branch of the tree
+function determineLongestBranch(data,nodeSize,height,type){
+  counter.prototype.add = function (node, a, b) { node.forEach(function(abundance){this.sumNodeSize += Math.sqrt(abundance*a+b);},this); };
+  var maxAbundance = Math.max.apply(null,data[2]["nodeAbundance"]);
+
+  if(type=="differentSize"){
+    var nodeSizeFactor = (nodeSize["max"]-nodeSize["min"])/maxAbundance;
+  }else{
+    var nodeSizeFactor = 0;
+  }
+
+  //determine the longest branch of the tree depending by adding all the node size
+  var abundanceLongestBranch = new counter();
+  abundanceLongestBranch.add(data[1]["nodeAbundance"],nodeSizeFactor,nodeSize["min"]);
+  var highestAbundance = new counter();
+  highestAbundance.add(data[2]["nodeAbundance"],nodeSizeFactor,nodeSize["min"]);
+  //check that the sum of the size nodes doesn't exceed the height of the svg 
+  if(abundanceLongestBranch.sumNodeSize>=highestAbundance.sumNodeSize && abundanceLongestBranch.sumNodeSize<height){
+    return abundanceLongestBranch.sumNodeSize;
+  }else if(highestAbundance.sumNodeSize>abundanceLongestBranch.sumNodeSize && highestAbundance.sumNodeSize<height){
+    return highestAbundance.sumNodeSize;
+  }else{
+    //resize the node max and min value 
+    nodeSize["max"] = nodeSize["max"]*0.1;
+    nodeSize["min"] *= 0.9;
+    if(type=="differentSize"){
+      nodeSizeFactor = (nodeSize["max"]-nodeSize["min"])/maxAbundance;
+    }else{
+      nodeSizeFactor = 0;
+    }
+    abundanceLongestBranch = new counter();
+    abundanceLongestBranch.add(data[1]["nodeAbundance"],nodeSizeFactor,nodeSize["min"]);
+    highestAbundance = new counter();
+    highestAbundance.add(data[2]["nodeAbundance"],nodeSizeFactor,nodeSize["min"]);
+    return Math.max(abundanceLongestBranch.sumNodeSize,highestAbundance.sumNodeSize);
+  }
+}
+
 
 /* ***************************************** functions used to visualize the tree ************************************************* */
 
@@ -96,9 +170,11 @@ function changeTree(){
   displayTree(dataClonotypes);
 }
 
-//place the coordonate of the node depending on the size of the node and the lenght of the branch
+//place the coordonate of the node depending on the size of the node and the length of the branch
 function determineNodeCoord(data, spaceBetweenNodes, nodeSizeFactor, yUnit, minSizeNode){
+console.log("MIN",nodeSizeFactor)
   var nbrLeaves=0;
+  data.data["nodeSize"] = (parseFloat(data.data.value)*nodeSizeFactor)+minSizeNode; //store the size of the node
   data.y = 0;
   nbrLeaves = determineXYCoord(data, nbrLeaves, spaceBetweenNodes, nodeSizeFactor, yUnit, minSizeNode);
 }
@@ -108,7 +184,8 @@ function determineXYCoord(data, nbrLeaves, spaceBetweenNodes, nodeSizeFactor, yU
   var xCoordSomme = 0, cptChildren = 0; 
   for(var i in data.children){
     cptChildren += 1;
-    data.children[i].y = data.y + yUnit*data.children[i].data.length + (Math.sqrt((parseFloat(data.children[i].data.value)*nodeSizeFactor)+minSizeNode)/2);
+    data.children[i].data["nodeSize"] = (parseFloat(data.children[i].data.value)*nodeSizeFactor)+minSizeNode; //store the size of the node
+    data.children[i].y = data.y + (Math.sqrt(data.data["nodeSize"]/3)) + yUnit*parseInt(data.children[i].data.length) +(Math.sqrt(data.children[i].data["nodeSize"]/3)) ;
     if(data.children[i].children){ 
       nbrLeaves = determineXYCoord(data.children[i],nbrLeaves,spaceBetweenNodes,nodeSizeFactor, yUnit, minSizeNode); 
       xCoordSomme += data.children[i].x;  
@@ -124,12 +201,13 @@ function determineXYCoord(data, nbrLeaves, spaceBetweenNodes, nodeSizeFactor, yU
     }
   }
   data.x = xCoordSomme/cptChildren;
+
   return nbrLeaves;
 }
 
 //give the start and end point to a branch    
 function branchShape(s,t) {
-  return "M" + s.x + "," + s.y + "V" + t.y + "H" + t.x;
+  return "M" + s.x + "," + (s.y-(Math.sqrt(s.data.nodeSize/3))) + "V" + (t.y+(Math.sqrt(t.data.nodeSize/3))) + "H" + t.x;
 }
 
 //display tooltips on mouseover nodes of the tree
@@ -205,17 +283,15 @@ function axisStepCalcul(distance){
 /* ***************************************** functions used to visualize the sequences ******************************************** */
 
 function headerInformation(tr1, tr2, tr3, cpt, column, className, nbr, regionName){
-  for(var i in column){
 
     var th1 = document.createElement('th');
+    th1.appendChild(document.createTextNode(regionName));
+    th1.colSpan = nbr;
+
+  for(var i in column){
+
     var th2 = document.createElement('th');
     var th3 = document.createElement('th');
-
-    if(i<nbr[0] || i>nbr[1]){
-      th1.appendChild(document.createTextNode(""));
-    }else{
-      th1.appendChild(document.createTextNode(regionName.shift()));
-    }
 
     if(cpt%10==0){
       th2.appendChild(document.createTextNode(cpt));
@@ -236,18 +312,23 @@ function headerInformation(tr1, tr2, tr3, cpt, column, className, nbr, regionNam
 
   return cpt;
 }
-  
+
+//store the data of the sequence of the file in an array
 function sequenceData(data){
   var tableau = [];
   var seq = data.split("\n");
   for(var i in seq){
     var element = seq[i].split("	");
-    tableau.push({"name":element[0],"V_region":element[1],"cdr3_region":element[2],"J_region":element[3]})
+        if(element.length==11){
+tableau.push({"name":element[0],"abundance":element[1],"identity":element[2],"V_mutation":element[3],"fwr1":element[4],"cdr1":element[5],"fwr2":element[6],"cdr2":element[7],"fwr3":element[8],"cdr3":element[9],"fwr4":element[10]})
+        }
   }
   return tableau;
 }
 
-function childClonotypeSequence(data,table,clonotypesNames){
+
+function childClonotypeSequence(data,table,header,clonotypesNames){
+  var classColumn = ["firstColumn","secondColumn","thirdColumn","fourthColumn"]
   //browse the clones and show the sequences for each of them
   for(var i in data){ 
     if(clonotypesNames.indexOf(data[i]["name"])!=-1){
@@ -255,33 +336,24 @@ function childClonotypeSequence(data,table,clonotypesNames){
       //create a tr element to add a line and add it to the table
       var tr = document.createElement('tr');
       table.appendChild(tr);
-      //create a th element to add a cell that contain the name
-      var td1 = document.createElement('td');
-      td1.appendChild(document.createTextNode(data[i]["name"]));
-      tr.appendChild(td1);
 
-      for(var j in data[i]["V_region"]){
-        //create a td element to add a cell that contain the sequence
-        var td2 = document.createElement('td');
-        td2.classList = "Vregion";
-        td2.appendChild(document.createTextNode(data[i]["V_region"][j]));
-        tr.appendChild(td2);
+      //create a th element to add a cell that contain the name, the abundance and the percentage of identity
+      for (var j=0; j<4; j++){
+        var td1 = document.createElement('td');
+        td1.appendChild(document.createTextNode(data[i][header[j]]));
+        td1.classList = classColumn[j];
+        tr.appendChild(td1);
       }
 
-      for(var j in data[i]["cdr3_region"]){
-        //create a td element to add a cell that contain the sequence
-        var td3 = document.createElement('td');
-        td3.classList = "cdr3region";
-        td3.appendChild(document.createTextNode(data[i]["cdr3_region"][j]));
-        tr.appendChild(td3);
-      }
-
-      for(var j in data[i]["J_region"]){
-        //create a td element to add a cell that contain the sequence
-        var td4 = document.createElement('td');
-        td4.classList = "Jregion";
-        td4.appendChild(document.createTextNode(data[i]["J_region"][j]));
-        tr.appendChild(td4);
+      //add to the table the different region of the sequences (fwr1, cdr1, fwr2, ...)
+      for (var j=4; j<header.length; j++){
+        for(var h in data[i][header[j]]){
+          //create a td element to add a cell that contain the sequence
+          var td2 = document.createElement('td');
+          td2.classList = header[j].substring(0,3);
+          td2.appendChild(document.createTextNode(data[i][header[j]][h]));
+          tr.appendChild(td2);
+        }
       }
 
     }
@@ -289,30 +361,71 @@ function childClonotypeSequence(data,table,clonotypesNames){
 
 }
 
+//adaptation of quickstart algorithm to sort the rows of the table
+function partition(rows,start,end,index){
+  var k=start;
+  for(var i=start+1; i<=end; i++){
+    var td1 = rows[k].getElementsByTagName("td")[index];
+    var td2 = rows[i].getElementsByTagName("td")[index];
+    if(index==0){
+      var value1 = parseFloat(td1.innerHTML.split("-")[1])
+      var value2 = parseFloat(td2.innerHTML.split("-")[1])
+      if(value2<value1){
+        rows[start].parentNode.insertBefore(rows[i], rows[k]);
+        k++;
+      }
+    }else{
+      var value1 = parseFloat(td1.innerHTML.split("(")[0])
+      var value2 = parseFloat(td2.innerHTML.split("(")[0])
+      if(value2>value1){
+        rows[start].parentNode.insertBefore(rows[i], rows[k]);
+        k++;
+      }
+    }
+  }
+  return k;
+}
+
+function sortRowOfTable(rows, start, end, index){
+  if(end>start){
+    pivot = partition(rows, start, end, index);
+    sortRowOfTable(rows, start, (pivot-1), index);
+    sortRowOfTable(rows, (pivot+ 1), end, index);
+  }
+}
+
+//sort the data of the table depending on the column selected
+function sortSequences(event){
+  columns = ["firstColumn","secondColumn", "thirdColumn", "fourthColumn"];
+  index = columns.indexOf(event.target.className);
+  table = document.getElementById("tableSequence").tBodies;
+  rows = table[0].children;
+  sortRowOfTable(rows, 0, rows.length-1, index);
+}
 
 /* ******************************************** download clonotype informations *************************************************** */
 
 function downloadClonotypesInformations(){
   var germlineSequence = document.getElementById('tableSequence').getElementsByTagName('thead')[0].getElementsByTagName('tr')[2];
   var sequencesTable = document.getElementById('tableSequence').getElementsByTagName('tbody')[0];
-  var sequences = "Name;V region;cdr3 region;J region\n";
-  var prevClassName="", title=decodeURI(cookies["analyseName"]).replace(" ","_");
+  var sequences = "Name	Reads (clonotypes abundance in clone (%))	 All sequence identity (%)	V identity (%)	fwr1	cdr1	fwr2	cdr2	fwr3	cdr3	fwr4\n";
+  var prevClassName="firstColumn", title=decodeURI(cookies["analyseName"]).replace(" ","_");
 
   for(var i=0; i<germlineSequence.cells.length; i++){
     if(germlineSequence.cells[i].className!=prevClassName){
-      sequences += ";";
       prevClassName=germlineSequence.cells[i].className;
+      sequences += "	";
     }
     sequences += germlineSequence.cells[i].innerHTML;
   }
 
   for(var i=0; i<sequencesTable.getElementsByTagName('tr').length; i++){
-    prevClassName="";
+    prevClassName="firstColumn";
     sequences += "\n";
     for(var j=0; j<sequencesTable.getElementsByTagName('tr')[i].cells.length; j++){
       if(sequencesTable.getElementsByTagName('tr')[i].cells[j].className!=prevClassName){
-        sequences += ";";
         prevClassName=sequencesTable.getElementsByTagName('tr')[i].cells[j].className;
+        sequences += "	";
       }
     sequences += sequencesTable.getElementsByTagName('tr')[i].cells[j].innerHTML;
     }
@@ -331,7 +444,7 @@ function downloadClonotypesInformations(){
   //add the two images and the table in the zip object
   zip.file(clone+"_length_tree("+title+").svg",blobTree,{base64: true});
   zip.file(clone+"_distance("+title+").svg",blobDistance,{base64: true});
-  zip.file(clone+"_sequences("+title+").csv",blobSequences,{base64: true});
+  zip.file(clone+"_sequences("+title+").txt",blobSequences,{base64: true});
 
   //generate the zip file asynchronously
   zip.generateAsync({type:"blob"}).then(function(content) {
