@@ -101,7 +101,7 @@ function displayTree(dataTree){
     //add text to the node
     nodeEnter.append("text")
              .attr('font-size', 12) //set the size of the text
-             .attr("dy", function(d) { return 15+(Math.sqrt((nodeSizeFactor*parseFloat(d.data.value))+nodeSize["min"])/2)})	//set the emplacement of the text
+             .attr("dy", function(d) { return 15+(Math.sqrt(d.data["nodeSize"]/3)) })	//set the emplacement of the text
              .attr("dx", 15)
              .attr("text-anchor", "middle")
              .text(function(d) { if(clonotypesName.indexOf(d.data.name)!=-1){return d.data.name;}})
@@ -182,7 +182,7 @@ function displayTree(dataTree){
           d3.select(this).selectAll("path.nodeTree").style("stroke-width", 3);
           d3.select(this).append("text")	// add the name of the clonotype
                          .attr('font-size', 12) //set the size of the text
-                         .attr("dy", function(d) { return 15+(Math.sqrt((nodeSizeFactor*parseFloat(d.data.value))+nodeSize["min"])/2)})	//set the emplacement of the text
+                         .attr("dy", function(d) { return 15+(Math.sqrt(d.data["nodeSize"]/3)) })	//set the emplacement of the text
                          .attr("dx", 15)
                          .attr("text-anchor", "middle")
                          .text(d.data.name)
