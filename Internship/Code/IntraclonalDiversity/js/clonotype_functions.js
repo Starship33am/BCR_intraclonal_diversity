@@ -1,48 +1,28 @@
-//stores the first 30 clonotypes found while going down the tree
-function firstClonotypes(file, cpt, names) {
-  if(cpt<300 && file.length>0){
-    var newfile = [], nbr_node = 0, size = 0;
-    for(var i in file){
-      for(var j in file[i].children){
-        cpt ++;
-        newfile.push(file[i].children[j]);
-        names.push(file[i].children[j]["name"]);
-      }
-    }
-    firstClonotypes(newfile, cpt, names);
-  }else{
-    for(var i in file){
-      if(file[i].children){
-        file[i]._children = file[i].children;
-        file[i].children = null;
-      }
-    }  
-  }
-}
-
 //browse the tree of clonotypes to find the 5 first clonotypes with the most abundance
 function findMostAbundantClonotypes(node, table){
-
   var longestTreeBranch = [0,{"sum":0,"nodeAbundance":0},{"sum":0,"nodeAbundance":[]}], lengthBranch = [], nodeSize = [], maxNodeSize = [], nodeAbundance = [[],[]];
   //for each children of the given node 
   for(var i in node.children){
-    //there is already 5 clonotypes stores in the tab
-    if(table.length == 5){
-      //Compare the abundance of the clonotypes to those in of the clonotypes in the tab
-      comparisonOfAbundance(table, node.children[i]);
-    }else{
-      //add the clonotypes to the table
-      table.push(node.children[i]);
-      //sort the elment of the table depending on the abundance
-      table.sort(function sortByAbondance(a, b){
-        if (a.data.value < b.data.value){
-          return -1;
-        }else if (a.data.value > b.data.value){
-          return 1;
-        }
-        return 0;
-      });
-      table.reverse();
+    //the node is not silent
+    if(node.children[i].data["name"][0]=="C"){
+      //there is already 5 clonotypes stores in the tab
+      if(table.length == 5){
+        //Compare the abundance of the clonotypes to those in of the clonotypes in the tab
+        comparisonOfAbundance(table, node.children[i]);
+      }else{
+        //add the clonotypes to the table
+        table.push(node.children[i]);
+        //sort the elment of the table depending on the abundance
+        table.sort(function sortByAbondance(a, b){
+          if (parseFloat(a.data.value) < parseFloat(b.data.value)){
+            return -1;
+          }else if (parseFloat(a.data.value) > parseFloat(b.data.value)){
+            return 1;
+          }
+          return 0;
+        });
+        table.reverse();
+      }
     }
 
     //look among the children of this node if there are clonotypes with more abundance
@@ -96,7 +76,7 @@ function comparisonOfAbundance(table, clonotype){
   var indice = -1;
   //browse all the element of the table to find if the clonotype has an abondance superior to the other
   while( superior && (nbElement != 0)){
-    if(parseFloat(clonotype.data.value)>table[nbElement-1].data.value){
+    if(parseFloat(clonotype.data.value)>parseFloat(table[nbElement-1].data.value)){
       indice = nbElement-1; //store the position of the element 
     }else{
       superior=false;
@@ -147,11 +127,14 @@ function determineLongestBranch(data,nodeSize,height,type){
     return highestAbundance.sumNodeSize;
   }else{
     //resize the node max and min value 
-    nodeSize["max"] = nodeSize["max"]*0.1;
-    nodeSize["min"] *= 0.9;
+    var difference = Math.max(abundanceLongestBranch.sumNodeSize,highestAbundance.sumNodeSize) - height;
+    var diffPercentage = ((difference*100)/height)/100+0.35;
     if(type=="differentSize"){
+      nodeSize["max"] *= (1-diffPercentage);
+      nodeSize["min"] *= diffPercentage;
       nodeSizeFactor = (nodeSize["max"]-nodeSize["min"])/maxAbundance;
     }else{
+      nodeSize["min"] /= (diffPercentage*10);
       nodeSizeFactor = 0;
     }
     abundanceLongestBranch = new counter();
@@ -172,7 +155,6 @@ function changeTree(){
 
 //place the coordonate of the node depending on the size of the node and the length of the branch
 function determineNodeCoord(data, spaceBetweenNodes, nodeSizeFactor, yUnit, minSizeNode){
-console.log("MIN",nodeSizeFactor)
   var nbrLeaves=0;
   data.data["nodeSize"] = (parseFloat(data.data.value)*nodeSizeFactor)+minSizeNode; //store the size of the node
   data.y = 0;
@@ -192,8 +174,8 @@ function determineXYCoord(data, nbrLeaves, spaceBetweenNodes, nodeSizeFactor, yU
     }else{
       nbrLeaves+=1;
       if(nbrLeaves>1){ 
-        data.children[i].x = nbrLeaves*spaceBetweenNodes; 
-        xCoordSomme +=nbrLeaves*spaceBetweenNodes;
+        data.children[i].x = (spaceBetweenNodes/2)+(nbrLeaves-1)*spaceBetweenNodes; 
+        xCoordSomme += (spaceBetweenNodes/2)+(nbrLeaves-1)*spaceBetweenNodes;
       }else{
         data.children[i].x = spaceBetweenNodes/2; 
         xCoordSomme += spaceBetweenNodes/2;
@@ -327,11 +309,11 @@ tableau.push({"name":element[0],"abundance":element[1],"identity":element[2],"V_
 }
 
 
-function childClonotypeSequence(data,table,header,clonotypesNames){
+function childClonotypeSequence(data,table,header){
   var classColumn = ["firstColumn","secondColumn","thirdColumn","fourthColumn"]
   //browse the clones and show the sequences for each of them
   for(var i in data){ 
-    if(clonotypesNames.indexOf(data[i]["name"])!=-1){
+    //if(clonotypesNames.indexOf(data[i]["name"])!=-1){
 
       //create a tr element to add a line and add it to the table
       var tr = document.createElement('tr');
@@ -356,7 +338,7 @@ function childClonotypeSequence(data,table,header,clonotypesNames){
         }
       }
 
-    }
+    //}
   }
 
 }
