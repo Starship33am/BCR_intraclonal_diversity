@@ -13,18 +13,14 @@ var clone = localStorage['clone'];
 var selectedNode = [], firstTime = true, dataClonotypes, clonotypesDistances=[], treeBranches=[];
 
 var user = cookies["Userfile"],
-    file = user +"_"+clone+"_clonotype.json";
-    path = "pipeline/usersFiles/"+user+"/tree/"+file;
+    file = user +"_"+clone.split("C")[1]+"_30_tree.json";
+    path = "pipeline/usersFiles/"+user+"/Output/"+file;
 
 //loading the json file
 d3.json(path, function(error, dataTree) {
   if (error) throw error;
 
-  //display only the 30 first clonotypes
-  var file = [dataTree], clonotypesNames=[];
-  firstClonotypes(file, 0, clonotypesNames);
-
   displayTree(dataTree);
-  displaySequence(clonotypesNames);
+  displaySequence();
 
 });
