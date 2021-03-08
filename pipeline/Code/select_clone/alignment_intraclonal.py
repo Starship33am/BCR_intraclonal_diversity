@@ -21,11 +21,12 @@ def read_file (nomFi):
 def read_AIRR(nomFi):
 	col_list = ['sequence_id','sequence','sequence_aa','rev_comp','productive','complete_vdj','vj_in_frame','stop_codon','locus','v_call','d_call','j_call','c_call','sequence_alignment','sequence_alignment_aa','germline_alignment','germline_alignment_aa','junction','junction_aa','np1','np1_aa','np2','np2_aa','cdr1','cdr1_aa','cdr2','cdr2_aa','cdr3','cdr3_aa','fwr1','fwr1_aa','fwr2','fwr2_aa','fwr3','fwr3_aa','fwr4','fwr4_aa','v_score','v_identity','v_support','v_cigar','d_score','d_identity','d_support','d_cigar','j_score','j_identity','j_support','j_cigar','c_score','c_identity','c_support','c_cigar','v_sequence_start','v_sequence_end','v_germline_start','v_germline_end','v_alignment_start','v_alignment_end','d_sequence_start','d_sequence_end','d_germline_start','d_germline_end','d_alignment_start','d_alignment_end','j_sequence_start','j_sequence_end','j_germline_start','j_germline_end','j_alignment_start','j_alignment_end','cdr1_start','cdr1_end','cdr2_start','cdr2_end','cdr3_start','cdr3_end','fwr1_start','fwr1_end','fwr2_start','fwr2_end','fwr3_start','fwr3_end','fwr4_start','fwr4_end','v_sequence_alignment','v_sequence_alignment_aa','d_sequence_alignment','d_sequence_alignment_aa','j_sequence_alignment','j_sequence_alignment_aa','c_sequence_alignment','c_sequence_alignment_aa','v_germline_alignment','v_germline_alignment_aa','d_germline_alignment','d_germline_alignment_aa','j_germline_alignment','j_germline_alignment_aa','c_germline_alignment','c_germline_alignment_aa','junction_length','junction_aa_length','np1_length','np2_length','n1_length','n2_length','p3v_length','p5d_length','p3d_length','p5j_length','consensus_count','duplicate_count','cell_id','clone_id','rearrangement_id','repertoire_id','rearrangement_set_id','sequence_analysis_category','d_number','5prime_trimmed_n_nb','3prime_trimmed_n_nb','insertions','deletions','junction_decryption']
 	df = pandas.read_csv(nomFi, sep='\t',usecols=col_list)
+	df.replace(np.nan,'', inplace=True)
 	df["whole_seq"] = df["fwr1"].astype(str) + df["cdr1"].astype(str) +df["fwr2"].astype(str)+ df["cdr2"].astype(str)+df["fwr3"].astype(str)+df["cdr3"].astype(str)+df["fwr4"].astype(str)
 	df["germline_seq"] = df["v_germline_alignment"].astype(str) + df["np1"].astype(str) + df["d_germline_alignment"].astype(str) + df["np2"].astype(str) + df["j_germline_alignment"].astype(str)
 	df['germline_seq'] = df['germline_seq'].str.replace('.','')
 	df.replace('', np.nan, inplace=True)
-	df.dropna(axis=0, how='any', thresh=None, subset=["cdr1_start","cdr2_start","cdr3_start","cdr1_end","cdr2_end","cdr3_end","v_sequence_start"], inplace=True)
+	df.dropna(axis=0, how='any', thresh=None, subset=["cdr1_start","cdr2_start","cdr3_start","cdr1_end","cdr2_end","cdr3_end","v_sequence_start","v_identity","j_identity","d_sequence_end","d_sequence_start"], inplace=True)
 	#print(df.loc[22,"v_identity"])
 	#print(df.loc[1,"sequence"],"     ",df.loc[1,"germline_seq"])
 	return df
@@ -33,9 +34,10 @@ def read_AIRR(nomFi):
 
 def read_seq_info(lines,airr_df,nb_clonotype):
 #the seq of each clonotypes
-#the most abundant seq ===> germline 
+#germline : sequence with the highest v_identity 
 	clonotype_seq = {}
 	list_selected_clonotype = []
+	list_representative_seq_clonotype = []
 	for l in lines:
 		seq = l.split("\t")
 		#print("seq : ",seq)
@@ -45,17 +47,21 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 		else: 
 			clonotype_seq[clonotype] = [seq[1]]
 	#print("clonotype_seq",clonotype_seq)
-	major_clonotype = (sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0])
-	germline = airr_df.loc[airr_df['sequence_id'] == clonotype_seq[major_clonotype][0]]["germline_seq"].values[0]
+	#major_clonotype = (sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0])
+	#germline = airr_df.loc[airr_df['sequence_id'] == clonotype_seq[major_clonotype][0]]["germline_seq"].values[0]
 	if nb_clonotype == 'all':
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)))
 	else :
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0:int(nb_clonotype)]))
-	#print("list_selected_clonotype",list_selected_clonotype)
-	return clonotype_seq,germline,list_selected_clonotype,clonotype_seq[major_clonotype][0]
+	for clonotype in list_selected_clonotype :
+		if airr_df.loc[airr_df['sequence_id'] == clonotype_seq[clonotype][0]].empty == False :
+			list_representative_seq_clonotype.append((clonotype,clonotype_seq[clonotype][0],float(airr_df.loc[airr_df['sequence_id'] == clonotype_seq[clonotype][0]]["v_identity"].values[0])))
+
+	sorted_based_on_V_identity = sorted(list_representative_seq_clonotype, key=lambda element: element[2])
+	germline = airr_df.loc[airr_df['sequence_id'] == sorted_based_on_V_identity[-1][1]]["germline_seq"].values[0]
+	return clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity[-1][1]
 
 #=============================================================================#
-
 def compare_clonotype_to_germline(region):
 
 	region_compered_to_germ = {}
@@ -80,14 +86,17 @@ def write_clonotype_align(region,repertoire_name,coressp_dico,total_seq_clone,ai
 
 	file_name = repertoire_name+"_aligned_regions.txt"
 	filetowrite=open(file_name,"w")
-	G = "germline"+"\t"+"_"+"\t" + "_" + "\t" +region['germline'][0][0:region['germline'][1][0]]+"\t"+ region['germline'][0][region['germline'][1][0]:region['germline'][1][1]]+"\t"+ region['germline'][0][region['germline'][1][1]:region['germline'][1][2]]+"\t"+ region['germline'][0][region['germline'][1][2]:region['germline'][1][3]]+"\t"+ region['germline'][0][region['germline'][1][3]:region['germline'][1][4]]+"\t"+ region['germline'][0][region['germline'][1][4]:region['germline'][1][5]]+"\t"+ region['germline'][0][region['germline'][1][5]:-1]+"\n"
+	#print("region",region)
+	G = "germline"+"\t"+"_"+"\t" + "_" + "\t" +region['germline'][0][0:region['germline'][1][0]]+"\t"+ region['germline'][0][region['germline'][1][0]:region['germline'][1][1]]+"\t"+ region['germline'][0][region['germline'][1][1]:region['germline'][1][2]]+"\t"+ region['germline'][0][region['germline'][1][2]:region['germline'][1][3]]+"\t"+ region['germline'][0][region['germline'][1][3]:region['germline'][1][4]]+"\t"+ region['germline'][0][region['germline'][1][4]:region['germline'][1][5]]+"\t"+ region['germline'][0][region['germline'][1][5]:region['germline'][1][6]]+"\t"+ region['germline'][0][region['germline'][1][6]:region['germline'][1][7]]+"\t"+ region['germline'][0][region['germline'][1][7]:-1]+"\n"
 	filetowrite.write(G)
 	for key in region.keys():
 		if key != 'germline':
 			V_percent = airr_df.loc[airr_df['sequence_id'] == key]["v_identity"].values[0]
+			d= airr_df.loc[airr_df['sequence_id'] == key]["d_sequence_alignment"]
+			cdr3 = airr_df.loc[airr_df['sequence_id'] == key]["cdr3"]
 			percentage = (len(coressp_dico[key])+1)/float(total_seq_clone)
 			#print(len(coressp_dico[key])+1, float(total_seq_clone),(len(coressp_dico[key])+1)/float(total_seq_clone))
-			clonotype_info = key+"\t"+str(len(coressp_dico[key])+1)+"("+str("%.3f" %percentage)+")"+ "\t"+ str(V_percent) + "\t" +region[key][0][0:region[key][1][0]]+"\t"+ region[key][0][region[key][1][0]:region[key][1][1]]+"\t"+ region[key][0][region[key][1][1]:region[key][1][2]]+"\t"+ region[key][0][region[key][1][2]:region[key][1][3]]+"\t"+ region[key][0][region[key][1][3]:region[key][1][4]]+"\t"+ region[key][0][region[key][1][4]:region[key][1][5]]+"\t"+ region[key][0][region[key][1][5]:-1]+"\n"
+			clonotype_info = key+"\t"+str(len(coressp_dico[key])+1)+"("+str("%.5f" %percentage)+")"+ "\t"+ str(V_percent) + "\t" +region[key][0][0:region[key][1][0]]+"\t"+ region[key][0][region[key][1][0]:region[key][1][1]]+"\t"+ region[key][0][region[key][1][1]:region[key][1][2]]+"\t"+ region[key][0][region[key][1][2]:region[key][1][3]]+"\t"+ region[key][0][region[key][1][3]:region[key][1][4]]+"\t"+ region[key][0][region[key][1][4]:region[key][1][5]]+"\t"+ region[key][0][region[key][1][5]:region[key][1][6]]+"\t"+ region[key][0][region[key][1][6]:region[key][1][7]]+"\t"+ region[key][0][region[key][1][7]:-1]+"\n"
 			filetowrite.write(clonotype_info)
 	filetowrite.close()
 	return 0
@@ -168,35 +177,38 @@ def write_all_aligned(repertoire_name,coressp_dico ):
 
 #=============================================================================#
 
-def write_clonotype_align_seq(airr_df,repertoire_name,aligned_seq,major_clonotype_seq_id):
-
+def write_clonotype_align_seq(airr_df,repertoire_name,aligned_seq,sorted_based_on_V_identity_seq_id):
 
 	region = {}
 	for seq in aligned_seq:
 
 		if seq[0].split("@")[0] != 'germline':
 			a = airr_df.loc[airr_df['sequence_id'] == seq[0].split("@")[0]]
-			if len(a["cdr1_start"].values) != 0 :
+			if len(a["cdr1_start"].values) != 0 and len(a["d_sequence_start"].values)!= 0:
 				region[seq[0].split("@")[0]] = []
 				startCDR1 = int(a["cdr1_start"].values[0]) - int(a["v_sequence_start"].values[0])
-				endCDR1	= int(a["cdr1_end"].values[0]) - int(a["v_sequence_start"].values[0])
+				endCDR1	= (int(a["cdr1_end"].values[0]) - int(a["v_sequence_start"].values[0])) +1 
 				startCDR2 = int(a["cdr2_start"].values[0]) - int(a["v_sequence_start"].values[0])
-				endCDR2 = int(a["cdr2_end"].values[0]) - int(a["v_sequence_start"].values[0])
+				endCDR2 = (int(a["cdr2_end"].values[0]) - int(a["v_sequence_start"].values[0]))+1
 				startCDR3 = int(float(a["cdr3_start"].values[0])) - int(float(a["v_sequence_start"].values[0]))
-				endCDR3 = int(a["cdr3_end"].values[0]) - int(a["v_sequence_start"].values[0])
-				lim = column_from_residue_number(str(seq[1]),[startCDR1,endCDR1,startCDR2,endCDR2,startCDR3,endCDR3])
+				startD = int(float(a["d_sequence_start"].values[0])) - int(float(a["v_sequence_start"].values[0]))
+				endD = (int(float(a["d_sequence_end"].values[0])) - int(float(a["v_sequence_start"].values[0])))+1
+				endCDR3 = (int(a["cdr3_end"].values[0]) - int(a["v_sequence_start"].values[0]))+1
+				list_loc =[startCDR1,endCDR1,startCDR2,endCDR2,startCDR3,startD,endD,endCDR3]
+				lim = column_from_residue_number(str(seq[1]),[startCDR1,endCDR1,startCDR2,endCDR2,startCDR3,startD,endD,endCDR3])
 				region[seq[0].split("@")[0]] = [str(seq[1]),lim]
 		else :
-			a = airr_df.loc[airr_df['sequence_id'] == major_clonotype_seq_id]
+			a = airr_df.loc[airr_df['sequence_id'] == sorted_based_on_V_identity_seq_id]
 			region['germline'] = []
 			startCDR1 = int(a["cdr1_start"].values[0]) - int(a["v_sequence_start"].values[0])
-
-			endCDR1	= int(a["cdr1_end"].values[0]) - int(a["v_sequence_start"].values[0])
+			endCDR1	= (int(a["cdr1_end"].values[0]) - int(a["v_sequence_start"].values[0])) +1 
 			startCDR2 = int(a["cdr2_start"].values[0]) - int(a["v_sequence_start"].values[0])
-			endCDR2 = int(a["cdr2_end"].values[0]) - int(a["v_sequence_start"].values[0])
-			startCDR3 = int(a["cdr3_start"].values[0]) - int(a["v_sequence_start"].values[0])
-			endCDR3 = int(a["cdr3_end"].values[0]) - int(a["v_sequence_start"].values[0])
-			lim2 = column_from_residue_number(str(seq[1]),[startCDR1,endCDR1,startCDR2,endCDR2,startCDR3,endCDR3])
+			endCDR2 = (int(a["cdr2_end"].values[0]) - int(a["v_sequence_start"].values[0]))+1
+			startCDR3 = int(float(a["cdr3_start"].values[0])) - int(float(a["v_sequence_start"].values[0]))
+			startD = int(float(a["d_sequence_start"].values[0])) - int(float(a["v_sequence_start"].values[0]))
+			endD = (int(float(a["d_sequence_end"].values[0])) - int(float(a["v_sequence_start"].values[0])))+1
+			endCDR3 = (int(a["cdr3_end"].values[0]) - int(a["v_sequence_start"].values[0]))+1
+			lim2 = column_from_residue_number(str(seq[1]),[startCDR1,endCDR1,startCDR2,endCDR2,startCDR3,startD,endD,endCDR3])
 			region[seq[0]] = [str(seq[1]),lim2]
 
 	return region
@@ -239,6 +251,12 @@ def column_from_residue_number(seq,res_no_list):
 			elif pos_without_gap ==res_no_list[5]:
 				#print(seq[list_region_seq[0]:i])
 				list_region_seq.append(i)
+			elif pos_without_gap ==res_no_list[6]:
+				#print(seq[list_region_seq[0]:i])
+				list_region_seq.append(i)
+			elif pos_without_gap ==res_no_list[7]:
+				#print(seq[list_region_seq[0]:i])
+				list_region_seq.append(i)
 	#print(seq[list_region_seq[1]:len(seq)])
 	#print("list_region_seq",list_region_seq)
 	return list_region_seq 
@@ -268,13 +286,13 @@ def main():
 	airr_df = read_AIRR(IMGT_seq_info)
 	lines_clonotype_seq = read_file (final_seq_info)
 
-	clonotype_seq,germline,list_selected_clonotype,major_clonotype_seq_id = read_seq_info(lines_clonotype_seq,airr_df,nb_clonotype)
+	clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity_seq_id = read_seq_info(lines_clonotype_seq,airr_df,nb_clonotype)
 	coressp_dico = write_clonaltree_align(clonotype_seq,list_selected_clonotype,airr_df,repertoire_name,germline)
 	aligned_seq = alignment(repertoire_name)
 	write_all_aligned(repertoire_name,coressp_dico)
 
 	#column_from_residue_number("A-AAAA-AAAA---A",[3,6])
-	region = write_clonotype_align_seq(airr_df,repertoire_name,aligned_seq,major_clonotype_seq_id)
+	region = write_clonotype_align_seq(airr_df,repertoire_name,aligned_seq,sorted_based_on_V_identity_seq_id)
 	region_compered_to_germ=compare_clonotype_to_germline(region)
 	total_seq_clone =len(lines_clonotype_seq)
 	write_clonotype_align(region_compered_to_germ,repertoire_name,coressp_dico,total_seq_clone,airr_df)
