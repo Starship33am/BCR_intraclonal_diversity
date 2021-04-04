@@ -1,9 +1,12 @@
 import numpy as np
 import random
-import random
+import math
+from operator import xor
 from ete3 import Tree
 import numpy as np
 import sys 
+
+INF = float('inf') 
 
 # Find set of vertex i or Find i parent
 def find(i, parent): 
@@ -19,7 +22,8 @@ def union(i, j, parent):
 	b = find(j, parent) 
 	parent[a] = b
 	return parent
-	
+
+
 # Finds MST using Kruskal's algorithm 
 def kruskalMST(cost, root, labels): 
 	INF = float('inf'); error = 0
@@ -96,53 +100,65 @@ def editTree(t1, adjMatrix, labels):
 			G = tr.search_nodes(name=node.name)
 			if (G):
 				children = node.get_children()
-
 				for n in children:
 					#print ('3', n.name)
 					if n.name not in ardColapsed:
-						colapse = colapseNodes(n.name, children, node.name, adjMatrix, labels)
+						colapse = colapseNodes(n.name, children, node.name, adjMatrix, labels, ardColapsed)
+						#print ('==', colapse)
 						if colapse:
 							N = G[0].add_child(name=None) # Adds a empty branch or bifurcation
-							n1 = N.add_child(name=n.name)
+							n1 = N.add_child(name=n.name) # Adds current node
 							ardColapsed.append(n.name)
+							
 							for c in colapse:
 								#print ('col ', c)
 								n2 = N.add_child(name=c)
-								ardColapsed.append(c)
+								ardColapsed.append(c) # Adds other nodes
 								#print(tr.get_ascii(show_internal=True))
 						else:
 							G[0].add_child(name=n.name)
-
 	return tr
 	
+def checkConsistence(tree, labels):
+	seen = {}
+	for node in tree.traverse("preorder"):
+		if node.name not in seen.keys():
+			if node.name in labels:
+				seen[node.name] = True
+			elif node.name != '':
+				print (node.name, " not in labels")
+		else:
+			print ("ERROR ", node.name, " several times")
+		
+	return len(seen)==len(labels)
 
-def colapseNodes(node, lnodes, parent, cost, labels):
-    colapse = []
-    #print ('---> ', node, lnodes, parent, labels)
-    idNode = labels.index(node); idPar = labels.index(parent)
-    for i in lnodes:
-        idI = labels.index(i.name)
-        #print ('nodes ', node, i.name)
-        if i.name != node and cost[idNode][idI] <= cost[idNode][idPar] and cost[idNode][idI] <= cost[idI][idPar]:
-            #print ('cost ',node, i.name, cost[idNode][idI]);print ('cost P ',node, parent, cost[idNode][idPar])
-            colapse.append(i.name)
-    return colapse
+def colapseNodes(node, lnodes, parent, cost, labels, aldColapsed):
+	colapse = []
+	#print ('---> ', node, lnodes, parent, labels)
+	idNode = labels.index(node); idPar = labels.index(parent)
+	for i in lnodes:
+		idI = labels.index(i.name)
+		#print ('nodes ', node, i.name)
+		if i.name != node and cost[idNode][idI] <= cost[idNode][idPar] and cost[idNode][idI] <= cost[idI][idPar]:
+			#print ('cost ',node, i.name, cost[idNode][idI]);print ('cost P ',node, parent, cost[idNode][idPar])
+			if i.name not in aldColapsed:
+				colapse.append(i.name)
+	return colapse
 
 def addNodeTree(t, a, b, min):
+
 	tp = ()
 	G = t.search_nodes(name=a)
 	
 	if (G):
-		G[0].add_child(name=b, dist=min)
+		G[0].add_child(name=b, dist=min); #print (a, b, 'cost', min)
 	else:
 		G = t.search_nodes(name=b)
 		if (G):
-			G[0].add_child(name=a, dist=min)
+			G[0].add_child(name=a, dist=min); #print (a, b, 'cost', min)
 		else:
 			print ("Warnning nodes do not exists: ", a, b)
-			return t, (a, b, min)
-	#print (t, tp)
-	return t, tp
+	return t
 
 def takeRandomNode(included, labels,  D):
 	#print ("LEN INC", len(included))
@@ -152,60 +168,101 @@ def takeRandomNode(included, labels,  D):
 		i = random.randint(0, D-1)
 	return i
 
-def generateTreeFromMST(MST, root, labels):
-	D = len(labels)
-	t = Tree()
-	iterr = 0
-	random.seed(30)
-	includedNodes = []; toInclude = []
 
-	firstNodes = MST[root,:]
-	print ('root', labels[root])
-	#Include root node
+def chooseBestNode(minsI, minsJ, visitedNodes, adjMatrix, labels, abundance):
 
-	t.add_child(name=labels[root]) #include  node root
-	includedNodes.append(labels[root])
-	toInclude.append(root)
+	maxAb = -INF; nodeA = 0; nodeB = 0
+	#print ('len(mins)', len(minsI))
+	for i in range(len(minsI)):
+		a = minsI[i]; b = minsJ[i];
+		#print ('mins ', a, b, labels[a], labels[b])
+		if (labels[a]!=labels[b]) and (xor(a in visitedNodes, b in visitedNodes)):
+			#print (labels[a], labels[b], adjMatrix[a][b])
+			ab = abundance[labels[a]] + abundance[labels[b]]
+			#print (labels[a], abundance[labels[a]], labels[b], abundance[labels[b]])
+			if  ab > maxAb:
+				maxAb = ab
+				nodeA = a
+				nodeB = b
+	if nodeA==0 and nodeB ==0:
+		print ("ERROR: Disconnected Tree", len(visitedNodes))
+		sys.exit()
+	return nodeA, nodeB
 
-	#print (t); print (includedNodes); print (toInclude); print ("D = ", D)
-	while (len(includedNodes) < D):
-		#print ("included = ", len(includedNodes))
-		if (len(toInclude) > 0):
-			i = toInclude.pop(0)#; print ("i = ", i)
-		else:
-			i = takeRandomNode(includedNodes, labels, D); #print ("rand i = ", i)
+
+def aminIndex(matrix, indices):
+	minV = INF
+	mins = []; minI = []; minJ = []
+	#Find the minimal value in the matrix constrainted by indices
+	for i in indices:
+		m = np.amin(matrix[i]) #take the min value
+		if m < minV:
+			minV = m
+	#print ('MinV', minV)
+	#Find the j indices with minimal value
+	for i in indices:
+		for j in range(len(matrix[i])):
+			if matrix[i][j] == minV:
+				minI.append(i)
+				minJ.append(j)
+	return minI, minJ
+
+def aminIndexFirstFound(matrix, indices):
+	minV = INF
+	mins = []; minI = []; minJ = []
+	#Find the minimal value in the matrix constrainted by indices
+	for i in indices:
+		m = np.amin(matrix[i]) #take the min value
+		j = np.argmin(matrix[i]) #take the index of the min value
+		if m < minV:
+			minV = m
+			minJ = j
+			minI = i
+	return [minI], [minJ]
+
+
+def correctMatrix(adjMatrixNP, visitedNodes):
    
-		G = t.search_nodes(name=labels[i])
-		#print (G)
-		if (G):
-			#G is a included node, so add its childrens
-			for j in range(i+1, D):
-				if MST[i][j] != 0: 
-					#print ("i,j" , i, j)
-					G[0].add_child(name=labels[j])
-					if labels[j] not in includedNodes:
-						includedNodes.append(labels[j])
-						toInclude.append(j)
-					
+	for i in range(len(adjMatrixNP)):
+		for j in range(i, len(adjMatrixNP[i])):
+			#print (' i, j ', i,j)
+			if i in visitedNodes and j in visitedNodes:
+				adjMatrixNP[i][j] = INF; adjMatrixNP[j][i] = INF
+	return adjMatrixNP
+
+
+def kruskalMST(cost, root, labels, abundance, useAb=True): 
+	tree = Tree()
+	tree.add_child(name=labels[root])
+	adjMatrixNP = np.array(cost); np.fill_diagonal(adjMatrixNP, INF)
+	visitedNodes = [root]
+	it = 0
+	while len(visitedNodes) < len(labels):
+		if useAb:
+			minsI, minsJ =  aminIndex(adjMatrixNP, visitedNodes)
 		else:
-			#G is child find its patents
-			for j in range(0, D):
-				if MST[i][j] != 0:
-					#print ("i,j 2" , i, j)
-					G = t.search_nodes(name=labels[j])
-					if G:
-						G[0].add_child(name=labels[i])
-						#print ('add', labels[i])
-						if labels[i] not in includedNodes:
-							includedNodes.append(labels[i])
-					else:
-						MST[j][i] = 1
-		if iterr == 50:
-			print (includedNodes.sort())
-			print (t)
-			sys.exit()
-		print ('iter', iterr)
-		iterr +=1
-	
-	return t
+			 minsI, minsJ =  aminIndexFirstFound(adjMatrixNP, visitedNodes)
+		#print (adjMatrixNP); print (minsI); print (minsJ)
+		nodeA, nodeB = chooseBestNode(minsI, minsJ, visitedNodes, adjMatrixNP, labels, abundance)
+		minV = adjMatrixNP[nodeA][nodeB]
+		adjMatrixNP[nodeA][nodeB] = INF; adjMatrixNP[nodeB][nodeA] = INF
+		#print ('==>', labels[nodeA], labels[nodeB], adjMatrixNP[nodeB][nodeA])
+		#print (adjMatrixNP)
+		tree = addNodeTree(tree, labels[nodeA], labels[nodeB], minV)
+		if nodeA not in visitedNodes:
+			visitedNodes.append(nodeA)
+		if nodeB not in visitedNodes:
+			visitedNodes.append(nodeB)
+		#print (nodeA, nodeB)
+		#print (tree.get_ascii(show_internal=True))
+		#if it == 100:
+		#	print (tree.get_ascii(show_internal=True))
+		#	print (len(visitedNodes))
+		#	sys.exit()
+		it +=1
+		#print ('it ', it)
+		adjMatrixNP = correctMatrix(adjMatrixNP, visitedNodes)
+	#print (adjMatrixNP)
+	return tree
+
 

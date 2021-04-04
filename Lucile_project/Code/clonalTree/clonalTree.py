@@ -1,33 +1,32 @@
-from Bio import SeqIO
+
 import numpy as np
 from optparse import OptionParser
 from scipy.spatial import distance
 from MSTree import *
+from BasicTree import *
+from BasicSeq import *
 import sys 
 
 
 
-def hamming_distance(chaine1, chaine2):
-	return sum(c1 != c2 for c1, c2 in zip(chaine1, chaine2))
 
-
-#Read fasta file, detect repeated sequences and naive
+#Read fasta file, detect repeated sequences and germline
 '''def readFasta(fastaFile):
 	dico = {}
-	naive = ""
+	germline = ""
 
 	for record in SeqIO.parse(fastaFile, "fasta"):
 		sequence = str(record.seq)
-		if record.id == "naive":
-			naive = sequence
+		if record.id == "germline":
+			germline = sequence
 		if sequence in dico.keys(): 
 			dico[sequence] = dico[sequence] + 1
 		else:
 			dico[sequence] = 1
-	return dico, naive
+	return dico, germline
 
 #Create array of colapsed sequences, detect root tree and generate array of sequence labels
-def colapseSequences(dico, naive):
+def colapseSequences(dico, germline):
 	count = 1
 	root  = 0
 
@@ -35,70 +34,64 @@ def colapseSequences(dico, naive):
 	
 	for key in dico.keys():
 		labels.append("Seq" + str(count) + "-" + str(dico[key]))
-		if key == naive:
+		if key == germline:
 			root = count - 1
 		arraySeqs.append(key)
 		count = count + 1
 	return labels, root, arraySeqs
 '''
 
-def readFasta(fastaFile):
-	dico = {}
-	naive = ""
-	labels = [];  arraySeqs = [];
-	count = 1; root  = 0
+def makeBoolean(var):
+	if var == '0':
+		return True
+	else:
+		return False
 
-	for record in SeqIO.parse(fastaFile, "fasta"):
-		if record.id not in dico.keys(): 
-			dico[record.id] = str(record.seq)
-			labels.append(record.id)
-			arraySeqs.append(str(record.seq))
-			count = count + 1
-		
-	return labels, root, arraySeqs
-
-#create adjacent matrix from colpased sequences by using hamming distance
-def createAdjMatrix(arraySeqs):
-	adjMatrix = np.zeros((len(arraySeqs), len(arraySeqs)))
-
-	for i in range(len(arraySeqs)):
-		#for j in range(i+1, len(arraySeqs)):
-		for j in range(0, len(arraySeqs)):
-			adjMatrix[i][j] = hamming_distance(arraySeqs[i], arraySeqs[j])
-	return adjMatrix
 
 
 #===================================================================================
 #						Main
 #===================================================================================
 def main():
-	usage = usage = "python clonalTree.py -i <fastaFile> -o <outputFile> \n"
+	usage = usage = "python clonalTree.py -i <fastaFile> -r <revision> -o <outputFile> \n"
 	parser = OptionParser(usage)
-	parser.add_option("-i", "--fastaFile", dest="fastaFile",
-		  help="sequences in fasta format")
-	parser.add_option("-o", "--outputFile", dest="outputFile",
-		  help="output file")
+	parser.add_option("-i", "--fastaFile", dest="fastaFile",  help="sequences in fasta format")
+	parser.add_option("-o", "--outputFile", dest="outputFile",  help="output file")
+	parser.add_option("-a", "--useAbundance", dest="useAbundance",  help="if 0 we use abundance")
+	parser.add_option("-r", "--revision", dest="revision",  help="if 0 we perform revision")
 	
 	(options, args) = parser.parse_args()
-	if len(sys.argv) != 5:
+	if len(sys.argv) < 5:
 		parser.error("incorrect number of arguments")
 	
 	fastaFile = options.fastaFile
 	outputFile = options.outputFile
-	#dico, naive = readFasta(fastaFile)
-	labels, root, arraySeqs =  readFasta(fastaFile)
-	print (labels)
+	useAbundance = options.useAbundance
+	revision = options.revision
+
+	useAbundance = makeBoolean(useAbundance)
+	revision = makeBoolean(revision)
+
+	#dico, germline = readFasta(fastaFile)
+	labels, root, arraySeqs, abundance =  readFastaAbundance(fastaFile)
+	#print (labels)
 	#sys.exit()
 	adjMatrix = createAdjMatrix(arraySeqs)
 
 	#print(adjMatrix)
-	tree = kruskalMST(adjMatrix, root, labels)
+	tree = kruskalMST(adjMatrix, root, labels, abundance, useAbundance)
 	#print (MST)
-	#tree = generateTreeFromMST(MST, root, labels)
-	#tree = editTree(tree, adjMatrix, labels)
-	tree.write(format=1, outfile=outputFile)
-	print (tree.get_ascii(show_internal=True))  
-	print ('done')
+	
+	if revision:
+		tree = editTree(tree, adjMatrix, labels)
+	if checkConsistence(tree, labels):
+		tree.write(format=1, outfile=outputFile)
+		#print (tree.get_ascii(show_internal=True)) 
+		print (costTree3(tree, labels, adjMatrix))
+		print ('done')
+	else:
+		print ('KO')
+	
 
 #===================================================================================
 if __name__ == "__main__":
