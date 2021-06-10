@@ -9,7 +9,7 @@ name=${ADDR[@]: -1}
 IFS=''
 mkdir Output
 mkdir Output/$1/
-python Code/GTM/format_labeling_imgt_airr.py -a Input/$1/vquest_airr.tsv -o Output/$1/${name}_seq_Fo.txt >> Output/$1/${name}_log.txt
+python Code/GTM/format_labeling_imgt_airr.py -a Input/$1/vquest_airr.tsv -o Output/$1/${name}_seq_Fo.txt -t 3 >> Output/$1/${name}_log.txt
 python Code/GTM/initial_clustering_f.py -i Output/$1/${name}_seq_Fo_V_CDR3_Jseq.txt -o Output/$1/${name} -s 0.7 >> Output/$1/${name}_log.txt
 python Code/GTM/format_clustering_output.py -i Output/$1/${name}_sameVJ_noallele_CDR3_0.7.txt -o Output/$1/${name}_initial_clusters_Fo.txt >> Output/$1/${name}_log.txt
 python Code/GTM/refinement.py -f Output/$1/${name}_seq_Fo_V_CDR3_Jseq.txt -c Output/$1/${name}_initial_clusters_Fo.txt >> Output/$1/${name}_log.txt
