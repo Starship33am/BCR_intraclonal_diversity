@@ -14,13 +14,10 @@ def read_output_file(filename):
 
 #####################################################################
 def filter_dico(Dico,remain_seq) :
-	print ("avant",len(Dico))
 	list_all_seq = Dico.keys()
 	to_delet = set(list_all_seq) - set(remain_seq)
-
 	for seq in to_delet:
 		del Dico[seq]
-	print ("apres",len(Dico))
 	return Dico, len(to_delet)
 
 #####################################################################
