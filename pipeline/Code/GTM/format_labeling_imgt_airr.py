@@ -13,10 +13,10 @@ def read_output_file(filename):
 
 
 #####################################################################
-def filter_dico(Dico,remaine_seq) :
+def filter_dico(Dico,remain_seq) :
 	print ("avant",len(Dico))
 	list_all_seq = Dico.keys()
-	to_delet = set(list_all_seq) - set(remaine_seq)
+	to_delet = set(list_all_seq) - set(remain_seq)
 
 	for seq in to_delet:
 		del Dico[seq]
@@ -26,7 +26,7 @@ def filter_dico(Dico,remaine_seq) :
 #####################################################################
 def dico_V_J_CDR3_format(AIRR,abundance_threshold):
 	lines = read_output_file(AIRR)
-	low_quality_seq, remaine_seq =[], []
+	low_quality_seq, remain_seq =[], []
 	Dico={}
 	Dico_uniq_adundance = {}
 	for l in range(1,len(lines)):
@@ -60,10 +60,10 @@ def dico_V_J_CDR3_format(AIRR,abundance_threshold):
 				Dico_uniq_adundance[split[13]] = [sequence_id]
 	for key in Dico_uniq_adundance.keys():
 		if len(Dico_uniq_adundance[key]) > abundance_threshold : 
-			remaine_seq.append(Dico_uniq_adundance[key])
-	flat_list_remaine_seq = [item for sublist in remaine_seq for item in sublist]
+			remain_seq.append(Dico_uniq_adundance[key])
+	flat_list_remain_seq = [item for sublist in remain_seq for item in sublist]
 	#delete low abundant unique sequences 
-	final_dico, deleted = filter_dico(Dico,flat_list_remaine_seq)
+	final_dico, deleted = filter_dico(Dico,flat_list_remain_seq)
 	number_of_analyzed_seq = len(Dico.keys()) - deleted
 	print("Total sequence count : " , len(lines)-1)
 	print("Number of low quality sequences that have been eliminated from the analysis : ",  len(low_quality_seq))
