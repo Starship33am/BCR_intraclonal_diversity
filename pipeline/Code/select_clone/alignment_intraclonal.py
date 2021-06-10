@@ -1,3 +1,4 @@
+import os
 import sys
 from optparse import OptionParser
 import operator
@@ -38,6 +39,8 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 	clonotype_seq = {}
 	list_selected_clonotype = []
 	list_representative_seq_clonotype = []
+	sequences_matching = {}
+	hashtable = {}
 	for l in lines:
 		seq = l.split("\t")
 		#print("seq : ",seq)
@@ -53,13 +56,36 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)))
 	else :
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0:int(nb_clonotype)]))
-	for clonotype in list_selected_clonotype :
-		if airr_df.loc[airr_df['sequence_id'] == clonotype_seq[clonotype][0]].empty == False :
-			list_representative_seq_clonotype.append((clonotype,clonotype_seq[clonotype][0],float(airr_df.loc[airr_df['sequence_id'] == clonotype_seq[clonotype][0]]["v_identity"].values[0])))
+	
+	hashtable = {key: list(value) for key, value in airr_df.groupby('whole_seq')['sequence_id']}
+	hashtable=collections.OrderedDict(sorted(hashtable.items(), key=lambda k: len(k[1]),reverse=True))
 
+	for clonotype in list_selected_clonotype :
+		clonotype_uniq_seq = most_abundant_uniq_sequence_in_clonotype(clonotype_seq[clonotype],hashtable)
+		if clonotype_uniq_seq!="" :
+			list_representative_seq_clonotype.append( (clonotype, clonotype_uniq_seq, float(airr_df.loc[airr_df['sequence_id'] == clonotype_uniq_seq]["v_identity"].values[0])) )
+			index_seq = clonotype_seq[clonotype].index(clonotype_uniq_seq)
+			#store the old and new id of the representative sequence for the clonotype
+			sequences_matching[clonotype_seq[clonotype][0]]=clonotype_seq[clonotype][index_seq]
+			clonotype_seq[clonotype].insert(0,clonotype_seq[clonotype].pop(index_seq)) #modify the reference sequence in clonotype_seq
 	sorted_based_on_V_identity = sorted(list_representative_seq_clonotype, key=lambda element: element[2])
 	germline = airr_df.loc[airr_df['sequence_id'] == sorted_based_on_V_identity[-1][1]]["germline_seq"].values[0]
-	return clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity[-1][1]
+	return clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity[-1][1],sequences_matching
+
+#=============================================================================#
+
+def most_abundant_uniq_sequence_in_clonotype(clonotype_seqs,hashtable):
+	seq_abundant=""
+	for sequence, liste_seqs in hashtable.items() :
+		if len (clonotype_seqs)>=len(liste_seqs) :
+			for seq in liste_seqs :
+				if seq!="" and seq in clonotype_seqs :
+					seq_abundant=seq
+					del hashtable[sequence]
+					break
+		if seq_abundant!="" :
+			break
+	return seq_abundant
 
 #=============================================================================#
 def compare_clonotype_to_germline(region):
@@ -127,12 +153,12 @@ def alignment(repertoire_name):
 	file_name = repertoire_name+"_selected_seq.fasta"
 	#clustalw= "/Users/nikaabdollahi/opt/anaconda3/envs/python3.6/bin/clustalw2"
 	#cline = ClustalwCommandline(clustalw, infile=file_name, outfile= "nika.aln")
-	muscle_cline = MuscleCommandline(input=file_name,out=file_name.split(".")[0]+".aln")
+	muscle_cline = MuscleCommandline(input=file_name,out=os.path.splitext(file_name)[0]+".aln")
 	muscle_cline()
-	align = AlignIO.read(file_name.split(".")[0]+".aln", "fasta")
+	align = AlignIO.read(os.path.splitext(file_name)[0]+".aln", "fasta")
 	#print(align)
-	count = SeqIO.write(align, file_name.split(".")[0]+"_uniq.aln.fa", "fasta")
-	aligned_seq = [(seq_record.id,seq_record.seq) for seq_record in SeqIO.parse(file_name.split(".")[0]+"_uniq.aln.fa","fasta")]
+	count = SeqIO.write(align, os.path.splitext(file_name)[0]+"_uniq.aln.fa", "fasta")
+	aligned_seq = [(seq_record.id,seq_record.seq) for seq_record in SeqIO.parse(os.path.splitext(file_name)[0]+"_uniq.aln.fa","fasta")]
 	return aligned_seq
 
 #=============================================================================#
@@ -247,12 +273,18 @@ def column_from_residue_number(seq,res_no_list):
 				list_region_seq.append(i)
 			elif pos_without_gap ==res_no_list[4]:
 				#print(seq[list_region_seq[0]:i])
+				#particular case where the start of D and the start of cdr3 are the same
+				if(res_no_list[4]==res_no_list[5]):
+					list_region_seq.append(i)
 				list_region_seq.append(i)
 			elif pos_without_gap ==res_no_list[5]:
 				#print(seq[list_region_seq[0]:i])
 				list_region_seq.append(i)
 			elif pos_without_gap ==res_no_list[6]:
 				#print(seq[list_region_seq[0]:i])
+				#particular case where the end of D and the end of cdr3 are the same
+				if(res_no_list[6]==res_no_list[7]):
+					list_region_seq.append(i)
 				list_region_seq.append(i)
 			elif pos_without_gap ==res_no_list[7]:
 				#print(seq[list_region_seq[0]:i])
@@ -260,6 +292,18 @@ def column_from_residue_number(seq,res_no_list):
 	#print(seq[list_region_seq[1]:len(seq)])
 	#print("list_region_seq",list_region_seq)
 	return list_region_seq 
+
+#=============================================================================#
+
+#save the old and new id of the representative seq in a txt file
+def write_matching_seq(repertoire_name, matching_seq):
+	file_name = repertoire_name+"_matching_sequences.txt"
+	filetowrite = open(file_name,"w")
+	for seq_ID in matching_seq:
+		ids = seq_ID + "	" + matching_seq[seq_ID] + "\n"
+		filetowrite.write(ids)
+	filetowrite.close()
+	return 0
 
 #####################################################################
 def main():
@@ -286,7 +330,8 @@ def main():
 	airr_df = read_AIRR(IMGT_seq_info)
 	lines_clonotype_seq = read_file (final_seq_info)
 
-	clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity_seq_id = read_seq_info(lines_clonotype_seq,airr_df,nb_clonotype)
+	clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity_seq_id, matching_seq = read_seq_info(lines_clonotype_seq,airr_df,nb_clonotype)
+	write_matching_seq(repertoire_name, matching_seq)
 	coressp_dico = write_clonaltree_align(clonotype_seq,list_selected_clonotype,airr_df,repertoire_name,germline)
 	aligned_seq = alignment(repertoire_name)
 	write_all_aligned(repertoire_name,coressp_dico)
