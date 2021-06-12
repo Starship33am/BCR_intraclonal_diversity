@@ -39,6 +39,7 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 	clonotype_seq = {}
 	list_selected_clonotype = []
 	list_representative_seq_clonotype = []
+	list_seq_same_v_identity = []
 	sequences_matching = {}
 	hashtable = {}
 	for l in lines:
@@ -57,9 +58,11 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 	else :
 		list_selected_clonotype = list((sorted(clonotype_seq, key=lambda k: len(clonotype_seq[k]), reverse=True)[0:int(nb_clonotype)]))
 	
+	
 	hashtable = {key: list(value) for key, value in airr_df.groupby('whole_seq')['sequence_id']}
+	Dico_seq_abundance = hashtable
 	hashtable=collections.OrderedDict(sorted(hashtable.items(), key=lambda k: len(k[1]),reverse=True))
-
+	
 	for clonotype in list_selected_clonotype :
 		clonotype_uniq_seq = most_abundant_uniq_sequence_in_clonotype(clonotype_seq[clonotype],hashtable)
 		if clonotype_uniq_seq!="" :
@@ -69,14 +72,29 @@ def read_seq_info(lines,airr_df,nb_clonotype):
 			sequences_matching[clonotype_seq[clonotype][0]]=clonotype_seq[clonotype][index_seq]
 			clonotype_seq[clonotype].insert(0,clonotype_seq[clonotype].pop(index_seq)) #modify the reference sequence in clonotype_seq
 	sorted_based_on_V_identity = sorted(list_representative_seq_clonotype, key=lambda element: element[2])
-	germline = airr_df.loc[airr_df['sequence_id'] == sorted_based_on_V_identity[-1][1]]["germline_seq"].values[0]
-	return clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity[-1][1],sequences_matching
+	max_V_identity = sorted_based_on_V_identity[-1][2]
+	list_max_V_identity = [element for element in sorted_based_on_V_identity if element[2] == max_V_identity ]
+	for seq in list_max_V_identity:
+		seq_to_count = airr_df.loc[airr_df['sequence_id'] == seq[1]]["whole_seq"].values[0]
+		list_seq_same_v_identity.append([seq[1],len(Dico_seq_abundance[seq_to_count]),float(airr_df.loc[airr_df['sequence_id'] == seq[1]]["d_identity"].values[0]),float(airr_df.loc[airr_df['sequence_id'] == seq[1]]["j_identity"].values[0])])
+	
+	#test=[['S7863', 730, 90.0, 10.12], ['S1797', 75, 0.0, 96.08], ['S38571', 23, 0.0, 94.12], ['S4205', 74, 10.0, 96.08], ['S945', 52, 0.0, 96.08], ['S28539', 13, 0.0, 96.08], ['S17660', 13, 0.0, 96.08], ['S9991', 9, 0.0, 96.08]]
+	seq_closest_germline_id = select_naive_seq(list_seq_same_v_identity)
+	germline = airr_df.loc[airr_df['sequence_id'] == seq_closest_germline_id]["germline_seq"].values[0]
+	return clonotype_seq,germline,list_selected_clonotype,seq_closest_germline_id,sequences_matching
 
 #=============================================================================#
+def select_naive_seq(list_seq_same_v_identity):
+	# sort the sequences based on 1) J identity 2) D identity 3) abundance 
+	sorted_list = sorted(list_seq_same_v_identity, key=lambda x: (-x[3], -x[2], -x[1]))
+	# return the sequence with highest J identity
+	return sorted_list[0][0]
 
+#=============================================================================#
 def most_abundant_uniq_sequence_in_clonotype(clonotype_seqs,hashtable):
 	seq_abundant=""
 	for sequence, liste_seqs in hashtable.items() :
+		#print(sequence)
 		if len (clonotype_seqs)>=len(liste_seqs) :
 			for seq in liste_seqs :
 				if seq!="" and seq in clonotype_seqs :
@@ -330,14 +348,14 @@ def main():
 	airr_df = read_AIRR(IMGT_seq_info)
 	lines_clonotype_seq = read_file (final_seq_info)
 
-	clonotype_seq,germline,list_selected_clonotype,sorted_based_on_V_identity_seq_id, matching_seq = read_seq_info(lines_clonotype_seq,airr_df,nb_clonotype)
+	clonotype_seq,germline,list_selected_clonotype,seq_closest_germline_id, matching_seq = read_seq_info(lines_clonotype_seq,airr_df,nb_clonotype)
 	write_matching_seq(repertoire_name, matching_seq)
 	coressp_dico = write_clonaltree_align(clonotype_seq,list_selected_clonotype,airr_df,repertoire_name,germline)
 	aligned_seq = alignment(repertoire_name)
 	write_all_aligned(repertoire_name,coressp_dico)
 
 	#column_from_residue_number("A-AAAA-AAAA---A",[3,6])
-	region = write_clonotype_align_seq(airr_df,repertoire_name,aligned_seq,sorted_based_on_V_identity_seq_id)
+	region = write_clonotype_align_seq(airr_df,repertoire_name,aligned_seq,seq_closest_germline_id)
 	region_compered_to_germ=compare_clonotype_to_germline(region)
 	total_seq_clone =len(lines_clonotype_seq)
 	write_clonotype_align(region_compered_to_germ,repertoire_name,coressp_dico,total_seq_clone,airr_df)
