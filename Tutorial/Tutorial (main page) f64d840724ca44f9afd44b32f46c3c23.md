@@ -2,7 +2,7 @@
 
 # Upload
 
-![Capture d’écran 2021-11-22 à 01.26.40.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.26.40.png)
+![Capture d’écran 2021-11-22 à 01.26.40.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.26.40.png)
 
 On this page, you can choose a name for your analysis, upload the AIRR file of the BCR repertoire, and provide an email address to receive a link to the outputs. Note that entering the email address is optional, it gives you the possibility to have access to your results for seven days. If you choose to not enter your email address, please make sure to keep the browser's window open, as long as you want to have access to the results. The analysis is relatively fast, for instance, it takes around three minutes to analyze a monoclonal repertoire containing 270 000 sequences. The required time can vary depending on the structure of the sample (the size of clusters and sequence mutations).
 
@@ -10,9 +10,9 @@ On this page, you can choose a name for your analysis, upload the AIRR file of t
 
 # Repertoire Analysis
 
-![Capture d’écran 2021-11-22 à 01.27.39.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.27.39.png)
+![Capture d’écran 2021-11-22 à 01.27.39.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.27.39.png)
 
-![Capture d’écran 2021-11-22 à 01.28.26.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.28.26.png)
+![Capture d’écran 2021-11-22 à 01.28.26.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.28.26.png)
 
 1) **Repertoire view:** The outer circle (gray) represents the entire repertoire, while inner circles represent clones, their sizes are proportional to their abundance in the repertoires.
 
@@ -28,9 +28,9 @@ If you click on any clone with the name (C1, C2, ...) you will have access to it
 
 # Clonal Analysis
 
-![Capture d’écran 2021-11-22 à 01.29.40.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.29.40.png)
+![Capture d’écran 2021-11-22 à 01.29.40.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.29.40.png)
 
-![Capture d’écran 2021-11-22 à 01.30.13.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.30.13.png)
+![Capture d’écran 2021-11-22 à 01.30.13.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.30.13.png)
 
 1) **Clone view:** Each circle represents a clonotype of the selected clone (the light yellow circle). Circle sizes represent clonotype abundance within the clone.
 
@@ -48,9 +48,9 @@ To go back to the "Repertoire analysis" view and choose another clone to study, 
 
 # Intraclonal studies
 
-![Capture d’écran 2021-11-22 à 01.32.03.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.32.03.png)
+![Capture d’écran 2021-11-22 à 01.32.03.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.32.03.png)
 
-![Capture d’écran 2021-11-22 à 01.32.26.png](Tutorial%20(main%20page)%20f64d840724ca44f9afd44b32f46c3c23/Capture_decran_2021-11-22_a_01.32.26.png)
+![Capture d’écran 2021-11-22 à 01.32.26.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.32.26.png)
 
 1) **Lineage tree: c**olored circles represent observed clonotypes, while white circles represent unobserved nodes. The branch length represents the number of somatic hypermutations among connected clonotypes. We identify clonotypes by a number, sorted by their abundance, which means that clonotype **1** is the most abundant in the clone. Nodes that represent the largest clonotypes have a bold border in the tree. When passing the mouse over nodes, clonotype details (identifier, abundance functionality) appear. By clicking on “display abundance”, it is possible to display the abundance of each clonotype by increasing the size of the correspondent node. Nodes are then labeled with their abundance (%) rather than a sequential number. Each clonotype may contain multiple unique sequences [link to clonotype definition]. Choosing " Display proportion of unique sequence" will turn each node into a pie chart illustrating the numerical proportion of unique sequences within the clonotype.
 
