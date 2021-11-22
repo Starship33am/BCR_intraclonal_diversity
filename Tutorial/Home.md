@@ -25,7 +25,7 @@ First, BCR sequences in **AIRR format [**Ref Glossary] are clustered into groups
 - Anlysis of a sub set or all the sequences of a given clone via IMGT/Vquest **[**Ref Tutorials/Video and Tutorials/text] + [Ref IMGT]
 - Generation of CDR3 logo of a clone **[**Ref Tutorials/Video and Tutorials/text] + [Ref VDJ-Logo]
 
-![pipeline.png](Home%2021e81e33af414761bb5af32248aefb23/pipeline.png)
+![pipeline.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/pipeline.png)
 
 All the generated tables and images are downloadable in their static form.[Explain whether or not and for how long the analysis are stored on the web-server]
 
