@@ -2,10 +2,14 @@
 
 **AIRR format :** Standardized representations for annotated immune repertoires established by the Adaptive Immune Receptor Repertoire community of the Antibody society **[Reference AIRR]**.
 
+****
+
 **BCR lineage :** A constantly changing antigenic landscape implies constant modifications of the immune repertoire. Upon antigen recognition, B cells undergo somatic hyper- mutations, producing BCR sequence variants that share the same specificity but have different affinities. The collection of these sequences is known as the B Cell Receptor (BCR) lineage.
+
 ****
 
 **BCR lineage tree :** a tree representing the evolutionary history of a BCR lineage. The root of the tree is the BCR sequence of the naive B cell giving rise to the lineage and other nodes are BCR sequence variants producing during the affinity maturation stage of the B-cell development.
+****
 
 ![levels.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/levels.png)
 
@@ -21,6 +25,8 @@ our grouping criteria, at least partially, on the amino acid level. We used the 
 clonotype. Knowing that clonotype is defined at the amino acid level, dif-
 ferent nucleotide sequences within a clonotype should pinpoint different
 positions in BCR genotype landscapes.
+
+****
 
 Reference AIRR :
 
