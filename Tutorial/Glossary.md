@@ -1,10 +1,5 @@
 # Glossary
 
-Created: November 15, 2021 3:44 PM
-Status: In Progress
-
-# Glossary
-
 **AIRR format :** Standardized representations for annotated immune repertoires established by the Adaptive Immune Receptor Repertoire community of the Antibody society **[Reference AIRR]**.
 
 **BCR lineage :** A constantly changing antigenic landscape implies constant modifications of the immune repertoire. Upon antigen recognition, B cells undergo somatic hyper- mutations, producing BCR sequence variants that share the same specificity but have different affinities. The collection of these sequences is known as the B Cell Receptor (BCR) lineage.
