@@ -12,7 +12,7 @@ Status: In Progress
 
 **BCR lineage tree :** a tree representing the evolutionary history of a BCR lineage. The root of the tree is the BCR sequence of the naive B cell giving rise to the lineage and other nodes are BCR sequence variants producing during the affinity maturation stage of the B-cell development.
 
-![Capture d’écran 2021-11-23 à 01.58.27.png](Glossary%20ce9fc7c18358443a8b57c8ad134f1315/Capture_decran_2021-11-23_a_01.58.27.png)
+![levels.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/levels.png)
 
 **Clone** : a set of sequences that represent a B-cell lineage, that is, all progeny
 of a given naive B cell. Sequences within a clone should have the same VDJ
