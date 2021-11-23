@@ -4,7 +4,7 @@
 
 ![Capture d’écran 2021-11-22 à 01.26.40.png](https://github.com/NikaAb/BCR_intraclonal_diversity/blob/master/Tutorial/Capture_decran_2021-11-22_a_01.26.40.png)
 
-On this page, you can choose a name for your analysis, upload the AIRR file of the BCR repertoire, and provide an email address to receive a link to the outputs. Note that entering the email address is optional, it gives you the possibility to have access to your results for seven days. If you choose to not enter your email address, please make sure to keep the browser's window open, as long as you want to have access to the results. The analysis is relatively fast, for instance, it takes around three minutes to analyze a monoclonal repertoire containing 270 000 sequences. The required time can vary depending on the structure of the sample (the size of clusters and sequence mutations).
+On this page, you can choose a name for your analysis, upload the AIRR file of the BCR repertoire, and provide an email address to receive a link to the outputs. You can check the required fields in the AIRR formatted file on this page **(link to AIRR FILE’S REQUIRED FIELDS FOR VICLOD PIPELINE)** Note that entering the email address is optional, it gives you the possibility to have access to your results for seven days. If you choose to not enter your email address, please make sure to keep the browser's window open, as long as you want to have access to the results. The analysis is relatively fast, for instance, it takes around three minutes to analyze a monoclonal repertoire containing 270 000 sequences. The required time can vary depending on the structure of the sample (the size of clusters and sequence mutations).
 
 ---
 
