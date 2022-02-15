@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> Elbow tree </title>
+  <link rel='stylesheet' href='src/tree.css'> 
+  <script src='https://d3js.org/d3.v4.min.js' charset='utf-8'></script>
+  <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+
+</head>
+
+<body>
+
+  <div style="width: 100%; height: 800px;">
+    <div id="chart1" style="width: 100%; height: 95%;" ></div>
+    <!-- Button to change the tree form --> 
+    <div id="treeForm" style="height: 5%; margin-left: 2%; ">
+      <input type="checkbox" id="showAbundance" name="showAbundance" onClick="changeTree();">
+      <label for="showAbundance">Display abundance</label>
+    </div><br><br>
+  </div>
+  
+  <script src="src/clonotype_functions.js" charset="utf-8"></script>
+  <script src="src/clonotype_tree.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  
+    var selectedNode = [], firstTime = true, dataClonotypes, treeBranches=[];
+
+    var path = "examples/example1_1_200_tree.json";
+
+    //loading the json file
+    d3.json(path, function(error, dataTree) {
+      if (error) {
+        message("File doesn't exist");
+      } else {
+        displayTree(dataTree);
+      }
+    });
+    
+  </script>
+
+</body>
+
+</html>
