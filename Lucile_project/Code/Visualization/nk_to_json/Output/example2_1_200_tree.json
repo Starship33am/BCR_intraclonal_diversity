@@ -1,0 +1,1000 @@
+{
+    "name": "naive",
+    "value": 1,
+    "color": "#808080",
+    "stroke": "#808080",
+    "style": "none",
+    "seq": "germline",
+    "children": [
+        {
+            "name": "seq5382",
+            "value": 0.026386547082835287,
+            "color": "#D98880",
+            "stroke": "#A3E4D7",
+            "style": "#A3E4D7",
+            "length": "0.0",
+            "children": [
+                {
+                    "name": "seq26",
+                    "value": 95.33538620669638,
+                    "color": "#7DCEA0",
+                    "stroke": "#A3E4D7",
+                    "style": "#A3E4D7",
+                    "length": "1.0",
+                    "children": [
+                        {
+                            "value": 1,
+                            "name": "ni0",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq146",
+                                    "value": 0.3599125022098733,
+                                    "color": "#D7BDE2",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq1740",
+                                    "value": 0.02480335425786517,
+                                    "color": "#F3B3EF",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq2047",
+                            "value": 0.23879825109965935,
+                            "color": "#AED6F1",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni1",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq644",
+                                    "value": 0.2105646457210256,
+                                    "color": "#FF00FF",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq58405",
+                                    "value": 0.020581506724611523,
+                                    "color": "#00FFFF",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq1305",
+                                    "value": 0.01477646636638776,
+                                    "color": "#F7DC6F",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni2",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq434",
+                                    "value": 0.1781091928091382,
+                                    "color": "#000000",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq14055",
+                                    "value": 0.00923529147899235,
+                                    "color": "#F5F5DC",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni3",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq419",
+                                    "value": 0.15990247532198185,
+                                    "color": "#CD5C5C",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq2497",
+                                    "value": 0.052773094165670574,
+                                    "color": "#00FA9A",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq14002",
+                                    "value": 0.012137811658104233,
+                                    "color": "#CD853F",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni4",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq684",
+                                    "value": 0.15884701343866842,
+                                    "color": "#FFFFF0",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq15268",
+                                    "value": 0.014512600895559408,
+                                    "color": "#00CED1",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq15361",
+                                    "value": 0.013193273541417644,
+                                    "color": "#BC8F8F",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni5",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq1499",
+                                    "value": 0.15330583855127303,
+                                    "color": "#A9A9A9",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq9851",
+                                    "value": 0.008443695066507292,
+                                    "color": "#BA55D3",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq506",
+                            "value": 0.15330583855127303,
+                            "color": "#F5F5F5",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni6",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq6024",
+                                    "value": 0.15093104931381784,
+                                    "color": "#FFEBCD",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq2923",
+                                    "value": 0.02216469954958164,
+                                    "color": "#9932CC",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni7",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq3405",
+                                    "value": 0.11055963227707985,
+                                    "color": "#F0FFFF",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq8453",
+                                    "value": 0.012401677128932585,
+                                    "color": "#FFFFE0",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq23363",
+                                    "value": 0.0076520986540222335,
+                                    "color": "#9400D3",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni8",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq1681",
+                                    "value": 0.10844870851045303,
+                                    "color": "#98FB98",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq7124",
+                                    "value": 0.014512600895559408,
+                                    "color": "#FFE4C4",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni9",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq1561",
+                                    "value": 0.10369913003554268,
+                                    "color": "#708090",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq1907",
+                                    "value": 0.009499156949820703,
+                                    "color": "#FFFAFA",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni10",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq9003",
+                                    "value": 0.10290753362305761,
+                                    "color": "#FFE4E1",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq10002",
+                                    "value": 0.01372100448307435,
+                                    "color": "#8B4513",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni11",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq350",
+                                    "value": 0.09763022420649056,
+                                    "color": "#778899",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq1027",
+                                    "value": 0.03799662779928281,
+                                    "color": "#FFE4B5",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni12",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq2089",
+                                    "value": 0.09103358743578174,
+                                    "color": "#F5FFFA",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq384",
+                                    "value": 0.08311762331093116,
+                                    "color": "#008B8B",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq2015",
+                            "value": 0.09076972196495339,
+                            "color": "#FFA500",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni13",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq586",
+                                    "value": 0.08865879819832656,
+                                    "color": "#DB7093",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq2345",
+                                    "value": 0.01372100448307435,
+                                    "color": "#00FF7F",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni14",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq3334",
+                                    "value": 0.08575627801921468,
+                                    "color": "#191970",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq39130",
+                                    "value": 0.03324704932437246,
+                                    "color": "#F8F8FF",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq10360",
+                                    "value": 0.009763022420649057,
+                                    "color": "#6A5ACD",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni15",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq2770",
+                                    "value": 0.0783680448360208,
+                                    "color": "#87CEEB",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq2052",
+                                    "value": 0.03905208968259623,
+                                    "color": "#FF8C00",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq338",
+                                    "value": 0.02110923766626823,
+                                    "color": "#228B22",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni16",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq3243",
+                                    "value": 0.07678485201105069,
+                                    "color": "#556B2F",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq183",
+                                    "value": 0.012665542599760937,
+                                    "color": "#F5DEB3",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq2232",
+                            "value": 0.058050403582237634,
+                            "color": "#87CEFA",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni17",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq666",
+                                    "value": 0.053036959636498925,
+                                    "color": "#7B68EE",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq15574",
+                                    "value": 0.017678986545499643,
+                                    "color": "#FAFAD2",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni18",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq223",
+                                    "value": 0.052773094165670574,
+                                    "color": "#F0F8FF",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq26219",
+                                    "value": 0.013984869953902702,
+                                    "color": "#DC143C",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq27604",
+                                    "value": 0.008707560537335644,
+                                    "color": "#20B2AA",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq1953",
+                            "value": 0.052509228694842223,
+                            "color": "#F0E68C",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni19",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq1911",
+                                    "value": 0.051981497753185515,
+                                    "color": "#FDF5E6",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq2506",
+                                    "value": 0.0414268789200514,
+                                    "color": "#7CFC00",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni20",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq13",
+                                    "value": 0.051981497753185515,
+                                    "color": "#ADD8E6",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq765",
+                                    "value": 0.04485713004081999,
+                                    "color": "#FFA07A",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq291",
+                                    "value": 0.02216469954958164,
+                                    "color": "#2E8B57",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq2238",
+                            "value": 0.050926035869872106,
+                            "color": "#FA8072",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni21",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq10768",
+                                    "value": 0.04907897757407363,
+                                    "color": "#FFEFD5",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq4036",
+                                    "value": 0.00923529147899235,
+                                    "color": "#AFEEEE",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni22",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq2706",
+                                    "value": 0.04881511210324528,
+                                    "color": "#32CD32",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq42461",
+                                    "value": 0.008971426008163998,
+                                    "color": "#FF1493",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni23",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq1542",
+                                    "value": 0.046704188336618456,
+                                    "color": "#FFF0F5",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq1229",
+                                    "value": 0.023220161432895053,
+                                    "color": "#0000CD",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni24",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq2389",
+                                    "value": 0.04406553362833493,
+                                    "color": "#DDA0DD",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq4018",
+                                    "value": 0.030080663674432226,
+                                    "color": "#8B0000",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq4834",
+                                    "value": 0.012401677128932585,
+                                    "color": "#FFF5EE",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni25",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq188",
+                                    "value": 0.04248234080336481,
+                                    "color": "#DEB887",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq8244",
+                                    "value": 0.025331085199521874,
+                                    "color": "#DCDCDC",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq3502",
+                            "value": 0.041163013449223046,
+                            "color": "#FFF8DC",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni26",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq1865",
+                                    "value": 0.040899147978394695,
+                                    "color": "#EE82EE",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq452",
+                                    "value": 0.03034452914526058,
+                                    "color": "#B0C4DE",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq2457",
+                            "value": 0.040635282507566345,
+                            "color": "#FF6347",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni27",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq978",
+                                    "value": 0.03931595515342458,
+                                    "color": "#FFFACD",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq334",
+                                    "value": 0.022428565020409994,
+                                    "color": "#4169E1",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq4593",
+                            "value": 0.035357973090999285,
+                            "color": "#EEE8AA",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "value": 1,
+                            "name": "ni28",
+                            "color": "#FFFFFF",
+                            "stroke": "#808080",
+                            "style": "2,2",
+                            "length": 1,
+                            "children": [
+                                {
+                                    "name": "seq10192",
+                                    "value": 0.03324704932437246,
+                                    "color": "#E9967A",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                },
+                                {
+                                    "name": "seq5681",
+                                    "value": 0.011346215245619174,
+                                    "color": "#B0E0E6",
+                                    "stroke": "#A3E4D7",
+                                    "style": "#A3E4D7",
+                                    "length": "0.0"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "seq1125",
+                            "value": 0.03324704932437246,
+                            "color": "#4B0082",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq1457",
+                            "value": 0.03113612555774564,
+                            "color": "#48D1CC",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq2546",
+                            "value": 0.025067219728693524,
+                            "color": "#8B008B",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq1811",
+                            "value": 0.02190083407875329,
+                            "color": "#E6E6FA",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq2555",
+                            "value": 0.01741512107467129,
+                            "color": "#A52A2A",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq19822",
+                            "value": 0.015040331837216113,
+                            "color": "#E0FFFF",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq5460",
+                            "value": 0.014248735424731054,
+                            "color": "#B8860B",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq27728",
+                            "value": 0.012929408070589291,
+                            "color": "#9370DB",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        },
+                        {
+                            "name": "seq5321",
+                            "value": 0.012401677128932585,
+                            "color": "#FAEBD7",
+                            "stroke": "#A3E4D7",
+                            "style": "#A3E4D7",
+                            "length": "1.0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
