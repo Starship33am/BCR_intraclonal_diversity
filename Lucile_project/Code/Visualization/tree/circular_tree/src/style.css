@@ -1,0 +1,27 @@
+html, body {
+   height: 100%;  
+}
+
+.nodeTree {
+  stroke-width: 1.5;
+}
+
+.nodeTree text {
+  font-size: 11;
+}
+
+.linkTree {
+  stroke-opacity: 1;
+}
+
+/* properties of the tooltip of the distance visualization and the tree visualization*/
+.tooltip {
+  position: absolute;
+  display: none;
+  padding : 5px;
+  font-size :12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;  
+  box-shadow: -3px 3px 15px #888;
+  color: white;
+}
